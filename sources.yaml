@@ -1,0 +1,13 @@
+sources:
+  - name: ProxyPool
+    url: https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta-2.yaml
+    dedup: true
+
+  - name: V2RA
+    url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/sub/sub_merge_yaml.yml
+
+  - name: AMPN
+    url: https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml
+
+  - name: NMW
+    url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.yml
