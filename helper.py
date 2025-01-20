@@ -1,3 +1,4 @@
+print("Script starting...")  # 确认脚本开始执行
 import yaml
 import requests
 import sys
@@ -21,7 +22,7 @@ class Site:
         self.name = config.get('name') or self._generate_name_from_url(self.url)
         
         # 默认配置
-        self.group = config.get('group', 'auto')
+        self.group = config.get('group', 'PROXY')
         self.inclusion = config.get('inclusion', [])
         self.exclusion = config.get('exclusion', [])
         self.dedup = config.get('dedup', True)
@@ -92,9 +93,10 @@ class Site:
                     if p not in used:
                         used.add(p)
                         nodes_good.append(node)
-                except:
+                except Exception as e:
                     if self.verbose != 'quiet':
                         self.log(f"Failed to resolve node {node['name']}: {node['server']}")
+                        print(f"Error resolving node {node['name']}: {e}")  # 添加额外的错误输出
             self.nodes = nodes_good
 
     def get_titles(self):
@@ -114,13 +116,15 @@ def main():
         # 添加这一行：确保使用 sources 列表
         sites_config = sites_config.get('sources', [])
 
+    print(f"Sites config loaded: {sites_config}")  # 打印站点配置
+
     # 读取模板配置
     with open("template.yaml", "r", encoding="utf-8") as f:
         config = yaml.load(f, Loader=FullLoader)
 
     # 初始化 proxies 和 proxy-groups
     config['proxies'] = []
-    config['proxy-groups'] = [{"name": "auto", "type": "select", "proxies": []}]
+    config['proxy-groups'] = [{"name": "PROXY", "type": "select", "proxies": []}]
 
     # 决定日志详细程度
     verbose = 'normal' if len(sys.argv) < 4 else sys.argv[3]
@@ -142,6 +146,7 @@ def main():
             except Exception as e:
                 if verbose != 'quiet':
                     print(f"Failed to process {site.name}: {e}")
+                    print(f"Detailed error during processing: {e}")  # 添加额外的错误输出
 
     # 对节点名去重
     config['proxies'] = list({x['name']: x for x in config['proxies']}.values())
