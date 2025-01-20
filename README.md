@@ -16,7 +16,7 @@
 
 ## User Guide
 
-使用前需要将网站订阅信息写在 `sites.yaml` 内。
+使用前需要将网站订阅信息写在 `sources.yaml` 内。
 
 ```yaml
 [
@@ -47,8 +47,9 @@ proxy-groups:
 ```text
 $ python3 helper.py
 Usage:
-    python3 helper.py <input> [output]
+    python3 helper.py <sources_config> [output] [verbose]
 Example:
-    python3 helper.py myTmp1.yaml
-    python3 helper.py myTmp2.yaml output2.yaml
+    python3 helper.py sources.yaml
+    python3 helper.py sources.yaml output.yaml
+    python3 helper.py sources.yaml output.yaml quiet
 ```

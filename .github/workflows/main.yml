@@ -1,0 +1,42 @@
+name: Update Clash Config
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天触发一次
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Run helper script
+      run: |
+        bash run.sh
+    - name: Deploy to Gist
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GIST_TOKEN }}
+        script: |
+          const fs = require('fs');
+          const content = fs.readFileSync('output.yaml', 'utf8');
+          try {
+            const { data } = await github.rest.gists.update({
+              gist_id: process.env.GIST_ID,
+              files: {
+                'output.yaml': {
+                  content: content
+                }
+              }
+            });
+            console.log('Gist updated:', data.html_url);
+          } catch (error) {
+            console.error('Failed to update Gist:', error);
+          }
+      env:
+        GIST_ID: ${{ secrets.GIST_ID }}
