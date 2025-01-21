@@ -60,30 +60,17 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
-- auth: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
-  down: 100
-  name: 🇷🇺 俄罗斯-圣彼得堡-HY-014-1B
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
-  port: 28153
-  server: 195.58.49.50
-  skip-cert-verify: true
-  type: hysteria2
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇻🇳 越南高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 63326
+  server: gsgs.hy2.one
+  type: ss
   udp: true
-  up: 100
-- name: 🇫🇷 VLESS法国1-专线2
-  network: tcp
-  port: 39029
-  server: relay002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- auth: 19e53491-3841-4cbf-827d-8640f17c4dab
+- auth: 6d374706-7684-4af8-8bd1-8bb09e8914a1
   down: 1024
-  name: 🇰🇷 KR 冰摇桃桃乌龙茶-1G
-  password: 19e53491-3841-4cbf-827d-8640f17c4dab
+  name: 🇰🇷 KR 冰摇桃桃乌龙茶-1D
+  password: 6d374706-7684-4af8-8bd1-8bb09e8914a1
   port: 23656
   server: kr.stardad.lol
   skip-cert-verify: true
@@ -91,600 +78,86 @@ proxies:
   type: hysteria2
   udp: true
   up: 1024
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾02-3x-流媒体
-  network: ws
-  port: 80
-  server: cf.hy2.one
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d480019e-4e0f-4d98-9cf2-0196702bb43c
-  ws-opts:
-    headers:
-      Host: tw02.hy2.one
-    path: /af323d
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-016-1D
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡中转 01
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 14362
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-014-1H
-  network: ws
-  port: 17926
-  server: 195.58.49.50
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
-  ws-opts:
-    path: /
-- cipher: aes-256-gcm
-  name: 🇭🇰 公益路线-香港HK 限速50MBPS-1P
-  password: 3dd51882-3c80-4d6e-a89e-e2785d82eb32
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇰🇷 韩国高速中转3
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 63321
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 SS新加坡1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39012
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- name: 🇭🇰 中国-香港-VL-003-1A
+- name: 🇺🇸 美国-纽约-VL-001-1E
   network: ws
   port: 47487
-  server: 212.192.13.179
-  tls: false
-  type: vless
-  udp: true
-  uuid: e3d3e0b7-953b-4752-aec5-0d5beba557b7
-  ws-opts:
-    path: /
-- auth: 6c04f6c8-da3b-4456-b230-719e55fc488d
-  down: 1024
-  name: 🇯🇵 JP 香草星冰乐-1E
-  password: 6c04f6c8-da3b-4456-b230-719e55fc488d
-  port: 48512
-  server: jpzl2.stardad.lol
-  skip-cert-verify: true
-  sni: https://bing.com
-  type: hysteria2
-  udp: true
-  up: 1024
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡西部-2K
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 47c5f83e-d505-4921-a062-0d6f2d6c2636
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- auth: 153248fc-273c-4020-9ce9-1aea972652db
-  down: 1024
-  name: 🇸🇬 SG 冷萃冰咖啡-1F
-  password: 153248fc-273c-4020-9ce9-1aea972652db
-  port: 35781
-  server: sgzl1.stardad.lol
-  skip-cert-verify: true
-  sni: https://bing.com
-  type: hysteria2
-  udp: true
-  up: 1024
-- name: 🇸🇬 VLESS新加坡1-直连
-  network: tcp
-  port: 30002
-  server: sg001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 中国-香港-005-1C
-  network: ws
-  port: 17926
-  server: 212.192.12.70
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e2498053-3728-4f32-b679-a41a262b3ff7
-  ws-opts:
-    path: /
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇰🇷 韩国-首尔
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: e8943201-9023-4a37-9c62-589ff450b27f
-  down: 1024
-  name: BR 燕麦拿铁-1C
-  password: e8943201-9023-4a37-9c62-589ff450b27f
-  port: 25888
-  server: br.taipeicity.news
-  skip-cert-verify: true
-  sni: https://bing.com
-  type: hysteria2
-  udp: true
-  up: 1024
-- name: 🇭🇰 中国-香港-003-1B
-  network: ws
-  port: 50785
-  server: 212.192.13.179
+  server: 207.90.237.199
   tls: false
   type: vless
   udp: true
   uuid: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
   ws-opts:
     path: /
-- name: 🇦🇺 TROJAN澳大利亚1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39035
-  server: relay002.queqiao.cloud
-  sni: au001.queqiao.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡西部-2B
-  network: ws
-  port: 443
-  server: visa.com
-  servername: xjp.daluquan.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3407dfcb-5f5e-42c3-a04d-387c81146826
-  ws-opts:
-    headers:
-      Host: xjp.daluquan.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚东部-1B
-  network: ws
-  port: 23452
-  server: syd-01.oci.ee
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0d12b83c-7462-43b2-9af8-79c77f5cf95b
-  ws-opts:
-    headers:
-      Host: syd-01.oci.ee
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡 01 解锁|1.0x-1A
-  network: tcp
-  port: 10000
-  reality-opts:
-    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
-    short-id: 155b37d2
-  server: 122.248.224.109
-  servername: apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
-- name: 🇺🇸 美国-纽约-001-1H
+- name: 🇺🇸 美国-纽约-001-1G
   network: ws
   port: 50785
   server: 207.90.237.199
   tls: false
   type: vless
   udp: true
-  uuid: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 IEPL专线NO3
-  port: 65533
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- auth: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
-  down: 100
-  name: 🇷🇺 俄罗斯-圣彼得堡-HY-016-1H
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
-  port: 45751
-  server: 194.87.69.50
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-012-1D
-  network: ws
-  port: 17926
-  server: 195.58.49.86
-  tls: false
-  type: vmess
-  udp: true
   uuid: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚 IEPL专线NO1
-  port: 20011
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚原生1
-  port: 45062
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇪🇺 欧洲-伦敦-1
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-arm-london1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: london1.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 纽约2
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20016
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 02-1A
+- name: 🇭🇰 中国-香港-VL-003-1H
   network: ws
-  port: 80
-  server: 54.169.136.28
+  port: 47487
+  server: 212.192.13.179
   tls: false
-  type: vmess
+  type: vless
   udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+  uuid: 1bcb538b-83d2-4538-a355-55dd1eda889b
   ws-opts:
-    headers:
-      Host: gw.alicdn.com
     path: /
-- name: 🇯🇵 VLESS日本2-专线
-  network: tcp
-  port: 39025
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 日本 IEPL专线NO3
-  port: 52117
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- name: 🇺🇸 VLESS美国1-专线2
-  network: tcp
-  port: 39027
-  server: relay002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 02 解锁|80端口|1.0x-1A
+  name: 🇭🇰 中国-香港-005-1H
   network: ws
-  port: 80
-  server: 8.218.213.13
+  port: 17926
+  server: 212.192.12.70
   tls: false
   type: vmess
   udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+  uuid: 1bcb538b-83d2-4538-a355-55dd1eda889b
   ws-opts:
-    headers:
-      Host: apple.com
-    path: /path
-- name: 🇭🇰 VLESS香港1-直连
-  network: tcp
-  port: 30002
-  server: hk001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本03
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- auth: 802078c7-5341-4ea4-8136-6b76e9913818
+    path: /
+- auth: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
   down: 100
-  name: 🇭🇰 中国-香港-HY-005-1E
+  name: 🇭🇰 中国-香港-HY-005-1A
   obfs: salamander
   obfs-password: YzcwOTNlODc4NDIzMWMyMg==
-  password: 802078c7-5341-4ea4-8136-6b76e9913818
+  password: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
   port: 32902
   server: 212.192.12.70
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 100
-- name: 🇫🇷 VLESS法国1-专线
-  network: tcp
-  port: 39029
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇺🇸 北美-US-圣何塞-2
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-amd-san-jose2.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: san-jose2.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 01 解锁|80端口|1.0x-1A
+  name: 🇦🇺 澳大利亚东部-1K
   network: ws
-  port: 80
-  server: 47.251.66.27
+  port: 23452
+  server: syd-01.oci.ee
   tls: false
   type: vmess
   udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+  uuid: 2bd90c72-22bd-44a2-b079-ae3770c3102d
   ws-opts:
     headers:
-      Host: apple.com
-    path: /
-- name: 🇭🇰 中国-香港-VL-004-1D
-  network: ws
-  port: 21919
-  server: 212.192.13.51
-  tls: false
-  type: vless
-  udp: true
-  uuid: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡 02 解锁|1.0x-1B
-  network: tcp
-  port: 10000
-  reality-opts:
-    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
-    short-id: 155b37d2
-  server: 54.169.136.28
-  servername: apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 01 解锁|80端口|1.0x-1A
-  network: ws
-  port: 80
-  server: 13.231.141.124
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
-  ws-opts:
-    headers:
-      Host: apple.com
+      Host: syd-01.oci.ee
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 新加坡 IEPL专线NO1
-  port: 20015
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-013-1E
+  name: 🇷🇺 俄罗斯-圣彼得堡-014-1K
   network: ws
   port: 17926
-  server: 194.87.69.52
+  server: 195.58.49.50
   tls: false
   type: vmess
   udp: true
   uuid: 802078c7-5341-4ea4-8136-6b76e9913818
   ws-opts:
     path: /
-- auth: 83c68c51-9076-41ef-ae99-4711345b137c
-  down: 10
-  name: 🇯🇵 HYSTERIA日本1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39038
-  server: relay002.queqiao.xyz
-  skip-cert-verify: true
-  sni: jp001.queqiao.xyz
-  type: hysteria2
-  udp: true
-  up: 2
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 SS英国1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: uk001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇺 SS澳大利亚1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39013
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯-圣彼得堡-015-1E
-  network: ws
-  port: 17926
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 802078c7-5341-4ea4-8136-6b76e9913818
-  ws-opts:
-    path: /
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇬🇧 英国SS-13
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 60194
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- name: 🇸🇬 TROJAN新加坡1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: sg001.queqiao.xyz
-  sni: sg001.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇭🇰 中国-香港-004-1A
-  network: ws
-  port: 6814
-  server: 212.192.13.51
-  tls: false
-  type: vless
-  udp: true
-  uuid: e3d3e0b7-953b-4752-aec5-0d5beba557b7
-  ws-opts:
-    path: /
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 🇹🇼 台湾2-3x
-  network: tcp
-  port: 50052
-  reality-opts:
-    public-key: X0trg79L3teC4E6tlpzK74e38xpzkYIKAO2bvcsY6ng
-    short-id: 07288de2
-  server: tw02.hy-2.sbs
-  servername: www.python.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d480019e-4e0f-4d98-9cf2-0196702bb43c
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇭🇰 香港-流媒体2x
-  network: tcp
-  port: 55442
-  reality-opts:
-    public-key: sS4V0lk9XYNJn6Ttu6Q7oxTjSoqTQ990_tzMi_y6kjI
-    short-id: a735f58f
-  server: xglmt.hy-2.sbs
-  servername: www.python.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d480019e-4e0f-4d98-9cf2-0196702bb43c
-- auth: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
-  down: 100
-  name: 🇷🇺 俄罗斯-圣彼得堡-HY-012-1B
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
-  port: 28153
-  server: 195.58.49.86
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾1
-  port: 45078
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 法国1
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇯🇵 日本 02 解锁|1.0x-1A
@@ -698,38 +171,33 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 01
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 43641
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇰🇷 韩国-2
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+- auth: 19e53491-3841-4cbf-827d-8640f17c4dab
+  down: 1024
+  name: 🇯🇵 JP 香草星冰乐-1G
+  password: 19e53491-3841-4cbf-827d-8640f17c4dab
+  port: 48512
+  server: jpzl2.stardad.lol
   skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
+  sni: https://bing.com
   type: hysteria2
   udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 05
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 51578
-  server: chiyu.myfczy169.top
-  type: ss
+  up: 1024
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度1
+  port: 45074
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
-- auth: 802078c7-5341-4ea4-8136-6b76e9913818
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- auth: e3d3e0b7-953b-4752-aec5-0d5beba557b7
   down: 100
-  name: 🇩🇪 德国-法兰克福-HY-001-1E
+  name: 🇩🇪 德国-法兰克福-HY-001-1J
   obfs: salamander
   obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
-  password: 802078c7-5341-4ea4-8136-6b76e9913818
+  password: e3d3e0b7-953b-4752-aec5-0d5beba557b7
   port: 3942
   server: 5.39.252.204
   skip-cert-verify: true
@@ -738,175 +206,72 @@ proxies:
   up: 100
 - alterId: 0
   cipher: auto
-  name: 🇨🇦 加拿大1
-  port: 45064
-  server: haa.dashuai.cyou
+  name: 🇸🇬 新加坡西部-2Z
+  network: ws
+  port: 443
+  server: visa.com
+  servername: xjp.daluquan.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a4cd5c04-d6ce-4cdb-8b69-0d60b117d4a6
+  ws-opts:
+    headers:
+      Host: xjp.daluquan.top
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港中转 03
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 14407
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 台湾2
+  port: 45077
+  server: xdd.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 SS美国1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: us001.queqiao.xyz
-  type: ss
-  udp: true
-- auth: 1bcb538b-83d2-4538-a355-55dd1eda889b
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- auth: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
   down: 100
-  name: 🇷🇺 俄罗斯-圣彼得堡-HY-015-1F
+  name: 🇷🇺 俄罗斯-圣彼得堡-HY-014-1G
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 1bcb538b-83d2-4538-a355-55dd1eda889b
+  password: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
   port: 28153
-  server: 195.58.49.42
+  server: 195.58.49.50
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 SS宁波1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: ningbo001.cn.queqiao.cloud
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇭 泰国中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 20289
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 01 解锁|80端口|1.0x-1B
+- name: 🇭🇰 中国-香港-004-1J
   network: ws
-  port: 80
-  server: 122.248.224.109
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
-  ws-opts:
-    headers:
-      Host: apple.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 SS日本2-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39010
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 非洲 IEPL专线 NO1
-  port: 44410
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本01
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 03 解锁|80端口|1.0x-1B
-  network: ws
-  port: 80
-  server: 54.199.121.245
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
-  ws-opts:
-    headers:
-      Host: apple.com
-    path: /
-- name: 🇺🇸 美国-纽约-VL-001-1D
-  network: ws
-  port: 47487
-  server: 207.90.237.199
+  port: 6814
+  server: 212.192.13.51
   tls: false
   type: vless
   udp: true
-  uuid: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
+  uuid: e3d3e0b7-953b-4752-aec5-0d5beba557b7
   ws-opts:
     path: /
-- auth: 1bcb538b-83d2-4538-a355-55dd1eda889b
-  down: 100
-  name: 🇷🇺 俄罗斯-圣彼得堡-HY-013-1F
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 1bcb538b-83d2-4538-a355-55dd1eda889b
-  port: 28153
-  server: 194.87.69.52
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 05
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 44454
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷 SS法国1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39014
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇪 瑞典中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 22539
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- name: 🇦🇺 VLESS澳大利亚1-专线
-  network: tcp
-  port: 39028
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇭🇰 香港4高速中转5x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53346
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- auth: 83c68c51-9076-41ef-ae99-4711345b137c
-  down: 10
-  name: 🇯🇵 HYSTERIA日本1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30004
-  server: jp001.queqiao.xyz
-  skip-cert-verify: true
-  sni: jp001.queqiao.xyz
-  type: hysteria2
-  udp: true
-  up: 2
 - alterId: 0
   cipher: auto
-  name: 🇳🇱 荷兰 IEPL专线NO1
-  port: 20014
-  server: qd.needss.top
+  name: 🇸🇬 新加坡西部-2G
+  network: ws
+  port: 23452
+  server: westsg2-ddns.oraclenat.cc
   tls: false
   type: vmess
   udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
+  uuid: f913e755-d04c-47cb-a9ee-208c44596d14
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇫🇷 法国2
@@ -915,74 +280,410 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- auth: 7e5d075e-9502-417e-8357-85272680f1f7
+  down: 1024
+  name: BR 燕麦拿铁-1A
+  password: 7e5d075e-9502-417e-8357-85272680f1f7
+  port: 25888
+  server: br.taipeicity.news
+  skip-cert-verify: true
+  sni: https://bing.com
+  type: hysteria2
+  udp: true
+  up: 1024
+- auth: fb5e7147-fbfa-40de-88f5-42629eba851d
+  down: 100
+  name: 🇷🇺 俄罗斯-圣彼得堡-HY-016-1D
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: fb5e7147-fbfa-40de-88f5-42629eba851d
+  port: 45751
+  server: 194.87.69.50
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇯🇵 日本-2
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-amd-osaka1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: osaka.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国中转 01
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 59863
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国NO.1
-  port: 45052
-  server: haa.dashuai.cyou
+  name: 🇷🇺 俄罗斯-圣彼得堡-016-1F
+  network: ws
+  port: 17926
+  server: 194.87.69.50
   tls: false
   type: vmess
   udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇯🇵 日本2高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53338
-  server: gsgs.hy2.one
+  uuid: 44e9ad89-a8ca-4b36-ad9f-682ce2e84e67
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港中转 05
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 20901
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 03 解锁|1.0x-1A
+  network: tcp
+  port: 10000
+  reality-opts:
+    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
+    short-id: 155b37d2
+  server: 47.128.239.226
+  servername: apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+- name: 🇭🇰 中国-香港-VL-004-1D
+  network: ws
+  port: 21919
+  server: 212.192.13.51
+  tls: false
+  type: vless
+  udp: true
+  uuid: fb5e7147-fbfa-40de-88f5-42629eba851d
+  ws-opts:
+    path: /
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇰🇷 韩国-首尔
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-arm-seoul1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-012-1G
+  network: ws
+  port: 17926
+  server: 195.58.49.86
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 497a2f18-e2e9-468c-abdf-cedcbf5bf2ae
+  ws-opts:
+    path: /
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬 新加坡1高速中转3x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53342
-  server: gsgs.hy2.one
+  name: 🇹🇼 台湾SS中转25x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 13108
+  server: g2.hy2.one
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 SS英国1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39016
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇺🇸 美国高速中转4
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 63324
-  server: gsgs.hy2.one
+  name: 🇹🇼 台湾中转 03
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 32525
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇦🇷 阿根廷 IEPL专线NO1
-  port: 20014
+  name: 🇸🇬 新加坡西部-2V
+  network: ws
+  port: 443
+  server: visa.com
+  servername: xjp.daluquan.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 46e6ebb7-8f0e-4a87-94ff-241094be4d7b
+  ws-opts:
+    headers:
+      Host: xjp.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-013-1D
+  network: ws
+  port: 17926
+  server: 194.87.69.52
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fb5e7147-fbfa-40de-88f5-42629eba851d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 IEPL专线NO3
+  port: 65533
   server: i.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡02-V4-流媒体
-  network: ws
-  port: 2052
-  server: cf.hy2.one
-  tls: false
-  type: vmess
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: aes-256-gcm
+  name: 🇭🇰 公益路线-香港HK 限速50MBPS-1A
+  password: 7cd9f825-f7ee-4f2d-b960-758e5e4d89e6
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
   udp: true
-  uuid: d480019e-4e0f-4d98-9cf2-0196702bb43c
-  ws-opts:
-    headers:
-      Host: sg0002.hy-2.top
-    path: /0
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇻🇳 越南高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 63326
+  name: 🇯🇵 日本2高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53338
   server: gsgs.hy2.one
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 02 解锁|80端口|1.0x-1A
+  network: ws
+  port: 80
+  server: 8.218.213.13
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+  ws-opts:
+    headers:
+      Host: apple.com
+    path: /path
+- auth: e2498053-3728-4f32-b679-a41a262b3ff7
+  down: 100
+  name: 🇷🇺 俄罗斯-圣彼得堡-HY-013-1C
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: e2498053-3728-4f32-b679-a41a262b3ff7
+  port: 28153
+  server: 194.87.69.52
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 澳大利亚 IEPL专线NO1
+  port: 20011
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: chacha20-ietf-poly1305
+  name: 🇲🇾 马来西亚中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 20119
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港中转 02
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 36858
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本02-1A
+  password: e4fa7116-f74d-4305-b936-ac8e6916730b
+  port: 20004
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾中转 01
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 18841
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇵🇹 葡萄牙 IEPL专线NO1
+  port: 31001
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: chacha20-ietf-poly1305
+  name: 🇰🇿 哈萨克斯坦中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21081
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- auth: a6bbf19b-db58-426d-b731-443b96ad10f7
+  down: 1024
+  name: 🇸🇬 SG 冷萃冰咖啡-1J
+  password: a6bbf19b-db58-426d-b731-443b96ad10f7
+  port: 35781
+  server: sgzl1.stardad.lol
+  skip-cert-verify: true
+  sni: https://bing.com
+  type: hysteria2
+  udp: true
+  up: 1024
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇹🇼 台湾高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53332
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 1-1A
+  password: e4fa7116-f74d-4305-b936-ac8e6916730b
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇭🇰 香港6高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53344
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- auth: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
+  down: 100
+  name: 🇷🇺 俄罗斯-圣彼得堡-HY-012-1E
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
+  port: 28153
+  server: 195.58.49.86
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇸🇬 新加坡3高速中转3x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53340
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港
+  port: 19901
+  server: xg.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度 IEPL专线NO1
+  port: 15442
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: 2022-blake3-aes-256-gcm
+  name: 日-本SS中转25x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 13107
+  server: g2.hy2.one
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾中转 05
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 44454
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 01 解锁|1.0x-1A
+  network: tcp
+  port: 10000
+  reality-opts:
+    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
+    short-id: 155b37d2
+  server: 122.248.224.109
+  servername: apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+- cipher: chacha20-ietf-poly1305
+  name: 🇦🇪 阿联酋中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21059
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯-圣彼得堡-015-1F
+  network: ws
+  port: 17926
+  server: 195.58.49.42
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 44e9ad89-a8ca-4b36-ad9f-682ce2e84e67
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21098
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国中转 03
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 22771
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- auth: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
+  down: 100
+  name: 🇷🇺 俄罗斯-圣彼得堡-HY-015-1A
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 35731d3e-abe9-4ed3-84cb-70df32e2b5f8
+  port: 28153
+  server: 195.58.49.42
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 🇭🇰 中国-香港-003-1E
+  network: ws
+  port: 50785
+  server: 212.192.13.179
+  tls: false
+  type: vless
+  udp: true
+  uuid: b2b54bd6-bd58-4f48-a2f9-a31c0c828ee9
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇯🇵 日本 04 解锁|1.0x-1B
@@ -996,366 +697,302 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
-- name: 🇸🇬 TROJAN新加坡1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39033
-  server: relay002.queqiao.xyz
-  sni: sg001.queqiao.xyz
-  type: trojan
+  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇭🇰 香港2高速中转2x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53348
+  server: gsgs.hy2.one
+  type: ss
   udp: true
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇺🇸 美国2高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53333
+  name: 🇭🇰 香港5高速中转5x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53345
   server: gsgs.hy2.one
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾01-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇭🇰 香港1高速中转2x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53349
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本04-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 20008
+  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 新加坡西部-1J
+  name: 🇸🇬 新加坡 01 解锁|80端口|1.0x-1B
   network: ws
-  port: 443
-  server: visa.com
-  servername: xjp.daluquan.top
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 122.248.224.109
+  tls: false
   type: vmess
   udp: true
-  uuid: 0fcc69e5-113b-41cd-b644-8dccfa1d8218
+  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
   ws-opts:
     headers:
-      Host: xjp.daluquan.top
+      Host: apple.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 SS香港2-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39011
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- name: 🇦🇺 VLESS澳大利亚1-专线2
-  network: tcp
-  port: 39028
-  server: relay002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 03
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 14407
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国NO.2
-  port: 45053
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港01
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- name: 🇫🇷 TROJAN法国1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39036
-  server: relay002.queqiao.xyz
-  sni: fr001.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇺🇸 VLESS美国1-直连
-  network: tcp
-  port: 30002
-  server: us001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- name: 🇭🇰 VLESS香港2-直连
-  network: tcp
-  port: 30002
-  server: hk002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡NO.2
-  port: 45055
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾2
-  port: 45077
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇯🇵 日本2SS中转15x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 20546
-  server: g.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国中转 02
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 54501
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇧🇷 巴西中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 20936
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国中转 02
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 30518
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 SS香港2-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: hk002.queqiao.xyz
-  type: ss
-  udp: true
-- name: 🇯🇵 TROJAN日本2-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: jp002.queqiao.xyz
-  sni: jp002.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇭🇰 TROJAN香港1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39031
-  server: relay002.queqiao.xyz
-  sni: hk001.queqiao.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 SS日本1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: jp001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇪 阿联酋中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21059
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇹🇼 台湾高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53332
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- name: 🇭🇰 VLESS香港1-专线2
-  network: tcp
-  port: 39024
-  server: relay002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- name: 🇫🇷 TROJAN法国1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: fr001.queqiao.xyz
-  sni: fr001.queqiao.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇵🇹 葡萄牙 IEPL专线NO1
-  port: 31001
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇺 SS澳大利亚1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39013
-  server: relay002.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 纽约01
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20013
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 04
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 34915
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 SS日本2-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39010
-  server: relay002.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡中转 03
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 50691
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 02
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 36858
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21098
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- name: 🇭🇰 TROJAN香港1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39031
-  server: relay001.queqiao.xyz
-  sni: hk001.queqiao.xyz
-  type: trojan
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬 新加坡3高速中转3x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53340
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇺 SS澳大利亚1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: au001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 01
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 34701
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- name: 🇺🇸 VLESS美国1-专线
-  network: tcp
-  port: 39027
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: chacha20-ietf-poly1305
-  name: 🇲🇾 马来西亚中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 20119
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇯🇵 日本-1
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-amd-tokyo1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: tokyo.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 IEPL专线NO1
-  port: 52103
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- cipher: chacha20-ietf-poly1305
   name: 🇭🇰 香港中转 04
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
   port: 11618
   server: chiyu.myfczy169.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 SS新加坡1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: sg001.queqiao.xyz
+  name: 🇸🇬 新加坡中转 01
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 14362
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
+- cipher: aes-256-gcm
+  name: S3-SKH
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 1200
+  server: hk.kfsldflk.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港03-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 20052
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
   down: 1000
-  name: 🇰🇷 韩国-1
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
+  name: 🇸🇬 新加坡-1
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
   port: 30001
-  server: oracle-arm-chuncheon1.lanmaoyun.icu
+  server: oracle-amd-singapore1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: main.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 澳大利亚原生2
+  port: 45063
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 台湾1
+  port: 45078
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 韩国 IEPL专线NO1
+  port: 20021
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 01 解锁|80端口|1.0x-1A
+  network: ws
+  port: 80
+  server: 47.251.66.27
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+  ws-opts:
+    headers:
+      Host: apple.com
+    path: /
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇰🇷 韩国-2
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
   up: 100
-- name: 🇭🇰 TROJAN香港1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: hk001.queqiao.xyz
-  sni: hk001.queqiao.xyz
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本01-1A
+  password: e4fa7116-f74d-4305-b936-ac8e6916730b
+  port: 20002
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 02 解锁|1.0x-1B
+  network: tcp
+  port: 10000
+  reality-opts:
+    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
+    short-id: 155b37d2
+  server: 54.169.136.28
+  servername: apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 纽约2-1A
+  password: e4fa7116-f74d-4305-b936-ac8e6916730b
+  port: 20016
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇪 瑞典中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 22539
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本03-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 20006
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡中转 02
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21296
+  server: chiyu.myfczy169.top
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇨🇦 加拿大 IEPL专线 NO1
-  port: 45112
+  name: 🇲🇴 澳门NO.2
+  port: 45051
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 非洲 IEPL专线 NO1
+  port: 44410
   server: i.needss.top
   tls: false
   type: vmess
   udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 加拿大2
+  port: 45065
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇹🇭 泰国 IEPL专线 NO1
+  port: 30028
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇹🇷 土耳其高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 63327
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡02-V4-流媒体
+  network: ws
+  port: 2052
+  server: cf.hy2.one
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b0c401ea-8f21-420b-a46d-2024e908fa04
+  ws-opts:
+    headers:
+      Host: sg0002.hy-2.top
+    path: /0
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本中转 01
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 34701
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵 日本 03 解锁|1.0x-1A
+  name: 🇯🇵 日本 01 解锁|1.0x-1B
+  network: tcp
+  port: 10000
+  reality-opts:
+    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
+    short-id: 155b37d2
+  server: 13.231.141.124
+  servername: apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+- cipher: chacha20-ietf-poly1305
+  name: 下方为备用节点
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 777
+  server: 666.com
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇯🇵 日本1高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53339
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇪🇺 欧洲-伦敦-1
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-arm-london1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: london1.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 日本 03 解锁|1.0x-1B
   network: tcp
   port: 10000
   reality-opts:
@@ -1367,26 +1004,83 @@ proxies:
   type: vless
   udp: true
   uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇰🇷 韩国-1
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-arm-chuncheon1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
 - cipher: chacha20-ietf-poly1305
-  name: 下方为备用节点
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 777
-  server: 666.com
+  name: 🇻🇳 越南中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21071
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港01-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇷 土耳其中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21048
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本中转 02
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 38180
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇹🇭 泰国 IEPL专线 NO1
-  port: 30028
-  server: i.needss.top
+  name: 🇭🇰 香港 03 解锁|80端口|1.0x-1B
+  network: ws
+  port: 80
+  server: 47.238.137.136
   tls: false
   type: vmess
   udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
+  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
+  ws-opts:
+    headers:
+      Host: apple.com
+    path: /
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇩🇪 欧洲-法兰克福-1
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-arm-frankfurt1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: frankfurt1.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度2
+  port: 45073
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本02
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20004
+  name: 🇺🇸 美国 纽约01-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 20013
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -1398,43 +1092,207 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- name: 🇯🇵 VLESS日本2-专线2
-  network: tcp
-  port: 39025
-  server: relay002.queqiao.xyz
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 01 解锁|80端口|1.0x-1A
+  network: ws
+  port: 80
+  server: 13.231.141.124
   tls: false
-  type: vless
+  type: vmess
   udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- name: 🇯🇵 TROJAN日本1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39007
-  server: relay001.queqiao.xyz
-  sni: jp001.queqiao.xyz
-  type: trojan
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+  ws-opts:
+    headers:
+      Host: apple.com
+    path: /
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇯🇵 日本-1
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-amd-tokyo1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: tokyo.nodes.lanmaoyun.icu
+  type: hysteria2
   udp: true
-- name: 🇯🇵 TROJAN日本1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39007
-  server: relay002.queqiao.xyz
-  sni: jp001.queqiao.xyz
-  type: trojan
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国 IEPL专线NO1
+  port: 54787
+  server: i.needss.top
+  tls: false
+  type: vmess
   udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬 新加坡2高速中转3x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53341
+  name: 🇸🇬 新加坡1高速中转3x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53342
   server: gsgs.hy2.one
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: E2-BQS
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 1200
-  server: hk.kfsldflk.xyz
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本NO.2
+  port: 45057
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 法国 CM 隧道NO1
+  port: 52108
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 03 解锁|80端口|1.0x-1A
+  network: ws
+  port: 80
+  server: 54.199.121.245
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+  ws-opts:
+    headers:
+      Host: apple.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港02-1B
+  password: 1ba61197-1a02-4b85-892f-08d38e32b4db
+  port: 20035
+  server: gy.666666222.shop
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡中转 03
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 50691
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇹🇼 台湾2-3x
+  network: tcp
+  port: 50052
+  reality-opts:
+    public-key: X0trg79L3teC4E6tlpzK74e38xpzkYIKAO2bvcsY6ng
+    short-id: 07288de2
+  server: tw02.hy-2.sbs
+  servername: www.python.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b0c401ea-8f21-420b-a46d-2024e908fa04
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇹🇭 泰国ISP高速中转3x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 63329
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国中转 01
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 53473
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 加拿大 IEPL专线 NO1
+  port: 45112
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇰🇷 韩国高速中转3
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 63321
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 台湾 IEPL专线NO1
+  port: 52103
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港中转 01
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 43641
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 04-1A
+  network: ws
+  port: 80
+  server: 47.245.87.58
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇯🇵 日本2SS中转15x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 20546
+  server: g.hy2.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 加拿大1
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国中转 02
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 30518
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇯🇵 日本SS中转25x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 13106
+  server: g2.hy2.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国NO.1
+  port: 45052
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 被滥用 节点已经爆炸-1A
@@ -1448,74 +1306,205 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 SS香港1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39009
-  server: relay001.queqiao.xyz
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇬🇧 英国SS-13
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 60194
+  server: gsgs.hy2.one
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡NO.1
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱 荷兰 IEPL专线NO1
+  port: 20014
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
 - cipher: 2022-blake3-aes-256-gcm
   name: 🇯🇵 日本3SS中转25x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
   port: 22063
   server: g3.hy2.one
   type: ss
   udp: true
-- name: 🇯🇵 VLESS日本1-专线
-  network: tcp
-  port: 39005
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 韩国 IEPL专线NO1
-  port: 20021
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
 - cipher: chacha20-ietf-poly1305
-  name: 🇰🇿 哈萨克斯坦中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21081
+  name: 🇹🇭 泰国中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 20289
   server: chiyu.myfczy169.top
   type: ss
   udp: true
-- name: 🇭🇰 TROJAN香港2-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: hk002.queqiao.xyz
-  sni: hk002.queqiao.xyz
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 SS香港2-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39011
-  server: relay002.queqiao.xyz
+  name: 🇧🇷 巴西中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 20936
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国中转 02
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 54501
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 澳大利亚原生1
+  port: 45062
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- cipher: chacha20-ietf-poly1305
   name: 🇹🇼 台湾中转 02
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
   port: 22297
   server: chiyu.myfczy169.top
   type: ss
   udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 日-本SS中转25x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 13107
-  server: g2.hy2.one
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 IEPL专线NO3
+  port: 52117
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 02-1A
+  network: ws
+  port: 80
+  server: 54.169.136.28
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇦🇷 阿根廷 IEPL专线NO1
+  port: 20014
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本中转 05
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 51578
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
-- client-fingerprint: qq
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 台湾02-3x-流媒体
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b0c401ea-8f21-420b-a46d-2024e908fa04
+  ws-opts:
+    headers:
+      Host: tw02.hy2.one
+    path: /af323d
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾中转 04
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 34915
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳 印度中转
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 21061
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡NO.2
+  port: 45055
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- auth: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  down: 1000
+  name: 🇺🇸 北美-US-圣何塞-2
+  password: ad660c7b-ffea-4a5c-ae48-fa5b7bf61c5d
+  port: 30001
+  server: oracle-amd-san-jose2.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: san-jose2.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 IEPL专线NO1
+  port: 20015
+  server: i.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本中转 03
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 14087
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国NO.2
+  port: 45053
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇺🇸 美国高速中转4
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 63324
+  server: gsgs.hy2.one
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 法国1
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 01fd298a-8d77-4f3c-99bc-826e5024908c
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大1-V6
   network: tcp
@@ -1528,343 +1517,40 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: d480019e-4e0f-4d98-9cf2-0196702bb43c
-- auth: 83c68c51-9076-41ef-ae99-4711345b137c
-  down: 10
-  name: 🇭🇰 HYSTERIA香港3-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30006
-  server: hk003.queqiao.xyz
-  skip-cert-verify: true
-  sni: hk003.queqiao.xyz
-  type: hysteria2
-  udp: true
-  up: 2
-- name: 🇦🇺 TROJAN澳大利亚1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: au001.queqiao.xyz
-  sni: au001.queqiao.xyz
-  type: trojan
-  udp: true
+  uuid: b0c401ea-8f21-420b-a46d-2024e908fa04
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇯🇵 日本SS中转25x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 13106
-  server: g2.hy2.one
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 03 解锁|80端口|1.0x-1B
-  network: ws
-  port: 80
-  server: 47.238.137.136
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
-  ws-opts:
-    headers:
-      Host: apple.com
-    path: /
-- name: 🇸🇬 VLESS新加坡1-专线2
-  network: tcp
-  port: 39026
-  server: relay002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- name: 🇺🇸 TROJAN美国1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: us001.queqiao.xyz
-  sni: us001.queqiao.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 SS香港1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39009
-  server: relay002.queqiao.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大2
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇭🇰 香港2高速中转2x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53348
+  name: 🇭🇰 香港4高速中转5x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53346
   server: gsgs.hy2.one
   type: ss
   udp: true
-- name: 🇭🇰 VLESS香港1-专线
-  network: tcp
-  port: 39024
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷 SS法国1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39014
-  server: relay002.queqiao.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡 03 解锁|1.0x-1B
+  name: 🇭🇰 香港-流媒体2x
   network: tcp
-  port: 10000
+  port: 55442
   reality-opts:
-    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
-    short-id: 155b37d2
-  server: 47.128.239.226
-  servername: apple.com
+    public-key: sS4V0lk9XYNJn6Ttu6Q7oxTjSoqTQ990_tzMi_y6kjI
+    short-id: a735f58f
+  server: xglmt.hy-2.sbs
+  servername: www.python.org
   tls: true
   type: vless
   udp: true
-  uuid: 5ba3a9b8-bcf6-402e-8f39-532f3e223805
-- name: 🇯🇵 VLESS日本1-直连
-  network: tcp
-  port: 30002
-  server: jp001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 日本 01 解锁|1.0x-1A
-  network: tcp
-  port: 10000
-  reality-opts:
-    public-key: xCUqnTXLBXrFGxHD0Bjak03ojvXmORrytznaW87QiRY
-    short-id: 155b37d2
-  server: 13.231.141.124
-  servername: apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇯🇵 日本-2
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-amd-osaka1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: osaka.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 04-1A
-  network: ws
-  port: 80
-  server: 47.245.87.58
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 07cd41a5-ff5f-406e-8fa4-19d95c8525b0
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- name: 🇫🇷 TROJAN法国1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39036
-  server: relay001.queqiao.xyz
-  sni: fr001.queqiao.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 05
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 20901
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷 SS法国1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: fr001.queqiao.xyz
-  type: ss
-  udp: true
+  uuid: b0c401ea-8f21-420b-a46d-2024e908fa04
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇭🇰 香港1高速中转2x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53349
+  name: 🇸🇬 新加坡2高速中转3x
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53341
   server: gsgs.hy2.one
   type: ss
   udp: true
-- name: 🇯🇵 TROJAN日本2-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39032
-  server: relay002.queqiao.xyz
-  sni: jp002.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇸🇬 VLESS新加坡1-专线
-  network: tcp
-  port: 39026
-  server: relay001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国中转 01
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 53473
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度2
-  port: 45073
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- name: 🇺🇸 TROJAN美国1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39034
-  server: relay002.queqiao.xyz
-  sni: us001.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇯🇵 VLESS日本2-直连
-  network: tcp
-  port: 30002
-  server: jp002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇸🇬 新加坡-1
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-amd-singapore1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: main.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 1
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20032
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 03
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 14087
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国中转 01
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 59863
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- name: 🇦🇺 TROJAN澳大利亚1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39035
-  server: relay001.queqiao.cloud
-  sni: au001.queqiao.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 SS英国1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39016
-  server: relay002.queqiao.xyz
-  type: ss
-  udp: true
 - cipher: 2022-blake3-aes-256-gcm
-  name: 🇭🇰 香港5高速中转5x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53345
+  name: 🇺🇸 美国2高速中转
+  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjBjNDAxZWEtOGYyMS00MjBiLWE0NmQtMjAyNGU5MDg=
+  port: 53333
   server: gsgs.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇷 土耳其中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21048
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- name: 🇸🇬 TROJAN新加坡1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39033
-  server: relay001.queqiao.xyz
-  sni: sg001.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇺🇸 TROJAN美国1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39034
-  server: relay001.queqiao.xyz
-  sni: us001.queqiao.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 04
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 20678
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾01
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 47564
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇭🇰 香港6高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53344
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港02
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20035
-  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
@@ -1875,242 +1561,11 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
+  uuid: 9facaf17-79ed-4013-bd6c-855a3cb2db1e
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国中转 03
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 22771
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本NO.2
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 01
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 18841
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇯🇵 日本1高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 53339
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度1
-  port: 45074
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 法国 CM 隧道NO1
-  port: 52108
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度 IEPL专线NO1
-  port: 15442
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 SS日本1-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39001
-  server: relay001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 SS香港1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: hk001.queqiao.xyz
-  type: ss
-  udp: true
-- name: 🇯🇵 TROJAN日本2-专线
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39032
-  server: relay001.queqiao.xyz
-  sni: jp002.queqiao.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚原生2
-  port: 45063
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- name: 🇦🇺 VLESS澳大利亚1-直连
-  network: tcp
-  port: 30002
-  server: au001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 SS日本2-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30000
-  server: jp002.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇻🇳 越南中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21071
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 SS日本1-专线2
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 39001
-  server: relay002.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 03
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 32525
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港03
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 印度中转
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21061
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇹🇼 台湾SS中转25x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 13108
-  server: g2.hy2.one
-  type: ss
-  udp: true
-- auth: 754679a7-a923-489c-86f2-4affb8ef55ad
-  down: 1000
-  name: 🇩🇪 欧洲-法兰克福-1
-  password: 754679a7-a923-489c-86f2-4affb8ef55ad
-  port: 30001
-  server: oracle-arm-frankfurt1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: frankfurt1.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本04
-  password: e637dace-5dd7-449b-8ed9-8d50c6ab46b6
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- name: 🇯🇵 TROJAN日本1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30003
-  server: jp001.queqiao.xyz
-  sni: jp001.queqiao.xyz
-  type: trojan
-  udp: true
-- name: 🇯🇵 VLESS日本1-专线2
-  network: tcp
-  port: 39005
-  server: relay002.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 SS上海1-直连
-  password: 83c68c51-9076-41ef-ae99-4711345b137c
-  port: 30005
-  server: sh001.queqiao.xyz
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇹🇭 泰国ISP高速中转3x
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 63329
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- name: 🇫🇷 VLESS法国1-直连
-  network: tcp
-  port: 30002
-  server: fr001.queqiao.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 83c68c51-9076-41ef-ae99-4711345b137c
-- alterId: 0
-  cipher: auto
-  name: 🇲🇴 澳门NO.2
-  port: 45051
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3484063-28b7-427c-9f0c-a0b1e97a29f9
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国 IEPL专线NO1
-  port: 54787
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2f2e557-6301-4786-adec-3fe33d4e6d34
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 02
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 38180
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇹🇷 土耳其高速中转
-  password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:ZDQ4MDAxOWUtNGUwZi00ZDk4LTljZjItMDE5NjcwMmI=
-  port: 63327
-  server: gsgs.hy2.one
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡中转 02
-  password: 0e43ca06-985c-4681-87bd-49cb61b56d39
-  port: 21296
+  name: 🇯🇵 日本中转 04
+  password: 106f6ae7-086d-4964-bce9-69a30b73f708
+  port: 20678
   server: chiyu.myfczy169.top
   type: ss
   udp: true
@@ -2617,20 +2072,6 @@ proxies:
     headers:
       Host: vsg1.0bad.com
     path: /chat
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US-34.193.158.132-0065
-  network: ws
-  port: 443
-  server: vjp3.0bad.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vjp3.0bad.com
-    path: /chat
 - name: 🇺🇸US-13.248.169.48-0066
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   port: 8443
@@ -2724,20 +2165,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🏁RELAY-141.193.213.21-0083
-  network: ws
-  port: 443
-  server: news.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  ws-opts:
-    headers:
-      Host: lg10.cfcdn1.xyz
-    path: /A2DJOPFT
-- alterId: 0
-  cipher: auto
   name: 🏁RELAY-104.16.210.157-0084
   network: ws
   port: 80
@@ -2806,6 +2233,20 @@ proxies:
     headers:
       Host: lg1.trump2023.us
     path: /ECTCJ0DF
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-34.193.158.132-0092
+  network: ws
+  port: 443
+  server: vau1.0bad.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vau1.0bad.com
+    path: /chat
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-188.114.99.9-0093
@@ -5352,12 +4793,6 @@ proxies:
   server: 103.106.1.92
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇱🇹LT-45.87.175.166-0443
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇳🇱NL-193.29.139.202-0444
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
@@ -5850,20 +5285,6 @@ proxies:
   port: 8080
   server: 193.29.139.189
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-198.41.209.70-0519
-  network: ws
-  port: 80
-  server: hsj.lbxjc.online
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-203.23.128.79-0520
   password: dt31KYYCCAUBwu09QwG9flPBIuP9jA6VXnjN8StKTkgc45ny
@@ -5894,6 +5315,20 @@ proxies:
   port: 443
   server: 156.146.62.162
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.17.221.248-0527
+  network: ws
+  port: 80
+  server: 104.17.221.248
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
 - name: 🇧🇷BR-168.138.142.53-0529
   password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
   port: 443
@@ -6624,6 +6059,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 🏁RELAY-141.193.213.20-0694
+  network: ws
+  port: 443
+  server: news.microsoft.com
+  servername: us.awsbest.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
+  ws-opts:
+    headers:
+      Host: news.microsoft.com
+    path: /share
+- alterId: 0
+  cipher: auto
   name: 🇻🇳VN-103.56.160.184-0701
   network: ws
   port: 80
@@ -6685,20 +6135,6 @@ proxies:
   name: 🇨🇳CN-183.236.51.60-0706
   network: ws
   port: 25244
-  server: hk1.awslcn.info
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-  ws-opts:
-    headers:
-      Host: hk1.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳CN-183.236.51.60-0707
-  network: ws
-  port: 25242
   server: hk1.awslcn.info
   skip-cert-verify: false
   tls: false
@@ -6960,33 +6396,12 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳CN-111.29.57.71-0726
-  network: ws
-  port: 25240
-  server: cm.awslcn.info
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-  ws-opts:
-    headers:
-      Host: cm.awslcn.info
-    path: /
 - name: 🇸🇬SG-54.169.209.27-0727
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
   server: tw02.trojanyyds.xyz
   skip-cert-verify: false
   sni: tw02.trojanyyds.xyz
-  type: trojan
-- name: 🇸🇬SG-54.169.209.27-0728
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: tw01.trojanyyds.xyz
   type: trojan
 - alterId: 0
   cipher: auto
@@ -8235,6 +7650,20 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.16.155.10-0888
+  network: ws
+  port: 2082
+  server: s1.cn-db.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-150-51-99.s1.cn-db.top
+    path: /dabai.in172.64.27.73
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-104.16.144.63-0889
@@ -9913,20 +9342,6 @@ proxies:
     headers:
       Host: nat.998808.xyz
     path: /fthe4gsefgtdu
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.19.48.236-1160
-  network: ws
-  port: 2052
-  server: s1.cn-db.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-185-39-111.s1.cn-db.top
-    path: /
 - cipher: aes-256-cfb
   name: 🇹🇷TR-45.89.52.66-1177
   password: KnJGad3FqTvjqbaX
@@ -10208,20 +9623,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🏁RELAY-104.21.72.233-1441
-  network: ws
-  port: 8080
-  server: vip3.pmy666.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 20666f30-0add-4da4-bba0-28f985426978
-  ws-opts:
-    headers:
-      Host: domg.pmy666.xyz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   name: 🇺🇸US-96.126.102.150-1444
   network: ws
   port: 443
@@ -10271,6 +9672,13 @@ proxies:
   ws-opts:
     path: /
 - name: 🇨🇳CN-112.29.184.53-1480
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  port: 60194
+  server: ru0195.alibabaokz.com
+  skip-cert-verify: false
+  sni: ru0195.alibabaokz.com
+  type: trojan
+- name: 🇨🇳CN-221.131.165.206-1482
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
   server: ru0195.alibabaokz.com
@@ -10886,20 +10294,6 @@ proxies:
     headers:
       Host: 147.135.112.248
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.18.12.15-1626
-  network: ws
-  port: 443
-  server: workers.dev
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7a70e0f7-170d-4ab0-82a0-c40554bfb320
-  ws-opts:
-    headers:
-      Host: workers.dev
-    path: /111111.online
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-104.21.112.1-1650
@@ -12802,13 +12196,6 @@ proxies:
   server: iplc.xiaohouzi.club
   skip-cert-verify: false
   sni: $$nazhk03.xiaohouzi.club
-  type: trojan
-- name: 🇺🇸US-76.223.54.146-2060
-  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
-  port: 19362
-  server: hnm.xiaohouzi.club
-  skip-cert-verify: false
-  sni: $$$$$$$$aws-hk03.xiaohouzi.club
   type: trojan
 - cipher: aes-256-gcm
   name: 🇯🇵JP-85.208.108.60-2061
@@ -16390,6 +15777,12 @@ proxies:
   uuid: 7fd87ddb-ff61-4aca-a40c-73f5cd4d2178
   ws-opts:
     path: /graphql
+- name: 🇨🇳CN-183.240.139.234-3032
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.taipeicitygovernment.if.ua
+  skip-cert-verify: false
+  type: trojan
 - name: 🇦🇺AU-103.224.212.211-3033
   password: 61605c66-6d41-4b9d-a496-b9898f3f95d0
   port: 443
@@ -16402,6 +15795,12 @@ proxies:
   port: 810
   server: 148.66.56.99
   type: ss
+- name: 🇨🇳CN-183.240.139.235-3040
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 2053
+  server: official.tokyometropolis.kherson.ua
+  skip-cert-verify: false
+  type: trojan
 - name: 🇩🇪DE-89.163.220.99-3045
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
@@ -16426,12 +15825,6 @@ proxies:
   port: 2376
   server: 172.99.190.7
   type: ss
-- name: 🇨🇳CN-183.240.139.235-3054
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.taipeicitygovernment.org.ua
-  skip-cert-verify: false
-  type: trojan
 - cipher: aes-256-gcm
   name: 🇳🇱NL-172.99.188.99-3055
   password: faBAoD54k87UJG7
@@ -16610,6 +16003,12 @@ proxies:
   uuid: 80abb903-24e0-4dbd-9c2f-a57e9a267555
   ws-opts:
     path: /ws
+- name: 🇨🇳CN-183.240.139.235-3107
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.seoulcityhall.com.ua
+  skip-cert-verify: false
+  type: trojan
 - name: 🇯🇵JP-150.230.217.213-3111
   password: c09eb137-bf68-4658-84e0-102d94b74168
   port: 443
@@ -16626,12 +16025,6 @@ proxies:
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
-  skip-cert-verify: false
-  type: trojan
-- name: 🇨🇳CN-183.240.139.235-3116
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 2053
-  server: official.tokyometropolis.ivano-frankivsk.ua
   skip-cert-verify: false
   type: trojan
 - name: 🇹🇼TW-60.249.3.229-3123
@@ -17429,6 +16822,20 @@ proxies:
   uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.16.210.157-4235
+  network: ws
+  port: 80
+  server: uicdn.cf
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+  ws-opts:
+    headers:
+      Host: uicdn.cf
+    path: /sshkit/1736960111/63859bc177a33/
 - alterId: 0
   cipher: auto
   name: 🇫🇮FI-65.109.137.157-4236
@@ -18948,6 +18355,12 @@ proxies:
   skip-cert-verify: false
   sni: douk01.xiaohouzi.club
   type: trojan
+- name: 🇺🇸US-76.223.54.146-4832
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  port: 8443
+  server: 119-8-122-159.ipv4.rush.ml
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇫🇷FR-193.70.85.191-4835
@@ -19118,6 +18531,20 @@ proxies:
   port: 443
   server: 167.88.61.14
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-72.247.234.254-4928
+  network: ws
+  port: 443
+  server: cacerts.digicert.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+  ws-opts:
+    headers:
+      Host: lg1.trump2023.us
+    path: /ECTCJ0DF
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-103.21.244.169-4932
@@ -20144,20 +19571,6 @@ proxies:
     headers:
       Host: v2.chigua.tk
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.26.9.13-5242
-  network: ws
-  port: 2086
-  server: RACKNERD.COM
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c2a55def-e91e-4132-c504-0f276c4c3a1e
-  ws-opts:
-    headers:
-      Host: br.cloudflare.quest
-    path: /aries
 - name: 🇨🇳CN-183.236.51.2-5244
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   port: 10819
@@ -20361,6 +19774,27 @@ proxies:
   port: 40005
   server: 146.56.179.67
   skip-cert-verify: false
+  type: trojan
+- name: 🇺🇸US-8.7.198.46-5279
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  port: 15003
+  server: east.eeeeeef998.buzz
+  skip-cert-verify: false
+  sni: data.steamdownload.top
+  type: trojan
+- name: 🇺🇸US-8.7.198.46-5280
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  port: 15005
+  server: east.eeeeeef998.buzz
+  skip-cert-verify: false
+  sni: data.steamdownload.top
+  type: trojan
+- name: 🇺🇸US-8.7.198.46-5281
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  port: 15006
+  server: east.eeeeeef998.buzz
+  skip-cert-verify: false
+  sni: data.steamdownload.top
   type: trojan
 - name: 🇺🇸US-8.7.198.46-5282
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
@@ -24205,12 +23639,6 @@ proxies:
   server: 223.111.144.12
   skip-cert-verify: false
   type: trojan
-- name: 🇨🇳CN-221.131.165.210-6189
-  password: 38571ca6-6692-4559-b901-0bc5826b7661
-  port: 60194
-  server: 221.131.165.210
-  skip-cert-verify: false
-  type: trojan
 - name: 🇨🇳CN-221.131.165.206-6190
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
@@ -24547,21 +23975,6 @@ proxies:
     headers:
       Host: hk-bmg.cowvpn.org
     path: /cctv13/vmess_hk-bmgcf
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.19.48.236-6275
-  network: ws
-  port: 2082
-  server: s1.db-link02.top
-  servername: 100-6-81-226.s1.db-link02.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: s1.db-link02.top
-    path: /dabai.in104.20.8.162
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-198.41.209.70-6277
@@ -32556,6 +31969,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 🇫🇷FR-45.145.165.113-8406
+  network: ws
+  port: 443
+  server: 45.145.165.113
+  servername: hms19.best-tizi.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: hms19.best-tizi.top
+    path: /linkws
+- alterId: 0
+  cipher: auto
   name: 🇮🇷IR-2.189.59.7-8407
   network: ws
   port: 443
@@ -33501,6 +32929,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 🏁RELAY-104.18.13.15-8478
+  network: ws
+  port: 443
+  server: workers.dev
+  servername: fragrant-heart-c94b.fticrh.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: fragrant-heart-c94b.fticrh.workers.dev
+    path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
   name: 🏁RELAY-104.21.32.1-8479
   network: ws
   port: 443
@@ -33925,6 +33368,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 🏁RELAY-104.21.1.32-8527
+  network: ws
+  port: 443
+  server: 3.clarity168.com
+  servername: 3.clarity168.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
+  ws-opts:
+    headers:
+      Host: 3.clarity168.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 🏁RELAY-104.21.53.183-8528
   network: ws
   port: 443
@@ -34038,6 +33496,21 @@ proxies:
     headers:
       Host: xmivideo.cfd
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.21.68.244-8538
+  network: ws
+  port: 443
+  server: git.bartsmeding.nl
+  servername: yelan.lastronin.cloudns.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: yelan.lastronin.cloudns.org
+    path: /link/hms02.fxiaomi.sbs
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-162.159.8.120-8539
@@ -35694,21 +35167,6 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 🏁RELAY-104.21.80.1-8712
-  network: ws
-  port: 443
-  server: af.cnpvcpp.com
-  servername: yetejbw5h52j25jlan.thelastronin.cloudns.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/ivideos.sbs
-- alterId: 0
-  cipher: auto
   name: 🏁RELAY-104.20.39.186-8713
   network: ws
   port: 443
@@ -36137,6 +35595,20 @@ proxies:
   network: ws
   port: 80
   server: 104.21.80.180
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 219eb7ea-8f9a-4af8-857b-4b4b564224ef
+  ws-opts:
+    headers:
+      Host: jp02.knt6y4bjx.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.21.80.180-8776
+  network: ws
+  port: 80
+  server: kz3bw.c6tu5uwk9.buzz
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -40306,19 +39778,19 @@ proxies:
     path: /qin12
 - alterId: 0
   cipher: auto
-  name: 🏁RELAY-104.21.80.53-9100
+  name: 🏁RELAY-172.67.174.92-9097
   network: ws
   port: 2053
-  server: 104.21.80.53
-  servername: qin20.rong1104.uk
+  server: qin14.rong1104.uk
+  servername: qin14.rong1104.uk
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 3ce0722e-1e03-4b05-9875-d7592b6c9f1c
+  uuid: f8d2fd33-ab8e-4004-f97d-10dde80af010
   ws-opts:
     headers:
-      Host: qin20.rong1104.uk
-    path: /
+      Host: qin14.rong1104.uk
+    path: /qin14
 - alterId: 0
   cipher: auto
   name: 🇰🇷KR-54.180.108.75-9104
@@ -40883,6 +40355,20 @@ proxies:
     headers:
       Host: www.sttlink.cc
     path: /ASFHLASHFO
+- alterId: 0
+  cipher: auto
+  name: 🏁RELAY-104.21.16.1-9157
+  network: ws
+  port: 443
+  server: wi.saintink.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: wi.saintink.eu.org
+    path: /vuk2.0bad.com/chat
 - name: 🇺🇸US-138.197.5.103-9203
   password: xxoo
   port: 443
@@ -41057,7 +40543,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: /
-  name: 🇺🇸US-13.248.169.48-9254
+  name: 🇺🇸US-76.223.54.146-9258
   network: grpc
   port: 2087
   server: jolimolilap.com
@@ -41068,18 +40554,18 @@ proxies:
   uuid: 98bd45bd-ad4a-4480-87b2-84f81c09aaa8
 - alterId: 0
   cipher: auto
-  name: 🏁RELAY-104.21.48.1-9261
+  name: 🏁RELAY-104.21.16.1-9260
   network: ws
   port: 443
   server: ip.saintink.eu.org
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: d4b6f48f-7474-44dc-9492-8fa3f63db887
+  uuid: b15ee8ec-0b0e-4ce2-b35c-f4be265ba217
   ws-opts:
     headers:
       Host: ip.saintink.eu.org
-    path: ro2.v2rayserv.com/vmess
+    path: ua1.v2rayserv.com/vmess
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸US-72.52.178.23-9294
   password: N2Y5Y
@@ -41093,20 +40579,6 @@ proxies:
   skip-cert-verify: false
   sni: zula.ir
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.21.112.1-9297
-  network: ws
-  port: 443
-  server: fake.id.workers.dev
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: F591CE71-33F8-4B12-824A-0167FA839ED9
-  ws-opts:
-    headers:
-      Host: fake.id.workers.dev
-    path: /speedtest
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-162.159.137.232-9302
@@ -41156,20 +40628,6 @@ proxies:
     headers:
       Host: cf.dalazhi.eu.org
     path: /kplxvws
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.21.7.193-9321
-  network: ws
-  port: 80
-  server: cf-lt.sharecentre.online
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42
-  ws-opts:
-    headers:
-      Host: cf-lt.sharecentre.online
-    path: 4a47e680
 - alterId: 0
   cipher: auto
   name: 🏁RELAY-198.41.203.157-9322
@@ -47096,6 +46554,18 @@ proxies:
     path: /speedtest
 - alterId: 0
   cipher: auto
+  name: 🏁RELAY-104.18.14.229-10279
+  network: ws
+  port: 443
+  server: 104.18.14.229
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  ws-opts:
+    path: /wss51068
+- alterId: 0
+  cipher: auto
   name: 🏁RELAY-104.17.95.4-10280
   network: ws
   port: 443
@@ -47851,17 +47321,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|0|--58
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  tls: false
-  type: vmess
-  uuid: cdcc9f3a-ad63-46e2-92f4-173c2a6ec201
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 11|0|--60
+  name: 11|0|--78
   network: http
   port: 2082
   server: 64.225.109.206
@@ -47870,13 +47330,27 @@ proxies:
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
 - alterId: 0
   cipher: auto
-  name: 11|0|--62
+  name: 11|0|--84
   network: tcp
   port: 80
-  server: 94.182.150.231
+  server: 94.182.150.230
   tls: false
   type: vmess
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+- alterId: 0
+  cipher: auto
+  name: 11|0|--85
+  network: ws
+  port: 443
+  server: 00.likelike.us.kg
+  servername: 00.likelike.us.kg
+  tls: true
+  type: vmess
+  uuid: 680e91d7-01ff-4082-b71a-472d5236adee
+  ws-opts:
+    headers:
+      Host: 00.likelike.us.kg
+    path: /serv00?ed=2048
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -48166,30 +47640,29 @@ proxies:
   protocol-param: OTI5MDI6cEZXR09R
   server: 2.hublink.pro
   type: ssr
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: qwerREWQ@@
-  port: 28290
-  server: p220.panda001.net
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-2
-  password: amazonskr05
-  port: 443
-  server: 3.36.116.141
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 23.157.40.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-3
+  password: YjJiYzBj
+  port: 8388
+  server: 45.140.146.223
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-4
-  password: amazonskr05
-  port: 443
-  server: 13.125.6.123
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-5
-  password: pKEW8JPByTVTLtM
-  port: 443
+  password: lGqs95QkFHo2NV
+  port: 5499
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
@@ -48200,38 +47673,38 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-7
-  password: faBAoD54k87UJG7
-  port: 2376
+  password: e4FCWrgpkji3QY
+  port: 9101
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-8
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-9
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-10
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-11
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-9
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-10
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-11
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-12
-  password: FoOiGlkAA9yPEGP
-  port: 7306
+  password: PCnnH6SQSnfoS27
+  port: 8090
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
@@ -48242,140 +47715,137 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-14
-  password: lGqs95QkFHo2NV
-  port: 5499
+  password: FoOiGlkAA9yPEGP
+  port: 7306
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-15
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-16
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-16
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-17
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  password: lGqs95QkFHo2NV
+  port: 5498
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-18
-  password: cdBIDV42DCwnfIN
-  port: 8118
+  password: KixLvKzwjekG00rm
+  port: 8000
   server: 23.157.40.5
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-19
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.157.40.5
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.164
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-20
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-21
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-21
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-22
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-23
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-24
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.157.40.5
-  type: ss
-- cipher: aes-256-gcm
-  name: 0|-https://t.me/MrXbin-25
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-23
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-24
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-26
-  password: KixLvKzwjekG00rm
-  port: 5500
+  password: RexnBgU7EV5ADxG
+  port: 7002
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-27
-  password: e4FCWrgpkji3QY
-  port: 9101
+  password: Y6R9pAtvxxzmGC
+  port: 9090
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-28
-  password: kDWvXYZoTBcGkC4
-  port: 8882
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-29
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-30
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 23.157.40.5
+  type: ss
+- cipher: aes-256-gcm
+  name: 0|-https://t.me/MrXbin-31
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 23.157.40.5
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-29
-  password: amazonskr05
-  port: 443
-  server: 54.179.54.70
+  name: 0|-https://t.me/MrXbin-32
+  password: qwerREWQ@@
+  port: 27973
+  server: p196.panda001.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-30
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-33
-  password: MDZhNTAz
-  port: 8388
-  server: 89.221.224.166
+  password: qwerREWQ@@
+  port: 28290
+  server: 125.141.31.74
   type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-35
-  password: amazonskr05
-  port: 443
-  server: 34.221.178.146
+  password: qwerREWQ@@
+  port: 61891
+  server: 27.255.82.135
   type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-36
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   name: 0|-https://t.me/MrXbin-37
-  password: EXN3S3eQpjE7EJu8
-  port: 9027
-  server: 217.30.10.18
+  password: dongtaiwang.com
+  port: 33333
+  server: 109.104.154.146
   type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-38
   password: amazonskr05
   port: 443
-  server: 13.229.206.58
+  server: 35.94.25.109
   type: ss
   udp: true
 - cipher: rc4-md5
@@ -48384,45 +47854,94 @@ proxies:
   port: 8080
   server: 138.199.42.68
   type: ss
-- cipher: rc4-md5
+- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-40
+  password: ZmQwZjFk
+  port: 8388
+  server: at1.opensocks.site
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-41
+  password: qwerREWQ@@
+  port: 37041
+  server: 121.170.203.147
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-43
+  password: amazonskr05
+  port: 443
+  server: 34.221.178.146
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 0|-https://t.me/MrXbin-44
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 23.251.121.242
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-41
+  name: 0|-https://t.me/MrXbin-45
   password: amazonskr05
   port: 443
   server: 13.250.116.31
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-42
+  name: 0|-https://t.me/MrXbin-46
+  password: amazonskr05
+  port: 443
+  server: 54.187.174.202
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-47
+  password: amazonskr05
+  port: 443
+  server: 54.179.54.70
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: 0|-https://t.me/MrXbin-48
+  password: asd123456
+  port: 8388
+  server: 107.148.6.121
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-66
   password: qwerREWQ@@
-  port: 5412
-  server: 27.255.82.23
+  port: 31066
+  server: 218.237.185.230
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-43
+  name: 0|-https://t.me/MrXbin-68
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-70
+  password: amazonskr05
+  port: 443
+  server: 54.199.222.156
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-71
   password: qwerREWQ@@
   port: 4563
   server: 121.170.203.148
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-58
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  skip-cert-verify: true
-  type: vmess
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-73
+  password: qwerREWQ@@
+  port: 34847
+  server: 218.50.149.114
+  type: ss
   udp: true
-  uuid: cdcc9f3a-ad63-46e2-92f4-173c2a6ec201
-  ws-opts: {}
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -48430,7 +47949,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 0|-https://t.me/MrXbin-60
+  name: 0|-https://t.me/MrXbin-91
   network: http
   port: 2082
   server: 64.225.109.206
@@ -48442,32 +47961,63 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-62
+  name: 0|-https://t.me/MrXbin-92
+  network: ws
+  port: 17926
+  server: 195.58.49.86
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: 0d144c6f-1919-4bda-a60b-36b944633a56
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-97
+  network: ws
+  port: 17926
+  server: 194.87.69.50
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: 5f6c0370-735f-4ed0-9a2d-b10ffa417b03
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-102
   port: 80
   server: 94.182.150.231
   skip-cert-verify: true
   type: vmess
   udp: true
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- name: 0,15|IN_speednode_0028
-  password: '3648425794742788096'
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-105
+  network: ws
   port: 443
-  server: 5.8.35.208
-  skip-cert-verify: false
-  sni: loving-boa.treefrog761.one
+  server: 00.likelike.us.kg
+  servername: 00.likelike.us.kg
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 680e91d7-01ff-4082-b71a-472d5236adee
+  ws-opts:
+    headers:
+      Host: 00.likelike.us.kg
+    path: /serv00?ed=2048
+- name: 0|-https://t.me/MrXbin-110
+  password: UO2beikcWh
+  port: 33261
+  server: 38.59.245.38
+  skip-cert-verify: true
   type: trojan
   udp: true
-- name: 0|-https://t.me/MrXbin-70
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: sg02.trojanyyds.xyz
-  type: trojan
-- name: 0|-https://t.me/MrXbin-73
-  password: '3723507166611775488'
-  port: 443
-  server: ample-cockatoo.boa152.lol
-  sni: ample-cockatoo.boa152.lol
-  type: trojan
 - name: 13,14|香港|@ripaojiedian
   network: tcp
   password: phXKwfrd
@@ -48707,6 +48257,14 @@ proxies:
     headers:
       Host: amepo.ambercc.filegear-sg.me
     path: /
+- name: 15|IN_speednode_0028
+  password: '3648425794742788096'
+  port: 443
+  server: 5.8.35.208
+  skip-cert-verify: false
+  sni: loving-boa.treefrog761.one
+  type: trojan
+  udp: true
 - name: 15|LU_speednode_0031
   network: ws
   password: Aimer
@@ -48888,240 +48446,167 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-014-1B
-  - 🇫🇷 VLESS法国1-专线2
-  - 🇰🇷 KR 冰摇桃桃乌龙茶-1G
-  - 🇹🇼 台湾02-3x-流媒体
-  - 🇷🇺 俄罗斯-圣彼得堡-016-1D
-  - 🇸🇬 新加坡中转 01
-  - 🇷🇺 俄罗斯-圣彼得堡-014-1H
-  - 🇭🇰 公益路线-香港HK 限速50MBPS-1P
-  - 🇰🇷 韩国高速中转3
-  - 🇸🇬 SS新加坡1-专线
-  - 🇭🇰 中国-香港-VL-003-1A
-  - 🇯🇵 JP 香草星冰乐-1E
-  - 🇸🇬 新加坡西部-2K
-  - 🇸🇬 SG 冷萃冰咖啡-1F
-  - 🇸🇬 VLESS新加坡1-直连
-  - 🇭🇰 中国-香港-005-1C
-  - 🇰🇷 韩国-首尔
-  - BR 燕麦拿铁-1C
-  - 🇭🇰 中国-香港-003-1B
-  - 🇦🇺 TROJAN澳大利亚1-专线2
-  - 🇸🇬 新加坡西部-2B
-  - 🇦🇺 澳大利亚东部-1B
-  - 🇸🇬 新加坡 01 解锁|1.0x-1A
-  - 🇺🇸 美国-纽约-001-1H
-  - 🇭🇰 香港 IEPL专线NO3
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-016-1H
-  - 🇷🇺 俄罗斯-圣彼得堡-012-1D
-  - 🇦🇺 澳大利亚 IEPL专线NO1
-  - 🇦🇺 澳大利亚原生1
-  - 🇪🇺 欧洲-伦敦-1
-  - 🇺🇸 美国 纽约2
-  - 🇸🇬 新加坡 02-1A
-  - 🇯🇵 VLESS日本2-专线
-  - 🇯🇵 日本 IEPL专线NO3
-  - 🇺🇸 VLESS美国1-专线2
-  - 🇭🇰 香港 02 解锁|80端口|1.0x-1A
-  - 🇭🇰 VLESS香港1-直连
-  - 🇸🇬 新加坡NO.1
-  - 🇯🇵 日本03
-  - 🇭🇰 中国-香港-HY-005-1E
-  - 🇫🇷 VLESS法国1-专线
-  - 🇺🇸 北美-US-圣何塞-2
-  - 🇺🇸 美国 01 解锁|80端口|1.0x-1A
-  - 🇭🇰 中国-香港-VL-004-1D
-  - 🇸🇬 新加坡 02 解锁|1.0x-1B
-  - 🇯🇵 日本 01 解锁|80端口|1.0x-1A
-  - 🇸🇬 新加坡 IEPL专线NO1
-  - 🇷🇺 俄罗斯-圣彼得堡-013-1E
-  - 🇯🇵 HYSTERIA日本1-专线2
-  - 🇬🇧 SS英国1-直连
-  - 🇦🇺 SS澳大利亚1-专线
-  - 🇷🇺 俄罗斯-圣彼得堡-015-1E
-  - 🇬🇧 英国SS-13
-  - 🇸🇬 TROJAN新加坡1-直连
-  - 🇭🇰 中国-香港-004-1A
-  - 🇹🇼 台湾2-3x
-  - 🇭🇰 香港-流媒体2x
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-012-1B
-  - 🇹🇼 台湾1
-  - 🇫🇷 法国1
-  - 🇯🇵 日本 02 解锁|1.0x-1A
-  - 🇭🇰 香港中转 01
-  - 🇰🇷 韩国-2
-  - 🇯🇵 日本中转 05
-  - 🇩🇪 德国-法兰克福-HY-001-1E
-  - 🇨🇦 加拿大1
-  - 🇺🇸 SS美国1-直连
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-015-1F
-  - 🇨🇳 SS宁波1-直连
-  - 🇹🇭 泰国中转
-  - 🇸🇬 新加坡 01 解锁|80端口|1.0x-1B
-  - 🇯🇵 SS日本2-专线
-  - 非洲 IEPL专线 NO1
-  - 🇯🇵 日本01
-  - 🇯🇵 日本 03 解锁|80端口|1.0x-1B
-  - 🇺🇸 美国-纽约-VL-001-1D
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-013-1F
-  - 🇹🇼 台湾中转 05
-  - 🇫🇷 SS法国1-专线
-  - 🇸🇪 瑞典中转
-  - 🇦🇺 VLESS澳大利亚1-专线
-  - 🇭🇰 香港4高速中转5x
-  - 🇯🇵 HYSTERIA日本1-直连
-  - 🇳🇱 荷兰 IEPL专线NO1
-  - 🇫🇷 法国2
-  - 🇺🇸 美国NO.1
-  - 🇯🇵 日本2高速中转
-  - 🇸🇬 新加坡1高速中转3x
-  - 🇬🇧 SS英国1-专线
-  - 🇺🇸 美国高速中转4
-  - 🇦🇷 阿根廷 IEPL专线NO1
-  - 🇸🇬 新加坡02-V4-流媒体
   - 🇻🇳 越南高速中转
-  - 🇯🇵 日本 04 解锁|1.0x-1B
-  - 🇸🇬 TROJAN新加坡1-专线2
-  - 🇺🇸 美国2高速中转
-  - 🇸🇬 新加坡西部-1J
-  - 🇭🇰 SS香港2-专线
-  - 🇦🇺 VLESS澳大利亚1-专线2
-  - 🇭🇰 香港中转 03
-  - 🇺🇸 美国NO.2
-  - 🇭🇰 香港01
-  - 🇫🇷 TROJAN法国1-专线2
-  - 🇺🇸 VLESS美国1-直连
-  - 🇭🇰 VLESS香港2-直连
-  - 🇸🇬 新加坡NO.2
-  - 🇹🇼 台湾2
-  - 🇯🇵 日本2SS中转15x
-  - 🇺🇸 美国中转 02
-  - 🇧🇷 巴西中转
-  - 🇬🇧 英国中转 02
-  - 🇭🇰 SS香港2-直连
-  - 🇯🇵 TROJAN日本2-直连
-  - 🇭🇰 TROJAN香港1-专线2
-  - 🇯🇵 SS日本1-直连
-  - 🇦🇪 阿联酋中转
-  - 🇹🇼 台湾高速中转
-  - 🇭🇰 VLESS香港1-专线2
-  - 🇫🇷 TROJAN法国1-直连
-  - 🇵🇹 葡萄牙 IEPL专线NO1
-  - 🇦🇺 SS澳大利亚1-专线2
-  - 🇺🇸 美国 纽约01
-  - 🇹🇼 台湾中转 04
-  - 🇯🇵 SS日本2-专线2
-  - 🇸🇬 新加坡中转 03
-  - 🇭🇰 香港中转 02
-  - 🇩🇪 德国中转
-  - 🇭🇰 TROJAN香港1-专线
-  - 🇸🇬 新加坡3高速中转3x
-  - 🇦🇺 SS澳大利亚1-直连
-  - 🇯🇵 日本中转 01
-  - 🇺🇸 VLESS美国1-专线
-  - 🇲🇾 马来西亚中转
-  - 🇯🇵 日本-1
-  - 🇹🇼 台湾 IEPL专线NO1
-  - 🇭🇰 香港中转 04
-  - 🇸🇬 SS新加坡1-直连
-  - 🇰🇷 韩国-1
-  - 🇭🇰 TROJAN香港1-直连
-  - 🇨🇦 加拿大 IEPL专线 NO1
-  - 🇯🇵 日本 03 解锁|1.0x-1A
-  - 下方为备用节点
-  - 🇹🇭 泰国 IEPL专线 NO1
-  - 🇯🇵 日本02
-  - 🇯🇵 日本NO.1
-  - 🇯🇵 VLESS日本2-专线2
-  - 🇯🇵 TROJAN日本1-专线
-  - 🇯🇵 TROJAN日本1-专线2
-  - 🇸🇬 新加坡2高速中转3x
-  - E2-BQS
-  - 被滥用 节点已经爆炸-1A
-  - 🇭🇰 SS香港1-专线
-  - 🇯🇵 日本3SS中转25x
-  - 🇯🇵 VLESS日本1-专线
-  - 🇰🇷 韩国 IEPL专线NO1
-  - 🇰🇿 哈萨克斯坦中转
-  - 🇭🇰 TROJAN香港2-直连
-  - 🇭🇰 SS香港2-专线2
-  - 🇹🇼 台湾中转 02
-  - 日-本SS中转25x
-  - 🇨🇦 加拿大1-V6
-  - 🇭🇰 HYSTERIA香港3-直连
-  - 🇦🇺 TROJAN澳大利亚1-直连
-  - 🇯🇵 日本SS中转25x
-  - 🇭🇰 香港 03 解锁|80端口|1.0x-1B
-  - 🇸🇬 VLESS新加坡1-专线2
-  - 🇺🇸 TROJAN美国1-直连
-  - 🇭🇰 SS香港1-专线2
-  - 🇨🇦 加拿大2
-  - 🇭🇰 香港2高速中转2x
-  - 🇭🇰 VLESS香港1-专线
-  - 🇫🇷 SS法国1-专线2
-  - 🇸🇬 新加坡 03 解锁|1.0x-1B
-  - 🇯🇵 VLESS日本1-直连
-  - 🇯🇵 日本 01 解锁|1.0x-1A
-  - 🇯🇵 日本-2
-  - 🇸🇬 新加坡 04-1A
-  - 🇫🇷 TROJAN法国1-专线
-  - 🇭🇰 香港中转 05
-  - 🇫🇷 SS法国1-直连
-  - 🇭🇰 香港1高速中转2x
-  - 🇯🇵 TROJAN日本2-专线2
-  - 🇸🇬 VLESS新加坡1-专线
-  - 🇺🇸 美国中转 01
-  - 🇮🇳 印度2
-  - 🇺🇸 TROJAN美国1-专线2
-  - 🇯🇵 VLESS日本2-直连
-  - 🇸🇬 新加坡-1
-  - 🇹🇼 台湾 1
-  - 🇯🇵 日本中转 03
-  - 🇭🇰 香港
-  - 🇬🇧 英国中转 01
-  - 🇦🇺 TROJAN澳大利亚1-专线
-  - 🇬🇧 SS英国1-专线2
-  - 🇭🇰 香港5高速中转5x
-  - 🇹🇷 土耳其中转
-  - 🇸🇬 TROJAN新加坡1-专线
-  - 🇺🇸 TROJAN美国1-专线
-  - 🇯🇵 日本中转 04
-  - 🇹🇼 台湾01
-  - 🇭🇰 香港6高速中转
-  - 🇭🇰 香港02
-  - 🇺🇸 美国 IEPL专线NO1
-  - 🇬🇧 英国中转 03
-  - 🇯🇵 日本NO.2
-  - 🇹🇼 台湾中转 01
-  - 🇯🇵 日本1高速中转
+  - 🇰🇷 KR 冰摇桃桃乌龙茶-1D
+  - 🇺🇸 美国-纽约-VL-001-1E
+  - 🇺🇸 美国-纽约-001-1G
+  - 🇭🇰 中国-香港-VL-003-1H
+  - 🇭🇰 中国-香港-005-1H
+  - 🇭🇰 中国-香港-HY-005-1A
+  - 🇦🇺 澳大利亚东部-1K
+  - 🇷🇺 俄罗斯-圣彼得堡-014-1K
+  - 🇯🇵 日本 02 解锁|1.0x-1A
+  - 🇯🇵 JP 香草星冰乐-1G
   - 🇮🇳 印度1
-  - 🇫🇷 法国 CM 隧道NO1
-  - 🇮🇳 印度 IEPL专线NO1
-  - 🇯🇵 SS日本1-专线
-  - 🇭🇰 SS香港1-直连
-  - 🇯🇵 TROJAN日本2-专线
-  - 🇦🇺 澳大利亚原生2
-  - 🇦🇺 VLESS澳大利亚1-直连
-  - 🇯🇵 SS日本2-直连
-  - 🇻🇳 越南中转
-  - 🇯🇵 SS日本1-专线2
-  - 🇹🇼 台湾中转 03
-  - 🇭🇰 香港03
-  - 🇮🇳 印度中转
+  - 🇩🇪 德国-法兰克福-HY-001-1J
+  - 🇸🇬 新加坡西部-2Z
+  - 🇭🇰 香港中转 03
+  - 🇹🇼 台湾2
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-014-1G
+  - 🇭🇰 中国-香港-004-1J
+  - 🇸🇬 新加坡西部-2G
+  - 🇫🇷 法国2
+  - BR 燕麦拿铁-1A
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-016-1D
+  - 🇯🇵 日本-2
+  - 🇬🇧 英国中转 01
+  - 🇷🇺 俄罗斯-圣彼得堡-016-1F
+  - 🇭🇰 香港中转 05
+  - 🇸🇬 新加坡 03 解锁|1.0x-1A
+  - 🇭🇰 中国-香港-VL-004-1D
+  - 🇰🇷 韩国-首尔
+  - 🇷🇺 俄罗斯-圣彼得堡-012-1G
   - 🇹🇼 台湾SS中转25x
-  - 🇩🇪 欧洲-法兰克福-1
-  - 🇯🇵 日本04
-  - 🇯🇵 TROJAN日本1-直连
-  - 🇯🇵 VLESS日本1-专线2
-  - 🇨🇳 SS上海1-直连
-  - 🇹🇭 泰国ISP高速中转3x
-  - 🇫🇷 VLESS法国1-直连
-  - 🇲🇴 澳门NO.2
-  - 🇩🇪 德国 IEPL专线NO1
-  - 🇯🇵 日本中转 02
-  - 🇹🇷 土耳其高速中转
+  - 🇹🇼 台湾中转 03
+  - 🇸🇬 新加坡西部-2V
+  - 🇷🇺 俄罗斯-圣彼得堡-013-1D
+  - 🇭🇰 香港 IEPL专线NO3
+  - 🇭🇰 公益路线-香港HK 限速50MBPS-1A
+  - 🇯🇵 日本2高速中转
+  - 🇭🇰 香港 02 解锁|80端口|1.0x-1A
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-013-1C
+  - 🇦🇺 澳大利亚 IEPL专线NO1
+  - 🇲🇾 马来西亚中转
+  - 🇭🇰 香港中转 02
+  - 🇯🇵 日本02-1A
+  - 🇹🇼 台湾中转 01
+  - 🇵🇹 葡萄牙 IEPL专线NO1
+  - 🇰🇿 哈萨克斯坦中转
+  - 🇸🇬 SG 冷萃冰咖啡-1J
+  - 🇹🇼 台湾高速中转
+  - 🇹🇼 台湾 1-1A
+  - 🇭🇰 香港6高速中转
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-012-1E
+  - 🇸🇬 新加坡3高速中转3x
+  - 🇭🇰 香港
+  - 🇮🇳 印度 IEPL专线NO1
+  - 日-本SS中转25x
+  - 🇹🇼 台湾中转 05
+  - 🇸🇬 新加坡 01 解锁|1.0x-1A
+  - 🇦🇪 阿联酋中转
+  - 🇷🇺 俄罗斯-圣彼得堡-015-1F
+  - 🇩🇪 德国中转
+  - 🇬🇧 英国中转 03
+  - 🇷🇺 俄罗斯-圣彼得堡-HY-015-1A
+  - 🇭🇰 中国-香港-003-1E
+  - 🇯🇵 日本 04 解锁|1.0x-1B
+  - 🇭🇰 香港2高速中转2x
+  - 🇭🇰 香港5高速中转5x
+  - 🇹🇼 台湾01-1B
+  - 🇭🇰 香港1高速中转2x
+  - 🇯🇵 日本04-1B
+  - 🇸🇬 新加坡 01 解锁|80端口|1.0x-1B
+  - 🇭🇰 香港中转 04
+  - 🇸🇬 新加坡中转 01
+  - S3-SKH
+  - 🇭🇰 香港03-1B
+  - 🇸🇬 新加坡-1
+  - 🇦🇺 澳大利亚原生2
+  - 🇹🇼 台湾1
+  - 🇰🇷 韩国 IEPL专线NO1
+  - 🇺🇸 美国 01 解锁|80端口|1.0x-1A
+  - 🇰🇷 韩国-2
+  - 🇯🇵 日本01-1A
+  - 🇸🇬 新加坡 02 解锁|1.0x-1B
+  - 🇺🇸 美国 纽约2-1A
+  - 🇸🇪 瑞典中转
+  - 🇯🇵 日本03-1B
   - 🇸🇬 新加坡中转 02
+  - 🇲🇴 澳门NO.2
+  - 非洲 IEPL专线 NO1
+  - 🇨🇦 加拿大2
+  - 🇹🇭 泰国 IEPL专线 NO1
+  - 🇹🇷 土耳其高速中转
+  - 🇸🇬 新加坡02-V4-流媒体
+  - 🇯🇵 日本中转 01
+  - 🇯🇵 日本 01 解锁|1.0x-1B
+  - 下方为备用节点
+  - 🇯🇵 日本1高速中转
+  - 🇪🇺 欧洲-伦敦-1
+  - 🇯🇵 日本 03 解锁|1.0x-1B
+  - 🇰🇷 韩国-1
+  - 🇻🇳 越南中转
+  - 🇭🇰 香港01-1B
+  - 🇹🇷 土耳其中转
+  - 🇯🇵 日本中转 02
+  - 🇭🇰 香港 03 解锁|80端口|1.0x-1B
+  - 🇩🇪 欧洲-法兰克福-1
+  - 🇮🇳 印度2
+  - 🇺🇸 美国 纽约01-1B
+  - 🇯🇵 日本NO.1
+  - 🇯🇵 日本 01 解锁|80端口|1.0x-1A
+  - 🇯🇵 日本-1
+  - 🇩🇪 德国 IEPL专线NO1
+  - 🇸🇬 新加坡1高速中转3x
+  - 🇯🇵 日本NO.2
+  - 🇫🇷 法国 CM 隧道NO1
+  - 🇯🇵 日本 03 解锁|80端口|1.0x-1A
+  - 🇭🇰 香港02-1B
+  - 🇸🇬 新加坡中转 03
+  - 🇹🇼 台湾2-3x
+  - 🇹🇭 泰国ISP高速中转3x
+  - 🇺🇸 美国中转 01
+  - 🇨🇦 加拿大 IEPL专线 NO1
+  - 🇰🇷 韩国高速中转3
+  - 🇹🇼 台湾 IEPL专线NO1
+  - 🇭🇰 香港中转 01
+  - 🇸🇬 新加坡 04-1A
+  - 🇯🇵 日本2SS中转15x
+  - 🇨🇦 加拿大1
+  - 🇬🇧 英国中转 02
+  - 🇯🇵 日本SS中转25x
+  - 🇺🇸 美国NO.1
+  - 被滥用 节点已经爆炸-1A
+  - 🇬🇧 英国SS-13
+  - 🇸🇬 新加坡NO.1
+  - 🇳🇱 荷兰 IEPL专线NO1
+  - 🇯🇵 日本3SS中转25x
+  - 🇹🇭 泰国中转
+  - 🇧🇷 巴西中转
+  - 🇺🇸 美国中转 02
+  - 🇦🇺 澳大利亚原生1
+  - 🇹🇼 台湾中转 02
+  - 🇯🇵 日本 IEPL专线NO3
+  - 🇸🇬 新加坡 02-1A
+  - 🇦🇷 阿根廷 IEPL专线NO1
+  - 🇯🇵 日本中转 05
+  - 🇹🇼 台湾02-3x-流媒体
+  - 🇹🇼 台湾中转 04
+  - 🇮🇳 印度中转
+  - 🇸🇬 新加坡NO.2
+  - 🇺🇸 北美-US-圣何塞-2
+  - 🇸🇬 新加坡 IEPL专线NO1
+  - 🇯🇵 日本中转 03
+  - 🇺🇸 美国NO.2
+  - 🇺🇸 美国高速中转4
+  - 🇫🇷 法国1
+  - 🇨🇦 加拿大1-V6
+  - 🇭🇰 香港4高速中转5x
+  - 🇭🇰 香港-流媒体2x
+  - 🇸🇬 新加坡2高速中转3x
+  - 🇺🇸 美国2高速中转
+  - 🇺🇸 美国 IEPL专线NO1
+  - 🇯🇵 日本中转 04
   - 🏁RELAY-172.67.187.251-0000
   - 🏁RELAY-23.227.38.100-0002
   - 🏁RELAY-23.227.38.40-0003
@@ -49158,7 +48643,6 @@ proxy-groups:
   - 🏁RELAY-141.101.114.32-0060
   - 🇺🇸US-204.15.74.75-0062
   - 🇺🇸US-34.193.158.132-0063
-  - 🇺🇸US-34.193.158.132-0065
   - 🇺🇸US-13.248.169.48-0066
   - 🏁RELAY-185.162.228.229-0073
   - 🏁RELAY-203.24.108.9-0074
@@ -49167,12 +48651,12 @@ proxy-groups:
   - 🏁RELAY-203.30.190.192-0078
   - 🏁RELAY-203.30.189.190-0079
   - 🇵🇱PL-51.83.186.142-0081
-  - 🏁RELAY-141.193.213.21-0083
   - 🏁RELAY-104.16.210.157-0084
   - 🏁RELAY-190.93.246.3-0087
   - 🏁RELAY-203.24.108.8-0089
   - 🏁RELAY-190.93.245.2-0090
   - 🏁RELAY-190.93.246.2-0091
+  - 🇺🇸US-34.193.158.132-0092
   - 🏁RELAY-188.114.99.9-0093
   - 🏁RELAY-188.114.99.10-0095
   - 🏁RELAY-190.93.244.2-0097
@@ -49470,7 +48954,6 @@ proxy-groups:
   - 🇺🇸US-216.39.248.133-0439
   - 🇬🇧GB-146.70.61.18-0440
   - 🇲🇩MD-103.106.1.92-0441
-  - 🇱🇹LT-45.87.175.166-0443
   - 🇳🇱NL-193.29.139.202-0444
   - 🇫🇷FR-45.158.171.66-0445
   - 🇫🇷FR-45.158.171.136-0446
@@ -49542,12 +49025,12 @@ proxy-groups:
   - 🇫🇷FR-45.158.171.110-0516
   - 🇷🇺RU-45.151.62.54-0517
   - 🇳🇱NL-193.29.139.189-0518
-  - 🏁RELAY-198.41.209.70-0519
   - 🇭🇰HK-203.23.128.79-0520
   - 🇵🇱PL-45.144.48.63-0521
   - 🇱🇻LV-46.183.217.232-0522
   - 🇭🇺HU-91.219.237.102-0524
   - 🇨🇭CH-156.146.62.162-0526
+  - 🏁RELAY-104.17.221.248-0527
   - 🇧🇷BR-168.138.142.53-0529
   - 🏁RELAY-198.41.209.70-0530
   - 🇫🇮FI-83.147.216.173-0531
@@ -49641,13 +49124,13 @@ proxy-groups:
   - 🇺🇸US-152.67.254.16-0669
   - 🇯🇵JP-168.138.203.232-0687
   - 🇺🇸US-45.79.111.214-0690
+  - 🏁RELAY-141.193.213.20-0694
   - 🇻🇳VN-103.56.160.184-0701
   - 🇻🇳VN-103.75.186.153-0702
   - 🇯🇵JP-85.208.108.61-0703
   - 🇨🇳CN-183.236.51.60-0704
   - 🇨🇳CN-111.29.57.71-0705
   - 🇨🇳CN-183.236.51.60-0706
-  - 🇨🇳CN-183.236.51.60-0707
   - 🇨🇳CN-111.29.57.71-0708
   - 🇨🇳CN-183.236.51.60-0709
   - 🇨🇳CN-183.236.51.60-0710
@@ -49666,9 +49149,7 @@ proxy-groups:
   - 🇨🇳CN-111.29.57.71-0723
   - 🇨🇳CN-119.36.154.75-0724
   - 🇨🇳CN-111.29.57.71-0725
-  - 🇨🇳CN-111.29.57.71-0726
   - 🇸🇬SG-54.169.209.27-0727
-  - 🇸🇬SG-54.169.209.27-0728
   - 🇨🇳CN-119.36.154.75-0729
   - 🇨🇳CN-119.36.154.75-0730
   - 🇨🇳CN-119.36.154.75-0731
@@ -49794,6 +49275,7 @@ proxy-groups:
   - 🇭🇰HK-141.11.216.174-0885
   - 🇨🇳CN-42.236.73.72-0886
   - 🇩🇪DE-3.72.188.43-0887
+  - 🏁RELAY-104.16.155.10-0888
   - 🏁RELAY-104.16.144.63-0889
   - 🏁RELAY-104.17.221.248-0894
   - 🇨🇳CN-36.150.215.222-0895
@@ -49930,7 +49412,6 @@ proxy-groups:
   - 🏁RELAY-172.67.205.70-1126
   - 🇨🇦CA-35.183.63.215-1127
   - 🏁RELAY-172.67.77.95-1128
-  - 🏁RELAY-104.19.48.236-1160
   - 🇹🇷TR-45.89.52.66-1177
   - 🇹🇷TR-45.89.52.66-1178
   - 🇳🇱NL-185.242.86.156-1330
@@ -49965,12 +49446,12 @@ proxy-groups:
   - 🇺🇸US-165.22.4.77-1424
   - 🇷🇺RU-45.8.159.241-1427
   - 🇷🇺RU-195.58.49.42-1438
-  - 🏁RELAY-104.21.72.233-1441
   - 🇺🇸US-96.126.102.150-1444
   - 🇷🇺RU-195.58.49.86-1466
   - 🇭🇰HK-212.192.12.70-1470
   - 🇷🇺RU-195.58.49.50-1478
   - 🇨🇳CN-112.29.184.53-1480
+  - 🇨🇳CN-221.131.165.206-1482
   - 🇨🇳CN-45.250.184.183-1497
   - 🇦🇹AT-95.164.36.59-1500
   - 🏁RELAY-104.21.78.137-1508
@@ -50029,7 +49510,6 @@ proxy-groups:
   - 🇮🇷IR-185.143.233.114-1613
   - 🏁RELAY-104.26.8.179-1621
   - 🇺🇸US-147.135.112.248-1625
-  - 🏁RELAY-104.18.12.15-1626
   - 🏁RELAY-104.21.112.1-1650
   - 🇸🇬SG-139.99.61.154-1659
   - 🏁RELAY-172.66.0.218-1667
@@ -50237,7 +49717,6 @@ proxy-groups:
   - 🇺🇸US-76.223.54.146-2057
   - 🇺🇸US-76.223.54.146-2058
   - 🇺🇸US-13.248.169.48-2059
-  - 🇺🇸US-76.223.54.146-2060
   - 🇯🇵JP-85.208.108.60-2061
   - 🇭🇰HK-8.210.15.231-2063
   - 🇹🇼TW-118.167.17.174-2064
@@ -50689,13 +50168,14 @@ proxy-groups:
   - 🇨🇿CZ-92.118.149.85-3025
   - 🇩🇪DE-94.130.184.57-3028
   - 🇫🇮FI-65.109.161.166-3031
+  - 🇨🇳CN-183.240.139.234-3032
   - 🇦🇺AU-103.224.212.211-3033
   - 🇭🇰HK-148.66.56.99-3039
+  - 🇨🇳CN-183.240.139.235-3040
   - 🇩🇪DE-89.163.220.99-3045
   - 🇯🇵JP-133.167.100.203-3046
   - 🇨🇳CN-183.240.139.235-3049
   - 🇬🇧GB-172.99.190.7-3050
-  - 🇨🇳CN-183.240.139.235-3054
   - 🇳🇱NL-172.99.188.99-3055
   - 🇬🇧GB-172.99.190.7-3057
   - 🇯🇵JP-85.208.108.18-3058
@@ -50719,10 +50199,10 @@ proxy-groups:
   - 🇹🇷TR-185.242.161.206-3098
   - 🇬🇧GB-172.99.190.39-3100
   - 🇮🇷IR-185.24.255.24-3105
+  - 🇨🇳CN-183.240.139.235-3107
   - 🇯🇵JP-150.230.217.213-3111
   - 🇯🇵JP-133.242.205.220-3113
   - 🇬🇧GB-132.145.51.172-3114
-  - 🇨🇳CN-183.240.139.235-3116
   - 🇹🇼TW-60.249.3.229-3123
   - 🇿🇦ZA-212.90.123.130-3124
   - 🇯🇵JP-185.160.26.91-3135
@@ -50818,6 +50298,7 @@ proxy-groups:
   - 🇳🇱NL-163.172.220.71-4226
   - 🇸🇬SG-13.215.200.86-4231
   - 🇫🇷FR-51.77.158.169-4232
+  - 🏁RELAY-104.16.210.157-4235
   - 🇫🇮FI-65.109.137.157-4236
   - 🇰🇷KR-13.125.124.161-4238
   - 🇭🇰HK-219.76.152.27-4239
@@ -51019,6 +50500,7 @@ proxy-groups:
   - 🇺🇸US-76.223.54.146-4826
   - 🇺🇸US-13.248.169.48-4827
   - 🇺🇸US-76.223.54.146-4828
+  - 🇺🇸US-76.223.54.146-4832
   - 🇫🇷FR-193.70.85.191-4835
   - 🏁RELAY-162.159.153.2-4837
   - 🇨🇦CA-159.203.18.119-4838
@@ -51037,6 +50519,7 @@ proxy-groups:
   - 🇺🇸US-38.114.114.19-4923
   - 🇺🇸US-38.114.114.19-4924
   - 🇺🇸US-167.88.61.14-4925
+  - 🇺🇸US-72.247.234.254-4928
   - 🏁RELAY-103.21.244.169-4932
   - 🇷🇺RU-45.8.158.51-4950
   - 🇨🇳CN-120.233.31.205-4959
@@ -51144,7 +50627,6 @@ proxy-groups:
   - 🇺🇸US-154.94.214.2-5205
   - 🏁RELAY-172.67.69.244-5236
   - 🏁RELAY-172.66.0.218-5240
-  - 🏁RELAY-104.26.9.13-5242
   - 🇨🇳CN-183.236.51.2-5244
   - 🇨🇳CN-183.236.51.8-5245
   - 🇨🇳CN-183.236.51.7-5246
@@ -51179,6 +50661,9 @@ proxy-groups:
   - 🇨🇳CN-183.236.51.4-5275
   - 🇨🇳CN-183.236.51.2-5276
   - 🇰🇷KR-146.56.179.67-5277
+  - 🇺🇸US-8.7.198.46-5279
+  - 🇺🇸US-8.7.198.46-5280
+  - 🇺🇸US-8.7.198.46-5281
   - 🇺🇸US-8.7.198.46-5282
   - 🇺🇸US-162.251.61.221-5289
   - 🇺🇸US-167.88.62.68-5291
@@ -51752,7 +51237,6 @@ proxy-groups:
   - 🇨🇳CN-111.6.86.215-6186
   - 🇺🇸US-38.33.23.98-6187
   - 🇨🇳CN-223.111.144.12-6188
-  - 🇨🇳CN-221.131.165.210-6189
   - 🇨🇳CN-221.131.165.206-6190
   - 🇨🇳CN-36.150.215.196-6191
   - 🇯🇵JP-13.231.125.86-6192
@@ -51799,7 +51283,6 @@ proxy-groups:
   - 🇺🇸US-38.110.1.46-6271
   - 🇺🇸US-38.110.1.46-6272
   - 🏁RELAY-172.67.218.14-6273
-  - 🏁RELAY-104.19.48.236-6275
   - 🏁RELAY-198.41.209.70-6277
   - 🇩🇪DE-23.157.88.61-6280
   - 🇬🇧GB-92.242.164.42-6282
@@ -52965,6 +52448,7 @@ proxy-groups:
   - 🇺🇸US-198.2.196.7-8403
   - 🇺🇸US-199.180.103.23-8404
   - 🇺🇸US-199.188.105.56-8405
+  - 🇫🇷FR-45.145.165.113-8406
   - 🇮🇷IR-2.189.59.7-8407
   - 🇮🇷IR-2.189.59.5-8408
   - 🇺🇸US-69.50.93.90-8409
@@ -53031,6 +52515,7 @@ proxy-groups:
   - 🇺🇸US-38.33.56.10-8475
   - 🇺🇸US-199.180.101.10-8476
   - 🇮🇷IR-2.189.59.6-8477
+  - 🏁RELAY-104.18.13.15-8478
   - 🏁RELAY-104.21.32.1-8479
   - 🇺🇸US-38.11.20.78-8480
   - 🇺🇸US-38.33.57.20-8481
@@ -53061,6 +52546,7 @@ proxy-groups:
   - 🏁RELAY-172.67.185.10-8521
   - 🇺🇸US-38.75.137.121-8524
   - 🇺🇸US-38.33.56.45-8525
+  - 🏁RELAY-104.21.1.32-8527
   - 🏁RELAY-104.21.53.183-8528
   - 🏁RELAY-104.21.68.244-8529
   - 🏁RELAY-172.67.207.26-8530
@@ -53069,6 +52555,7 @@ proxy-groups:
   - 🏁RELAY-104.21.44.106-8533
   - 🏁RELAY-45.149.12.56-8534
   - 🏁RELAY-104.17.213.57-8536
+  - 🏁RELAY-104.21.68.244-8538
   - 🏁RELAY-162.159.8.120-8539
   - 🏁RELAY-172.67.156.210-8540
   - 🏁RELAY-172.67.181.241-8541
@@ -53184,7 +52671,6 @@ proxy-groups:
   - 🏁RELAY-104.21.15.212-8707
   - 🇨🇭CH-23.166.88.27-8709
   - 🇺🇸US-38.91.100.228-8710
-  - 🏁RELAY-104.21.80.1-8712
   - 🏁RELAY-104.20.39.186-8713
   - 🏁RELAY-172.67.128.179-8728
   - 🏁RELAY-104.21.14.106-8729
@@ -53215,6 +52701,7 @@ proxy-groups:
   - 🇺🇸US-173.230.153.192-8773
   - 🇺🇸US-45.33.54.48-8774
   - 🏁RELAY-104.21.80.180-8775
+  - 🏁RELAY-104.21.80.180-8776
   - 🇸🇬SG-192.53.114.166-8777
   - 🇸🇬SG-172.105.115.147-8778
   - 🇺🇸US-45.79.103.11-8779
@@ -53511,7 +52998,7 @@ proxy-groups:
   - 🇭🇰HK-118.107.244.83-9093
   - 🏁RELAY-104.18.5.191-9095
   - 🏁RELAY-172.67.174.92-9096
-  - 🏁RELAY-104.21.80.53-9100
+  - 🏁RELAY-172.67.174.92-9097
   - 🇰🇷KR-54.180.108.75-9104
   - 🇰🇷KR-54.180.102.106-9105
   - 🏁RELAY-104.21.8.93-9106
@@ -53557,6 +53044,7 @@ proxy-groups:
   - 🇮🇷IR-2.189.130.110-9154
   - 🇮🇷IR-2.189.130.82-9155
   - 🏁RELAY-172.67.147.168-9156
+  - 🏁RELAY-104.21.16.1-9157
   - 🇺🇸US-138.197.5.103-9203
   - 🇵🇹PT-94.131.10.5-9209
   - 🏁RELAY-172.67.131.245-9213
@@ -53571,16 +53059,14 @@ proxy-groups:
   - 🏁RELAY-185.148.105.52-9248
   - 🇳🇱NL-172.233.51.96-9249
   - 🇺🇸US-13.248.169.48-9252
-  - 🇺🇸US-13.248.169.48-9254
-  - 🏁RELAY-104.21.48.1-9261
+  - 🇺🇸US-76.223.54.146-9258
+  - 🏁RELAY-104.21.16.1-9260
   - 🇺🇸US-72.52.178.23-9294
   - 🇫🇷FR-51.159.59.186-9296
-  - 🏁RELAY-104.21.112.1-9297
   - 🏁RELAY-162.159.137.232-9302
   - 🏁RELAY-162.159.137.232-9303
   - 🇭🇰HK-103.234.53.23-9312
   - 🏁RELAY-141.101.121.157-9320
-  - 🏁RELAY-104.21.7.193-9321
   - 🏁RELAY-198.41.203.157-9322
   - 🏁RELAY-172.64.146.48-9329
   - 🏁RELAY-104.21.7.50-9333
@@ -54156,6 +53642,7 @@ proxy-groups:
   - 🏁RELAY-104.18.190.89-10276
   - 🏁RELAY-104.18.190.52-10277
   - 🏁RELAY-104.18.141.98-10278
+  - 🏁RELAY-104.18.14.229-10279
   - 🏁RELAY-104.17.95.4-10280
   - 🏁RELAY-104.17.77.94-10282
   - 🏁RELAY-104.17.69.9-10283
@@ -54228,9 +53715,9 @@ proxy-groups:
   - '3,17|🇺🇸_US_美国 #22'
   - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - 11|0|--58
-  - 11|0|--60
-  - 11|0|--62
+  - 11|0|--78
+  - 11|0|--84
+  - 11|0|--85
   - 11,15,16|香港3|@ripaojiedian
   - 11,16|香港4|@ripaojiedian
   - 11,15,16|韩国2|@ripaojiedian
@@ -54259,8 +53746,8 @@ proxy-groups:
   - 15|🇸🇬 狮城特殊|@ripaojiedian
   - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 16|5pel5pysM3xAcmlwYW9qaWVkaWFu
-  - 0|-https://t.me/MrXbin-1
   - 0|-https://t.me/MrXbin-2
+  - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-4
   - 0|-https://t.me/MrXbin-5
   - 0|-https://t.me/MrXbin-6
@@ -54282,28 +53769,37 @@ proxy-groups:
   - 0|-https://t.me/MrXbin-22
   - 0|-https://t.me/MrXbin-23
   - 0|-https://t.me/MrXbin-24
-  - 0|-https://t.me/MrXbin-25
   - 0|-https://t.me/MrXbin-26
   - 0|-https://t.me/MrXbin-27
   - 0|-https://t.me/MrXbin-28
   - 0|-https://t.me/MrXbin-29
   - 0|-https://t.me/MrXbin-30
+  - 0|-https://t.me/MrXbin-31
+  - 0|-https://t.me/MrXbin-32
   - 0|-https://t.me/MrXbin-33
   - 0|-https://t.me/MrXbin-35
-  - 0|-https://t.me/MrXbin-36
   - 0|-https://t.me/MrXbin-37
   - 0|-https://t.me/MrXbin-38
   - 0|-https://t.me/MrXbin-39
   - 0|-https://t.me/MrXbin-40
   - 0|-https://t.me/MrXbin-41
-  - 0|-https://t.me/MrXbin-42
   - 0|-https://t.me/MrXbin-43
-  - 0|-https://t.me/MrXbin-58
-  - 0|-https://t.me/MrXbin-60
-  - 0|-https://t.me/MrXbin-62
-  - 0,15|IN_speednode_0028
+  - 0|-https://t.me/MrXbin-44
+  - 0|-https://t.me/MrXbin-45
+  - 0|-https://t.me/MrXbin-46
+  - 0|-https://t.me/MrXbin-47
+  - 0|-https://t.me/MrXbin-48
+  - 0|-https://t.me/MrXbin-66
+  - 0|-https://t.me/MrXbin-68
   - 0|-https://t.me/MrXbin-70
+  - 0|-https://t.me/MrXbin-71
   - 0|-https://t.me/MrXbin-73
+  - 0|-https://t.me/MrXbin-91
+  - 0|-https://t.me/MrXbin-92
+  - 0|-https://t.me/MrXbin-97
+  - 0|-https://t.me/MrXbin-102
+  - 0|-https://t.me/MrXbin-105
+  - 0|-https://t.me/MrXbin-110
   - 13,14|香港|@ripaojiedian
   - 13,14|香港2|@ripaojiedian
   - 13,14|香港3|@ripaojiedian
@@ -54330,6 +53826,7 @@ proxy-groups:
   - 15|AM_speednode_0001
   - 15|AM_speednode_0002
   - 15|ES_speednode_0020
+  - 15|IN_speednode_0028
   - 15|LU_speednode_0031
   - 15|SG_speednode_0045
   - 15|SG_speednode_0046
