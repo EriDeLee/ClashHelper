@@ -5,6 +5,8 @@ import sys
 import os
 import socket
 import urllib.parse
+import concurrent.futures
+from concurrent.futures import ThreadPoolExecutor
 
 from yaml.loader import FullLoader
 
@@ -88,34 +90,55 @@ class Site:
             used = set()
             dedup_nodes = []
             for node in self.nodes:
-                try:
-                    ip = socket.getaddrinfo(node['server'], None)[0][4][0]
-                    p = (ip, node['port'])
-                    if p not in used:
-                        used.add(p)
-                        dedup_nodes.append(node)
-                except Exception as e:
-                    if self.verbose != 'quiet':
-                        self.log(f"Failed to resolve node {node['name']}: {node['server']}")
-                        print(f"Error resolving node {node['name']}: {e}")  # 添加额外的错误输出
+                p = (node['server'], node['port'])
+                if p not in used:
+                    used.add(p)
+                    dedup_nodes.append(node)
             self.nodes = dedup_nodes
             nodes_good = []
 
-        # 可用性检测
-        available_nodes = [
-            node for node in self.nodes if self._is_node_available(node)
-        ]
+        # 并行可用性检测
+        available_nodes = []
+        total = len(self.nodes)
+        if self.verbose != 'quiet':
+            self.log(f"开始检测 {total} 个节点可用性...")
+        
+        with ThreadPoolExecutor(max_workers=50) as executor:
+            future_to_node = {executor.submit(self._is_node_available, node): node for node in self.nodes}
+            completed = 0
+            for future in concurrent.futures.as_completed(future_to_node):
+                node = future_to_node[future]
+                completed += 1
+                try:
+                    if future.result():
+                        available_nodes.append(node)
+                        if self.verbose != 'quiet':
+                            self.log(f"进度 [{completed}/{total}] - 节点可用: {node['name']}")
+                    else:
+                        if self.verbose != 'quiet':
+                            self.log(f"进度 [{completed}/{total}] - 节点不可用: {node['name']}")
+                except Exception as e:
+                    if self.verbose != 'quiet':
+                        self.log(f"进度 [{completed}/{total}] - 检测出错: {node['name']} - {str(e)}")
+        
+        if self.verbose != 'quiet':
+            self.log(f"节点检测完成，{len(available_nodes)}/{total} 个节点可用")
+        
         self.nodes = available_nodes
 
     def _is_node_available(self, node):
+        # 只检查端口是否开放
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(5)
         try:
-            socket.create_connection((node['server'], node['port']), timeout=5)
+            sock.connect((node['server'], node['port']))
             return True
         except Exception as e:
             if self.verbose != 'quiet':
                 self.log(f"Node {node['name']} unavailable: {node['server']}:{node['port']} - {e}")
-            print(f"Node {node['name']} unavailable: {node['server']}:{node['port']} - {e}") # 添加额外的错误输出
             return False
+        finally:
+            sock.close()
 
     def get_titles(self):
         return [x['name'] for x in self.nodes]
