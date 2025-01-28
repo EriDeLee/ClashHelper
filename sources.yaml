@@ -4,7 +4,7 @@ sources:
     dedup: true
 
   - name: V2RA
-    url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/sub/sub_merge_yaml.yml
+    url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/Eternity.yml
     dedup: true
 
   - name: AMPN
