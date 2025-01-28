@@ -86,18 +86,36 @@ class Site:
         # 去重
         if self.dedup:
             used = set()
+            dedup_nodes = []
             for node in self.nodes:
                 try:
                     ip = socket.getaddrinfo(node['server'], None)[0][4][0]
                     p = (ip, node['port'])
                     if p not in used:
                         used.add(p)
-                        nodes_good.append(node)
+                        dedup_nodes.append(node)
                 except Exception as e:
                     if self.verbose != 'quiet':
                         self.log(f"Failed to resolve node {node['name']}: {node['server']}")
                         print(f"Error resolving node {node['name']}: {e}")  # 添加额外的错误输出
-            self.nodes = nodes_good
+            self.nodes = dedup_nodes
+            nodes_good = []
+
+        # 可用性检测
+        available_nodes = [
+            node for node in self.nodes if self._is_node_available(node)
+        ]
+        self.nodes = available_nodes
+
+    def _is_node_available(self, node):
+        try:
+            socket.create_connection((node['server'], node['port']), timeout=5)
+            return True
+        except Exception as e:
+            if self.verbose != 'quiet':
+                self.log(f"Node {node['name']} unavailable: {node['server']}:{node['port']} - {e}")
+            print(f"Node {node['name']} unavailable: {node['server']}:{node['port']} - {e}") # 添加额外的错误输出
+            return False
 
     def get_titles(self):
         return [x['name'] for x in self.nodes]
@@ -158,10 +176,7 @@ def main():
         f.write(yaml.dump(config, default_flow_style=False, allow_unicode=True))
 
     # 输出
-    if verbose == 'quiet':
-        print(f"已生成包含 {proxy_count} 个节点的配置文件：{output_file}")
-    else:
-        print(f"配置文件已生成：{output_file}")
+    print(f"已生成包含 {proxy_count} 个节点的配置文件：{output_file}")
 
 if __name__ == "__main__":
     main()
