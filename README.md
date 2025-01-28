@@ -10,9 +10,9 @@
 
 输出的配置文件不包含模板中的注释，不影响使用。
 
-## 使用场景
+## 更新
 
-搭配 [Github Actions](https://github.com/marketplace/actions/deploy-to-gist) 的 [cron jobs](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) 使用，推送配置文件至 [Github Gist](https://gist.github.com/)。将 Gist 的 `raw` 链接配置为 Clash 客户端订阅链接即可。
+Github 随缘更新（Action机器测试不准确 有需要的clone到本地自己运行）
 
 ## User Guide
 
