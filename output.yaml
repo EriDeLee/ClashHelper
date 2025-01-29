@@ -60,742 +60,6 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本03
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20006
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港02
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20035
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇵🇹 葡萄牙 IEPL专线NO1
-  port: 31001
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇪 瑞典中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 22539
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇷 土耳其中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21048
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国中转 01
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 53473
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 公益路线-香港HK 限速50MBPS-1D
-  password: c6692ff2-c33c-48d5-8b69-8957a67141de
-  port: 49709
-  server: jg647hf446ghvw.eucs.cn
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 03
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 14407
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇭 泰国中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 20289
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度2
-  port: 45073
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大2
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 04
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 11618
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇿 哈萨克斯坦中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21081
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚原生2
-  port: 45063
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡中转 03
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 50691
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本02
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度1
-  port: 45074
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 法国1
-  port: 45072
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 纽约01
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20013
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 05
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 44454
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 02
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 38180
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国NO.1
-  port: 45052
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇧🇷 巴西中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 20936
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21098
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 1
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20032
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本01
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡NO.1
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡西部-1C
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f9cff63d-912b-4527-a5fd-488f9863f3dc
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国中转 02
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 54501
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 05
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 51578
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国中转 01
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 59863
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 IEPL专线NO1
-  port: 20015
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇹🇭 泰国 IEPL专线 NO1
-  port: 30028
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- cipher: chacha20-ietf-poly1305
-  name: 🇲🇾 马来西亚中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 20119
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 01
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 43641
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 01
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 18841
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 纽约2
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20016
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 02
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 22297
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡NO.2
-  port: 45055
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 02
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 36858
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港01
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇻🇳 越南中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21071
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚 IEPL专线NO1
-  port: 20011
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国 IEPL专线NO1
-  port: 54787
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡02-V4-流媒体
-  network: ws
-  port: 2052
-  server: cf.hy2.one
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cddc9c52-eb3b-4f37-8305-1e6c2546f152
-  ws-opts:
-    headers:
-      Host: sg0002.hy-2.top
-    path: /0
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡西部-1F
-  network: ws
-  port: 443
-  server: visa.com
-  servername: xjp.daluquan.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a68403a8-5266-45cf-9c3d-d3e7bf3375b5
-  ws-opts:
-    headers:
-      Host: xjp.daluquan.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大 IEPL专线 NO1
-  port: 45112
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 非洲 IEPL专线 NO1
-  port: 44410
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国NO.2
-  port: 45053
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾02-3x-流媒体
-  network: ws
-  port: 80
-  server: cf.hy2.one
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cddc9c52-eb3b-4f37-8305-1e6c2546f152
-  ws-opts:
-    headers:
-      Host: tw02.hy2.one
-    path: /af323d
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 04
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 20678
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾01
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 47564
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 IEPL专线NO1
-  port: 54770
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 法国2
-  port: 45071
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 IEPL专线NO1
-  port: 20017
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 法国 CM 隧道NO1
-  port: 52108
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港03
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20052
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大1
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国中转 03
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 22771
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇦🇷 阿根廷 IEPL专线NO1
-  port: 20014
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 IEPL专线NO1
-  port: 52103
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 03
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 32525
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 印度中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21061
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾中转 04
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 34915
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷 韩国 IEPL专线NO1
-  port: 20021
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度 IEPL专线NO1
-  port: 15442
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 01
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 34701
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾1
-  port: 45078
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港中转 05
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 20901
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国中转 02
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 30518
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本NO.1
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本04
-  password: ed484da3-dd7e-4c89-bae8-1a3cbeea1422
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 IEPL专线NO3
-  port: 52117
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本NO.2
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡中转 02
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21296
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇪 阿联酋中转
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 21059
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱 荷兰 IEPL专线NO1
-  port: 20014
-  server: qd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡中转 01
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 14362
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇦🇺 澳大利亚原生1
-  port: 45062
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本中转 03
-  password: a9a3530c-67db-4572-a2dc-fa2e255566ed
-  port: 14087
-  server: chiyu.myfczy169.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 IEPL专线NO3
-  port: 20016
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ae5f1f4-6328-485f-b8aa-382581d9fbeb
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾2
-  port: 45077
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- alterId: 0
-  cipher: auto
-  name: 🇲🇴 澳门NO.2
-  port: 45051
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d2958db0-577e-410b-92cd-638992571c37
-- cipher: aes-256-cfb
-  name: 🇺🇸US-35.94.24.233-6066 | 47.899MB
-  password: amazonskr05
-  port: 443
-  server: 35.94.24.233
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: RELAY-104.21.42.243-6270 | 50.227MB
-  network: ws
-  port: 443
-  server: sgfqkqmltcy.site
-  servername: RELAY-104.21.42.243-6270 | 50.227MB
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: sgfqkqmltcy.site
-    path: /
-- cipher: aes-256-cfb
-  name: 🇺🇸US-35.92.44.190-0729 | 48.583MB
-  password: amazonskr05
-  port: 443
-  server: 35.92.44.190
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-54.187.27.197-6074 | 45.038MB
-  password: amazonskr05
-  port: 443
-  server: 54.187.27.197
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-54.244.34.53-0421 | 45.143MB
-  password: amazonskr05
-  port: 443
-  server: 54.244.34.53
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-54.189.160.123-0407 | 48.359MB
-  password: amazonskr05
-  port: 443
-  server: 54.189.160.123
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-35.87.38.141-6065 | 45.813MB
-  password: amazonskr05
-  port: 443
-  server: 35.87.38.141
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-34.214.166.173-6073 | 44.162MB
-  password: amazonskr05
-  port: 443
-  server: 34.214.166.173
-  type: ss
 - cipher: aes-256-cfb
   name: 🇺🇸US-54.213.250.37-6071 | 48.088MB
   password: amazonskr05
@@ -816,19 +80,76 @@ proxies:
     headers:
       Host: 100-143-127-247.s4.db-link01.top
     path: /
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.189.160.123-0407 | 48.359MB
+  password: amazonskr05
+  port: 443
+  server: 54.189.160.123
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-35.87.38.141-6065 | 45.813MB
+  password: amazonskr05
+  port: 443
+  server: 35.87.38.141
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-35.94.24.233-6066 | 47.899MB
+  password: amazonskr05
+  port: 443
+  server: 35.94.24.233
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.244.34.53-0421 | 45.143MB
+  password: amazonskr05
+  port: 443
+  server: 54.244.34.53
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-35.92.44.190-0729 | 48.583MB
+  password: amazonskr05
+  port: 443
+  server: 35.92.44.190
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-54.187.27.197-6074 | 45.038MB
+  password: amazonskr05
+  port: 443
+  server: 54.187.27.197
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-34.214.166.173-6073 | 44.162MB
+  password: amazonskr05
+  port: 443
+  server: 34.214.166.173
+  type: ss
 - alterId: 0
   cipher: auto
-  name: RELAY-104.16.155.10-0839 | 40.309MB
+  name: RELAY-104.21.42.243-6270 | 50.227MB
   network: ws
-  port: 2086
-  server: s4.db-link02.top
+  port: 443
+  server: sgfqkqmltcy.site
+  servername: RELAY-104.21.42.243-6270 | 50.227MB
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   ws-opts:
     headers:
-      Host: 100-215-157-195.s4.db-link02.top
+      Host: sgfqkqmltcy.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-172.67.71.217-1321 | 44.212MB
+  network: ws
+  port: 443
+  server: 172.67.71.217
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: 1t3chx0.zed23.web1337.net
     path: /
 - alterId: 0
   cipher: auto
@@ -844,19 +165,25 @@ proxies:
     headers:
       Host: 100-235-225-209.s5.db-link02.top
     path: /
+- cipher: aes-128-cfb
+  name: 🇺🇸US-184.170.241.194-0369 | 44.382MB
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
 - alterId: 0
   cipher: auto
-  name: RELAY-172.67.71.217-1321 | 44.212MB
+  name: RELAY-104.16.155.10-0839 | 40.309MB
   network: ws
-  port: 443
-  server: 172.67.71.217
+  port: 2086
+  server: s4.db-link02.top
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
-  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 1t3chx0.zed23.web1337.net
+      Host: 100-215-157-195.s4.db-link02.top
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸US-104.207.155.64-0424 | 35.902MB
@@ -879,12 +206,20 @@ proxies:
     headers:
       Host: 100-250-32-53.s1.db-link01.top
     path: /
-- cipher: aes-128-cfb
-  name: 🇺🇸US-184.170.241.194-0369 | 44.382MB
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.17.213.241-0850 | 35.505MB
+  network: ws
+  port: 8880
+  server: s2.db-link01.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-14-147-154.s2.db-link01.top
+    path: /
 - alterId: 0
   cipher: auto
   name: RELAY-104.16.155.10-1303 | 30.352MB
@@ -899,6 +234,18 @@ proxies:
     headers:
       Host: 100-79-28-26.s1.db-link01.top
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.181-0284 | 34.27MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: aes-256-cfb
+  name: SK-156.146.40.194-0471 | 29.017MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
 - alterId: 0
   cipher: auto
   name: RELAY-104.21.77.29-8678 | 27.312MB
@@ -913,12 +260,6 @@ proxies:
     headers:
       Host: beyonddbc.sbs
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.181-0284 | 34.27MB
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
 - cipher: aes-256-cfb
   name: 🇰🇷KR-54.180.228.40-1193 | 16.896MB
   password: amazonskr05
@@ -926,10 +267,10 @@ proxies:
   server: 54.180.228.40
   type: ss
 - cipher: aes-256-cfb
-  name: 🇯🇵JP-57.180.24.232-0503 | 18.16MB
+  name: 🇯🇵JP-18.183.142.200-6040 | 20.622MB
   password: amazonskr05
   port: 443
-  server: 57.180.24.232
+  server: 18.183.142.200
   type: ss
 - cipher: aes-256-cfb
   name: 🇯🇵JP-13.231.184.191-0538 | 20.973MB
@@ -938,10 +279,10 @@ proxies:
   server: 13.231.184.191
   type: ss
 - cipher: aes-256-cfb
-  name: 🇯🇵JP-18.183.142.200-6040 | 20.622MB
+  name: 🇯🇵JP-57.180.24.232-0503 | 18.16MB
   password: amazonskr05
   port: 443
-  server: 18.183.142.200
+  server: 57.180.24.232
   type: ss
 - alterId: 0
   cipher: auto
@@ -984,6 +325,12 @@ proxies:
   port: 443
   server: 13.250.116.128
   type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇬SG-18.139.208.132-6058 | 13.465MB
+  password: amazonskr05
+  port: 443
+  server: 18.139.208.132
+  type: ss
 - name: 🇯🇵JP-74.226.136.204-5968 | 13.343MB
   password: 243eab52-9ac1-405c-887c-eb112c0985b8
   port: 443
@@ -992,22 +339,16 @@ proxies:
   sni: hk03.trojanyyds.xyz
   type: trojan
 - cipher: aes-256-cfb
-  name: 🇸🇬SG-18.139.208.132-6058 | 13.465MB
+  name: 🇸🇬SG-47.128.239.238-0808 | 13.524MB
   password: amazonskr05
   port: 443
-  server: 18.139.208.132
+  server: 47.128.239.238
   type: ss
 - cipher: aes-256-cfb
   name: 🇸🇬SG-13.229.129.167-6059 | 13.173MB
   password: amazonskr05
   port: 443
   server: 13.229.129.167
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇸🇬SG-47.128.239.238-0808 | 13.524MB
-  password: amazonskr05
-  port: 443
-  server: 47.128.239.238
   type: ss
 - alterId: 0
   cipher: auto
@@ -1039,10 +380,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: RELAY-104.17.221.248-0531 | 11.537MB
+  name: RELAY-104.16.155.10-0276 | 11.245MB
   network: ws
   port: 80
-  server: hsj.lbxjc.online
+  server: 104.16.155.10
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1057,17 +398,45 @@ proxies:
   port: 443
   server: 13.114.24.98
   type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-13.209.14.198-6049 | 7.466MB
-  password: amazonskr05
-  port: 443
-  server: 13.209.14.198
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.17.221.248-0531 | 11.537MB
+  network: ws
+  port: 80
+  server: hsj.lbxjc.online
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: RELAY-104.19.48.236-0277 | 12.353MB
+  network: ws
+  port: 80
+  server: 104.19.48.236
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
 - cipher: aes-256-cfb
   name: 🇯🇵JP-176.32.78.140-0828 | 8.046MB
   password: amazonskr05
   port: 443
   server: 176.32.78.140
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-13.209.14.198-6049 | 7.466MB
+  password: amazonskr05
+  port: 443
+  server: 13.209.14.198
   type: ss
 - alterId: 0
   cipher: auto
@@ -1085,39 +454,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,6|🇺🇸_US_美国 #7'
-  network: ws
-  port: 2086
-  server: 104.19.38.62
-  sni: ip004.dtku47.xyz
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
-  network: ws
-  port: 2086
-  server: 104.19.57.4
-  sni: ip11.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
-  network: ws
-  port: 2086
-  server: 104.19.47.79
-  sni: ip14.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
   name: '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
   network: ws
   port: 2086
@@ -1129,14 +465,14 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  name: '1,6|🇺🇸_US_美国 #7'
   network: ws
   port: 2086
-  server: 104.19.46.39
-  sni: ''
+  server: 104.19.38.62
+  sni: ip004.dtku47.xyz
   tls: false
   type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -1151,10 +487,10 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '1,6|🇺🇸_US_美国 #18'
+  name: '1,6|🇺🇸_US_美国 #8'
   network: ws
   port: 2086
-  server: 104.19.46.27
+  server: 104.19.47.122
   sni: ip14.freegradely.xyz
   tls: false
   type: vmess
@@ -1173,10 +509,424 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '1,6|🇺🇸_US_美国 #8'
+  name: '1,6|🇺🇸_US_美国 #17'
   network: ws
   port: 2086
-  server: 104.19.47.122
+  server: 104.19.46.59
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国 #19'
+  network: ws
+  port: 2086
+  server: 104.19.45.15
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国 #14'
+  network: ws
+  port: 2052
+  server: 104.19.46.123
+  sni: cdn2.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
+  network: ws
+  port: 8080
+  server: 104.19.47.16
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国 #16'
+  network: ws
+  port: 2086
+  server: 104.19.46.233
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '3,17|🇺🇸_US_美国 #21'
+  network: ws
+  port: 2086
+  server: 104.19.32.46
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸_US_美国->🇮🇳_IN_印度
+  network: ws
+  port: 2052
+  server: 104.17.156.224
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本3|@ripaojiedian
+  password: W05U3QJLWPM8NDNH
+  port: 18014
+  server: 219.135.227.210
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  password: 81898fd1-12c9-4197-8017-26ec0b242647
+  port: 30018
+  server: 114.132.40.118
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇸🇬 新加坡2|@ripaojiedian
+  password: 89JKYYJT9GRMVWVW
+  port: 16008
+  server: 219.135.227.210
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港2|@ripaojiedian
+  password: UEJBNJ5R5XAGT9YJ
+  port: 15014
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港|@ripaojiedian
+  password: P3H53ZJU7Q2VS6GP
+  port: 15002
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国3|@ripaojiedian
+  password: QX5ETP5KNLIN3Q4N
+  port: 17006
+  server: 219.135.227.210
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇸🇬 新加坡3|@ripaojiedian
+  password: NKYSJ7T1AFPJLYVG
+  port: 16003
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本2|@ripaojiedian
+  password: 3RU9RZ91MGOPITE7
+  port: 18015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港3|@ripaojiedian
+  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
+  port: 41411
+  server: south.sf0jm.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国2|@ripaojiedian
+  password: K0AA69ZLLFIBXP1Q
+  port: 17004
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国|@ripaojiedian
+  password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
+  port: 13022
+  server: naiu-us.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国 #12'
+  network: ws
+  port: 2086
+  server: 104.19.21.230
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇳🇱 荷兰|@ripaojiedian
+  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
+  port: 49207
+  server: south.sf0jm.xyz
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国 #11'
+  network: ws
+  port: 2086
+  server: 104.20.25.146
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸_US_美国
+  network: ws
+  port: 2052
+  server: 104.16.38.71
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: us6_0.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
+  network: ws
+  port: 2052
+  server: 104.18.37.248
+  tls: false
+  type: vmess
+  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  network: ws
+  port: 2052
+  server: 104.19.21.240
+  sni: cdn2.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  network: ws
+  port: 2086
+  server: 104.18.57.111
+  sni: ip11.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
+  network: ws
+  port: 2052
+  server: cfcdn2.sanfencdn9.com
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  network: ws
+  port: 2052
+  server: 172.67.164.78
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in3.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3,17|🇺🇸_US_美国 #20'
+  network: ws
+  port: 2082
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '12|github.com/freefq - 美国CloudFla... #2'
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 12|github.com/freefq - 美国Fastly全球...
+  network: ws
+  port: 443
+  server: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.229.117.61
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.143.147.45
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.169.74.60
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 1|_US_->_ES_
+  password: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  port: 59019
+  server: fuck5.mmmmmmmmmm.cfd
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  network: ws
+  port: 2086
+  server: 172.64.198.249
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 12|github.com/freefq - 印度  2
+  network: ws
+  port: 443
+  server: 202.78.162.5
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: '3,17|🇺🇸_US_美国 #22'
+  network: ws
+  port: 8080
+  server: russia.com
+  tls: false
+  type: vmess
+  uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  network: ws
+  port: 2086
+  server: 172.64.175.213
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  network: ws
+  port: 2086
+  server: 104.19.57.4
+  sni: ip11.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  network: ws
+  port: 2086
+  server: 104.19.46.39
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,6|🇺🇸_US_美国 #18'
+  network: ws
+  port: 2086
+  server: 104.19.46.27
   sni: ip14.freegradely.xyz
   tls: false
   type: vmess
@@ -1195,67 +945,13 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '1,6|🇺🇸_US_美国 #14'
+  name: '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
-  port: 2052
-  server: 104.19.46.123
-  sni: cdn2.freegradely.xyz
+  port: 2082
+  server: 172.67.130.140
   tls: false
   type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国 #19'
-  network: ws
-  port: 2086
-  server: 104.19.45.15
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国 #15'
-  network: ws
-  port: 2086
-  server: 104.19.51.232
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国 #17'
-  network: ws
-  port: 2086
-  server: 104.19.46.59
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国 #16'
-  network: ws
-  port: 2086
-  server: 104.19.46.233
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
-  network: ws
-  port: 8080
-  server: 104.19.47.16
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -1269,320 +965,14 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '3,17|🇺🇸_US_美国 #21'
+  name: '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
   network: ws
   port: 2086
-  server: 104.19.32.46
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts: {}
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
-  password: W05U3QJLWPM8NDNH
-  port: 18014
-  server: 219.135.227.210
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡2|@ripaojiedian
-  password: 89JKYYJT9GRMVWVW
-  port: 16008
-  server: 219.135.227.210
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港4|@ripaojiedian
-  password: 81898fd1-12c9-4197-8017-26ec0b242647
-  port: 30018
-  server: 114.132.40.118
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国3|@ripaojiedian
-  password: QX5ETP5KNLIN3Q4N
-  port: 17006
-  server: 219.135.227.210
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港|@ripaojiedian
-  password: P3H53ZJU7Q2VS6GP
-  port: 15002
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
-  port: 41411
-  server: south.sf0jm.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港2|@ripaojiedian
-  password: UEJBNJ5R5XAGT9YJ
-  port: 15014
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本2|@ripaojiedian
-  password: 3RU9RZ91MGOPITE7
-  port: 18015
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡3|@ripaojiedian
-  password: NKYSJ7T1AFPJLYVG
-  port: 16003
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇳🇱 荷兰|@ripaojiedian
-  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
-  port: 49207
-  server: south.sf0jm.xyz
-  tfo: false
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国|@ripaojiedian
-  password: 2b39bbdd-a565-4f8e-b6b6-6b034b2076f4
-  port: 13022
-  server: naiu-us.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国2|@ripaojiedian
-  password: K0AA69ZLLFIBXP1Q
-  port: 17004
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 18.143.147.45
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.229.117.61
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.169.74.60
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
-  network: ws
-  port: 2052
-  server: 104.18.37.248
-  tls: false
-  type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 2|🇺🇸_US_美国
-  network: ws
-  port: 2052
-  server: 104.16.38.71
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: us6_0.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '12|github.com/freefq - 美国CloudFla... #2'
-  network: ws
-  port: 8880
-  server: 104.21.82.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
-  network: ws
-  port: 2086
-  server: 104.18.57.111
-  sni: ip11.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国 #11'
-  network: ws
-  port: 2086
-  server: 104.20.25.146
+  server: 104.19.47.79
   sni: ip14.freegradely.xyz
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国 #12'
-  network: ws
-  port: 2086
-  server: 104.19.21.230
-  sni: ip14.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国 #20'
-  network: ws
-  port: 2082
-  server: cfcdn1.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  network: ws
-  port: 2052
-  server: 172.67.164.78
-  tls: false
-  type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      Host: in3.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  sni: ''
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  network: ws
-  port: 2086
-  server: 172.64.198.249
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 12|github.com/freefq - 美国Fastly全球...
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
-  name: 12|github.com/freefq - 印度  2
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
-  ws-opts:
-    headers:
-      Host: irsoft.sytes.net
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  network: ws
-  port: 2086
-  server: 172.64.175.213
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3,17|🇺🇸_US_美国 #22'
-  network: ws
-  port: 8080
-  server: russia.com
-  tls: false
-  type: vmess
-  uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
-  network: ws
-  port: 2052
-  server: 104.19.21.240
-  sni: cdn2.freegradely.xyz
-  tls: false
-  type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts: {}
 - alpn:
   - http/1.1
@@ -1597,31 +987,10 @@ proxies:
     headers:
       Host: www.zitian.cn
 - cipher: aes-256-gcm
-  name: 13|🇭🇰 香港|@ripaojiedian
-  password: P3H53ZJU7Q2VS6GP
-  port: 15002
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: UEJBNJ5R5XAGT9YJ
   port: 15014
   server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇯🇵 日本2|@ripaojiedian
-  password: 3RU9RZ91MGOPITE7
-  port: 18015
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  name: 13|🇭🇰 香港3|@ripaojiedian
-  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
-  port: 41411
-  server: south.sf0jm.xyz
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1632,10 +1001,52 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
+  name: 13|🇯🇵 日本3|@ripaojiedian
+  password: W05U3QJLWPM8NDNH
+  port: 18014
+  server: 219.135.227.210
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  name: 13|🇭🇰 香港3|@ripaojiedian
+  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
+  port: 41411
+  server: south.sf0jm.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇯🇵 日本2|@ripaojiedian
+  password: 3RU9RZ91MGOPITE7
+  port: 18015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇺🇸 美国3|@ripaojiedian
+  password: QX5ETP5KNLIN3Q4N
+  port: 17006
+  server: 219.135.227.210
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 13|🇭🇰 香港|@ripaojiedian
+  password: P3H53ZJU7Q2VS6GP
+  port: 15002
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
   name: 13|🇸🇬 新加坡3|@ripaojiedian
   password: NKYSJ7T1AFPJLYVG
   port: 16003
   server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  name: 13|🇳🇱 荷兰|@ripaojiedian
+  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
+  port: 49207
+  server: south.sf0jm.xyz
   tfo: false
   type: ss
 - name: 13,14|美国|@ripaojiedian
@@ -1647,17 +1058,10 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-gcm
-  name: 13|🇺🇸 美国3|@ripaojiedian
-  password: QX5ETP5KNLIN3Q4N
-  port: 17006
-  server: 219.135.227.210
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 13|🇯🇵 日本3|@ripaojiedian
-  password: W05U3QJLWPM8NDNH
-  port: 18014
-  server: 219.135.227.210
+  name: 13|🇭🇰 香港4|@ripaojiedian
+  password: 81898fd1-12c9-4197-8017-26ec0b242647
+  port: 30018
+  server: 114.132.40.118
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1667,20 +1071,6 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  password: 81898fd1-12c9-4197-8017-26ec0b242647
-  port: 30018
-  server: 114.132.40.118
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  name: 13|🇳🇱 荷兰|@ripaojiedian
-  password: 03f2af77-f215-4e86-86cd-72f2d6d69e0c
-  port: 49207
-  server: south.sf0jm.xyz
-  tfo: false
-  type: ss
 - name: 15|speednode_0009
   password: e279c494-c426-443a-a034-a04516409242
   port: 13035
@@ -1688,54 +1078,24 @@ proxies:
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-11
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- name: 0|-https://t.me/MrXbin-50
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: true
-  sni: us01.trojanyyds.xyz
-  type: trojan
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-7
+  name: 0|-https://t.me/MrXbin-6
   password: amazonskr05
   port: 443
   server: 43.203.239.233
   type: ss
-- name: 0|-https://t.me/MrXbin-48
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw02.trojanyyds.xyz
-  sni: tw02.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 0|-https://t.me/MrXbin-51
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: sg02.trojanyyds.xyz
-  type: trojan
-- name: 0|-https://t.me/MrXbin-49
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw01.trojanyyds.xyz
-  sni: tw01.trojanyyds.xyz
-  type: trojan
-- name: 0|-https://t.me/MrXbin-53
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: in01.trojanyyds.xyz
-  sni: in01.trojanyyds.xyz
-  type: trojan
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-4
+  name: 0|-https://t.me/MrXbin-7
   password: amazonskr05
   port: 443
-  server: 47.128.239.238
+  server: 54.95.145.3
+  type: ss
+- cipher: aes-256-cfb
+  name: 13|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.229.117.61
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   name: 13|🇸🇬 狮城特殊|@ripaojiedian
@@ -1752,41 +1112,17 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 13|🇰🇷 韩国特殊|@ripaojiedian
+  name: 0|-https://t.me/MrXbin-3
   password: amazonskr05
   port: 443
-  server: 13.229.117.61
-  tfo: false
+  server: 47.128.239.238
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-15
+  name: 0|-https://t.me/MrXbin-1
   password: qwerREWQ@@
   port: 31066
   server: 218.237.185.230
   type: ss
-- name: 0|-https://t.me/MrXbin-52
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 13|🇭🇰 香港5|@ripaojiedian
-  port: 51037
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|speednode_0031
-  password: 5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad
-  port: 443
-  server: cmc2.5gsieuvip.vn
-  skip-cert-verify: true
-  type: trojan
 - name: 15|speednode_0027
   password: 5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad
   port: 443
@@ -1794,28 +1130,23 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: amazonskr05
-  port: 443
-  server: 35.92.44.190
+  name: 0|-https://t.me/MrXbin-8
+  password: qwerREWQ@@
+  port: 51199
+  server: 221.139.79.20
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-5
+  name: 0|-https://t.me/MrXbin-4
   password: amazonskr05
   port: 443
-  server: 43.203.201.77
+  server: 35.88.145.179
   type: ss
 - cipher: aes-256-cfb
   name: 0|-https://t.me/MrXbin-2
   password: amazonskr05
   port: 443
-  server: 54.244.34.53
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-6
-  password: amazonskr05
-  port: 443
-  server: 54.189.160.123
+  server: 35.92.44.190
   type: ss
 - name: 15|speednode_0034
   password: '3763495982449565696'
@@ -1831,239 +1162,143 @@ proxies:
   skip-cert-verify: true
   sni: pet-bulldog.goat627.mom
   type: trojan
-- cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-31
-  obfs: http_post
-  password: +asd6a5s5df+
+- name: 15|speednode_0031
+  password: 5f7be901-1bb7-4cc5-9c7d-e33bd7e407ad
   port: 443
-  protocol: auth_aes128_md5
-  server: nsus3.irundns.net
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-8
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
-  type: ss
+  server: cmc2.5gsieuvip.vn
+  skip-cert-verify: true
+  type: trojan
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-10
+  name: 0|-https://t.me/MrXbin-9
   password: qwerREWQ@@
-  port: 51199
-  server: 221.139.79.20
+  port: 51633
+  server: 211.178.105.134
   type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇯🇵 日本03
-  - 🇭🇰 香港02
-  - 🇵🇹 葡萄牙 IEPL专线NO1
-  - 🇸🇪 瑞典中转
-  - 🇹🇷 土耳其中转
-  - 🇺🇸 美国中转 01
-  - 🇭🇰 公益路线-香港HK 限速50MBPS-1D
-  - 🇭🇰 香港中转 03
-  - 🇹🇭 泰国中转
-  - 🇮🇳 印度2
-  - 🇨🇦 加拿大2
-  - 🇭🇰 香港中转 04
-  - 🇰🇿 哈萨克斯坦中转
-  - 🇦🇺 澳大利亚原生2
-  - 🇸🇬 新加坡中转 03
-  - 🇯🇵 日本02
-  - 🇮🇳 印度1
-  - 🇫🇷 法国1
-  - 🇺🇸 美国 纽约01
-  - 🇹🇼 台湾中转 05
-  - 🇯🇵 日本中转 02
-  - 🇺🇸 美国NO.1
-  - 🇧🇷 巴西中转
-  - 🇩🇪 德国中转
-  - 🇹🇼 台湾 1
-  - 🇯🇵 日本01
-  - 🇸🇬 新加坡NO.1
-  - 🇸🇬 新加坡西部-1C
-  - 🇺🇸 美国中转 02
-  - 🇯🇵 日本中转 05
-  - 🇬🇧 英国中转 01
-  - 🇸🇬 新加坡 IEPL专线NO1
-  - 🇹🇭 泰国 IEPL专线 NO1
-  - 🇲🇾 马来西亚中转
-  - 🇭🇰 香港中转 01
-  - 🇹🇼 台湾中转 01
-  - 🇺🇸 美国 纽约2
-  - 🇹🇼 台湾中转 02
-  - 🇸🇬 新加坡NO.2
-  - 🇭🇰 香港中转 02
-  - 🇭🇰 香港01
-  - 🇻🇳 越南中转
-  - 🇦🇺 澳大利亚 IEPL专线NO1
-  - 🇩🇪 德国 IEPL专线NO1
-  - 🇸🇬 新加坡02-V4-流媒体
-  - 🇸🇬 新加坡西部-1F
-  - 🇨🇦 加拿大 IEPL专线 NO1
-  - 非洲 IEPL专线 NO1
-  - 🇺🇸 美国NO.2
-  - 🇹🇼 台湾02-3x-流媒体
-  - 🇯🇵 日本中转 04
-  - 🇹🇼 台湾01
-  - 🇺🇸 美国 IEPL专线NO1
-  - 🇫🇷 法国2
-  - 🇯🇵 日本 IEPL专线NO1
-  - 🇫🇷 法国 CM 隧道NO1
-  - 🇭🇰 香港03
-  - 🇨🇦 加拿大1
-  - 🇬🇧 英国中转 03
-  - 🇦🇷 阿根廷 IEPL专线NO1
-  - 🇹🇼 台湾 IEPL专线NO1
-  - 🇹🇼 台湾中转 03
-  - 🇮🇳 印度中转
-  - 🇹🇼 台湾中转 04
-  - 🇰🇷 韩国 IEPL专线NO1
-  - 🇮🇳 印度 IEPL专线NO1
-  - 🇯🇵 日本中转 01
-  - 🇹🇼 台湾1
-  - 🇭🇰 香港中转 05
-  - 🇬🇧 英国中转 02
-  - 🇯🇵 日本NO.1
-  - 🇯🇵 日本04
-  - 🇯🇵 日本 IEPL专线NO3
-  - 🇯🇵 日本NO.2
-  - 🇸🇬 新加坡中转 02
-  - 🇦🇪 阿联酋中转
-  - 🇳🇱 荷兰 IEPL专线NO1
-  - 🇸🇬 新加坡中转 01
-  - 🇦🇺 澳大利亚原生1
-  - 🇯🇵 日本中转 03
-  - 🇹🇼 台湾 IEPL专线NO3
-  - 🇹🇼 台湾2
-  - 🇲🇴 澳门NO.2
-  - 🇺🇸US-35.94.24.233-6066 | 47.899MB
-  - RELAY-104.21.42.243-6270 | 50.227MB
-  - 🇺🇸US-35.92.44.190-0729 | 48.583MB
-  - 🇺🇸US-54.187.27.197-6074 | 45.038MB
-  - 🇺🇸US-54.244.34.53-0421 | 45.143MB
-  - 🇺🇸US-54.189.160.123-0407 | 48.359MB
-  - 🇺🇸US-35.87.38.141-6065 | 45.813MB
-  - 🇺🇸US-34.214.166.173-6073 | 44.162MB
   - 🇺🇸US-54.213.250.37-6071 | 48.088MB
   - RELAY-104.19.48.236-1320 | 41.405MB
-  - RELAY-104.16.155.10-0839 | 40.309MB
-  - RELAY-104.19.48.236-1306 | 36.774MB
+  - 🇺🇸US-54.189.160.123-0407 | 48.359MB
+  - 🇺🇸US-35.87.38.141-6065 | 45.813MB
+  - 🇺🇸US-35.94.24.233-6066 | 47.899MB
+  - 🇺🇸US-54.244.34.53-0421 | 45.143MB
+  - 🇺🇸US-35.92.44.190-0729 | 48.583MB
+  - 🇺🇸US-54.187.27.197-6074 | 45.038MB
+  - 🇺🇸US-34.214.166.173-6073 | 44.162MB
+  - RELAY-104.21.42.243-6270 | 50.227MB
   - RELAY-172.67.71.217-1321 | 44.212MB
+  - RELAY-104.19.48.236-1306 | 36.774MB
+  - 🇺🇸US-184.170.241.194-0369 | 44.382MB
+  - RELAY-104.16.155.10-0839 | 40.309MB
   - 🇺🇸US-104.207.155.64-0424 | 35.902MB
   - RELAY-104.17.213.241-0789 | 35.059MB
-  - 🇺🇸US-184.170.241.194-0369 | 44.382MB
+  - RELAY-104.17.213.241-0850 | 35.505MB
   - RELAY-104.16.155.10-1303 | 30.352MB
-  - RELAY-104.21.77.29-8678 | 27.312MB
   - LT-45.87.175.181-0284 | 34.27MB
+  - SK-156.146.40.194-0471 | 29.017MB
+  - RELAY-104.21.77.29-8678 | 27.312MB
   - 🇰🇷KR-54.180.228.40-1193 | 16.896MB
-  - 🇯🇵JP-57.180.24.232-0503 | 18.16MB
-  - 🇯🇵JP-13.231.184.191-0538 | 20.973MB
   - 🇯🇵JP-18.183.142.200-6040 | 20.622MB
+  - 🇯🇵JP-13.231.184.191-0538 | 20.973MB
+  - 🇯🇵JP-57.180.24.232-0503 | 18.16MB
   - RELAY-104.17.221.248-0854 | 22.08MB
   - RELAY-104.21.81.115-0788 | 18.793MB
   - 🇰🇷KR-43.203.203.14-6048 | 14.76MB
   - 🇸🇬SG-13.250.116.128-0518 | 13.897MB
-  - 🇯🇵JP-74.226.136.204-5968 | 13.343MB
   - 🇸🇬SG-18.139.208.132-6058 | 13.465MB
-  - 🇸🇬SG-13.229.129.167-6059 | 13.173MB
+  - 🇯🇵JP-74.226.136.204-5968 | 13.343MB
   - 🇸🇬SG-47.128.239.238-0808 | 13.524MB
+  - 🇸🇬SG-13.229.129.167-6059 | 13.173MB
   - RELAY-198.41.209.70-1120 | 11.998MB
   - RELAY-104.17.221.248-0848 | 11.567MB
-  - RELAY-104.17.221.248-0531 | 11.537MB
+  - RELAY-104.16.155.10-0276 | 11.245MB
   - 🇯🇵JP-13.114.24.98-6229 | 9.726MB
-  - 🇰🇷KR-13.209.14.198-6049 | 7.466MB
+  - RELAY-104.17.221.248-0531 | 11.537MB
+  - RELAY-104.19.48.236-0277 | 12.353MB
   - 🇯🇵JP-176.32.78.140-0828 | 8.046MB
+  - 🇰🇷KR-13.209.14.198-6049 | 7.466MB
   - RELAY-104.16.230.132-0544 | 5.848MB
-  - '1,6|🇺🇸_US_美国 #7'
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  - '1,6|🇺🇸_US_美国 #7'
   - '1,6|🇺🇸_US_美国 #10'
-  - '1,6|🇺🇸_US_美国 #18'
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   - '1,6|🇺🇸_US_美国 #8'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
-  - '1,6|🇺🇸_US_美国 #14'
-  - '1,6|🇺🇸_US_美国 #19'
-  - '1,6|🇺🇸_US_美国 #15'
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   - '1,6|🇺🇸_US_美国 #17'
-  - '1,6|🇺🇸_US_美国 #16'
+  - '1,6|🇺🇸_US_美国 #19'
+  - '1,6|🇺🇸_US_美国 #14'
   - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  - '1,6|🇺🇸_US_美国 #16'
   - '3,17|🇺🇸_US_美国 #21'
+  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
   - 15|🇯🇵 日本3|@ripaojiedian
-  - 15|🇸🇬 新加坡2|@ripaojiedian
   - 15|🇭🇰 香港4|@ripaojiedian
-  - 15|🇺🇸 美国3|@ripaojiedian
-  - 15|🇭🇰 香港|@ripaojiedian
-  - 15|🇭🇰 香港3|@ripaojiedian
+  - 15|🇸🇬 新加坡2|@ripaojiedian
   - 15|🇭🇰 香港2|@ripaojiedian
-  - 15|🇯🇵 日本2|@ripaojiedian
+  - 15|🇭🇰 香港|@ripaojiedian
+  - 15|🇺🇸 美国3|@ripaojiedian
   - 15|🇸🇬 新加坡3|@ripaojiedian
-  - 15|🇳🇱 荷兰|@ripaojiedian
-  - 15|🇺🇸 美国|@ripaojiedian
+  - 15|🇯🇵 日本2|@ripaojiedian
+  - 15|🇭🇰 香港3|@ripaojiedian
   - 15|🇺🇸 美国2|@ripaojiedian
-  - 15|🇸🇬 狮城特殊|@ripaojiedian
-  - 15|🇰🇷 韩国特殊|@ripaojiedian
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
-  - 2|🇺🇸_US_美国
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
-  - '1,6|🇺🇸_US_美国 #11'
+  - 15|🇺🇸 美国|@ripaojiedian
   - '1,6|🇺🇸_US_美国 #12'
-  - '3,17|🇺🇸_US_美国 #20'
-  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
-  - 12|github.com/freefq - 美国Fastly全球...
-  - 12|github.com/freefq - 印度  2
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - '3,17|🇺🇸_US_美国 #22'
+  - 15|🇳🇱 荷兰|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #11'
+  - 2|🇺🇸_US_美国
+  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
   - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  - 2|🇺🇸_US_美国->🇫🇷_FR_法国
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
+  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  - '3,17|🇺🇸_US_美国 #20'
+  - '12|github.com/freefq - 美国CloudFla... #2'
+  - 12|github.com/freefq - 美国Fastly全球...
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
+  - 15|🇸🇬 狮城特殊|@ripaojiedian
+  - 15|🇯🇵 日本特殊|@ripaojiedian
+  - 1|_US_->_ES_
+  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  - 12|github.com/freefq - 印度  2
+  - '3,17|🇺🇸_US_美国 #22'
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  - '1,6|🇺🇸_US_美国 #18'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
+  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
   - 16|d*********g.com_3
-  - 13|🇭🇰 香港|@ripaojiedian
   - 13|🇭🇰 香港2|@ripaojiedian
-  - 13|🇯🇵 日本2|@ripaojiedian
-  - 13|🇭🇰 香港3|@ripaojiedian
   - 13|🇸🇬 新加坡2|@ripaojiedian
-  - 13|🇸🇬 新加坡3|@ripaojiedian
-  - 13,14|美国|@ripaojiedian
-  - 13|🇺🇸 美国3|@ripaojiedian
   - 13|🇯🇵 日本3|@ripaojiedian
-  - 13|🇺🇸 美国2|@ripaojiedian
-  - 13|🇭🇰 香港4|@ripaojiedian
+  - 13|🇭🇰 香港3|@ripaojiedian
+  - 13|🇯🇵 日本2|@ripaojiedian
+  - 13|🇺🇸 美国3|@ripaojiedian
+  - 13|🇭🇰 香港|@ripaojiedian
+  - 13|🇸🇬 新加坡3|@ripaojiedian
   - 13|🇳🇱 荷兰|@ripaojiedian
+  - 13,14|美国|@ripaojiedian
+  - 13|🇭🇰 香港4|@ripaojiedian
+  - 13|🇺🇸 美国2|@ripaojiedian
   - 15|speednode_0009
-  - 0|-https://t.me/MrXbin-11
-  - 0|-https://t.me/MrXbin-50
+  - 0|-https://t.me/MrXbin-6
   - 0|-https://t.me/MrXbin-7
-  - 0|-https://t.me/MrXbin-48
-  - 0|-https://t.me/MrXbin-51
-  - 0|-https://t.me/MrXbin-49
-  - 0|-https://t.me/MrXbin-53
-  - 0|-https://t.me/MrXbin-4
+  - 13|🇰🇷 韩国特殊|@ripaojiedian
   - 13|🇸🇬 狮城特殊|@ripaojiedian
   - 13|🇯🇵 日本特殊|@ripaojiedian
-  - 13|🇰🇷 韩国特殊|@ripaojiedian
-  - 0|-https://t.me/MrXbin-15
-  - 0|-https://t.me/MrXbin-52
-  - 13|🇭🇰 香港5|@ripaojiedian
-  - 15|speednode_0031
-  - 15|speednode_0027
+  - 0|-https://t.me/MrXbin-3
   - 0|-https://t.me/MrXbin-1
-  - 0|-https://t.me/MrXbin-5
+  - 15|speednode_0027
+  - 0|-https://t.me/MrXbin-8
+  - 0|-https://t.me/MrXbin-4
   - 0|-https://t.me/MrXbin-2
-  - 0|-https://t.me/MrXbin-6
   - 15|speednode_0034
   - 15|speednode_0032
-  - 0|-https://t.me/MrXbin-31
-  - 0|-https://t.me/MrXbin-8
-  - 0|-https://t.me/MrXbin-10
+  - 15|speednode_0031
+  - 0|-https://t.me/MrXbin-9
   type: select
 rule-providers:
   apple:
