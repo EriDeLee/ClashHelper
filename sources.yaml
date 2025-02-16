@@ -1,10 +1,27 @@
 sources:
   - name: V2RA
     url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/Eternity.yml
-    dedup: true
 
   - name: AMPN
     url: https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml
 
   - name: NMW
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.yml
+
+  - name: PUDDIN
+    url: https://raw.githubusercontent.com/PuddinCat/best-clash-proxies/refs/heads/main/proxies.yaml
+
+  - name: FREESUB
+    url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
+
+  - name: EMZCLASH
+    url: https://git.io/emzclash
+
+  - name: FREENODE
+    url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+
+  - name: ANAERSUB
+    url: https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml
+
+  - name: TESTEDNODE
+    url: https://raw.githubusercontent.com/dongchengjie/airport/main/subs/merged/tested_within.yaml
