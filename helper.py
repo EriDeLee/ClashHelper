@@ -4,170 +4,203 @@ print("Script starting...")
 import sys
 import os
 import socket
-import yaml
-import requests
+import json
+import subprocess
 import urllib.parse
-import concurrent.futures
-from concurrent.futures import ThreadPoolExecutor
+import yaml
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from yaml.loader import SafeLoader
 
-# 全局变量：控制是否全局去重（全局去重只保留名称唯一的节点）
-ENABLE_GLOBAL_DEDUP = True
+# ─────────────────────────────
+# 全局设置
+# FAST_MODE = 1 表示采用快速检测（仅基于socket），FAST_MODE = 0 表示采用准确检测（调用Go程序）
+FAST_MODE = 0
+# LATENCY_THRESHOLD 单位毫秒，只有测得延迟小于此值的节点才认为合格（仅在准确检测下生效）
+LATENCY_THRESHOLD = 500
 
+# ─────────────────────────────
+# 所有日志直接输出详细信息
+def log(msg):
+    print(msg)
+
+# ─────────────────────────────
+# NodeFilter：根据节点原始名称(_orig_name)对黑白名单进行过滤（不做日志分级）
 class NodeFilter:
-    # 只负责黑白名单过滤，不再处理 dedup，去重将在全局处理
     def __init__(self, inclusion, exclusion):
-        self.inclusion = inclusion
-        self.exclusion = exclusion
+        self.inclusion = inclusion or []
+        self.exclusion = exclusion or []
 
     def apply(self, nodes):
-        # 黑名单过滤
+        def get_name(node):
+            return node.get('_orig_name', node.get('name', '')).lower()
+        # 黑名单过滤：若节点名称或server字段中包含排除关键词，则过滤
         if self.exclusion:
-            nodes = [
-                node for node in nodes
-                if not any(k.lower() in node.get('name', '').lower() or k.lower() in node.get('server', '').lower()
-                           for k in self.exclusion)
-            ]
-        # 白名单过滤
+            nodes = [node for node in nodes if not any(kw.lower() in get_name(node) or kw.lower() in node.get('server', '').lower() for kw in self.exclusion)]
+        # 白名单过滤：若设置包含关键词，则保留满足其一的节点
         if self.inclusion:
-            nodes = [
-                node for node in nodes
-                if any(k.lower() in node.get('name', '').lower() or k.lower() in node.get('server', '').lower()
-                       for k in self.inclusion)
-            ]
+            nodes = [node for node in nodes if any(kw.lower() in get_name(node) or kw.lower() in node.get('server', '').lower() for kw in self.inclusion)]
         return nodes
 
+# ─────────────────────────────
+# NodeValidator：根据FAST_MODE选择检测方式，应用延迟阈值过滤（所有日志均打印详细）
 class NodeValidator:
-    def __init__(self, timeout=5, verbose='normal'):
+    def __init__(self, timeout=5):
         self.timeout = timeout
-        self.verbose = verbose
+        # Go程序二进制文件路径（请确保“latency”在当前目录下）
+        self.go_bin = os.path.join(os.path.dirname(__file__), 'latency')
 
-    def _is_node_available(self, node, log_callback=None):
-        # 尝试将 port 转换为整数，避免字符串带来的错误
-        try:
-            port = int(node.get('port'))
-        except Exception as conv_err:
-            if self.verbose == 'verbose' and log_callback:
-                log_callback(f"Port conversion error on node {node.get('name', 'Unknown')}: {conv_err}")
-            return False
-
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(self.timeout)
-        try:
-            sock.connect((node.get('server'), port))
-            return True
-        except Exception as e:
-            if self.verbose == 'verbose' and log_callback:
-                log_callback(f"Error on node {node.get('name', 'Unknown')}: {e}")
-            return False
-        finally:
-            sock.close()
-
-    def validate(self, nodes, max_workers=None, log_callback=None):
-        available_nodes = []
-        total = len(nodes)
+    def validate(self, nodes, max_workers=None):
         if max_workers is None:
-            max_workers = min(50, (os.cpu_count() or 1) * 5)
+            cpu_count = os.cpu_count()
+            if FAST_MODE == 0:
+                max_workers = cpu_count // 2 if cpu_count > 1 else 1 # 准确模式：CPU线程数一半，最少为1
+            else:
+                max_workers = cpu_count # 快速模式：CPU线程数
+        if FAST_MODE == 0:
+            return self._validate_accurate(nodes, max_workers)
+        else:
+            return self._validate_fast(nodes, max_workers)
+
+    def _validate_accurate(self, nodes, max_workers):
+        available = []
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            future_to_node = {executor.submit(self._is_node_available, node, log_callback): node for node in nodes}
+            futures = {executor.submit(self._test_with_go, node): node for node in nodes}
+            total = len(futures)
             completed = 0
-            for future in concurrent.futures.as_completed(future_to_node):
+            for future in as_completed(futures):
                 completed += 1
-                node = future_to_node[future]
+                node = futures[future]
                 try:
-                    if future.result():
-                        available_nodes.append(node)
-                        if log_callback:
-                            log_callback(f"进度 [{completed}/{total}] - 节点可用: {node.get('name', 'Unknown')}")
+                    success, latency = future.result()
+                    progress = f"[{completed}/{total}]"
+                    subscription = node.get('subscription', 'Unknown')
+                    log(f"[{subscription}] [准确模式] {progress} 节点 {node.get('_orig_name', node.get('name','Unknown'))} 延迟: {latency:.1f}ms, 可用: {success}")
+                    if success and latency <= LATENCY_THRESHOLD:
+                        node['latency'] = latency
+                        available.append(node)
                     else:
-                        if log_callback:
-                            log_callback(f"进度 [{completed}/{total}] - 节点不可用: {node.get('name', 'Unknown')}")
+                        log(f"[{subscription}] [准确模式] {progress} 节点 {node.get('_orig_name','Unknown')} 失败")
                 except Exception as e:
-                    if log_callback:
-                        log_callback(f"进度 [{completed}/{total}] - 检测出错: {node.get('name', 'Unknown')} - {e}")
-        return available_nodes
+                    log(f"[{subscription}] [准确模式] {progress} 节点 {node.get('_orig_name','Unknown')} 检测异常：{e}")
+        available.sort(key=lambda x: x.get('latency', float('inf')))
+        return available
 
+    def _test_with_go(self, node):
+        cfg = {
+            "type": node['type'].lower(),
+            "name": node.get('_orig_name', node.get('name', 'Unknown')),
+            "server": node['server'],
+            "port": int(node['port']),
+            "auth": {k: v for k, v in node.items() if k not in ['name', '_orig_name', 'type', 'server', 'port']}
+        }
+        try:
+            proc = subprocess.run([self.go_bin],
+                                    input=json.dumps(cfg).encode(),
+                                    stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE,
+                                    timeout=self.timeout)
+            if proc.returncode != 0:
+                log(f"节点 {cfg['name']} Go程序错误: {proc.stderr.decode().strip()}")
+                return (False, 0)
+            res = json.loads(proc.stdout)
+            if not res.get('success'):
+                log(f"节点 {cfg['name']} 检测失败: {res.get('error','')}")
+                return (False, 0)
+            return (True, res.get('latency', 0))
+        except Exception as e:
+            log(f"节点 {cfg['name']} 调用Go异常: {e}")
+            return (False, 0)
+
+    def _validate_fast(self, nodes, max_workers):
+        available = []
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {executor.submit(self._check_port, node): node for node in nodes}
+            for future in as_completed(futures):
+                node = futures[future]
+                if future.result():
+                    available.append(node)
+                    log(f"[快速模式] 节点 {node.get('_orig_name', node.get('name','Unknown'))} 可用")
+                else:
+                    log(f"[快速模式] 节点 {node.get('_orig_name', node.get('name','Unknown'))} 不可用")
+        return available
+
+    def _check_port(self, node):
+        try:
+            s = socket.create_connection((node['server'], int(node['port'])), timeout=2)
+            s.close()
+            return True
+        except Exception:
+            return False
+
+# ─────────────────────────────
+# Site：加载订阅源，过滤节点，调用检测，最后为每个节点增加订阅前缀
 class Site:
-    REQUIRED_FIELDS = ['name', 'type', 'server', 'port']  # 必填字段
-
-    def __init__(self, config: dict, verbose: str = 'normal'):
+    REQUIRED_FIELDS = ['name', 'type', 'server', 'port']
+    def __init__(self, config):
         self.url = config.get('url')
         self.name = config.get('name') or self._generate_name_from_url(self.url)
         self.group = config.get('group', 'PROXY')
-        self.verbose = verbose
         self.nodes = []
         self.data = None
-
-        # 删除了单独 dedup 选项，只使用黑白名单过滤
-        self.filter = NodeFilter(
-            inclusion=config.get('inclusion', []),
-            exclusion=config.get('exclusion', [])
-        )
-        self.validator = NodeValidator(verbose=verbose)
+        self.filter = NodeFilter(config.get('inclusion'), config.get('exclusion'))
         self._fetch_proxy_list()
 
     def _generate_name_from_url(self, url):
-        parsed = urllib.parse.urlparse(url)
-        return parsed.netloc.split('.')[-2] if parsed.netloc else 'Unknown'
+        parts = urllib.parse.urlparse(url).netloc.split('.')
+        return parts[-2] if len(parts) >= 2 else 'Unknown'
 
     def _fetch_proxy_list(self):
         try:
+            import requests
             headers = {"User-Agent": "ClashForAndroid/2.5.12"}
-            r = requests.get(self.url, headers=headers, timeout=10)
-            r.raise_for_status()  # 非 200 会抛出异常
-            self.data = yaml.load(r.text, Loader=SafeLoader)
-            count = len(self.data.get('proxies', [])) if self.data else 0
-            self.log(f"成功获取订阅: {count} 个节点")
+            resp = requests.get(self.url, headers=headers, timeout=10)
+            resp.raise_for_status()
+            self.data = yaml.load(resp.text, Loader=SafeLoader)
+            if self.data and 'proxies' in self.data:
+                for node in self.data.get('proxies'):
+                    node['_orig_name'] = node.get('name', 'Unknown')
+            log(f"[{self.name}] 成功获取订阅: {len(self.data.get('proxies', []))} 个节点")
         except Exception as e:
             self.data = None
-            self.log(f"订阅获取失败: {e}")
+            log(f"[{self.name}] 订阅获取失败: {e}")
 
     def purge(self):
         if not self.data or 'proxies' not in self.data:
-            self.log("No proxies found")
+            log(f"[{self.name}] No proxies found")
             return
-
-        # 应用黑白名单过滤
         self.nodes = self.filter.apply(self.data['proxies'])
         total_before = len(self.nodes)
-
-        # 检查必填字段，丢弃缺少必填字段的节点
-        valid_nodes = []
+        valid = [node for node in self.nodes if all(field in node for field in Site.REQUIRED_FIELDS)]
+        for node in valid:
+            node['subscription'] = self.name
+        log(f"[{self.name}] 过滤后剩余节点: {len(valid)} (原始: {total_before})")
+        log(f"[{self.name}] 开始检测 {len(valid)} 个节点可用性...")
+        validator = NodeValidator(timeout=10)
+        self.nodes = validator.validate(valid)
+        log(f"[{self.name}] 节点检测完成，{len(self.nodes)} 个节点可用")
+        # 为检测通过的节点名称增加订阅前缀
         for node in self.nodes:
-            if all(field in node for field in Site.REQUIRED_FIELDS):
-                valid_nodes.append(node)
-            else:
-                self.log(f"节点缺少必填字段，将被忽略: {node}")
-        self.nodes = valid_nodes
-
-        self.log(f"过滤后剩余节点: {len(self.nodes)} (原始: {total_before})")
-        # 检测节点可用性
-        self.log(f"开始检测 {len(self.nodes)} 个节点可用性...")
-        self.nodes = self.validator.validate(self.nodes, log_callback=lambda msg: self.log(msg))
-        self.log(f"节点检测完成，{len(self.nodes)} 个节点可用")
+            orig = node.get('_orig_name', node.get('name', 'Unknown'))
+            node['subscription'] = self.name
+            node['name'] = f"{self.name}-{orig}"
 
     def get_titles(self):
-        return [x.get('name', 'Unknown') for x in self.nodes]
+        return [node.get('name', 'Unknown') for node in self.nodes]
 
-    def log(self, message: str):
-        if self.verbose != 'quiet':
-            print(f"[{self.name}] {message}")
+# ─────────────────────────────
+def from_config(config):
+    return Site(config)
 
-def from_config(config: dict, verbose: str = 'normal'):
-    return Site(config, verbose)
-
+# ─────────────────────────────
 def main():
     if len(sys.argv) < 2 or len(sys.argv) > 4:
-        print("Usage:")
-        print("    python3 helper.py <sources_config> [output] [quiet/normal/verbose]")
+        print("Usage: python3 helper.py <sources_config> [output] [quiet/normal/debug]")
         sys.exit(1)
-
     sources_file = sys.argv[1]
     if not os.path.isfile(sources_file):
         print(f"错误：配置文件 {sources_file} 不存在")
         sys.exit(1)
-
-    verbose = 'normal' if len(sys.argv) < 4 else sys.argv[3].lower()
+    # 本版本不再区分日志级别，一律输出详细信息
     try:
         with open(sources_file, "r", encoding="utf-8") as f:
             sites_config = yaml.load(f, Loader=SafeLoader)
@@ -175,34 +208,37 @@ def main():
     except Exception as e:
         print(f"配置加载失败: {e}")
         sys.exit(1)
-
     try:
         template_path = os.path.join(os.path.dirname(__file__), "template.yaml")
-    except NameError:
+    except Exception:
         template_path = "template.yaml"
     if not os.path.isfile(template_path):
         print(f"错误：模板文件 {template_path} 不存在")
         sys.exit(1)
-
     try:
         with open(template_path, "r", encoding="utf-8") as f:
-            config = yaml.load(f, Loader=SafeLoader)
+            config_template = yaml.load(f, Loader=SafeLoader)
     except Exception as e:
         print(f"模板加载失败: {e}")
         sys.exit(1)
-
-    config['proxies'] = []
-    config['proxy-groups'] = [{"name": "PROXY", "type": "select", "proxies": []}]
+    config_template['proxies'] = []
+    config_template['proxy-groups'] = [{"name": "PROXY", "type": "select", "proxies": []}]
 
     sites = []
-    with ThreadPoolExecutor(max_workers=min(50, (os.cpu_count() or 1) * 2)) as executor:
-        future_to_site = {executor.submit(from_config, site_conf, verbose): site_conf for site_conf in sites_config}
-        for future in concurrent.futures.as_completed(future_to_site):
+    with ThreadPoolExecutor(max_workers=10) as executor: # 这里保持默认的线程池大小为10，用于订阅源加载
+        futures = {executor.submit(from_config, conf): conf for conf in sites_config}
+        for future in as_completed(futures):
             try:
                 site = future.result()
                 sites.append(site)
             except Exception as e:
                 print(f"订阅源加载出现错误: {e}")
+
+    # 检查订阅源名称唯一性
+    site_names = [site.name for site in sites if site.data is not None]
+    if len(site_names) != len(set(site_names)):
+        print("错误: 订阅源的名称不唯一，请确保每个订阅源的 name 字段不同")
+        sys.exit(1)
 
     proxy_count = 0
     for site in sites:
@@ -210,22 +246,18 @@ def main():
             try:
                 site.purge()
                 if site.nodes:
-                    config['proxies'] += site.nodes
-                    for group in config['proxy-groups']:
+                    config_template['proxies'] += site.nodes
+                    for group in config_template['proxy-groups']:
                         if group.get('name') == site.group:
                             group['proxies'] += site.get_titles()
                     proxy_count += len(site.nodes)
             except Exception as e:
-                if verbose != 'quiet':
-                    print(f"Failed to process {site.name}: {e}")
+                print(f"订阅源 {site.name} 处理失败: {e}")
 
-    if ENABLE_GLOBAL_DEDUP:
-        config['proxies'] = list({node.get('name'): node for node in config['proxies']}.values())
-
-    output_file = sys.argv[2] if len(sys.argv) >= 3 and not sys.argv[2].lower() in ['quiet', 'normal', 'verbose'] else "output.yaml"
+    output_file = sys.argv[2] if (len(sys.argv) >= 3 and sys.argv[2].lower() not in ['quiet','normal','debug']) else "output.yaml"
     try:
         with open(output_file, "w", encoding="utf-8") as f:
-            f.write(yaml.dump(config, default_flow_style=False, allow_unicode=True))
+            f.write(yaml.dump(config_template, default_flow_style=False, allow_unicode=True))
     except Exception as e:
         print(f"写入输出文件失败: {e}")
         sys.exit(1)

@@ -1,7 +1,4 @@
 sources:
-  - name: V2RA
-    url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/Eternity.yml
-
   - name: AMPN
     url: https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml
 

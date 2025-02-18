@@ -2,7 +2,7 @@
 chcp 65001
 
 REM 运行Python脚本生成配置文件
-python helper.py sources.yaml output.yaml verbose
+python helper.py sources.yaml output.yaml
 echo Clash配置文件已生成：output.yaml
 
 REM 配置Git并提交更改
