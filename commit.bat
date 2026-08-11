@@ -1,20 +1,19 @@
 @echo off
 chcp 65001
+REM ÔËĞĞPython½Å±¾Éú³ÉÅäÖÃÎÄ¼ş£¨Ê¹ÓÃÏîÄ¿ÄÚÇ¶Python£©
+python\python.exe helper.py sources.yaml output.yaml
+echo ClashÅäÖÃÎÄ¼şÒÑÉú³É£ºoutput.yaml
 
-REM è¿è¡ŒPythonè„šæœ¬ç”Ÿæˆé…ç½®æ–‡ä»¶
-python helper.py sources.yaml output.yaml
-echo Clashé…ç½®æ–‡ä»¶å·²ç”Ÿæˆï¼šoutput.yaml
-
-REM é…ç½®Gitå¹¶æäº¤æ›´æ”¹
-git config --global core.quotepath false
-git config --global i18n.commitencoding utf-8
-git config --global i18n.logoutputencoding utf-8
-git config --global gui.encoding utf-8
-git config --global user.name "EricLeeaaaaa"
-git config --global user.email "ericleeaaaaa@github.com"
+REM ÅäÖÃGit²¢Ìá½»¸ü¸Ä
+REM git config --global core.quotepath false
+REM git config --global i18n.commitencoding utf-8
+REM git config --global i18n.logoutputencoding utf-8
+REM git config --global gui.encoding utf-8
+REM git config --global user.name "EricLeeaaaaa"
+REM git config --global user.email "ericleeaaaaa@github.com"
 git add output.yaml
-git commit -m "æ›´æ–° Clash é…ç½®æ–‡ä»¶"
+git commit -m "¸üĞÂ Clash ÅäÖÃÎÄ¼ş"
 git push
 
-echo æ‰€æœ‰æ“ä½œå·²å®Œæˆï¼
+echo ËùÓĞ²Ù×÷ÒÑÍê³É£¡
 pause
