@@ -60,651 +60,232 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
-- _orig_name: 🇹🇼 台湾|@ripaojiedian
-  client-fingerprint: chrome
-  latency: 377
-  name: FREENODE-🇹🇼 台湾|@ripaojiedian
-  password: 65f14831-5c67-483f-9e85-f3aa73f21187
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  subscription: FREENODE
-  type: trojan
-- _orig_name: 美国 019
-  client-fingerprint: chrome
-  latency: 436
-  name: ANAERSUB-美国 019
-  network: ws
-  port: 80
-  server: 172.67.204.84
-  skip-cert-verify: false
-  subscription: ANAERSUB
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /t.mevpnAndroid2/?ed=2560
-- _orig_name: 美国 036
-  client-fingerprint: chrome
-  latency: 438
-  name: ANAERSUB-美国 036
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  skip-cert-verify: false
-  subscription: ANAERSUB
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- _orig_name: 美国 039
-  client-fingerprint: chrome
-  latency: 454
-  name: ANAERSUB-美国 039
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  subscription: ANAERSUB
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /?ed=2560
-- _orig_name: CN_speednode_0057
-  cipher: chacha20-ietf-poly1305
-  latency: 212
-  name: PUDDIN-CN_speednode_0057
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11412
-  server: hkg-02-zz.manatraffic.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0015
-  cipher: chacha20-ietf-poly1305
-  latency: 223
-  name: PUDDIN-CN_speednode_0015
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11561
-  server: sgp-01-zz.manatraffic.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0009
-  cipher: chacha20-ietf-poly1305
-  latency: 230
-  name: PUDDIN-CN_speednode_0009
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11413
-  server: hkg-03-zz.manatraffic.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0025
-  cipher: chacha20-ietf-poly1305
-  latency: 253
-  name: PUDDIN-CN_speednode_0025
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19017
-  server: yy1.vyunyunnode.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0023
-  cipher: chacha20-ietf-poly1305
-  latency: 267
-  name: PUDDIN-CN_speednode_0023
-  password: 1834fc79-7f4b-4e2b-9048-17c7b809fc44
-  port: 19013
-  server: yy1.vyunyunnode.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0016
-  cipher: chacha20-ietf-poly1305
-  latency: 311
-  name: PUDDIN-CN_speednode_0016
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11562
-  server: sgp-02-zz.manatraffic.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0019
-  cipher: chacha20-ietf-poly1305
-  latency: 325
-  name: PUDDIN-CN_speednode_0019
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 11563
-  server: sgp-03-zz.manatraffic.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: CN_speednode_0020
-  cipher: chacha20-ietf-poly1305
-  latency: 351
-  name: PUDDIN-CN_speednode_0020
-  password: 8771d456-6779-4c33-a796-b6defc67bc75
-  port: 14202
-  server: jpn-02-zz.manatraffic.top
-  subscription: PUDDIN
-  type: ss
-  udp: true
-- _orig_name: ❓ 未知_1
+- _orig_name: 🟢🇨🇳_github.com/Ruk1ng001_0c5403d7
+  latency: 120
+  name: FREESUB-🟢🇨🇳_github.com/Ruk1ng001_0c5403d7
+  port: 8080
+  server: 112.64.135.45
+  subscription: FREESUB
+  type: http
+- _orig_name: 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_505c093b
   alterId: '0'
   cipher: auto
-  latency: 121
-  name: TESTEDNODE-❓ 未知_1
-  port: '50004'
-  server: 112.132.212.19
-  subscription: TESTEDNODE
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- _orig_name: 🇨🇳 中国_1
-  alterId: '0'
-  cipher: auto
-  latency: 152
-  name: TESTEDNODE-🇨🇳 中国_1
-  port: '50002'
-  server: 47.104.186.133
-  subscription: TESTEDNODE
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- _orig_name: 🇨🇳 中国_2
-  alterId: '0'
-  cipher: auto
-  latency: 167
-  name: TESTEDNODE-🇨🇳 中国_2
-  port: '59003'
-  server: 183.236.51.36
-  subscription: TESTEDNODE
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- _orig_name: 🇯🇵 日本_1
-  cipher: rc4-md5
-  latency: 172
-  name: TESTEDNODE-🇯🇵 日本_1
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40202'
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 1.link-hub.blog
-  subscription: TESTEDNODE
-  type: ssr
-- _orig_name: 🇯🇵 日本_2
-  cipher: rc4-md5
-  latency: 194
-  name: TESTEDNODE-🇯🇵 日本_2
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40200'
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 1.link-hub.blog
-  subscription: TESTEDNODE
-  type: ssr
-- _orig_name: 🇯🇵 日本_8
-  cipher: rc4-md5
-  latency: 230
-  name: TESTEDNODE-🇯🇵 日本_8
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40254'
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  subscription: TESTEDNODE
-  type: ssr
-- _orig_name: 🇩🇪 德国_9
-  client-fingerprint: chrome
-  latency: 394
-  name: TESTEDNODE-🇩🇪 德国_9
-  network: ws
-  port: '80'
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- _orig_name: 🇯🇵 日本_9
-  cipher: rc4-md5
-  latency: 421
-  name: TESTEDNODE-🇯🇵 日本_9
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40255'
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  subscription: TESTEDNODE
-  type: ssr
-- _orig_name: ❓ 未知_29
-  latency: 430
-  name: TESTEDNODE-❓ 未知_29
-  network: ws
-  port: '80'
-  server: 104.24.158.124
-  skip-cert-verify: false
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: bf73e6e5-0336-40d5-995c-283de50646d2
-  ws-opts:
-    headers:
-      Host: divine-limit-e9df-ppal03.jorekon645.workers.dev
-    path: /?ed=2560
-- _orig_name: 🇺🇸 美国_18
-  client-fingerprint: chrome
-  latency: 432
-  name: TESTEDNODE-🇺🇸 美国_18
-  network: ws
-  port: '80'
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /?ed=2560
-- _orig_name: 🇭🇰 香港_2
-  cipher: rc4-md5
-  latency: 434
-  name: TESTEDNODE-🇭🇰 香港_2
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40239'
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  subscription: TESTEDNODE
-  type: ssr
-- _orig_name: ❓ 未知_30
-  client-fingerprint: chrome
-  latency: 452
-  name: TESTEDNODE-❓ 未知_30
-  network: ws
-  port: '80'
-  server: 104.24.186.156
-  skip-cert-verify: false
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  ws-opts:
-    headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
-    path: /?ed=2560
-- _orig_name: ❓ 未知_6
-  client-fingerprint: chrome
-  latency: 457
-  name: TESTEDNODE-❓ 未知_6
-  network: ws
-  port: '80'
-  server: 172.67.204.84
-  skip-cert-verify: false
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /t.mevpnAndroid2/?ed=2560
-- _orig_name: ❓ 未知_21
-  latency: 462
-  name: TESTEDNODE-❓ 未知_21
-  network: ws
-  port: '80'
-  server: 104.24.181.248
-  skip-cert-verify: false
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: faa47bdc-8581-4e47-a557-35caa72681bd
-  ws-opts:
-    headers:
-      Host: delicate-feather-dc36-ppal03.shah-beck.workers.dev
-    path: /?ed=2560
-- _orig_name: ❓ 未知_19
-  latency: 495
-  name: TESTEDNODE-❓ 未知_19
-  network: ws
-  port: '80'
-  server: 104.24.177.129
-  skip-cert-verify: false
-  subscription: TESTEDNODE
-  tls: false
-  type: vless
-  uuid: eb19e160-51f8-40d3-966b-9fa5de336924
-  ws-opts:
-    headers:
-      Host: crimson-cell-5828-ppal03.febox45376.workers.dev
-    path: /?ed=2560
-- _orig_name: ❓_🇸🇬_💼_github.com/Ruk1ng001_3736323235316435
-  cipher: aes-256-cfb
-  latency: 167
-  name: FREESUB-❓_🇸🇬_💼_github.com/Ruk1ng001_3736323235316435
-  password: amazonskr05
-  port: 443
-  server: 13.229.111.3
-  subscription: FREESUB
-  type: ss
-  udp: true
-- _orig_name: 🟡_🇰🇷_💼_github.com/Ruk1ng001_3233386134363435
-  cipher: aes-256-cfb
-  latency: 177
-  name: FREESUB-🟡_🇰🇷_💼_github.com/Ruk1ng001_3233386134363435
-  password: amazonskr05
-  port: 443
-  server: 43.202.60.105
-  subscription: FREESUB
-  type: ss
-- _orig_name: ❓_🇸🇬_💼_github.com/Ruk1ng001_3465633935366130
-  cipher: aes-256-cfb
-  latency: 184
-  name: FREESUB-❓_🇸🇬_💼_github.com/Ruk1ng001_3465633935366130
-  password: amazonskr05
-  port: 443
-  server: 18.141.9.206
-  subscription: FREESUB
-  type: ss
-  udp: true
-- _orig_name: 🟡_🇯🇵_💼_github.com/Ruk1ng001_3530626233316364
-  cipher: aes-256-cfb
-  latency: 242
-  name: FREESUB-🟡_🇯🇵_💼_github.com/Ruk1ng001_3530626233316364
-  password: amazonskr05
-  port: 443
-  server: 43.206.216.94
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟡_🇯🇵_💼_github.com/Ruk1ng001_63613462663030
-  cipher: aes-256-cfb
-  latency: 254
-  name: FREESUB-🟡_🇯🇵_💼_github.com/Ruk1ng001_63613462663030
-  password: amazonskr05
-  port: 443
-  server: 3.112.216.127
-  subscription: FREESUB
-  type: ss
-- _orig_name: github.com/Ruk1ng001_6336653262653165
-  cipher: rc4-md5
-  latency: 305
-  name: FREESUB-github.com/Ruk1ng001_6336653262653165
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40209
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 1.link-hub.blog
-  subscription: FREESUB
-  type: ssr
-- _orig_name: github.com/Ruk1ng001_3134346264363038
-  auth: c31b23ea-bf3c-476e-8b6b-6f2cc3fc958e
-  latency: 335
-  name: FREESUB-github.com/Ruk1ng001_3134346264363038
-  password: c31b23ea-bf3c-476e-8b6b-6f2cc3fc958e
-  port: 8899
-  server: xinjiapo2.su8.lol
-  skip-cert-verify: false
-  sni: xinjiapo2.su8.lol
-  subscription: FREESUB
-  type: hysteria2
-- _orig_name: github.com/Ruk1ng001_6163333033623533
-  auth: c31b23ea-bf3c-476e-8b6b-6f2cc3fc958e
-  latency: 352
-  name: FREESUB-github.com/Ruk1ng001_6163333033623533
-  password: c31b23ea-bf3c-476e-8b6b-6f2cc3fc958e
-  port: 8899
-  server: riben1.su8.lol
-  skip-cert-verify: false
-  sni: riben1.su8.lol
-  subscription: FREESUB
-  type: hysteria2
-- _orig_name: 🟡_🇰🇷_💼_github.com/Ruk1ng001_6366396365646136
-  cipher: aes-256-cfb
-  latency: 353
-  name: FREESUB-🟡_🇰🇷_💼_github.com/Ruk1ng001_6366396365646136
-  password: amazonskr05
-  port: 443
-  server: 3.36.73.26
-  subscription: FREESUB
-  type: ss
-- _orig_name: ❓_🇯🇵_💼_github.com/Ruk1ng001_3333303339656635
-  cipher: aes-256-cfb
-  latency: 354
-  name: FREESUB-❓_🇯🇵_💼_github.com/Ruk1ng001_3333303339656635
-  password: amazonskr05
-  port: 443
-  server: 52.194.186.197
-  subscription: FREESUB
-  type: ss
-- _orig_name: github.com/Ruk1ng001_6537303666313561
-  cipher: chacha20-ietf-poly1305
-  latency: 365
-  name: FREESUB-github.com/Ruk1ng001_6537303666313561
-  password: 4619d5a0-258a-48f4-98bf-88843d5d7a83
-  port: 30003
-  server: gdgs.tarioblink.me
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟡_🇺🇸_💼_github.com/Ruk1ng001_6163346662633466
-  cipher: aes-256-cfb
-  latency: 367
-  name: FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_6163346662633466
-  password: amazonskr05
-  port: 443
-  server: 54.184.126.174
-  subscription: FREESUB
-  type: ss
-  udp: true
-- _orig_name: github.com/Ruk1ng001_3661343931643865
-  auth: 334c4713-73ea-4e71-b827-21a22d31736b
-  latency: 396
-  name: FREESUB-github.com/Ruk1ng001_3661343931643865
-  password: 334c4713-73ea-4e71-b827-21a22d31736b
-  port: 23417
-  server: sg3.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: sg3.xiaoliyu.cyou
-  subscription: FREESUB
-  type: hysteria2
-- _orig_name: 🟡_🇺🇸_💼_github.com/Ruk1ng001_6263313235616438
-  cipher: aes-256-cfb
-  latency: 419
-  name: FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_6263313235616438
-  password: amazonskr05
-  port: 443
-  server: 54.190.1.125
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟡_🇺🇸_💼_github.com/Ruk1ng001_3937646333626565
-  cipher: aes-256-cfb
-  latency: 422
-  name: FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_3937646333626565
-  password: amazonskr05
-  port: 443
-  server: 18.237.113.248
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟡_🇺🇸_💼_github.com/Ruk1ng001_6266373737613234
-  cipher: aes-256-cfb
-  latency: 427
-  name: FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_6266373737613234
-  password: amazonskr05
-  port: 443
-  server: 35.86.174.240
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟡_🇺🇸_💻_github.com/Ruk1ng001_6536353537636437
-  client-fingerprint: chrome
-  latency: 435
-  name: FREESUB-🟡_🇺🇸_💻_github.com/Ruk1ng001_6536353537636437
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  servername: pormang.webhost99.workers.dev
-  subscription: FREESUB
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /?ed=2560
-- _orig_name: 🟡_🇺🇸_💼_github.com/Ruk1ng001_3765393462366132
-  cipher: aes-256-cfb
-  latency: 435
-  name: FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_3765393462366132
-  password: amazonskr05
-  port: 443
-  server: 35.160.134.223
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟡_🇺🇸_💼_github.com/Ruk1ng001_3635306330626235
-  cipher: aes-256-cfb
-  latency: 438
-  name: FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_3635306330626235
-  password: amazonskr05
-  port: 443
-  server: 54.244.78.72
-  subscription: FREESUB
-  type: ss
-- _orig_name: 🟠_🇺🇸_💻_github.com/Ruk1ng001_6630306430633262
-  client-fingerprint: chrome
-  latency: 443
-  name: FREESUB-🟠_🇺🇸_💻_github.com/Ruk1ng001_6630306430633262
-  network: ws
-  port: 80
-  server: 172.67.204.84
-  subscription: FREESUB
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /t.mevpnAndroid2/?ed=2560
-- _orig_name: github.com/Ruk1ng001_6638613563616231
-  cipher: rc4-md5
-  latency: 458
-  name: FREESUB-github.com/Ruk1ng001_6638613563616231
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40255
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 3.link-hub.click
-  subscription: FREESUB
-  type: ssr
-- _orig_name: ❓_🇺🇸_📶_github.com/Ruk1ng001_3631336634383031
-  client-fingerprint: chrome
-  latency: 496
-  name: FREESUB-❓_🇺🇸_📶_github.com/Ruk1ng001_3631336634383031
+  latency: 127
+  name: FREESUB-🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_505c093b
   network: tcp
-  port: 2046
-  reality-opts:
-    public-key: P0t-7rDdRNOg0bHvo-S_VgNWzcmXb5cB7b6qA1vtfE4
-    short-id: d4fdce164f84219c
-  server: 40.83.200.62
-  servername: www.apple.com
+  port: 29019
+  server: 366-1095.rabbitpro-in-3.com
+  subscription: FREESUB
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- _orig_name: 🟢🇹🇼[🤖📺🎪✨]_github.com/Ruk1ng001_b0cf964a
+  alterId: '0'
+  cipher: auto
+  latency: 161
+  name: FREESUB-🟢🇹🇼[🤖📺🎪✨]_github.com/Ruk1ng001_b0cf964a
+  network: tcp
+  port: 27120
+  server: 366-1095.rabbitpro-in-3.com
+  subscription: FREESUB
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- _orig_name: 🟢🇵🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_1e41146c
+  alterId: '0'
+  cipher: auto
+  latency: 168
+  name: FREESUB-🟢🇵🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_1e41146c
+  network: tcp
+  port: 27136
+  server: 366-1095.rabbitpro-in-3.com
+  subscription: FREESUB
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- _orig_name: 🔴🇭🇰[📺🎪🎞️]_github.com/Ruk1ng001_054bd55d
+  latency: 177
+  name: FREESUB-🔴🇭🇰[📺🎪🎞️]_github.com/Ruk1ng001_054bd55d
+  port: 10808
+  server: 123.58.219.171
+  subscription: FREESUB
+  type: socks5
+- _orig_name: 🟠🇸🇬[🎭]_github.com/Ruk1ng001_99365f4a
+  alterId: 2
+  cipher: auto
+  latency: 177
+  name: FREESUB-🟠🇸🇬[🎭]_github.com/Ruk1ng001_99365f4a
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
   skip-cert-verify: false
   subscription: FREESUB
-  tfo: false
-  tls: true
-  type: vless
-  uuid: ba00fea2-9c5b-46aa-895d-2e189715c374
-- _orig_name: 15|🇰🇷 韩国特殊|@ripaojiedian
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  latency: 272
-  name: AMPN-15|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- _orig_name: 🟠🇭🇰[📺📦🔍]_github.com/Ruk1ng001_099454ad
+  latency: 260
+  name: FREESUB-🟠🇭🇰[📺📦🔍]_github.com/Ruk1ng001_099454ad
+  password: '111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
+  subscription: FREESUB
+  type: socks5
+  username: '111'
+- _orig_name: 🟠🇭🇰[📺]_github.com/Ruk1ng001_4c6d8eb9
+  latency: 282
+  name: FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_4c6d8eb9
+  password: '123'
+  port: 3060
+  server: 43.100.43.112
+  subscription: FREESUB
+  type: socks5
+  username: '123'
+- _orig_name: 🔴🇻🇳[🤖📺🔍]_github.com/Ruk1ng001_8b5a9fdb
+  latency: 326
+  name: FREESUB-🔴🇻🇳[🤖📺🔍]_github.com/Ruk1ng001_8b5a9fdb
+  port: 8080
+  server: 113.160.132.26
+  subscription: FREESUB
+  type: http
+- _orig_name: 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
+  latency: 386
+  name: FREESUB-🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
   port: 443
-  server: 52.197.129.53
-  subscription: AMPN
-  tfo: false
-  type: ss
+  server: fan.571589.xyz
+  sni: fan.571589.xyz
+  subscription: FREESUB
+  tls: true
+  type: http
+- _orig_name: 🟠🇯🇵[🤖📺📦]_github.com/Ruk1ng001_16f5ab4e
+  latency: 426
+  name: FREESUB-🟠🇯🇵[🤖📺📦]_github.com/Ruk1ng001_16f5ab4e
+  password: '123456'
+  port: 1080
+  server: 8.209.236.192
+  subscription: FREESUB
+  type: socks5
+  username: '123456'
+- _orig_name: 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_FQLMnmSE
+  latency: 499
+  name: FREESUB-🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_FQLMnmSE
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  subscription: FREESUB
+  tls: true
+  type: http
+  udp: true
+  username: test
+- _orig_name: 🇬🇷GR_1|2.1MB/s
+  alterId: '0'
+  cipher: auto
+  latency: 356
+  name: NMW-🇬🇷GR_1|2.1MB/s
+  network: tcp
+  port: '29072'
+  server: 366-1095.rabbitpro-in-3.com
+  skip-cert-verify: false
+  subscription: NMW
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  xudp: true
+- _orig_name: 美国 008
+  alterId: 0
+  cipher: auto
+  latency: 163
+  name: ANAERSUB-美国 008
+  network: tcp
+  port: 27136
+  server: 366-1095.rabbitpro-in-3.com
+  subscription: ANAERSUB
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- _orig_name: 美国 033
+  alterId: 0
+  cipher: auto
+  latency: 354
+  name: ANAERSUB-美国 033
+  network: tcp
+  port: 29072
+  server: 366-1095.rabbitpro-in-3.com
+  skip-cert-verify: false
+  subscription: ANAERSUB
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  xudp: true
+- _orig_name: 德国 004
+  latency: 382
+  name: ANAERSUB-德国 004
+  network: tcp
+  port: 62145
+  server: 134.98.157.85
+  subscription: ANAERSUB
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  xudp: true
+- _orig_name: 爱尔兰 002
+  latency: 424
+  name: ANAERSUB-爱尔兰 002
+  network: tcp
+  port: 62145
+  server: 143.47.188.131
+  subscription: ANAERSUB
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  xudp: true
+- _orig_name: 德国 002
+  latency: 491
+  name: ANAERSUB-德国 002
+  network: tcp
+  port: 62145
+  server: 84.235.175.201
+  subscription: ANAERSUB
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  xudp: true
+- _orig_name: 🏁 未知-1C00BA04
+  latency: 420
+  name: TESTEDNODE-🏁 未知-1C00BA04
+  network: ws
+  password: HutaoCloud
+  port: 11543
+  server: 185.220.238.77
+  skip-cert-verify: true
+  subscription: TESTEDNODE
+  type: trojan
+  ws-opts:
+    path: /api
 proxy-groups:
 - name: PROXY
   proxies:
-  - FREENODE-🇹🇼 台湾|@ripaojiedian
-  - ANAERSUB-美国 019
-  - ANAERSUB-美国 036
-  - ANAERSUB-美国 039
-  - PUDDIN-CN_speednode_0057
-  - PUDDIN-CN_speednode_0015
-  - PUDDIN-CN_speednode_0009
-  - PUDDIN-CN_speednode_0025
-  - PUDDIN-CN_speednode_0023
-  - PUDDIN-CN_speednode_0016
-  - PUDDIN-CN_speednode_0019
-  - PUDDIN-CN_speednode_0020
-  - TESTEDNODE-❓ 未知_1
-  - TESTEDNODE-🇨🇳 中国_1
-  - TESTEDNODE-🇨🇳 中国_2
-  - TESTEDNODE-🇯🇵 日本_1
-  - TESTEDNODE-🇯🇵 日本_2
-  - TESTEDNODE-🇯🇵 日本_8
-  - TESTEDNODE-🇩🇪 德国_9
-  - TESTEDNODE-🇯🇵 日本_9
-  - TESTEDNODE-❓ 未知_29
-  - TESTEDNODE-🇺🇸 美国_18
-  - TESTEDNODE-🇭🇰 香港_2
-  - TESTEDNODE-❓ 未知_30
-  - TESTEDNODE-❓ 未知_6
-  - TESTEDNODE-❓ 未知_21
-  - TESTEDNODE-❓ 未知_19
-  - FREESUB-❓_🇸🇬_💼_github.com/Ruk1ng001_3736323235316435
-  - FREESUB-🟡_🇰🇷_💼_github.com/Ruk1ng001_3233386134363435
-  - FREESUB-❓_🇸🇬_💼_github.com/Ruk1ng001_3465633935366130
-  - FREESUB-🟡_🇯🇵_💼_github.com/Ruk1ng001_3530626233316364
-  - FREESUB-🟡_🇯🇵_💼_github.com/Ruk1ng001_63613462663030
-  - FREESUB-github.com/Ruk1ng001_6336653262653165
-  - FREESUB-github.com/Ruk1ng001_3134346264363038
-  - FREESUB-github.com/Ruk1ng001_6163333033623533
-  - FREESUB-🟡_🇰🇷_💼_github.com/Ruk1ng001_6366396365646136
-  - FREESUB-❓_🇯🇵_💼_github.com/Ruk1ng001_3333303339656635
-  - FREESUB-github.com/Ruk1ng001_6537303666313561
-  - FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_6163346662633466
-  - FREESUB-github.com/Ruk1ng001_3661343931643865
-  - FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_6263313235616438
-  - FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_3937646333626565
-  - FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_6266373737613234
-  - FREESUB-🟡_🇺🇸_💻_github.com/Ruk1ng001_6536353537636437
-  - FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_3765393462366132
-  - FREESUB-🟡_🇺🇸_💼_github.com/Ruk1ng001_3635306330626235
-  - FREESUB-🟠_🇺🇸_💻_github.com/Ruk1ng001_6630306430633262
-  - FREESUB-github.com/Ruk1ng001_6638613563616231
-  - FREESUB-❓_🇺🇸_📶_github.com/Ruk1ng001_3631336634383031
-  - AMPN-15|🇰🇷 韩国特殊|@ripaojiedian
+  - FREESUB-🟢🇨🇳_github.com/Ruk1ng001_0c5403d7
+  - FREESUB-🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_505c093b
+  - FREESUB-🟢🇹🇼[🤖📺🎪✨]_github.com/Ruk1ng001_b0cf964a
+  - FREESUB-🟢🇵🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_1e41146c
+  - FREESUB-🔴🇭🇰[📺🎪🎞️]_github.com/Ruk1ng001_054bd55d
+  - FREESUB-🟠🇸🇬[🎭]_github.com/Ruk1ng001_99365f4a
+  - FREESUB-🟠🇭🇰[📺📦🔍]_github.com/Ruk1ng001_099454ad
+  - FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_4c6d8eb9
+  - FREESUB-🔴🇻🇳[🤖📺🔍]_github.com/Ruk1ng001_8b5a9fdb
+  - FREESUB-🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
+  - FREESUB-🟠🇯🇵[🤖📺📦]_github.com/Ruk1ng001_16f5ab4e
+  - FREESUB-🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_FQLMnmSE
+  - NMW-🇬🇷GR_1|2.1MB/s
+  - ANAERSUB-美国 008
+  - ANAERSUB-美国 033
+  - ANAERSUB-德国 004
+  - ANAERSUB-爱尔兰 002
+  - ANAERSUB-德国 002
+  - TESTEDNODE-🏁 未知-1C00BA04
   type: select
 rule-providers:
   apple:

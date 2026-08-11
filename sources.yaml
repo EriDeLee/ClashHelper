@@ -6,7 +6,7 @@ sources:
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.yml
 
   - name: PUDDIN
-    url: https://raw.githubusercontent.com/PuddinCat/best-clash-proxies/refs/heads/main/proxies.yaml
+    url: https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml
 
   - name: FREESUB
     url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
