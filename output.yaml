@@ -60,24 +60,49 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
+- _orig_name: 香港4|@ripaojiedian
+  latency: 311.125
+  name: NMW-香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 11035
+  server: 18.162.244.203
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  subscription: NMW
+  type: trojan
+- _orig_name: 新加坡3|@ripaojiedian
+  latency: 348.25
+  name: NMW-新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 26704
+  server: 18.163.126.92
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  subscription: NMW
+  type: trojan
 - _orig_name: 🔴🇭🇰[📺🎭✈️🔍]_github.com/Ruk1ng001_054bd55d
-  latency: 220.315
+  latency: 171.828
   name: FREESUB-🔴🇭🇰[📺🎭✈️🔍]_github.com/Ruk1ng001_054bd55d
   port: 10808
   server: 123.58.219.171
   subscription: FREESUB
   type: socks5
-- _orig_name: 🔴🇰🇷[🤖📺]_github.com/Ruk1ng001_c7d469b4
-  latency: 284.188
-  name: FREESUB-🔴🇰🇷[🤖📺]_github.com/Ruk1ng001_c7d469b4
-  port: 1080
-  server: 43.164.136.189
+- _orig_name: 🟠🇭🇰[📺]_github.com/Ruk1ng001_099454ad
+  latency: 278.554
+  name: FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_099454ad
+  password: '111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
   subscription: FREESUB
   type: socks5
+  username: '111'
 - _orig_name: 🟠🇮🇩[📺🎪🔍]_github.com/Ruk1ng001_3f658a95
   alterId: '0'
   cipher: auto
-  latency: 349.246
+  latency: 344.215
   name: FREESUB-🟠🇮🇩[📺🎪🔍]_github.com/Ruk1ng001_3f658a95
   network: tcp
   port: 27035
@@ -85,17 +110,19 @@ proxies:
   subscription: FREESUB
   type: vmess
   uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-- _orig_name: 🟠🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_d8a84f16
-  latency: 390.144
-  name: FREESUB-🟠🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_d8a84f16
-  password: abc123
-  port: 1080
-  server: 47.239.98.42
+- _orig_name: 🟠🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_6738ba5f
+  latency: 374.143
+  name: FREESUB-🟠🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_6738ba5f
+  password: null
+  port: 443
+  server: hk40.240104.xyz
+  skip-cert-verify: false
   subscription: FREESUB
-  type: socks5
-  username: abc123
+  tls: true
+  type: http
+  username: null
 - _orig_name: 🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_0d396e07
-  latency: 435.553
+  latency: 423.907
   name: FREESUB-🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_0d396e07
   password: pass
   port: 1080
@@ -104,7 +131,7 @@ proxies:
   type: socks5
   username: user
 - _orig_name: 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_26d0e430
-  latency: 446.991
+  latency: 424.165
   name: FREESUB-🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_26d0e430
   password: e4b72b531a2d10900519
   port: 443
@@ -114,28 +141,977 @@ proxies:
   tls: true
   type: http
   username: testuser1
-- _orig_name: 日本 003
+- _orig_name: 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
+  latency: 437.898
+  name: FREESUB-🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
+  port: 443
+  server: fan.571589.xyz
+  sni: fan.571589.xyz
+  subscription: FREESUB
+  tls: true
+  type: http
+- _orig_name: 🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_de4eaa15
+  latency: 446.991
+  name: FREESUB-🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_de4eaa15
+  port: 443
+  server: fan.240104.xyz
+  skip-cert-verify: true
+  sni: fan.240104.xyz
+  subscription: FREESUB
+  tls: true
+  type: http
+- _orig_name: 🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_f23c339c
+  latency: 488.713
+  name: FREESUB-🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_f23c339c
+  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  port: 443
+  server: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+  subscription: FREESUB
+  tls: true
+  type: http
+  username: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- _orig_name: 🇯🇵_JP_日本
   alterId: 0
   cipher: auto
-  latency: 178.97
-  name: ANAERSUB-日本 003
+  latency: 175.336
+  name: EMZCLASH-🇯🇵_JP_日本
   network: http
   port: 53268
   server: 47.74.43.250
   skip-cert-verify: true
-  subscription: ANAERSUB
+  subscription: EMZCLASH
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 16364b13-0e00-4f2e-82f0-37a721088953
+- _orig_name: 🇭🇰_HK_中国香港_1
+  alpn:
+  - h2
+  - http/1.1
+  latency: 195.539
+  name: EMZCLASH-🇭🇰_HK_中国香港_1
+  password: t3re5bgbot4z4z3t
+  port: 30101
+  server: xiweini.dpdns.org
+  skip-cert-verify: true
+  sni: xiweini.dpdns.org
+  subscription: EMZCLASH
+  tls: true
+  type: trojan
+  udp: true
+- _orig_name: 🇹🇼_TW_中国台湾->🇺🇸_US_美国
+  alterId: 0
+  cipher: auto
+  latency: 474.163
+  name: EMZCLASH-🇹🇼_TW_中国台湾->🇺🇸_US_美国
+  port: 51360
+  server: lt.badns.help
+  skip-cert-verify: true
+  subscription: EMZCLASH
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+- _orig_name: 🇫🇷FR_611|179KB/s|X001-260618
+  encryption: none
+  latency: 152.479
+  name: Daily_Free-🇫🇷FR_611|179KB/s|X001-260618
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 91.193.58.162
+  sub_tag: X001-260618
+  subscription: Daily_Free
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇫🇷FR_608|236KB/s|X001-260618
+  encryption: none
+  latency: 158.651
+  name: Daily_Free-🇫🇷FR_608|236KB/s|X001-260618
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 91.193.58.180
+  sub_tag: X001-260618
+  subscription: Daily_Free
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇫🇷FR_536|212KB/s|C002-260622
+  encryption: none
+  latency: 162.279
+  name: Daily_Free-🇫🇷FR_536|212KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 91.193.58.24
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇫🇷FR_535|113KB/s|C002-260622
+  encryption: none
+  latency: 182.069
+  name: Daily_Free-🇫🇷FR_535|113KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 91.193.58.226
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇸🇨SC_1|65KB/s|R002-260618
+  latency: 346.202
+  name: Daily_Free-🇸🇨SC_1|65KB/s|R002-260618
+  port: 443
+  server: hk40.240104.xyz
+  sni: hk40.240104.xyz
+  sub_tag: R002-260618
+  subscription: Daily_Free
+  tls: true
+  type: http
+  udp: true
+- _orig_name: 🇸🇨SC_2|179KB/s|R002-260618
+  latency: 370.754
+  name: Daily_Free-🇸🇨SC_2|179KB/s|R002-260618
+  port: 443
+  server: hk40.240104.xyz
+  skip-cert-verify: false
+  sni: hk40.240104.xyz
+  sub_tag: R002-260618
+  subscription: Daily_Free
+  tls: true
+  type: http
+  udp: true
+- _orig_name: 🇸🇬SG_37|264KB/s|R002-260618
+  latency: 398.851
+  name: Daily_Free-🇸🇬SG_37|264KB/s|R002-260618
+  password: admin
+  port: 1080
+  server: 143.198.85.89
+  sub_tag: R002-260618
+  subscription: Daily_Free
+  type: socks5
+  udp: true
+  username: admin
+- _orig_name: 🇯🇵JP_102|167KB/s|R002-260618
+  latency: 409.13
+  name: Daily_Free-🇯🇵JP_102|167KB/s|R002-260618
+  port: 443
+  server: fan.571589.xyz
+  sni: fan.571589.xyz
+  sub_tag: R002-260618
+  subscription: Daily_Free
+  tls: true
+  type: http
+  udp: true
+- _orig_name: 🇫🇷FR_463|420KB/s
+  latency: 417.661
+  name: Daily_Free-🇫🇷FR_463|420KB/s
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: 45.135.235.30
+  subscription: Daily_Free
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: vms.lifetime07.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    max-early-data: 2560
+    path: /
+  xudp: true
+- _orig_name: 🇯🇵JP_100|291KB/s|P002-260618
+  latency: 454.888
+  name: Daily_Free-🇯🇵JP_100|291KB/s|P002-260618
+  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  port: 443
+  server: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+  sni: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+  sub_tag: P002-260618
+  subscription: Daily_Free
+  tls: true
+  type: http
+  udp: true
+  username: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- _orig_name: 🇭🇰HK_7|1.2MB/s
+  latency: 157.751
+  name: KOOKER-🇭🇰HK_7|1.2MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.8
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇭🇰HK_5|3.3MB/s
+  latency: 158.987
+  name: KOOKER-🇭🇰HK_5|3.3MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.182
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /pyip=Telegram-WangCai2
+  xudp: true
+- _orig_name: 🇭🇰HK_2|1.6MB/s
+  encryption: none
+  latency: 160.553
+  name: KOOKER-🇭🇰HK_2|1.6MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.196
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇭🇰HK_6|2.7MB/s
+  encryption: none
+  latency: 162.154
+  name: KOOKER-🇭🇰HK_6|2.7MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.162
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇭🇰HK_3|1.4MB/s
+  encryption: none
+  latency: 164.353
+  name: KOOKER-🇭🇰HK_3|1.4MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.24
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/68.0.3440.106 Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇭🇰HK_4|1.2MB/s
+  encryption: none
+  latency: 183.405
+  name: KOOKER-🇭🇰HK_4|1.2MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.226
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.135 Safari/537.36
+    path: /pyip=Telegram-WangCai2🇨🇳
+  xudp: true
+- _orig_name: 🇸🇬SG_2|2.3MB/s
+  latency: 195.7
+  name: KOOKER-🇸🇬SG_2|2.3MB/s
+  network: ws
+  port: 8880
+  server: 45.40.147.40
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: vms.lifetime37.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    max-early-data: 2560
+    path: /
+  xudp: true
+- _orig_name: 🇭🇰HK_9|1.6MB/s
+  latency: 198.482
+  name: KOOKER-🇭🇰HK_9|1.6MB/s
+  network: ws
+  port: 80
+  server: 91.193.58.121
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  ws-opts:
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /pyip=Telegram-WangCai2
+  xudp: true
+- _orig_name: 🇸🇬SG_8|1.1MB/s
+  latency: 279.654
+  name: KOOKER-🇸🇬SG_8|1.1MB/s
+  network: ws
+  port: 8880
+  server: 45.40.147.30
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /
+  xudp: true
+- _orig_name: 🇸🇬SG_3|597KB/s
+  latency: 281.578
+  name: KOOKER-🇸🇬SG_3|597KB/s
+  network: ws
+  port: 8880
+  server: 72.167.25.30
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /
+  xudp: true
+- _orig_name: 🇸🇬SG_6|4.4MB/s
+  latency: 284.616
+  name: KOOKER-🇸🇬SG_6|4.4MB/s
+  network: ws
+  port: 8880
+  server: 166.62.107.2
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  ws-opts:
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /pyip=Telegram🇨🇳 @WangCai2
+  xudp: true
+- _orig_name: 🇸🇬SG_4|4.6MB/s
+  encryption: none
+  latency: 314.082
+  name: KOOKER-🇸🇬SG_4|4.6MB/s
+  network: ws
+  port: 8880
+  server: 50.62.194.30
+  subscription: KOOKER
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /
+  xudp: true
+- _orig_name: 🇸🇬SG_1|3.3MB/s
+  latency: 393.335
+  name: KOOKER-🇸🇬SG_1|3.3MB/s
+  password: admin
+  port: 1080
+  server: 143.198.85.89
+  skip-cert-verify: true
+  subscription: KOOKER
+  type: socks5
+  username: admin
+- _orig_name: 🇭🇰HK_1|3.2MB/s
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  latency: 472.131
+  name: KOOKER-🇭🇰HK_1|3.2MB/s
+  network: tcp
+  port: 20243
+  reality-opts:
+    public-key: fB0gzruxHdrID18WQclmC5QGVCrHTqOwnqFosxh2TnY
+    short-id: 214dd1031b8a
+  server: 34.124.166.13
+  servername: www.spotify.com
+  subscription: KOOKER
+  tls: true
+  type: vless
+  udp: true
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
+- _orig_name: 🇯🇵JP_1|5.2MB/s
+  latency: 474.081
+  name: KOOKER-🇯🇵JP_1|5.2MB/s
+  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  port: 443
+  server: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+  sni: e9b9c37c-t9zts0-tcw58g-1p0be.jp.oshuawei.com
+  subscription: KOOKER
+  tls: true
+  type: http
+  username: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- _orig_name: vless 246 - 253
+  latency: 219.989
+  name: LOCKLOUD-vless 246 - 253
+  network: ws
+  port: 8880
+  server: 45.40.147.40
+  subscription: LOCKLOUD
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+    path: /?ed=2560&https://t.me/youtube@zyfxs🇨🇳
+- _orig_name: vmess 184 - 1218
+  alterId: 0
+  cipher: auto
+  latency: 177.451
+  name: CLASHER-vmess 184 - 1218
+  network: http
+  port: 53268
+  server: 47.74.43.250
+  subscription: CLASHER
+  type: vmess
+  udp: true
+  uuid: 16364b13-0e00-4f2e-82f0-37a721088953
+- _orig_name: trojan-408614674
+  latency: 195.269
+  name: AU1RXX-trojan-408614674
+  password: t3re5bgbot4z4z3t
+  port: 30101
+  server: xiweini.dpdns.org
+  skip-cert-verify: false
+  sni: xiweini.dpdns.org
+  subscription: AU1RXX
+  type: trojan
+  udp: true
+- _orig_name: trojan-408527877
+  latency: 208.178
+  name: AU1RXX-trojan-408527877
+  password: t3re5bgbot4z4z3t
+  port: 30101
+  server: xiweini.dpdns.org
+  skip-cert-verify: false
+  sni: xiweini.dpdns.org
+  subscription: AU1RXX
+  type: trojan
+  udp: true
+- _orig_name: trojan-397997348
+  latency: 243.907
+  name: AU1RXX-trojan-397997348
+  password: t3re5bgbot4z4z3t
+  port: 30101
+  server: xiweini.dpdns.org
+  skip-cert-verify: true
+  sni: xiweini.dpdns.org
+  subscription: AU1RXX
+  type: trojan
+  udp: true
+- _orig_name: trojan-408674632
+  latency: 309.606
+  name: AU1RXX-trojan-408674632
+  password: BxceQaOe
+  port: 11035
+  server: 18.162.244.203
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  subscription: AU1RXX
+  type: trojan
+  udp: true
+- _orig_name: trojan-408674639
+  latency: 359.759
+  name: AU1RXX-trojan-408674639
+  password: BxceQaOe
+  port: 26704
+  server: 18.163.126.92
+  skip-cert-verify: true
+  sni: t.me%2fripaojiedian
+  subscription: AU1RXX
+  type: trojan
+  udp: true
+- _orig_name: shadowsocks-387719497
+  cipher: aes-256-cfb
+  latency: 471.186
+  name: AU1RXX-shadowsocks-387719497
+  password: amazonskr05
+  port: 443
+  server: 3.76.30.105
+  subscription: AU1RXX
+  type: ss
+  udp: true
+- _orig_name: shadowsocks-376006390
+  cipher: chacha20-ietf-poly1305
+  latency: 491.754
+  name: AU1RXX-shadowsocks-376006390
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  port: 42982
+  server: 217.28.129.81
+  subscription: AU1RXX
+  type: ss
+  udp: true
+- _orig_name: HK-103.149.183.80-0172 | 0.0MB
+  cipher: chacha20-ietf
+  latency: 105.188
+  name: MAXHK-HK-103.149.183.80-0172 | 0.0MB
+  password: asd123456
+  port: 8388
+  server: 103.149.183.80
+  subscription: MAXHK
+  type: ss
+- _orig_name: _JP_日本
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  latency: 183.62
+  name: MAXHK-_JP_日本
+  network: http
+  port: 53268
+  server: 47.74.43.250
+  subscription: MAXHK
+  tls: false
   type: vmess
   uuid: 16364b13-0e00-4f2e-82f0-37a721088953
+- _orig_name: 🇭🇰 香港 03
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  latency: 422.057
+  name: CHILD9527-🇭🇰 香港 03
+  network: tcp
+  port: 20243
+  reality-opts:
+    public-key: fB0gzruxHdrID18WQclmC5QGVCrHTqOwnqFosxh2TnY
+    short-id: 214dd1031b8a
+  server: 34.124.166.13
+  servername: www.spotify.com
+  subscription: CHILD9527
+  tls: true
+  type: vless
+  udp: true
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
+- _orig_name: 🏳️ 其他 07
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  latency: 477.937
+  name: CHILD9527-🏳️ 其他 07
+  network: tcp
+  port: 20843
+  reality-opts:
+    public-key: 3gomAzFXNmwrb-llPQCDK_xkPFOyBmVKR52iy8U3yjg
+    short-id: aad7f0276f60244b
+  server: 34.124.166.13
+  servername: www.spotify.com
+  subscription: CHILD9527
+  tls: true
+  type: vless
+  udp: true
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
+- _orig_name: github-mfuu-vmess_45
+  alterId: 0
+  cipher: auto
+  latency: 488.767
+  name: WUBOZH-github-mfuu-vmess_45
+  network: tcp
+  port: 51360
+  server: lt.badns.help
+  subscription: WUBOZH
+  tls: false
+  type: vmess
+  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+- _orig_name: 自建-香港-v4
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 150.947
+  name: ZCB-自建-香港-v4
+  port: 46028
+  reality-opts:
+    public-key: ZUpEUDxLNrNXWkiT20EFTz6cIc0RmjL-Olib-OennB0
+    short-id: 5eac8289
+  server: 151.242.125.100
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: ZCB
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34309e50-6697-4836-8d0e-c17ee2f979c4
+- _orig_name: 自建-东京-v4
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 286.725
+  name: ZCB-自建-东京-v4
+  port: 46028
+  reality-opts:
+    public-key: PZbWzaFDKzEudGuUHNQskYsni1stsBOWMB1wQouJSVg
+    short-id: 47a06576
+  server: 45.192.249.244
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: ZCB
+  tls: true
+  type: vless
+  udp: true
+  uuid: 130aa8e0-d9ee-4c1a-b590-1d538a9c29bf
+- _orig_name: 自建-香港-中转
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 303.01
+  name: ZCB-自建-香港-中转
+  port: 46029
+  reality-opts:
+    public-key: ZUpEUDxLNrNXWkiT20EFTz6cIc0RmjL-Olib-OennB0
+    short-id: 5eac8289
+  server: 111.39.250.124
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: ZCB
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34309e50-6697-4836-8d0e-c17ee2f979c4
+- _orig_name: 🇯🇵 [直连][旗舰]日本1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 318.328
+  name: ZCB-🇯🇵 [直连][旗舰]日本1
+  port: 443
+  reality-opts:
+    public-key: BA8mvRN9GwK0UyNqEbpmhpslATWzSn9N0Ady9rHXuGQ
+    short-id: 34d571c93fb25e4b
+  server: jp1-vip2.suntree.club
+  servername: www.microsoft.com
+  skip-cert-verify: true
+  subscription: ZCB
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63a92837-1ca6-465a-83b5-6bde2faff0b0
+- _orig_name: 🇭🇰 [直连][旗舰]香港1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 478.095
+  name: ZCB-🇭🇰 [直连][旗舰]香港1
+  port: 443
+  reality-opts:
+    public-key: BA8mvRN9GwK0UyNqEbpmhpslATWzSn9N0Ady9rHXuGQ
+    short-id: 34d571c93fb25e4b
+  server: hk1-vip2.suntree.club
+  servername: www.microsoft.com
+  skip-cert-verify: true
+  subscription: ZCB
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63a92837-1ca6-465a-83b5-6bde2faff0b0
+- _orig_name: 🇮🇳 印度 | IND
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  latency: 479.64
+  name: SNAKE2-🇮🇳 印度 | IND
+  network: tcp
+  port: 20843
+  reality-opts:
+    public-key: 3gomAzFXNmwrb-llPQCDK_xkPFOyBmVKR52iy8U3yjg
+    short-id: aad7f0276f60244b
+  server: 34.124.166.13
+  servername: www.spotify.com
+  subscription: SNAKE2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6
+- _orig_name: 🇯🇵JP-47.74.43.250-0705
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  latency: 182.29
+  name: SSAGG-🇯🇵JP-47.74.43.250-0705
+  network: http
+  port: 53268
+  server: 47.74.43.250
+  skip-cert-verify: false
+  subscription: SSAGG
+  tls: false
+  type: vmess
+  uuid: 16364b13-0e00-4f2e-82f0-37a721088953
+- _orig_name: 🇭🇰 102  | ⬇️ 6MB/s
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 170.038
+  name: OVMVO-🇭🇰 102  | ⬇️ 6MB/s
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: j0mfhbzohqV1W_PaNeYyKEVuaiK1-A9k2AQJQK7ZDzQ
+    short-id: 4aeab483de4dd53a
+  server: 43.161.225.44
+  servername: www.apple.com
+  skip-cert-verify: false
+  subscription: OVMVO
+  tls: true
+  type: vless
+  udp: true
+  uuid: 904183f1-0495-478b-b11f-1fe12e84ad8b
+- _orig_name: 🇭🇰 018  | ⬇️ 294KB/s
+  latency: 258.358
+  name: OVMVO-🇭🇰 018  | ⬇️ 294KB/s
+  password: '123'
+  port: 5555
+  server: 47.83.127.139
+  subscription: OVMVO
+  tls: false
+  type: socks5
+  username: '123'
+- _orig_name: 🇸🇬 019  | ⬇️ 22KB/s
+  alpn:
+  - h2
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 273.92
+  name: OVMVO-🇸🇬 019  | ⬇️ 22KB/s
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
+    short-id: 5a42dbd7e26a0415
+  server: 178.128.52.52
+  servername: zoom.us
+  skip-cert-verify: false
+  subscription: OVMVO
+  tls: true
+  type: vless
+  udp: true
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+- _orig_name: 🇭🇰 012  | ⬇️ 33KB/s
+  latency: 279.341
+  name: OVMVO-🇭🇰 012  | ⬇️ 33KB/s
+  password: abc123
+  port: 1080
+  server: 47.239.98.42
+  subscription: OVMVO
+  type: socks5
+  username: abc123
+- _orig_name: 🇭🇰 052  | ⬇️ 62KB/s
+  latency: 285.024
+  name: OVMVO-🇭🇰 052  | ⬇️ 62KB/s
+  password: '111'
+  port: 11310
+  server: 47.76.229.132
+  subscription: OVMVO
+  type: socks5
+  username: '111'
+- _orig_name: 🇸🇬 077  | ⬇️ 9MB/s
+  encryption: none
+  latency: 342.989
+  name: OVMVO-🇸🇬 077  | ⬇️ 9MB/s
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: 52.74.176.20
+  skip-cert-verify: false
+  subscription: OVMVO
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5ad0bed3-68ac-495e-b778-8b2d0e1dc176
+  ws-opts:
+    path: /
+- _orig_name: 🇸🇬 044  | ⬇️ 10MB/s
+  encryption: none
+  latency: 374.907
+  name: OVMVO-🇸🇬 044  | ⬇️ 10MB/s
+  network: ws
+  packet-encoding: xudp
+  port: 17771
+  server: 52.76.177.127
+  skip-cert-verify: false
+  subscription: OVMVO
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1178e691-88c5-4c7d-b4ea-1cefcdf52553
+  ws-opts:
+    path: /
+- _orig_name: 🇭🇰 097  | ⬇️ 122KB/s
+  latency: 380.987
+  name: OVMVO-🇭🇰 097  | ⬇️ 122KB/s
+  password: '123'
+  port: 30001
+  server: 47.239.74.242
+  subscription: OVMVO
+  tls: false
+  type: socks5
+  username: '123'
+- _orig_name: 🇭🇰 099  | ⬇️ 3MB/s
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 466.212
+  name: OVMVO-🇭🇰 099  | ⬇️ 3MB/s
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: CdNLdccy_ALnjDvwZa14eP31CoJ_BLqJAS2OLCNwogg
+    short-id: d19dcb524604e214
+  server: 124.156.182.132
+  servername: www.apple.com
+  skip-cert-verify: false
+  subscription: OVMVO
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1b6de5d8-3285-422c-b6fe-2989918f528b
 proxy-groups:
 - name: PROXY
   proxies:
+  - NMW-香港4|@ripaojiedian
+  - NMW-新加坡3|@ripaojiedian
   - FREESUB-🔴🇭🇰[📺🎭✈️🔍]_github.com/Ruk1ng001_054bd55d
-  - FREESUB-🔴🇰🇷[🤖📺]_github.com/Ruk1ng001_c7d469b4
+  - FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_099454ad
   - FREESUB-🟠🇮🇩[📺🎪🔍]_github.com/Ruk1ng001_3f658a95
-  - FREESUB-🟠🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_d8a84f16
+  - FREESUB-🟠🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_6738ba5f
   - FREESUB-🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_0d396e07
   - FREESUB-🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_26d0e430
-  - ANAERSUB-日本 003
+  - FREESUB-🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
+  - FREESUB-🔴🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_de4eaa15
+  - FREESUB-🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_f23c339c
+  - EMZCLASH-🇯🇵_JP_日本
+  - EMZCLASH-🇭🇰_HK_中国香港_1
+  - EMZCLASH-🇹🇼_TW_中国台湾->🇺🇸_US_美国
+  - Daily_Free-🇫🇷FR_611|179KB/s|X001-260618
+  - Daily_Free-🇫🇷FR_608|236KB/s|X001-260618
+  - Daily_Free-🇫🇷FR_536|212KB/s|C002-260622
+  - Daily_Free-🇫🇷FR_535|113KB/s|C002-260622
+  - Daily_Free-🇸🇨SC_1|65KB/s|R002-260618
+  - Daily_Free-🇸🇨SC_2|179KB/s|R002-260618
+  - Daily_Free-🇸🇬SG_37|264KB/s|R002-260618
+  - Daily_Free-🇯🇵JP_102|167KB/s|R002-260618
+  - Daily_Free-🇫🇷FR_463|420KB/s
+  - Daily_Free-🇯🇵JP_100|291KB/s|P002-260618
+  - KOOKER-🇭🇰HK_7|1.2MB/s
+  - KOOKER-🇭🇰HK_5|3.3MB/s
+  - KOOKER-🇭🇰HK_2|1.6MB/s
+  - KOOKER-🇭🇰HK_6|2.7MB/s
+  - KOOKER-🇭🇰HK_3|1.4MB/s
+  - KOOKER-🇭🇰HK_4|1.2MB/s
+  - KOOKER-🇸🇬SG_2|2.3MB/s
+  - KOOKER-🇭🇰HK_9|1.6MB/s
+  - KOOKER-🇸🇬SG_8|1.1MB/s
+  - KOOKER-🇸🇬SG_3|597KB/s
+  - KOOKER-🇸🇬SG_6|4.4MB/s
+  - KOOKER-🇸🇬SG_4|4.6MB/s
+  - KOOKER-🇸🇬SG_1|3.3MB/s
+  - KOOKER-🇭🇰HK_1|3.2MB/s
+  - KOOKER-🇯🇵JP_1|5.2MB/s
+  - LOCKLOUD-vless 246 - 253
+  - CLASHER-vmess 184 - 1218
+  - AU1RXX-trojan-408614674
+  - AU1RXX-trojan-408527877
+  - AU1RXX-trojan-397997348
+  - AU1RXX-trojan-408674632
+  - AU1RXX-trojan-408674639
+  - AU1RXX-shadowsocks-387719497
+  - AU1RXX-shadowsocks-376006390
+  - MAXHK-HK-103.149.183.80-0172 | 0.0MB
+  - MAXHK-_JP_日本
+  - CHILD9527-🇭🇰 香港 03
+  - CHILD9527-🏳️ 其他 07
+  - WUBOZH-github-mfuu-vmess_45
+  - ZCB-自建-香港-v4
+  - ZCB-自建-东京-v4
+  - ZCB-自建-香港-中转
+  - ZCB-🇯🇵 [直连][旗舰]日本1
+  - ZCB-🇭🇰 [直连][旗舰]香港1
+  - SNAKE2-🇮🇳 印度 | IND
+  - SSAGG-🇯🇵JP-47.74.43.250-0705
+  - OVMVO-🇭🇰 102  | ⬇️ 6MB/s
+  - OVMVO-🇭🇰 018  | ⬇️ 294KB/s
+  - OVMVO-🇸🇬 019  | ⬇️ 22KB/s
+  - OVMVO-🇭🇰 012  | ⬇️ 33KB/s
+  - OVMVO-🇭🇰 052  | ⬇️ 62KB/s
+  - OVMVO-🇸🇬 077  | ⬇️ 9MB/s
+  - OVMVO-🇸🇬 044  | ⬇️ 10MB/s
+  - OVMVO-🇭🇰 097  | ⬇️ 122KB/s
+  - OVMVO-🇭🇰 099  | ⬇️ 3MB/s
   type: select
 rule-providers:
   apple:

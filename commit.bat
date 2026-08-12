@@ -1,10 +1,17 @@
 @echo off
 chcp 65001
-REM ÔËĞĞPython½Å±¾Éú³ÉÅäÖÃÎÄ¼ş£¨Ê¹ÓÃÏîÄ¿ÄÚÇ¶Python£©
+setlocal
+REM Keep every temp write inside this folder (nothing lands on C:).
+if not exist "%~dp0.py-tmp" mkdir "%~dp0.py-tmp"
+set "TMP=%~dp0.py-tmp"
+set "TEMP=%~dp0.py-tmp"
+set "PYTHONNOUSERSITE=1"
+REM è¿è¡ŒPythonè„šæœ¬ç”Ÿæˆé…ç½®æ–‡ä»¶ï¼ˆä½¿ç”¨é¡¹ç›®å†…åµŒPythonï¼‰
 python\python.exe helper.py sources.yaml output.yaml
-echo ClashÅäÖÃÎÄ¼şÒÑÉú³É£ºoutput.yaml
+if errorlevel 1 (pause & goto :eof)
+echo Clashé…ç½®æ–‡ä»¶å·²ç”Ÿæˆï¼šoutput.yaml
 
-REM ÅäÖÃGit²¢Ìá½»¸ü¸Ä
+REM é…ç½®Gitå¹¶æäº¤æ›´æ”¹
 REM git config --global core.quotepath false
 REM git config --global i18n.commitencoding utf-8
 REM git config --global i18n.logoutputencoding utf-8
@@ -12,8 +19,8 @@ REM git config --global gui.encoding utf-8
 REM git config --global user.name "EricLeeaaaaa"
 REM git config --global user.email "ericleeaaaaa@github.com"
 git add output.yaml
-git commit -m "¸üĞÂ Clash ÅäÖÃÎÄ¼ş"
+git commit -m "æ›´æ–° Clash é…ç½®æ–‡ä»¶"
 git push
 
-echo ËùÓĞ²Ù×÷ÒÑÍê³É£¡
+echo æ‰€æœ‰æ“ä½œå·²å®Œæˆï¼
 pause

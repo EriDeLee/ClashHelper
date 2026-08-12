@@ -7,6 +7,7 @@ import json
 import math
 import subprocess
 import threading
+import time
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -43,6 +44,15 @@ TEST_CONCURRENCY = 128
 TEST_URL = "http://www.google.com/generate_204"
 
 FETCH_WORKERS = 10    # 并发拉取订阅源的线程数
+FETCH_TIMEOUT = 10    # 单次请求超时（秒）
+# 2026-08-12 实测：raw.githubusercontent.com 本身没问题 —— 串行 33/33、10 并发
+# 29/29 全成功，最慢单请求 2.4s。但那天正式跑的时候 6/29 个源超时，8768 个节点
+# （占全池 42%）压根没进检测；随后 3 并发重测又换了一批源失败。也就是说失败是
+# 网络时段性抖动，跟并发数和域名都无关，换 jsDelivr CDN 也治不了（还会因为边缘
+# 缓存拿到旧文件：实测 AU1RXX 的 CDN 副本旧了 60 分钟、少 24 个节点）。
+# 对症的做法只有重试。三次尝试最坏多等 36s，换回来的是那 42%。
+FETCH_ATTEMPTS = 3    # 单个源的尝试次数
+FETCH_BACKOFF = 2     # 重试前等待的基数秒，第 n 次失败后等 n*BACKOFF
 
 # 刻意不做 (ip, port) 去重。2026-08-11 实测：六个源之间字面量重复只占 2.4%，
 # 加上 IP 级重复也只有 9%，去掉后耗时没有可测差别（不去重 39.5s / 去重 43.1s，
@@ -121,11 +131,17 @@ class BatchValidator:
                 log(f"[检测] 跳过 port 非法的节点："
                     f"{node.get('_orig_name', '?')} port={node.get('port')!r}")
                 continue
+            # name 和 server 必须显式 str()。latency.go 的 ProxyConfig 把这两个
+            # 声明成 string，而 decodeConfigs 是对整个数组做一次 json.Unmarshal，
+            # 任何一个元素类型不符就整批拒绝。2026-08-12 实测：VPNFA 里 3 个节点
+            # 的 name 在 YAML 里写成裸数字（1 / 3 / 5334），被解析成 int，
+            # 于是 22605 个节点全军覆没、一个结果都没回来。port 的 int() 已经是
+            # 同一类问题的历史补丁（40 个节点的 port 是 '443' 这种字符串）。
             payload.append({
                 "id": idx,
                 "type": str(node['type']).lower(),
-                "name": node.get('_orig_name', node.get('name', 'Unknown')),
-                "server": node['server'],
+                "name": str(node.get('_orig_name', node.get('name', 'Unknown'))),
+                "server": str(node['server']),
                 "port": port,
                 "auth": {k: v for k, v in node.items() if k not in INTERNAL_KEYS},
             })
@@ -306,18 +322,31 @@ class Site:
         return parts[-2] if len(parts) >= 2 else 'Unknown'
 
     def _fetch_proxy_list(self):
-        try:
-            headers = {"User-Agent": "ClashForAndroid/2.5.12"}
-            resp = requests.get(self.url, headers=headers, timeout=10)
-            resp.raise_for_status()
-            self.data = yaml.load(resp.text, Loader=SafeLoader)
-            if self.data and 'proxies' in self.data:
-                for node in self.data.get('proxies') or []:
-                    node['_orig_name'] = node.get('name', 'Unknown')
-            log(f"[{self.name}] 成功获取订阅: {len((self.data or {}).get('proxies') or [])} 个节点")
-        except Exception as e:
-            self.data = None
-            log(f"[{self.name}] 订阅获取失败: {e}")
+        headers = {"User-Agent": "ClashForAndroid/2.5.12"}
+        last_err = None
+        for attempt in range(1, FETCH_ATTEMPTS + 1):
+            try:
+                resp = requests.get(self.url, headers=headers, timeout=FETCH_TIMEOUT)
+                resp.raise_for_status()
+                self.data = yaml.load(resp.text, Loader=SafeLoader)
+                if self.data and 'proxies' in self.data:
+                    for node in self.data.get('proxies') or []:
+                        node['_orig_name'] = node.get('name', 'Unknown')
+                retried = f"（第 {attempt} 次尝试）" if attempt > 1 else ""
+                log(f"[{self.name}] 成功获取订阅: "
+                    f"{len((self.data or {}).get('proxies') or [])} 个节点{retried}")
+                return
+            except Exception as e:
+                # 整块重试而不是只重试 requests：响应被截断时 yaml.load 才报错，
+                # 那种情况重来一次同样能救回来。
+                last_err = e
+                self.data = None
+                if attempt < FETCH_ATTEMPTS:
+                    wait = FETCH_BACKOFF * attempt
+                    log(f"[{self.name}] 第 {attempt}/{FETCH_ATTEMPTS} 次获取失败："
+                        f"{e}，{wait}s 后重试")
+                    time.sleep(wait)
+        log(f"[{self.name}] 订阅获取失败（已尝试 {FETCH_ATTEMPTS} 次）: {last_err}")
 
     def prepare(self):
         """只做本地过滤，不做检测。返回待检测的候选节点。"""
