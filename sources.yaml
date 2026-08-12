@@ -1,7 +1,4 @@
 sources:
-  - name: AMPN
-    url: https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml
-
   - name: NMW
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.yml
 
@@ -12,10 +9,7 @@ sources:
     url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
 
   - name: EMZCLASH
-    url: https://git.io/emzclash
-
-  - name: FREENODE
-    url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
 
   - name: ANAERSUB
     url: https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml

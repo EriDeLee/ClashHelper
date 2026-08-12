@@ -60,232 +60,82 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
-- _orig_name: 🟢🇨🇳_github.com/Ruk1ng001_0c5403d7
-  latency: 120
-  name: FREESUB-🟢🇨🇳_github.com/Ruk1ng001_0c5403d7
-  port: 8080
-  server: 112.64.135.45
-  subscription: FREESUB
-  type: http
-- _orig_name: 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_505c093b
-  alterId: '0'
-  cipher: auto
-  latency: 127
-  name: FREESUB-🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_505c093b
-  network: tcp
-  port: 29019
-  server: 366-1095.rabbitpro-in-3.com
-  subscription: FREESUB
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-- _orig_name: 🟢🇹🇼[🤖📺🎪✨]_github.com/Ruk1ng001_b0cf964a
-  alterId: '0'
-  cipher: auto
-  latency: 161
-  name: FREESUB-🟢🇹🇼[🤖📺🎪✨]_github.com/Ruk1ng001_b0cf964a
-  network: tcp
-  port: 27120
-  server: 366-1095.rabbitpro-in-3.com
-  subscription: FREESUB
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-- _orig_name: 🟢🇵🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_1e41146c
-  alterId: '0'
-  cipher: auto
-  latency: 168
-  name: FREESUB-🟢🇵🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_1e41146c
-  network: tcp
-  port: 27136
-  server: 366-1095.rabbitpro-in-3.com
-  subscription: FREESUB
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-- _orig_name: 🔴🇭🇰[📺🎪🎞️]_github.com/Ruk1ng001_054bd55d
-  latency: 177
-  name: FREESUB-🔴🇭🇰[📺🎪🎞️]_github.com/Ruk1ng001_054bd55d
+- _orig_name: 🔴🇭🇰[📺🎭✈️🔍]_github.com/Ruk1ng001_054bd55d
+  latency: 220.315
+  name: FREESUB-🔴🇭🇰[📺🎭✈️🔍]_github.com/Ruk1ng001_054bd55d
   port: 10808
   server: 123.58.219.171
   subscription: FREESUB
   type: socks5
-- _orig_name: 🟠🇸🇬[🎭]_github.com/Ruk1ng001_99365f4a
-  alterId: 2
-  cipher: auto
-  latency: 177
-  name: FREESUB-🟠🇸🇬[🎭]_github.com/Ruk1ng001_99365f4a
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: false
-  subscription: FREESUB
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- _orig_name: 🟠🇭🇰[📺📦🔍]_github.com/Ruk1ng001_099454ad
-  latency: 260
-  name: FREESUB-🟠🇭🇰[📺📦🔍]_github.com/Ruk1ng001_099454ad
-  password: '111'
-  port: 11211
-  server: 47.243.173.50
-  skip-cert-verify: true
-  subscription: FREESUB
-  type: socks5
-  username: '111'
-- _orig_name: 🟠🇭🇰[📺]_github.com/Ruk1ng001_4c6d8eb9
-  latency: 282
-  name: FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_4c6d8eb9
-  password: '123'
-  port: 3060
-  server: 43.100.43.112
-  subscription: FREESUB
-  type: socks5
-  username: '123'
-- _orig_name: 🔴🇻🇳[🤖📺🔍]_github.com/Ruk1ng001_8b5a9fdb
-  latency: 326
-  name: FREESUB-🔴🇻🇳[🤖📺🔍]_github.com/Ruk1ng001_8b5a9fdb
-  port: 8080
-  server: 113.160.132.26
-  subscription: FREESUB
-  type: http
-- _orig_name: 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
-  latency: 386
-  name: FREESUB-🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
-  port: 443
-  server: fan.571589.xyz
-  sni: fan.571589.xyz
-  subscription: FREESUB
-  tls: true
-  type: http
-- _orig_name: 🟠🇯🇵[🤖📺📦]_github.com/Ruk1ng001_16f5ab4e
-  latency: 426
-  name: FREESUB-🟠🇯🇵[🤖📺📦]_github.com/Ruk1ng001_16f5ab4e
-  password: '123456'
+- _orig_name: 🔴🇰🇷[🤖📺]_github.com/Ruk1ng001_c7d469b4
+  latency: 284.188
+  name: FREESUB-🔴🇰🇷[🤖📺]_github.com/Ruk1ng001_c7d469b4
   port: 1080
-  server: 8.209.236.192
+  server: 43.164.136.189
   subscription: FREESUB
   type: socks5
-  username: '123456'
-- _orig_name: 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_FQLMnmSE
-  latency: 499
-  name: FREESUB-🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_FQLMnmSE
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  subscription: FREESUB
-  tls: true
-  type: http
-  udp: true
-  username: test
-- _orig_name: 🇬🇷GR_1|2.1MB/s
+- _orig_name: 🟠🇮🇩[📺🎪🔍]_github.com/Ruk1ng001_3f658a95
   alterId: '0'
   cipher: auto
-  latency: 356
-  name: NMW-🇬🇷GR_1|2.1MB/s
+  latency: 349.246
+  name: FREESUB-🟠🇮🇩[📺🎪🔍]_github.com/Ruk1ng001_3f658a95
   network: tcp
-  port: '29072'
+  port: 27035
   server: 366-1095.rabbitpro-in-3.com
-  skip-cert-verify: false
-  subscription: NMW
-  tls: false
+  subscription: FREESUB
   type: vmess
-  udp: true
   uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-  xudp: true
-- _orig_name: 美国 008
+- _orig_name: 🟠🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_d8a84f16
+  latency: 390.144
+  name: FREESUB-🟠🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_d8a84f16
+  password: abc123
+  port: 1080
+  server: 47.239.98.42
+  subscription: FREESUB
+  type: socks5
+  username: abc123
+- _orig_name: 🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_0d396e07
+  latency: 435.553
+  name: FREESUB-🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_0d396e07
+  password: pass
+  port: 1080
+  server: 47.237.78.169
+  subscription: FREESUB
+  type: socks5
+  username: user
+- _orig_name: 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_26d0e430
+  latency: 446.991
+  name: FREESUB-🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_26d0e430
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 146.70.29.45
+  sni: 92461d2d.acsnet.co
+  subscription: FREESUB
+  tls: true
+  type: http
+  username: testuser1
+- _orig_name: 日本 003
   alterId: 0
   cipher: auto
-  latency: 163
-  name: ANAERSUB-美国 008
-  network: tcp
-  port: 27136
-  server: 366-1095.rabbitpro-in-3.com
-  subscription: ANAERSUB
-  type: vmess
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-- _orig_name: 美国 033
-  alterId: 0
-  cipher: auto
-  latency: 354
-  name: ANAERSUB-美国 033
-  network: tcp
-  port: 29072
-  server: 366-1095.rabbitpro-in-3.com
-  skip-cert-verify: false
-  subscription: ANAERSUB
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
-  xudp: true
-- _orig_name: 德国 004
-  latency: 382
-  name: ANAERSUB-德国 004
-  network: tcp
-  port: 62145
-  server: 134.98.157.85
-  subscription: ANAERSUB
-  type: vless
-  udp: true
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  xudp: true
-- _orig_name: 爱尔兰 002
-  latency: 424
-  name: ANAERSUB-爱尔兰 002
-  network: tcp
-  port: 62145
-  server: 143.47.188.131
-  subscription: ANAERSUB
-  type: vless
-  udp: true
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  xudp: true
-- _orig_name: 德国 002
-  latency: 491
-  name: ANAERSUB-德国 002
-  network: tcp
-  port: 62145
-  server: 84.235.175.201
-  subscription: ANAERSUB
-  type: vless
-  udp: true
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  xudp: true
-- _orig_name: 🏁 未知-1C00BA04
-  latency: 420
-  name: TESTEDNODE-🏁 未知-1C00BA04
-  network: ws
-  password: HutaoCloud
-  port: 11543
-  server: 185.220.238.77
+  latency: 178.97
+  name: ANAERSUB-日本 003
+  network: http
+  port: 53268
+  server: 47.74.43.250
   skip-cert-verify: true
-  subscription: TESTEDNODE
-  type: trojan
-  ws-opts:
-    path: /api
+  subscription: ANAERSUB
+  type: vmess
+  uuid: 16364b13-0e00-4f2e-82f0-37a721088953
 proxy-groups:
 - name: PROXY
   proxies:
-  - FREESUB-🟢🇨🇳_github.com/Ruk1ng001_0c5403d7
-  - FREESUB-🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_505c093b
-  - FREESUB-🟢🇹🇼[🤖📺🎪✨]_github.com/Ruk1ng001_b0cf964a
-  - FREESUB-🟢🇵🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_1e41146c
-  - FREESUB-🔴🇭🇰[📺🎪🎞️]_github.com/Ruk1ng001_054bd55d
-  - FREESUB-🟠🇸🇬[🎭]_github.com/Ruk1ng001_99365f4a
-  - FREESUB-🟠🇭🇰[📺📦🔍]_github.com/Ruk1ng001_099454ad
-  - FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_4c6d8eb9
-  - FREESUB-🔴🇻🇳[🤖📺🔍]_github.com/Ruk1ng001_8b5a9fdb
-  - FREESUB-🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_4920bfe7
-  - FREESUB-🟠🇯🇵[🤖📺📦]_github.com/Ruk1ng001_16f5ab4e
-  - FREESUB-🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_FQLMnmSE
-  - NMW-🇬🇷GR_1|2.1MB/s
-  - ANAERSUB-美国 008
-  - ANAERSUB-美国 033
-  - ANAERSUB-德国 004
-  - ANAERSUB-爱尔兰 002
-  - ANAERSUB-德国 002
-  - TESTEDNODE-🏁 未知-1C00BA04
+  - FREESUB-🔴🇭🇰[📺🎭✈️🔍]_github.com/Ruk1ng001_054bd55d
+  - FREESUB-🔴🇰🇷[🤖📺]_github.com/Ruk1ng001_c7d469b4
+  - FREESUB-🟠🇮🇩[📺🎪🔍]_github.com/Ruk1ng001_3f658a95
+  - FREESUB-🟠🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_d8a84f16
+  - FREESUB-🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_0d396e07
+  - FREESUB-🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_26d0e430
+  - ANAERSUB-日本 003
   type: select
 rule-providers:
   apple:

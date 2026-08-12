@@ -1,2 +1,6 @@
 python/
 AGENTS.md
+go/
+.go-*
+.py-tmp/
+__pycache__
