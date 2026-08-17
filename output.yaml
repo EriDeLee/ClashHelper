@@ -60,16 +60,18 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
-- _orig_name: 🇭🇰HK_1|1.3MB/s
+- _orig_name: 🇭🇰HK_1|5.5MB/s
   alterId: 0
   cipher: auto
-  latency: 234.548
-  name: NMW-🇭🇰HK_1|1.3MB/s
+  jitter: 53.1
+  latency: 230.8
+  name: NMW-🇭🇰HK_1|5.5MB/s
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: true
   subscription: NMW
+  success: 3/3
   tls: false
   type: vmess
   uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
@@ -77,20 +79,52 @@ proxies:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
-- _orig_name: 🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_e44b7cd3
-  auth: bc751c4c5c80f17dfbc05785c368b613
-  latency: 286.891
-  name: FREESUB-🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_e44b7cd3
-  password: bc751c4c5c80f17dfbc05785c368b613
-  port: 50160
-  server: 154.31.115.179
-  sni: 154-31-115-179.liao.kdns.fr
+- _orig_name: 🇯🇵JP_2|4.3MB/s
+  client-fingerprint: chrome
+  jitter: 77.2
+  latency: 376.5
+  name: NMW-🇯🇵JP_2|4.3MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: ethical-raccoon.rooster465.autos
+  skip-cert-verify: false
+  subscription: NMW
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: xx|7c66|puddincat07@Telegram
+  client-fingerprint: chrome
+  jitter: 77.2
+  latency: 364.8
+  name: PUDDIN-xx|7c66|puddincat07@Telegram
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: ethical-raccoon.rooster465.autos
+  skip-cert-verify: false
+  subscription: PUDDIN
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_aa7d4114
+  client-fingerprint: chrome
+  latency: 360.1
+  name: FREESUB-🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_aa7d4114
+  network: tcp
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: true
+  sni: www.nintendogames.net
   subscription: FREESUB
-  type: hysteria2
+  success: 1/3
+  type: trojan
   udp: true
 - _orig_name: 🟠🇲🇾[🎬🤖📺🎭]_github.com/Ruk1ng001_938f221d
   auth: 94c44047f066661fa4175c9823e56394
-  latency: 344.515
+  jitter: 37.0
+  latency: 378.7
   name: FREESUB-🟠🇲🇾[🎬🤖📺🎭]_github.com/Ruk1ng001_938f221d
   password: 94c44047f066661fa4175c9823e56394
   port: 50160
@@ -98,28 +132,56 @@ proxies:
   skip-cert-verify: true
   sni: 47-250-51-16.liao.kdns.fr
   subscription: FREESUB
+  success: 3/3
   type: hysteria2
 - _orig_name: 美国 009
   alterId: 0
   cipher: auto
-  latency: 122.135
+  jitter: 31.0
+  latency: 147.6
   name: ANAERSUB-美国 009
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: true
   subscription: ANAERSUB
+  success: 3/3
   type: vmess
   uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
   ws-opts:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
-- _orig_name: 🇭🇰HK_134|172KB/s|A001-260618
+- _orig_name: 🇫🇷FR_1046|400KB/s|B007-260618
+  encryption: none
+  jitter: 16.3
+  latency: 119.5
+  name: Daily_Free-🇫🇷FR_1046|400KB/s|B007-260618
+  network: ws
+  packet-encoding: xudp
+  port: 8080
+  server: 104.21.87.238
+  sub_tag: B007-260618
+  subscription: Daily_Free
+  success: 2/3
+  type: vless
+  udp: true
+  uuid: 8f53fce2-6c17-4e37-9ae9-d969fd85117c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: ApI-hub-C9A393.ALiMiRZAi539-484.WOrKerS.DeV
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    max-early-data: 2560
+    path: /vl/Wp4FqWLcoYNYXCovu4
+  xudp: true
+- _orig_name: 🇭🇰HK_148|153KB/s|A001-260618
   alterId: 0
   cipher: auto
-  latency: 127.437
-  name: Daily_Free-🇭🇰HK_134|172KB/s|A001-260618
+  jitter: 45.1
+  latency: 148.1
+  name: Daily_Free-🇭🇰HK_148|153KB/s|A001-260618
   network: ws
   packet-encoding: xudp
   port: 16632
@@ -127,6 +189,7 @@ proxies:
   skip-cert-verify: false
   sub_tag: A001-260618
   subscription: Daily_Free
+  success: 3/3
   tls: false
   type: vmess
   udp: true
@@ -136,11 +199,35 @@ proxies:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
   xudp: true
-- _orig_name: 🇭🇰HK_133|173KB/s|M003-260806
+- _orig_name: 🇭🇰HK_149|82KB/s|A001-260618
+  alterId: 0
+  cipher: auto
+  jitter: 43.9
+  latency: 160.5
+  name: Daily_Free-🇭🇰HK_149|82KB/s|A001-260618
+  network: ws
+  packet-encoding: xudp
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  sub_tag: A001-260618
+  subscription: Daily_Free
+  success: 3/3
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
+  ws-opts:
+    headers:
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- _orig_name: 🇭🇰HK_147|82KB/s|M003-260806
   alterId: '0'
   cipher: auto
-  latency: 127.569
-  name: Daily_Free-🇭🇰HK_133|173KB/s|M003-260806
+  jitter: 0.4
+  latency: 170.7
+  name: Daily_Free-🇭🇰HK_147|82KB/s|M003-260806
   network: ws
   packet-encoding: xudp
   port: 16632
@@ -148,6 +235,7 @@ proxies:
   skip-cert-verify: false
   sub_tag: M003-260806
   subscription: Daily_Free
+  success: 3/3
   tls: false
   type: vmess
   udp: true
@@ -157,72 +245,78 @@ proxies:
       Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
     path: /
   xudp: true
-- _orig_name: 🇭🇰HK_116|214KB/s|A004-260618
-  alterId: 0
-  cipher: auto
-  latency: 133.772
-  name: Daily_Free-🇭🇰HK_116|214KB/s|A004-260618
+- _orig_name: 🇫🇷FR_182|425KB/s|C002-260622
+  encryption: none
+  jitter: 8.4
+  latency: 178.6
+  name: Daily_Free-🇫🇷FR_182|425KB/s|C002-260622
   network: ws
   packet-encoding: xudp
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-  skip-cert-verify: false
-  sub_tag: A004-260618
+  port: 8880
+  server: cf9.466688.xyz
+  sub_tag: C002-260622
   subscription: Daily_Free
-  tls: false
-  type: vmess
+  success: 2/3
+  type: vless
   udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
   ws-opts:
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+      Host: summer-snow-c151.320-3ef.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+  xudp: true
+- _orig_name: 🇫🇷FR_1044|274KB/s|B007-260618
+  encryption: none
+  jitter: 61.8
+  latency: 178.8
+  name: Daily_Free-🇫🇷FR_1044|274KB/s|B007-260618
+  network: ws
+  packet-encoding: xudp
+  port: 2082
+  server: 104.17.191.186
+  sub_tag: B007-260618
+  subscription: Daily_Free
+  success: 3/3
+  type: vless
+  udp: true
+  uuid: 288bb3f1-8994-47cf-8bd8-9b7d4d716461
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: newvless2026.nova-b0f3f5.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    max-early-data: 2560
     path: /
   xudp: true
-- _orig_name: 🇰🇷KR_411|183KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 182.862
-  name: Daily_Free-🇰🇷KR_411|183KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: united-grouse.rooster465.autos
-  skip-cert-verify: false
-  sni: united-grouse.rooster465.autos
+- _orig_name: 🇫🇷FR_671|224KB/s|C002-260622
+  encryption: none
+  latency: 187.8
+  name: Daily_Free-🇫🇷FR_671|224KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: cf9.466688.xyz
   sub_tag: C002-260622
   subscription: Daily_Free
-  type: trojan
+  success: 1/3
+  type: vless
   udp: true
-- _orig_name: 🇰🇷KR_402|221KB/s
+  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
+  ws-opts:
+    headers:
+      Host: empty-rain-1df4.332-633.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+  xudp: true
+- _orig_name: 🇰🇷KR_412|357KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 200.299
-  name: Daily_Free-🇰🇷KR_402|221KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: regular-raptor.rooster465.autos
-  skip-cert-verify: false
-  sni: regular-raptor.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇰🇷KR_389|182KB/s
-  client-fingerprint: chrome
-  latency: 200.388
-  name: Daily_Free-🇰🇷KR_389|182KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: united-grouse.rooster465.autos
-  skip-cert-verify: false
-  sni: united-grouse.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇰🇷KR_429|396KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 217.162
-  name: Daily_Free-🇰🇷KR_429|396KB/s|C002-260622
+  jitter: 12.3
+  latency: 192.5
+  name: Daily_Free-🇰🇷KR_412|357KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
@@ -231,26 +325,122 @@ proxies:
   sni: regular-raptor.rooster465.autos
   sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_768|220KB/s|C002-260622
+- _orig_name: 🇫🇷FR_206|299KB/s|C002-260622
+  encryption: none
+  jitter: 28.6
+  latency: 195.5
+  name: Daily_Free-🇫🇷FR_206|299KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: cf9.466688.xyz
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 2/3
+  type: vless
+  udp: true
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /pyip=ProxyIP.JP.autumniussss.net
+  xudp: true
+- _orig_name: 🇰🇷KR_371|108KB/s
   client-fingerprint: chrome
-  latency: 245.12
-  name: Daily_Free-🇯🇵JP_768|220KB/s|C002-260622
+  jitter: 11.8
+  latency: 212.9
+  name: Daily_Free-🇰🇷KR_371|108KB/s
   network: tcp
   password: PQ05174892
   port: 443
-  server: free-tuna.rooster465.autos
+  server: united-grouse.rooster465.autos
   skip-cert-verify: false
-  sni: free-tuna.rooster465.autos
-  sub_tag: C002-260622
+  sni: united-grouse.rooster465.autos
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_798|326KB/s|C002-260622
+- _orig_name: 🇰🇷KR_395|98KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 247.083
-  name: Daily_Free-🇯🇵JP_798|326KB/s|C002-260622
+  jitter: 8.2
+  latency: 214.5
+  name: Daily_Free-🇰🇷KR_395|98KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: united-grouse.rooster465.autos
+  skip-cert-verify: false
+  sni: united-grouse.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇫🇷FR_67|212KB/s
+  encryption: none
+  latency: 216.9
+  name: Daily_Free-🇫🇷FR_67|212KB/s
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: cf9.466688.xyz
+  subscription: Daily_Free
+  success: 1/3
+  type: vless
+  udp: true
+  uuid: f989cbf4-40d2-41d2-8a00-1fe4e29b2192
+  ws-opts:
+    headers:
+      Host: ancient-rice-c180.455-8ad.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net@https://t.me/QiangLieTuiJian
+  xudp: true
+- _orig_name: 🇫🇷FR_195|113KB/s|C002-260622
+  encryption: none
+  jitter: 79.8
+  latency: 221.8
+  name: Daily_Free-🇫🇷FR_195|113KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: cf9.466688.xyz
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 2/3
+  type: vless
+  udp: true
+  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
+  ws-opts:
+    headers:
+      Host: broken-star-c5ae.446.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+  xudp: true
+- _orig_name: 🇯🇵JP_749|228KB/s|R002-260618
+  auth: bc751c4c5c80f17dfbc05785c368b613
+  jitter: 1.8
+  latency: 233.4
+  name: Daily_Free-🇯🇵JP_749|228KB/s|R002-260618
+  password: bc751c4c5c80f17dfbc05785c368b613
+  port: 50160
+  server: 154.31.115.179
+  sni: 154-31-115-179.liao.kdns.fr
+  sub_tag: R002-260618
+  subscription: Daily_Free
+  success: 3/3
+  type: hysteria2
+  udp: true
+- _orig_name: 🇯🇵JP_754|214KB/s|C002-260622
+  client-fingerprint: chrome
+  latency: 255.9
+  name: Daily_Free-🇯🇵JP_754|214KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
@@ -259,254 +449,14 @@ proxies:
   sni: open-caribou.rooster465.autos
   sub_tag: C002-260622
   subscription: Daily_Free
+  success: 1/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_766|207KB/s|C002-260622
+- _orig_name: 🇯🇵JP_752|204KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 249.704
-  name: Daily_Free-🇯🇵JP_766|207KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: smooth-cougar.rooster465.autos
-  skip-cert-verify: false
-  sni: smooth-cougar.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_732|180KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 249.918
-  name: Daily_Free-🇯🇵JP_732|180KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: mighty-lemming.rooster465.autos
-  skip-cert-verify: false
-  sni: mighty-lemming.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_684|254KB/s
-  client-fingerprint: chrome
-  latency: 254.221
-  name: Daily_Free-🇯🇵JP_684|254KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: mighty-lemming.rooster465.autos
-  skip-cert-verify: false
-  sni: mighty-lemming.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_785|139KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 255.814
-  name: Daily_Free-🇯🇵JP_785|139KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: intimate-hog.rooster465.autos
-  skip-cert-verify: false
-  sni: intimate-hog.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_703|211KB/s
-  client-fingerprint: chrome
-  latency: 257.868
-  name: Daily_Free-🇯🇵JP_703|211KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: free-tuna.rooster465.autos
-  skip-cert-verify: false
-  sni: free-tuna.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_772|338KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 258.64
-  name: Daily_Free-🇯🇵JP_772|338KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: witty-duckling.rooster465.autos
-  skip-cert-verify: false
-  sni: witty-duckling.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_806|87KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 259.084
-  name: Daily_Free-🇯🇵JP_806|87KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: key-sponge.rooster465.autos
-  skip-cert-verify: false
-  sni: key-sponge.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_748|114KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 259.396
-  name: Daily_Free-🇯🇵JP_748|114KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: inspired-hound.rooster465.autos
-  skip-cert-verify: false
-  sni: inspired-hound.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_729|94KB/s
-  client-fingerprint: chrome
-  latency: 260.075
-  name: Daily_Free-🇯🇵JP_729|94KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sterling-vervet.rooster465.autos
-  skip-cert-verify: false
-  sni: sterling-vervet.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_807|103KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 262.419
-  name: Daily_Free-🇯🇵JP_807|103KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sterling-vervet.rooster465.autos
-  skip-cert-verify: false
-  sni: sterling-vervet.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_782|115KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 263.123
-  name: Daily_Free-🇯🇵JP_782|115KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: brief-flamingo.rooster465.autos
-  skip-cert-verify: false
-  sni: brief-flamingo.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_708|153KB/s
-  client-fingerprint: chrome
-  latency: 265.079
-  name: Daily_Free-🇯🇵JP_708|153KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: inspired-hound.rooster465.autos
-  skip-cert-verify: false
-  sni: inspired-hound.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_713|162KB/s
-  client-fingerprint: chrome
-  latency: 266.296
-  name: Daily_Free-🇯🇵JP_713|162KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: intimate-hog.rooster465.autos
-  skip-cert-verify: false
-  sni: intimate-hog.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_718|201KB/s
-  client-fingerprint: chrome
-  latency: 266.972
-  name: Daily_Free-🇯🇵JP_718|201KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: smooth-cougar.rooster465.autos
-  skip-cert-verify: false
-  sni: smooth-cougar.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_731|131KB/s
-  client-fingerprint: chrome
-  latency: 268.369
-  name: Daily_Free-🇯🇵JP_731|131KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: champion-alien.rooster465.autos
-  skip-cert-verify: false
-  sni: champion-alien.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_714|132KB/s
-  client-fingerprint: chrome
-  latency: 268.973
-  name: Daily_Free-🇯🇵JP_714|132KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: key-sponge.rooster465.autos
-  skip-cert-verify: false
-  sni: key-sponge.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_705|363KB/s
-  client-fingerprint: chrome
-  latency: 269.608
-  name: Daily_Free-🇯🇵JP_705|363KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: ethical-raccoon.rooster465.autos
-  skip-cert-verify: false
-  sni: ethical-raccoon.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_707|334KB/s
-  client-fingerprint: chrome
-  latency: 270.614
-  name: Daily_Free-🇯🇵JP_707|334KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: brief-flamingo.rooster465.autos
-  skip-cert-verify: false
-  sni: brief-flamingo.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_796|339KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 271.502
-  name: Daily_Free-🇯🇵JP_796|339KB/s|C002-260622
+  jitter: 15.7
+  latency: 257.9
+  name: Daily_Free-🇯🇵JP_752|204KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
@@ -515,83 +465,14 @@ proxies:
   sni: champion-alien.rooster465.autos
   sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_760|321KB/s|C002-260622
+- _orig_name: 🇸🇬SG_223|175KB/s|A004-260618
   client-fingerprint: chrome
-  latency: 273.158
-  name: Daily_Free-🇯🇵JP_760|321KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: proud-escargot.rooster465.autos
-  skip-cert-verify: false
-  sni: proud-escargot.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_783|124KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 275.505
-  name: Daily_Free-🇯🇵JP_783|124KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: ethical-raccoon.rooster465.autos
-  skip-cert-verify: false
-  sni: ethical-raccoon.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵JP_668|223KB/s
-  client-fingerprint: chrome
-  latency: 278.914
-  name: Daily_Free-🇯🇵JP_668|223KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: witty-duckling.rooster465.autos
-  skip-cert-verify: false
-  sni: witty-duckling.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇲🇾MY_3|337KB/s|S001-260618
-  down: ''
-  fingerprint: ''
-  latency: 279.232
-  name: Daily_Free-🇲🇾MY_3|337KB/s|S001-260618
-  obfs: ''
-  obfs-password: ''
-  password: 94c44047f066661fa4175c9823e56394
-  port: 50160
-  server: 47-250-51-16.liao.kdns.fr
-  skip-cert-verify: true
-  sni: 47-250-51-16.liao.kdns.fr
-  sub_tag: S001-260618
-  subscription: Daily_Free
-  type: hysteria2
-  udp: true
-  up: ''
-- _orig_name: 🇯🇵JP_725|279KB/s
-  client-fingerprint: chrome
-  latency: 280.185
-  name: Daily_Free-🇯🇵JP_725|279KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: proud-escargot.rooster465.autos
-  skip-cert-verify: false
-  sni: proud-escargot.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_245|230KB/s|A004-260618
-  client-fingerprint: chrome
-  latency: 280.302
-  name: Daily_Free-🇸🇬SG_245|230KB/s|A004-260618
+  jitter: 24.4
+  latency: 258.6
+  name: Daily_Free-🇸🇬SG_223|175KB/s|A004-260618
   network: tcp
   password: fVZMat1g9H
   port: 52
@@ -599,25 +480,106 @@ proxies:
   skip-cert-verify: false
   sub_tag: A004-260618
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_674|147KB/s
+- _orig_name: 🇯🇵JP_681|164KB/s
   client-fingerprint: chrome
-  latency: 280.484
-  name: Daily_Free-🇯🇵JP_674|147KB/s
+  jitter: 15.8
+  latency: 261.4
+  name: Daily_Free-🇯🇵JP_681|164KB/s
   network: tcp
   password: PQ05174892
   port: 443
-  server: aware-puma.rooster465.autos
+  server: smooth-cougar.rooster465.autos
   skip-cert-verify: false
-  sni: aware-puma.rooster465.autos
+  sni: smooth-cougar.rooster465.autos
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_687|201KB/s
+- _orig_name: 🇰🇷KR_384|308KB/s
   client-fingerprint: chrome
-  latency: 287.918
-  name: Daily_Free-🇯🇵JP_687|201KB/s
+  jitter: 76.5
+  latency: 261.9
+  name: Daily_Free-🇰🇷KR_384|308KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: regular-raptor.rooster465.autos
+  skip-cert-verify: false
+  sni: regular-raptor.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_671|335KB/s
+  client-fingerprint: chrome
+  jitter: 5.9
+  latency: 262.1
+  name: Daily_Free-🇯🇵JP_671|335KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: ethical-raccoon.rooster465.autos
+  skip-cert-verify: false
+  sni: ethical-raccoon.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_728|125KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 19.3
+  latency: 263.9
+  name: Daily_Free-🇯🇵JP_728|125KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: free-tuna.rooster465.autos
+  skip-cert-verify: false
+  sni: free-tuna.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_726|282KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 11.8
+  latency: 265.0
+  name: Daily_Free-🇯🇵JP_726|282KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: smooth-cougar.rooster465.autos
+  skip-cert-verify: false
+  sni: smooth-cougar.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_742|205KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 18.3
+  latency: 266.9
+  name: Daily_Free-🇯🇵JP_742|205KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: ethical-raccoon.rooster465.autos
+  skip-cert-verify: false
+  sni: ethical-raccoon.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_654|99KB/s
+  client-fingerprint: chrome
+  latency: 270.0
+  name: Daily_Free-🇯🇵JP_654|99KB/s
   network: tcp
   password: PQ05174892
   port: 443
@@ -625,14 +587,154 @@ proxies:
   skip-cert-verify: false
   sni: open-caribou.rooster465.autos
   subscription: Daily_Free
+  success: 1/3
   type: trojan
   udp: true
-- _orig_name: 🇭🇰HK_100|151KB/s|A004-260618
+- _orig_name: 🇯🇵JP_720|144KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 39.4
+  latency: 270.0
+  name: Daily_Free-🇯🇵JP_720|144KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: proud-escargot.rooster465.autos
+  skip-cert-verify: false
+  sni: proud-escargot.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_637|253KB/s
+  client-fingerprint: chrome
+  jitter: 7.1
+  latency: 270.2
+  name: Daily_Free-🇯🇵JP_637|253KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: witty-duckling.rooster465.autos
+  skip-cert-verify: false
+  sni: witty-duckling.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_718|309KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 13.4
+  latency: 270.4
+  name: Daily_Free-🇯🇵JP_718|309KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: aware-puma.rooster465.autos
+  skip-cert-verify: false
+  sni: aware-puma.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_689|72KB/s
+  client-fingerprint: chrome
+  jitter: 16.9
+  latency: 271.5
+  name: Daily_Free-🇯🇵JP_689|72KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: proud-escargot.rooster465.autos
+  skip-cert-verify: false
+  sni: proud-escargot.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_669|212KB/s
+  client-fingerprint: chrome
+  jitter: 1.3
+  latency: 274.3
+  name: Daily_Free-🇯🇵JP_669|212KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: free-tuna.rooster465.autos
+  skip-cert-verify: false
+  sni: free-tuna.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_778|333KB/s
+  client-fingerprint: chrome
+  jitter: 21.6
+  latency: 274.6
+  name: Daily_Free-🇯🇵JP_778|333KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: concise-guinea.rooster465.autos
+  skip-cert-verify: false
+  sni: concise-guinea.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_694|84KB/s
+  client-fingerprint: chrome
+  jitter: 12.6
+  latency: 278.6
+  name: Daily_Free-🇯🇵JP_694|84KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: champion-alien.rooster465.autos
+  skip-cert-verify: false
+  sni: champion-alien.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_644|317KB/s
+  client-fingerprint: chrome
+  jitter: 16.1
+  latency: 283.8
+  name: Daily_Free-🇯🇵JP_644|317KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: aware-puma.rooster465.autos
+  skip-cert-verify: false
+  sni: aware-puma.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵JP_762|130KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 23.2
+  latency: 285.7
+  name: Daily_Free-🇯🇵JP_762|130KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: sterling-vervet.rooster465.autos
+  skip-cert-verify: false
+  sni: sterling-vervet.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇭🇰HK_112|401KB/s|A004-260618
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: update
-  latency: 299.106
-  name: Daily_Free-🇭🇰HK_100|151KB/s|A004-260618
+  jitter: 3.6
+  latency: 297.4
+  name: Daily_Free-🇭🇰HK_112|401KB/s|A004-260618
   network: grpc
   packet-encoding: xudp
   port: 10126
@@ -643,41 +745,119 @@ proxies:
   servername: s0.awsstatic.com
   sub_tag: A004-260618
   subscription: Daily_Free
+  success: 2/3
   tls: true
   type: vless
   udp: true
   uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
   xudp: true
-- _orig_name: 🇰🇷KR_418|125KB/s|C002-260622
+- _orig_name: 🇰🇷KR_419|159KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 301.458
-  name: Daily_Free-🇰🇷KR_418|125KB/s|C002-260622
+  jitter: 3.7
+  latency: 300.0
+  name: Daily_Free-🇰🇷KR_419|159KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: awake-redbird.rooster465.autos
+  skip-cert-verify: false
+  sni: awake-redbird.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 2/3
+  type: trojan
+  udp: true
+- _orig_name: 🇫🇷FR_808|135KB/s|C002-260622
+  encryption: none
+  jitter: 1.6
+  latency: 300.7
+  name: Daily_Free-🇫🇷FR_808|135KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: 50.62.194.30
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /
+  xudp: true
+- _orig_name: 🇰🇷KR_358|151KB/s
+  client-fingerprint: chrome
+  jitter: 8.5
+  latency: 303.7
+  name: Daily_Free-🇰🇷KR_358|151KB/s
   network: tcp
   password: PQ05174892
   port: 443
   server: precious-stag.rooster465.autos
   skip-cert-verify: false
   sni: precious-stag.rooster465.autos
-  sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_791|329KB/s|R002-260618
-  auth: bc751c4c5c80f17dfbc05785c368b613
-  latency: 302.135
-  name: Daily_Free-🇯🇵JP_791|329KB/s|R002-260618
-  password: bc751c4c5c80f17dfbc05785c368b613
-  port: 50160
-  server: 154.31.115.179
-  sni: 154-31-115-179.liao.kdns.fr
-  sub_tag: R002-260618
+- _orig_name: 🇭🇰HK_185|255KB/s|A004-260618
+  client-fingerprint: chrome
+  latency: 305.5
+  name: Daily_Free-🇭🇰HK_185|255KB/s|A004-260618
+  network: tcp
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: true
+  sni: 2c.fast9988.com
+  sub_tag: A004-260618
   subscription: Daily_Free
+  success: 1/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷KR_362|127KB/s
+  client-fingerprint: chrome
+  jitter: 16.8
+  latency: 307.1
+  name: Daily_Free-🇰🇷KR_362|127KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: careful-cow.rooster465.autos
+  skip-cert-verify: false
+  sni: careful-cow.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇲🇾MY_6|172KB/s|S001-260618
+  down: ''
+  fingerprint: ''
+  jitter: 23.3
+  latency: 310.3
+  name: Daily_Free-🇲🇾MY_6|172KB/s|S001-260618
+  obfs: ''
+  obfs-password: ''
+  password: 94c44047f066661fa4175c9823e56394
+  port: 50160
+  server: 47-250-51-16.liao.kdns.fr
+  skip-cert-verify: true
+  sni: 47-250-51-16.liao.kdns.fr
+  sub_tag: S001-260618
+  subscription: Daily_Free
+  success: 3/3
   type: hysteria2
   udp: true
-- _orig_name: 🇰🇷KR_424|187KB/s
+  up: ''
+- _orig_name: 🇰🇷KR_408|176KB/s
   client-fingerprint: chrome
-  latency: 305.376
-  name: Daily_Free-🇰🇷KR_424|187KB/s
+  jitter: 6.4
+  latency: 317.8
+  name: Daily_Free-🇰🇷KR_408|176KB/s
   network: tcp
   password: PQ05174892
   port: 443
@@ -685,12 +865,38 @@ proxies:
   skip-cert-verify: false
   sni: awake-redbird.rooster465.autos
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇰🇷KR_414|364KB/s|C002-260622
+- _orig_name: 🇭🇰HK_129|234KB/s|A004-260618
+  alterId: 0
+  cipher: auto
+  jitter: 495.0
+  latency: 319.8
+  name: Daily_Free-🇭🇰HK_129|234KB/s|A004-260618
+  network: ws
+  packet-encoding: xudp
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+  skip-cert-verify: false
+  sub_tag: A004-260618
+  subscription: Daily_Free
+  success: 3/3
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- _orig_name: 🇰🇷KR_399|209KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 316.605
-  name: Daily_Free-🇰🇷KR_414|364KB/s|C002-260622
+  jitter: 72.0
+  latency: 323.1
+  name: Daily_Free-🇰🇷KR_399|209KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
@@ -699,135 +905,65 @@ proxies:
   sni: careful-cow.rooster465.autos
   sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇰🇷KR_380|89KB/s
-  client-fingerprint: chrome
-  latency: 323.008
-  name: Daily_Free-🇰🇷KR_380|89KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: careful-cow.rooster465.autos
-  skip-cert-verify: false
-  sni: careful-cow.rooster465.autos
+- _orig_name: 🇫🇷FR_811|195KB/s|F003-260618
+  latency: 339.1
+  name: Daily_Free-🇫🇷FR_811|195KB/s|F003-260618
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 208.103.161.249
+  sub_tag: F003-260618
   subscription: Daily_Free
-  type: trojan
+  success: 1/3
+  type: vless
   udp: true
-- _orig_name: 🇰🇷KR_375|317KB/s
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  ws-opts:
+    headers:
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.101 Safari/537.36
+    path: /
+  xudp: true
+- _orig_name: 🇸🇬SG_230|87KB/s
   client-fingerprint: chrome
-  latency: 331.414
-  name: Daily_Free-🇰🇷KR_375|317KB/s
+  jitter: 12.3
+  latency: 362.6
+  name: Daily_Free-🇸🇬SG_230|87KB/s
   network: tcp
   password: PQ05174892
   port: 443
-  server: precious-stag.rooster465.autos
+  server: stable-python.rooster465.autos
   skip-cert-verify: false
-  sni: precious-stag.rooster465.autos
+  sni: stable-python.rooster465.autos
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇸🇬SG_235|481KB/s|C002-260622
+- _orig_name: 🇸🇬SG_231|219KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 347.483
-  name: Daily_Free-🇸🇬SG_235|481KB/s|C002-260622
+  jitter: 16.9
+  latency: 363.6
+  name: Daily_Free-🇸🇬SG_231|219KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
-  server: welcome-monitor.rooster465.autos
+  server: intense-sole.rooster465.autos
   skip-cert-verify: false
-  sni: welcome-monitor.rooster465.autos
+  sni: intense-sole.rooster465.autos
   sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇸🇬SG_249|223KB/s|C002-260622
+- _orig_name: 🇸🇬SG_210|208KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 362.01
-  name: Daily_Free-🇸🇬SG_249|223KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: apparent-wasp.rooster465.autos
-  skip-cert-verify: false
-  sni: apparent-wasp.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_210|266KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 363.269
-  name: Daily_Free-🇸🇬SG_210|266KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: vast-werewolf.rooster465.autos
-  skip-cert-verify: false
-  sni: vast-werewolf.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_205|258KB/s
-  client-fingerprint: chrome
-  latency: 363.627
-  name: Daily_Free-🇸🇬SG_205|258KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: apparent-wasp.rooster465.autos
-  skip-cert-verify: false
-  sni: apparent-wasp.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_207|297KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 363.75
-  name: Daily_Free-🇸🇬SG_207|297KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: composed-sheep.rooster465.autos
-  skip-cert-verify: false
-  sni: composed-sheep.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_234|240KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 365.814
-  name: Daily_Free-🇸🇬SG_234|240KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: intense-monarch.rooster465.autos
-  skip-cert-verify: false
-  sni: intense-monarch.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_213|128KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 371.819
-  name: Daily_Free-🇸🇬SG_213|128KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: amusing-grub.rooster465.autos
-  skip-cert-verify: false
-  sni: amusing-grub.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_231|148KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 372.944
-  name: Daily_Free-🇸🇬SG_231|148KB/s|C002-260622
+  jitter: 4.0
+  latency: 364.2
+  name: Daily_Free-🇸🇬SG_210|208KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
@@ -836,130 +972,94 @@ proxies:
   sni: pleased-raptor.rooster465.autos
   sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇸🇬SG_165|194KB/s
+- _orig_name: 🇸🇬SG_197|405KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 373.239
-  name: Daily_Free-🇸🇬SG_165|194KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: pleased-albacore.rooster465.autos
-  skip-cert-verify: false
-  sni: pleased-albacore.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_187|76KB/s
-  client-fingerprint: chrome
-  latency: 374.193
-  name: Daily_Free-🇸🇬SG_187|76KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: fleet-pony.rooster465.autos
-  skip-cert-verify: false
-  sni: fleet-pony.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_229|180KB/s|C002-260622
-  client-fingerprint: chrome
-  latency: 376.558
-  name: Daily_Free-🇸🇬SG_229|180KB/s|C002-260622
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sharp-feline.rooster465.autos
-  skip-cert-verify: false
-  sni: sharp-feline.rooster465.autos
-  sub_tag: C002-260622
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_170|191KB/s
-  client-fingerprint: chrome
-  latency: 377.998
-  name: Daily_Free-🇸🇬SG_170|191KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: composed-sheep.rooster465.autos
-  skip-cert-verify: false
-  sni: composed-sheep.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_197|183KB/s
-  client-fingerprint: chrome
-  latency: 378.224
-  name: Daily_Free-🇸🇬SG_197|183KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: sharp-feline.rooster465.autos
-  skip-cert-verify: false
-  sni: sharp-feline.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_184|214KB/s
-  client-fingerprint: chrome
-  latency: 378.801
-  name: Daily_Free-🇸🇬SG_184|214KB/s
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: welcome-monitor.rooster465.autos
-  skip-cert-verify: false
-  sni: welcome-monitor.rooster465.autos
-  subscription: Daily_Free
-  type: trojan
-  udp: true
-- _orig_name: 🇸🇬SG_201|215KB/s
-  client-fingerprint: chrome
-  latency: 379.252
-  name: Daily_Free-🇸🇬SG_201|215KB/s
+  jitter: 5.5
+  latency: 364.7
+  name: Daily_Free-🇸🇬SG_197|405KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
   server: amusing-grub.rooster465.autos
   skip-cert-verify: false
   sni: amusing-grub.rooster465.autos
+  sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇸🇬SG_247|271KB/s
+- _orig_name: 🇸🇬SG_213|77KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 386.746
-  name: Daily_Free-🇸🇬SG_247|271KB/s
+  jitter: 3.5
+  latency: 364.8
+  name: Daily_Free-🇸🇬SG_213|77KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
-  server: intense-sole.rooster465.autos
+  server: intense-monarch.rooster465.autos
   skip-cert-verify: false
-  sni: intense-sole.rooster465.autos
+  sni: intense-monarch.rooster465.autos
+  sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇸🇬SG_171|165KB/s
+- _orig_name: 🇸🇬SG_232|97KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 389.306
-  name: Daily_Free-🇸🇬SG_171|165KB/s
+  jitter: 9.0
+  latency: 365.3
+  name: Daily_Free-🇸🇬SG_232|97KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: fleet-pony.rooster465.autos
+  skip-cert-verify: false
+  sni: fleet-pony.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_194|137KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 5.3
+  latency: 365.8
+  name: Daily_Free-🇸🇬SG_194|137KB/s|C002-260622
   network: tcp
   password: PQ05174892
   port: 443
   server: vast-werewolf.rooster465.autos
   skip-cert-verify: false
   sni: vast-werewolf.rooster465.autos
+  sub_tag: C002-260622
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇸🇬SG_176|233KB/s
+- _orig_name: 🇸🇬SG_226|187KB/s|C002-260622
   client-fingerprint: chrome
-  latency: 403.002
-  name: Daily_Free-🇸🇬SG_176|233KB/s
+  jitter: 12.3
+  latency: 370.1
+  name: Daily_Free-🇸🇬SG_226|187KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: apparent-wasp.rooster465.autos
+  skip-cert-verify: false
+  sni: apparent-wasp.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_162|230KB/s
+  client-fingerprint: chrome
+  jitter: 16.1
+  latency: 370.7
+  name: Daily_Free-🇸🇬SG_162|230KB/s
   network: tcp
   password: PQ05174892
   port: 443
@@ -967,34 +1067,320 @@ proxies:
   skip-cert-verify: false
   sni: intense-monarch.rooster465.autos
   subscription: Daily_Free
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇰🇷KR_336|280KB/s|A004-260618
-  down: ''
-  fingerprint: ''
-  latency: 459.526
-  name: Daily_Free-🇰🇷KR_336|280KB/s|A004-260618
-  obfs: ''
-  obfs-password: ''
-  password: dfb54e674104158210fdfcac45e5679d
-  port: 50160
-  server: 193.122.104.200
-  skip-cert-verify: true
-  sni: 193-122-104-200.liao.kdns.fr
+- _orig_name: 🇸🇬SG_169|118KB/s
+  client-fingerprint: chrome
+  jitter: 13.7
+  latency: 371.9
+  name: Daily_Free-🇸🇬SG_169|118KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: welcome-monitor.rooster465.autos
+  skip-cert-verify: false
+  sni: welcome-monitor.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇫🇷FR_427|256KB/s|M002-260618
+  client-fingerprint: chrome
+  encryption: none
+  jitter: 326.2
+  latency: 372.1
+  name: Daily_Free-🇫🇷FR_427|256KB/s|M002-260618
+  network: ws
+  packet-encoding: xudp
+  port: 2087
+  server: 104.16.150.130
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  sub_tag: M002-260618
+  subscription: Daily_Free
+  success: 2/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    max-early-data: 2560
+    path: /
+  xudp: true
+- _orig_name: 🇸🇬SG_157|109KB/s
+  client-fingerprint: chrome
+  jitter: 8.4
+  latency: 372.2
+  name: Daily_Free-🇸🇬SG_157|109KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: vast-werewolf.rooster465.autos
+  skip-cert-verify: false
+  sni: vast-werewolf.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_172|343KB/s
+  client-fingerprint: chrome
+  jitter: 9.2
+  latency: 372.4
+  name: Daily_Free-🇸🇬SG_172|343KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: fleet-pony.rooster465.autos
+  skip-cert-verify: false
+  sni: fleet-pony.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_233|233KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 16.9
+  latency: 373.0
+  name: Daily_Free-🇸🇬SG_233|233KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: pleased-albacore.rooster465.autos
+  skip-cert-verify: false
+  sni: pleased-albacore.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_189|272KB/s
+  client-fingerprint: chrome
+  jitter: 14.8
+  latency: 373.5
+  name: Daily_Free-🇸🇬SG_189|272KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: apparent-wasp.rooster465.autos
+  skip-cert-verify: false
+  sni: apparent-wasp.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_191|178KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 5.4
+  latency: 378.8
+  name: Daily_Free-🇸🇬SG_191|178KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: composed-sheep.rooster465.autos
+  skip-cert-verify: false
+  sni: composed-sheep.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_156|195KB/s
+  client-fingerprint: chrome
+  jitter: 8.5
+  latency: 379.0
+  name: Daily_Free-🇸🇬SG_156|195KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: composed-sheep.rooster465.autos
+  skip-cert-verify: false
+  sni: composed-sheep.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_224|181KB/s
+  client-fingerprint: chrome
+  jitter: 32.1
+  latency: 379.7
+  name: Daily_Free-🇸🇬SG_224|181KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: intense-sole.rooster465.autos
+  skip-cert-verify: false
+  sni: intense-sole.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_214|165KB/s|C002-260622
+  client-fingerprint: chrome
+  jitter: 4.5
+  latency: 381.4
+  name: Daily_Free-🇸🇬SG_214|165KB/s|C002-260622
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: welcome-monitor.rooster465.autos
+  skip-cert-verify: false
+  sni: welcome-monitor.rooster465.autos
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_185|92KB/s
+  client-fingerprint: chrome
+  jitter: 4.8
+  latency: 384.0
+  name: Daily_Free-🇸🇬SG_185|92KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: amusing-grub.rooster465.autos
+  skip-cert-verify: false
+  sni: amusing-grub.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_151|184KB/s
+  client-fingerprint: chrome
+  jitter: 17.7
+  latency: 387.5
+  name: Daily_Free-🇸🇬SG_151|184KB/s
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: pleased-albacore.rooster465.autos
+  skip-cert-verify: false
+  sni: pleased-albacore.rooster465.autos
+  subscription: Daily_Free
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇳🇱NL_362|256KB/s|A004-260618
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  jitter: 11.3
+  latency: 414.3
+  name: Daily_Free-🇳🇱NL_362|256KB/s|A004-260618
+  network: tcp
+  packet-encoding: xudp
+  port: 40443
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  server: 5.253.42.163
+  servername: deepl.com
   sub_tag: A004-260618
   subscription: Daily_Free
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  xudp: true
+- _orig_name: 🇫🇷FR_283|234KB/s|X001-260618
+  encryption: none
+  latency: 423.5
+  name: Daily_Free-🇫🇷FR_283|234KB/s|X001-260618
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: 104.25.122.72
+  sub_tag: X001-260618
+  subscription: Daily_Free
+  success: 1/3
+  type: vless
+  udp: true
+  uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: billowing-cloud-d339.sospanel.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/39.0.2171.95 Safari/537.36
+    max-early-data: 2560
+    path: /eyJqdW5rIjoiVXRIT2UwaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+  xudp: true
+- _orig_name: 🇰🇷KR_415|108KB/s|R002-260618
+  auth: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  latency: 455.9
+  name: Daily_Free-🇰🇷KR_415|108KB/s|R002-260618
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 152-67-200-82.liao.kdns.fr
+  sub_tag: R002-260618
+  subscription: Daily_Free
+  success: 1/3
   type: hysteria2
   udp: true
-  up: ''
+- _orig_name: 🇹🇭TH_3|172KB/s|A004-260618
+  alterId: 0
+  cipher: auto
+  jitter: 217.7
+  latency: 460.6
+  name: Daily_Free-🇹🇭TH_3|172KB/s|A004-260618
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: www.true.th
+  servername: d7pu5mzr9c4b0.cloudfront.net
+  skip-cert-verify: false
+  sub_tag: A004-260618
+  subscription: Daily_Free
+  success: 2/3
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  ws-opts:
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
+    path: /htun
+  xudp: true
+- _orig_name: 🇫🇷FR_177|239KB/s|C002-260622
+  latency: 462.2
+  name: Daily_Free-🇫🇷FR_177|239KB/s|C002-260622
+  network: ws
+  packet-encoding: xudp
+  port: 8880
+  server: 199.181.197.40
+  sub_tag: C002-260622
+  subscription: Daily_Free
+  success: 1/3
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: vms.lifetime19.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    max-early-data: 2560
+    path: /
+  xudp: true
 - _orig_name: 🇰🇷KR_2|2.7MB/s
   client-fingerprint: chrome
-  latency: 283.225
+  jitter: 11.1
+  latency: 295.0
   name: KOOKER-🇰🇷KR_2|2.7MB/s
   network: ws
   port: 8443
   server: 43.155.221.27
   servername: kjgdksgghre466.pages.dev
   subscription: KOOKER
+  success: 3/3
   tls: true
   type: vless
   udp: true
@@ -1005,13 +1391,15 @@ proxies:
     path: /
 - _orig_name: 🇯🇵JP_2|3.8MB/s
   client-fingerprint: chrome
-  latency: 296.964
+  jitter: 10.6
+  latency: 305.1
   name: KOOKER-🇯🇵JP_2|3.8MB/s
   network: ws
   port: 2053
   server: 172.237.5.208
   servername: kjgdksgghre466.pages.dev
   subscription: KOOKER
+  success: 3/3
   tls: true
   type: vless
   udp: true
@@ -1022,13 +1410,15 @@ proxies:
     path: /
 - _orig_name: 🇯🇵JP_1|1.5MB/s
   client-fingerprint: chrome
-  latency: 297.506
+  jitter: 10.0
+  latency: 308.9
   name: KOOKER-🇯🇵JP_1|1.5MB/s
   network: ws
   port: 443
   server: 172.104.120.92
   servername: kjgdksgghre466.pages.dev
   subscription: KOOKER
+  success: 3/3
   tls: true
   type: vless
   udp: true
@@ -1039,13 +1429,15 @@ proxies:
     path: /
 - _orig_name: 🇸🇬SG_1|1.6MB/s
   client-fingerprint: chrome
-  latency: 360.433
+  jitter: 188.1
+  latency: 490.2
   name: KOOKER-🇸🇬SG_1|1.6MB/s
   network: ws
   port: 443
   server: 178.128.211.191
   servername: kjgdksgghre466.pages.dev
   subscription: KOOKER
+  success: 3/3
   tls: true
   type: vless
   udp: true
@@ -1054,63 +1446,34 @@ proxies:
     headers:
       Host: kjgdksgghre466.pages.dev
     path: /
-- _orig_name: trojan 16 - 601
-  latency: 261.156
-  name: CLASHER-trojan 16 - 601
+- _orig_name: trojan 203 - 780
+  jitter: 12.4
+  latency: 203.1
+  name: CLASHER-trojan 203 - 780
   password: PQ05174892
   port: 443
-  server: inspired-hound.rooster465.autos
-  sni: inspired-hound.rooster465.autos
+  server: regular-raptor.rooster465.autos
+  sni: regular-raptor.rooster465.autos
   subscription: CLASHER
+  success: 3/3
   tls: true
   type: trojan
   udp: true
-- _orig_name: trojan-642134452
-  latency: 253.005
-  name: AU1RXX-trojan-642134452
+- _orig_name: trojan 86 - 663
+  jitter: 2.8
+  latency: 256.6
+  name: CLASHER-trojan 86 - 663
   password: PQ05174892
   port: 443
-  server: brief-flamingo.rooster465.autos
-  skip-cert-verify: false
-  sni: brief-flamingo.rooster465.autos
-  subscription: AU1RXX
-  type: trojan
-  udp: true
-- _orig_name: trojan-642136461
-  latency: 257.827
-  name: AU1RXX-trojan-642136461
-  password: PQ05174892
-  port: 443
-  server: free-tuna.rooster465.autos
-  skip-cert-verify: false
-  sni: free-tuna.rooster465.autos
-  subscription: AU1RXX
-  type: trojan
-  udp: true
-- _orig_name: trojan-642136468
-  latency: 260.598
-  name: AU1RXX-trojan-642136468
-  password: PQ05174892
-  port: 443
-  server: inspired-hound.rooster465.autos
-  skip-cert-verify: false
-  sni: inspired-hound.rooster465.autos
-  subscription: AU1RXX
-  type: trojan
-  udp: true
-- _orig_name: trojan-642136471
-  latency: 265.121
-  name: AU1RXX-trojan-642136471
-  password: PQ05174892
-  port: 443
-  server: key-sponge.rooster465.autos
-  skip-cert-verify: false
-  sni: key-sponge.rooster465.autos
-  subscription: AU1RXX
+  server: smooth-cougar.rooster465.autos
+  skip-cert-verify: true
+  subscription: CLASHER
+  success: 3/3
   type: trojan
   udp: true
 - _orig_name: trojan-623134618
-  latency: 266.525
+  jitter: 6.2
+  latency: 260.0
   name: AU1RXX-trojan-623134618
   password: fVZMat1g9H
   port: 52
@@ -1118,76 +1481,50 @@ proxies:
   skip-cert-verify: false
   sni: ''
   subscription: AU1RXX
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: trojan-642136476
-  latency: 271.049
-  name: AU1RXX-trojan-642136476
+- _orig_name: trojan-642136461
+  jitter: 25.3
+  latency: 263.6
+  name: AU1RXX-trojan-642136461
   password: PQ05174892
   port: 443
-  server: mighty-lemming.rooster465.autos
+  server: free-tuna.rooster465.autos
   skip-cert-verify: false
-  sni: mighty-lemming.rooster465.autos
+  sni: free-tuna.rooster465.autos
   subscription: AU1RXX
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: trojan-642136483
-  latency: 358.692
-  name: AU1RXX-trojan-642136483
+- _orig_name: trojan-642136468
+  jitter: 7.3
+  latency: 268.3
+  name: AU1RXX-trojan-642136468
   password: PQ05174892
   port: 443
-  server: pleased-raptor.rooster465.autos
+  server: inspired-hound.rooster465.autos
   skip-cert-verify: false
-  sni: pleased-raptor.rooster465.autos
+  sni: inspired-hound.rooster465.autos
   subscription: AU1RXX
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: trojan-642138460
-  latency: 361.979
-  name: AU1RXX-trojan-642138460
-  password: PQ05174892
-  port: 443
-  server: vast-werewolf.rooster465.autos
+- _orig_name: trojan-500957038
+  latency: 296.3
+  name: AU1RXX-trojan-500957038
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
   skip-cert-verify: false
-  sni: vast-werewolf.rooster465.autos
+  sni: www.nintendogames.net
   subscription: AU1RXX
-  type: trojan
-  udp: true
-- _orig_name: trojan-642138449
-  latency: 362.976
-  name: AU1RXX-trojan-642138449
-  password: PQ05174892
-  port: 443
-  server: sharp-feline.rooster465.autos
-  skip-cert-verify: false
-  sni: sharp-feline.rooster465.autos
-  subscription: AU1RXX
-  type: trojan
-  udp: true
-- _orig_name: trojan-635869402
-  latency: 366.146
-  name: AU1RXX-trojan-635869402
-  password: PQ05174892
-  port: 443
-  server: composed-sheep.rooster465.autos
-  skip-cert-verify: false
-  sni: composed-sheep.rooster465.autos
-  subscription: AU1RXX
-  type: trojan
-  udp: true
-- _orig_name: trojan-642136481
-  latency: 374.448
-  name: AU1RXX-trojan-642136481
-  password: PQ05174892
-  port: 443
-  server: pleased-albacore.rooster465.autos
-  skip-cert-verify: false
-  sni: pleased-albacore.rooster465.autos
-  subscription: AU1RXX
+  success: 1/3
   type: trojan
   udp: true
 - _orig_name: trojan-642136456
-  latency: 377.256
+  jitter: 5.9
+  latency: 357.5
   name: AU1RXX-trojan-642136456
   password: PQ05174892
   port: 443
@@ -1195,12 +1532,90 @@ proxies:
   skip-cert-verify: false
   sni: fleet-pony.rooster465.autos
   subscription: AU1RXX
+  success: 3/3
   type: trojan
   udp: true
+- _orig_name: trojan-561637502
+  latency: 358.4
+  name: AU1RXX-trojan-561637502
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  subscription: AU1RXX
+  success: 1/3
+  type: trojan
+  udp: true
+- _orig_name: trojan-642138460
+  jitter: 5.3
+  latency: 363.2
+  name: AU1RXX-trojan-642138460
+  password: PQ05174892
+  port: 443
+  server: vast-werewolf.rooster465.autos
+  skip-cert-verify: false
+  sni: vast-werewolf.rooster465.autos
+  subscription: AU1RXX
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: trojan-635869402
+  jitter: 19.3
+  latency: 367.1
+  name: AU1RXX-trojan-635869402
+  password: PQ05174892
+  port: 443
+  server: composed-sheep.rooster465.autos
+  skip-cert-verify: false
+  sni: composed-sheep.rooster465.autos
+  subscription: AU1RXX
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: trojan-642136481
+  jitter: 3.3
+  latency: 368.9
+  name: AU1RXX-trojan-642136481
+  password: PQ05174892
+  port: 443
+  server: pleased-albacore.rooster465.autos
+  skip-cert-verify: false
+  sni: pleased-albacore.rooster465.autos
+  subscription: AU1RXX
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: trojan-642136483
+  jitter: 9.1
+  latency: 376.8
+  name: AU1RXX-trojan-642136483
+  password: PQ05174892
+  port: 443
+  server: pleased-raptor.rooster465.autos
+  skip-cert-verify: false
+  sni: pleased-raptor.rooster465.autos
+  subscription: AU1RXX
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: hysteria2-553326953
+  jitter: 16.7
+  latency: 379.3
+  name: AU1RXX-hysteria2-553326953
+  password: dfb54e674104158210fdfcac45e5679d
+  port: 50160
+  server: 193.122.104.200
+  skip-cert-verify: true
+  sni: 193-122-104-200.liao.kdns.fr
+  subscription: AU1RXX
+  success: 3/3
+  type: hysteria2
 - _orig_name: vless-629456321
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  latency: 436.614
+  jitter: 5.0
+  latency: 415.0
   name: AU1RXX-vless-629456321
   network: tcp
   port: 40443
@@ -1210,113 +1625,280 @@ proxies:
   server: 5.253.42.163
   servername: deepl.com
   subscription: AU1RXX
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-- _orig_name: 🇭🇰HK_1|5.5MB/s
+- _orig_name: 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_aa7d4114
+  client-fingerprint: chrome
+  jitter: 195.6
+  latency: 395.0
+  name: HAONL-🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_aa7d4114
+  network: tcp
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  subscription: HAONL
+  success: 2/3
+  type: trojan
+  udp: true
+- _orig_name: 🇭🇰HK_1|5.7MB/s
+  alpn:
+  - ''
   alterId: 0
   cipher: auto
-  latency: 124.007
-  name: SHAOYOU-🇭🇰HK_1|5.5MB/s
+  jitter: 66.8
+  latency: 156.7
+  name: SHAOYOU-🇭🇰HK_1|5.7MB/s
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: true
   subscription: SHAOYOU
+  success: 3/3
   tls: false
   type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  udp: true
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
   ws-opts:
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
     path: /
-- _orig_name: 🇯🇵JP_2|4.3MB/s
+- _orig_name: 🇭🇰HK_2|4.9MB/s
+  alterId: 0
+  cipher: auto
+  jitter: 6.6
+  latency: 161.8
+  name: SHAOYOU-🇭🇰HK_2|4.9MB/s
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  subscription: SHAOYOU
+  success: 3/3
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
+  ws-opts:
+    headers:
+      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- _orig_name: 🇰🇷KR_4|5.8MB/s
   client-fingerprint: chrome
-  latency: 256.69
-  name: SHAOYOU-🇯🇵JP_2|4.3MB/s
+  jitter: 21.6
+  latency: 199.5
+  name: SHAOYOU-🇰🇷KR_4|5.8MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: united-grouse.rooster465.autos
+  skip-cert-verify: false
+  sni: united-grouse.rooster465.autos
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷KR_3|5.5MB/s
+  client-fingerprint: chrome
+  jitter: 3.5
+  latency: 200.7
+  name: SHAOYOU-🇰🇷KR_3|5.5MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: 15.164.227.68
+  skip-cert-verify: false
+  sni: united-grouse.rooster465.autos
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷KR_5|1019KB/s
+  client-fingerprint: chrome
+  encryption: none
+  jitter: 23.8
+  latency: 245.9
+  name: SHAOYOU-🇰🇷KR_5|1019KB/s
+  network: tcp
+  port: '8686'
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
+  server: 15.164.217.164
+  servername: www.apple.com
+  subscription: SHAOYOU
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  xudp: true
+- _orig_name: 🇯🇵JP_4|4.3MB/s
+  client-fingerprint: chrome
+  jitter: 3.5
+  latency: 258.2
+  name: SHAOYOU-🇯🇵JP_4|4.3MB/s
   network: tcp
   password: PQ05174892
   port: '443'
   server: ethical-raccoon.rooster465.autos
   skip-cert-verify: false
+  sni: ethical-raccoon.rooster465.autos
   subscription: SHAOYOU
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇯🇵JP_1|4.9MB/s
+- _orig_name: 🇯🇵JP_3|4.8MB/s
   client-fingerprint: chrome
-  latency: 273.925
-  name: SHAOYOU-🇯🇵JP_1|4.9MB/s
+  jitter: 8.6
+  latency: 259.5
+  name: SHAOYOU-🇯🇵JP_3|4.8MB/s
   network: tcp
   password: PQ05174892
   port: '443'
-  server: mighty-lemming.rooster465.autos
+  server: 13.115.145.243
   skip-cert-verify: false
-  sni: mighty-lemming.rooster465.autos
+  sni: smooth-cougar.rooster465.autos
   subscription: SHAOYOU
+  success: 3/3
   type: trojan
   udp: true
-- _orig_name: 🇭🇰HK_2|4.0MB/s
+- _orig_name: 🇯🇵JP_1|3.7MB/s
+  jitter: 9.7
+  latency: 260.6
+  name: SHAOYOU-🇯🇵JP_1|3.7MB/s
+  password: PQ05174892
+  port: 443
+  server: champion-alien.rooster465.autos
+  skip-cert-verify: true
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷KR_1|2.6MB/s
   client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  latency: 306.13
-  name: SHAOYOU-🇭🇰HK_2|4.0MB/s
+  jitter: 32.3
+  latency: 316.6
+  name: SHAOYOU-🇰🇷KR_1|2.6MB/s
   network: grpc
-  port: 10126
+  port: 10049
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
-  server: 95.40.100.129
+  server: kr4-r.link-t7.com
   servername: s0.awsstatic.com
   subscription: SHAOYOU
+  success: 3/3
   tls: true
   type: vless
-  uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
-- _orig_name: 🇹🇭TH_1|1.5MB/s
-  encryption: none
-  latency: 462.455
-  name: SHAOYOU-🇹🇭TH_1|1.5MB/s
-  network: ws
-  port: '80'
-  server: 18.239.134.69
-  subscription: SHAOYOU
-  type: vless
   udp: true
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  ws-opts:
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
-    path: /
-  xudp: true
-- _orig_name: HK_1|4.3MB/s
-  alterId: 0
-  cipher: auto
-  latency: 113.583
-  name: MAXHK-HK_1|4.3MB/s
-  network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  subscription: MAXHK
-  tls: false
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
+  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+- _orig_name: 🇭🇰HK_4|4.2MB/s
+  client-fingerprint: chrome
+  jitter: 69.0
+  latency: 333.7
+  name: SHAOYOU-🇭🇰HK_4|4.2MB/s
+  network: raw
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: '50887'
+  server: 2c.fast9988.com
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  subscription: SHAOYOU
+  success: 2/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_1|1.5MB/s
+  jitter: 7.8
+  latency: 362.2
+  name: SHAOYOU-🇸🇬SG_1|1.5MB/s
+  password: PQ05174892
+  port: 443
+  server: apparent-wasp.rooster465.autos
+  skip-cert-verify: true
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_8|4.1MB/s
+  client-fingerprint: chrome
+  jitter: 8.6
+  latency: 366.0
+  name: SHAOYOU-🇸🇬SG_8|4.1MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: pleased-albacore.rooster465.autos
+  skip-cert-verify: false
+  sni: pleased-albacore.rooster465.autos
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_7|4.3MB/s
+  client-fingerprint: chrome
+  jitter: 17.8
+  latency: 366.9
+  name: SHAOYOU-🇸🇬SG_7|4.3MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: intense-monarch.rooster465.autos
+  skip-cert-verify: false
+  sni: intense-monarch.rooster465.autos
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_6|1.8MB/s
+  client-fingerprint: chrome
+  jitter: 13.7
+  latency: 367.9
+  name: SHAOYOU-🇸🇬SG_6|1.8MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: 52.220.98.46
+  skip-cert-verify: false
+  sni: pleased-albacore.rooster465.autos
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬SG_5|2.0MB/s
+  client-fingerprint: chrome
+  jitter: 27.1
+  latency: 368.3
+  name: SHAOYOU-🇸🇬SG_5|2.0MB/s
+  network: tcp
+  password: PQ05174892
+  port: '443'
+  server: 47.128.224.11
+  skip-cert-verify: false
+  sni: vast-werewolf.rooster465.autos
+  subscription: SHAOYOU
+  success: 3/3
+  type: trojan
+  udp: true
 - _orig_name: HK_5|4.7MB/s
   alterId: 0
   cipher: auto
-  latency: 135.801
+  jitter: 15.5
+  latency: 156.7
   name: MAXHK-HK_5|4.7MB/s
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   subscription: MAXHK
+  success: 3/3
   tls: false
   type: vmess
   uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
@@ -1327,12 +1909,14 @@ proxies:
 - _orig_name: HK_3|1.6MB/s
   alterId: 0
   cipher: auto
-  latency: 136.457
+  jitter: 9.7
+  latency: 161.8
   name: MAXHK-HK_3|1.6MB/s
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   subscription: MAXHK
+  success: 3/3
   tls: false
   type: vmess
   uuid: 0c657913-e593-4893-9555-f88478c33a4b
@@ -1340,16 +1924,48 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
     path: /
+- _orig_name: HK_1|4.3MB/s
+  alterId: 0
+  cipher: auto
+  jitter: 10.1
+  latency: 162.4
+  name: MAXHK-HK_1|4.3MB/s
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  subscription: MAXHK
+  success: 3/3
+  tls: false
+  type: vmess
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+- _orig_name: 香港3|@ripaojiedian
+  jitter: 4.4
+  latency: 308.2
+  name: MAXHK-香港3|@ripaojiedian
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  subscription: MAXHK
+  success: 2/3
+  type: trojan
 - _orig_name: 🇩🇪 德国 893
   alterId: 0
   cipher: auto
-  latency: 124.568
+  jitter: 2.9
+  latency: 152.7
   name: CHILD9527-🇩🇪 德国 893
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: false
   subscription: CHILD9527
+  success: 3/3
   tls: false
   type: vmess
   uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
@@ -1357,51 +1973,219 @@ proxies:
     headers:
       Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
     path: /
-- _orig_name: 🇺🇸 美国 111
-  client-fingerprint: chrome
-  latency: 230.707
-  name: CHILD9527-🇺🇸 美国 111
-  network: ws
-  port: 2087
-  server: 104.16.150.130
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- _orig_name: 🇹🇼 台湾 04
+  jitter: 2.8
+  latency: 162.5
+  name: CHILD9527-🇹🇼 台湾 04
+  network: tcp
+  port: 10000
+  server: 220.130.75.248
   subscription: CHILD9527
-  tls: true
+  success: 3/3
+  tls: false
   type: vless
   udp: true
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  ws-opts:
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-    path: /
-- _orig_name: 🇭🇰 香港 04
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+- _orig_name: 🇰🇷 韩国 07
+  jitter: 5.2
+  latency: 204.7
+  name: CHILD9527-🇰🇷 韩国 07
+  password: PQ05174892
+  port: 443
+  server: united-grouse.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷 韩国 02
   client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  latency: 281.717
-  name: CHILD9527-🇭🇰 香港 04
+  jitter: 12.3
+  latency: 219.4
+  name: CHILD9527-🇰🇷 韩国 02
   network: grpc
-  port: 10126
+  port: 10046
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
-  server: 95.40.100.129
+  server: kr1-r.link-t7.com
   servername: s0.awsstatic.com
   subscription: CHILD9527
+  success: 3/3
   tls: true
   type: vless
-  uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
+  udp: true
+  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+- _orig_name: 🇯🇵 日本 18
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  jitter: 19.9
+  latency: 248.6
+  name: CHILD9527-🇯🇵 日本 18
+  network: grpc
+  port: 10032
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  server: jp2-r.link-t7.com
+  servername: s0.awsstatic.com
+  subscription: CHILD9527
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+- _orig_name: 🇯🇵 日本 25
+  jitter: 13.6
+  latency: 249.1
+  name: CHILD9527-🇯🇵 日本 25
+  password: PQ05174892
+  port: 443
+  server: aware-puma.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵 日本 04
+  jitter: 17.3
+  latency: 253.7
+  name: CHILD9527-🇯🇵 日本 04
+  password: PQ05174892
+  port: 443
+  server: champion-alien.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵 日本 19
+  auth: bc751c4c5c80f17dfbc05785c368b613
+  jitter: 13.5
+  latency: 254.1
+  name: CHILD9527-🇯🇵 日本 19
+  password: bc751c4c5c80f17dfbc05785c368b613
+  port: 50160
+  server: 154.31.115.179
+  skip-cert-verify: true
+  sni: 154-31-115-179.liao.kdns.fr
+  subscription: CHILD9527
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇭🇰 香港 06
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 258.9
+  name: CHILD9527-🇭🇰 香港 06
+  network: tcp
+  port: 9444
+  server: bns.taiaise.cn
+  servername: bns.taiaise.cn
+  subscription: CHILD9527
+  success: 1/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
+- _orig_name: 🇯🇵 日本 24
+  jitter: 4.1
+  latency: 259.2
+  name: CHILD9527-🇯🇵 日本 24
+  password: PQ05174892
+  port: 443
+  server: proud-escargot.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵 日本 10
+  jitter: 29.2
+  latency: 262.7
+  name: CHILD9527-🇯🇵 日本 10
+  password: PQ05174892
+  port: 443
+  server: inspired-hound.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵 日本 06
+  jitter: 2.3
+  latency: 263.2
+  name: CHILD9527-🇯🇵 日本 06
+  password: PQ05174892
+  port: 443
+  server: smooth-cougar.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇭🇰 香港 09
+  jitter: 10.8
+  latency: 295.0
+  name: CHILD9527-🇭🇰 香港 09
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  subscription: CHILD9527
+  success: 2/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷 韩国 03
+  jitter: 8.1
+  latency: 301.9
+  name: CHILD9527-🇰🇷 韩国 03
+  password: PQ05174892
+  port: 443
+  server: precious-stag.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇰🇷 韩国 06
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  jitter: 12.2
+  latency: 316.1
+  name: CHILD9527-🇰🇷 韩国 06
+  network: grpc
+  port: 10049
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  server: kr4-r.link-t7.com
+  servername: s0.awsstatic.com
+  subscription: CHILD9527
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
 - _orig_name: 🇩🇪 德国 884
   alterId: 0
   cipher: auto
-  latency: 366.357
+  jitter: 5.9
+  latency: 372.5
   name: CHILD9527-🇩🇪 德国 884
   network: ws
   port: 80
   server: www.true.th
   skip-cert-verify: false
   subscription: CHILD9527
+  success: 2/3
   tls: false
   type: vmess
   uuid: a150d554-e962-4632-829f-ee583ada3f95
@@ -1409,8 +2193,79 @@ proxies:
     headers:
       Host: d7pu5mzr9c4b0.cloudfront.net
     path: /htun
+- _orig_name: 🇸🇬 新加坡 07
+  jitter: 10.0
+  latency: 373.3
+  name: CHILD9527-🇸🇬 新加坡 07
+  password: PQ05174892
+  port: 443
+  server: apparent-wasp.rooster465.autos
+  skip-cert-verify: true
+  subscription: CHILD9527
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇸🇬 新加坡 09
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  jitter: 22.1
+  latency: 377.4
+  name: CHILD9527-🇸🇬 新加坡 09
+  network: grpc
+  port: 10039
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  server: sg4-r.link-t7.com
+  servername: d1.awsstatic.com
+  subscription: CHILD9527
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+- _orig_name: 🏳️ 其他 14
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  jitter: 9.2
+  latency: 426.7
+  name: CHILD9527-🏳️ 其他 14
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  server: 5.253.42.163
+  servername: deepl.com
+  subscription: CHILD9527
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+- _orig_name: 🇸🇬 新加坡 04
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 179.5
+  latency: 472.4
+  name: CHILD9527-🇸🇬 新加坡 04
+  network: tcp
+  port: 13779
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  server: 111.119.235.145
+  servername: tesla.com
+  subscription: CHILD9527
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
 - _orig_name: 🇺🇸 美国 31
-  latency: 456.586
+  latency: 480.1
   name: CHILD9527-🇺🇸 美国 31
   network: ws
   port: 443
@@ -1418,6 +2273,7 @@ proxies:
   servername: d1yxsk0zprgivr.cloudfront.net
   skip-cert-verify: true
   subscription: CHILD9527
+  success: 1/3
   tls: true
   type: vless
   udp: true
@@ -1426,10 +2282,30 @@ proxies:
     headers:
       host: d1yxsk0zprgivr.cloudfront.net
     path: /
+- _orig_name: 自建-香港-v4
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 62.9
+  latency: 162.7
+  name: ZCB-自建-香港-v4
+  port: 46028
+  reality-opts:
+    public-key: ZUpEUDxLNrNXWkiT20EFTz6cIc0RmjL-Olib-OennB0
+    short-id: 5eac8289
+  server: 151.242.125.100
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: ZCB
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34309e50-6697-4836-8d0e-c17ee2f979c4
 - _orig_name: 自建-东京-v4
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  latency: 237.44
+  jitter: 49.7
+  latency: 277.6
   name: ZCB-自建-东京-v4
   port: 46028
   reality-opts:
@@ -1439,23 +2315,7 @@ proxies:
   servername: www.apple.com
   skip-cert-verify: true
   subscription: ZCB
-  tls: true
-  type: vless
-  udp: true
-  uuid: 130aa8e0-d9ee-4c1a-b590-1d538a9c29bf
-- _orig_name: 自建-东京-中转
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  latency: 382.215
-  name: ZCB-自建-东京-中转
-  port: 46028
-  reality-opts:
-    public-key: PZbWzaFDKzEudGuUHNQskYsni1stsBOWMB1wQouJSVg
-    short-id: 47a06576
-  server: 111.39.250.124
-  servername: www.apple.com
-  skip-cert-verify: true
-  subscription: ZCB
+  success: 3/3
   tls: true
   type: vless
   udp: true
@@ -1463,7 +2323,8 @@ proxies:
 - _orig_name: 🇯🇵 [直连][旗舰]日本1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  latency: 421.384
+  jitter: 101.1
+  latency: 282.9
   name: ZCB-🇯🇵 [直连][旗舰]日本1
   port: 443
   reality-opts:
@@ -1473,14 +2334,35 @@ proxies:
   servername: www.microsoft.com
   skip-cert-verify: true
   subscription: ZCB
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 63a92837-1ca6-465a-83b5-6bde2faff0b0
+- _orig_name: 自建-香港-中转
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 11.7
+  latency: 296.4
+  name: ZCB-自建-香港-中转
+  port: 46029
+  reality-opts:
+    public-key: ZUpEUDxLNrNXWkiT20EFTz6cIc0RmjL-Olib-OennB0
+    short-id: 5eac8289
+  server: 111.39.250.124
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: ZCB
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34309e50-6697-4836-8d0e-c17ee2f979c4
 - _orig_name: 🇭🇰 [直连][旗舰]香港1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  latency: 475.833
+  jitter: 11.4
+  latency: 475.7
   name: ZCB-🇭🇰 [直连][旗舰]香港1
   port: 443
   reality-opts:
@@ -1490,22 +2372,38 @@ proxies:
   servername: www.microsoft.com
   skip-cert-verify: true
   subscription: ZCB
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 63a92837-1ca6-465a-83b5-6bde2faff0b0
+- _orig_name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  jitter: 4.5
+  latency: 163.0
+  name: SNAKE2-🇹🇼 🇨🇳 台湾 | TWN 2
+  network: tcp
+  port: 10000
+  server: 220.130.75.248
+  subscription: SNAKE2
+  success: 3/3
+  tls: false
+  type: vless
+  udp: true
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
 - _orig_name: 🇭🇰 香港 | HKG 8
   alpn:
   - ''
   alterId: 0
   cipher: auto
-  latency: 130.595
+  jitter: 37.8
+  latency: 169.6
   name: SNAKE2-🇭🇰 香港 | HKG 8
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: true
   subscription: SNAKE2
+  success: 3/3
   tls: false
   type: vmess
   udp: true
@@ -1514,33 +2412,13 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
     path: /
-- _orig_name: 🇹🇼 🇨🇳 台湾 | TWN 2
-  latency: 162.691
-  name: SNAKE2-🇹🇼 🇨🇳 台湾 | TWN 2
-  network: tcp
-  port: 10000
-  server: 220.130.75.248
-  subscription: SNAKE2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- _orig_name: 🇰🇷 韩国 | KOR 7
-  latency: 198.73
-  name: SNAKE2-🇰🇷 韩国 | KOR 7
-  password: PQ05174892
-  port: 443
-  server: united-grouse.rooster465.autos
-  skip-cert-verify: true
-  subscription: SNAKE2
-  type: trojan
-  udp: true
 - _orig_name: 🇰🇷 韩国 | KOR 2
   client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  latency: 221.176
+  jitter: 14.5
+  latency: 198.1
   name: SNAKE2-🇰🇷 韩国 | KOR 2
   network: grpc
   port: 10046
@@ -1550,27 +2428,30 @@ proxies:
   server: kr1-r.link-t7.com
   servername: s0.awsstatic.com
   subscription: SNAKE2
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
-- _orig_name: 🇯🇵 日本 | JPN 17
-  auth: bc751c4c5c80f17dfbc05785c368b613
-  latency: 240.378
-  name: SNAKE2-🇯🇵 日本 | JPN 17
-  password: bc751c4c5c80f17dfbc05785c368b613
-  port: 50160
-  server: 154.31.115.179
+- _orig_name: 🇰🇷 韩国 | KOR 7
+  jitter: 3.2
+  latency: 207.5
+  name: SNAKE2-🇰🇷 韩国 | KOR 7
+  password: PQ05174892
+  port: 443
+  server: united-grouse.rooster465.autos
   skip-cert-verify: true
-  sni: 154-31-115-179.liao.kdns.fr
   subscription: SNAKE2
-  type: hysteria2
+  success: 3/3
+  type: trojan
+  udp: true
 - _orig_name: 🇯🇵 日本 | JPN 16
   client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  latency: 241.524
+  jitter: 12.5
+  latency: 229.8
   name: SNAKE2-🇯🇵 日本 | JPN 16
   network: grpc
   port: 10032
@@ -1580,78 +2461,94 @@ proxies:
   server: jp2-r.link-t7.com
   servername: s0.awsstatic.com
   subscription: SNAKE2
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+- _orig_name: 🇯🇵 日本 | JPN 17
+  auth: bc751c4c5c80f17dfbc05785c368b613
+  jitter: 1.2
+  latency: 243.8
+  name: SNAKE2-🇯🇵 日本 | JPN 17
+  password: bc751c4c5c80f17dfbc05785c368b613
+  port: 50160
+  server: 154.31.115.179
+  skip-cert-verify: true
+  sni: 154-31-115-179.liao.kdns.fr
+  subscription: SNAKE2
+  success: 3/3
+  type: hysteria2
 - _orig_name: 🇯🇵 日本 | JPN 22
-  latency: 246.177
+  jitter: 3.2
+  latency: 251.7
   name: SNAKE2-🇯🇵 日本 | JPN 22
   password: PQ05174892
   port: 443
   server: proud-escargot.rooster465.autos
   skip-cert-verify: true
   subscription: SNAKE2
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵 日本 | JPN 2
-  latency: 252.787
-  name: SNAKE2-🇯🇵 日本 | JPN 2
-  password: PQ05174892
-  port: 443
-  server: champion-alien.rooster465.autos
-  skip-cert-verify: true
-  subscription: SNAKE2
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵 日本 | JPN 18
-  latency: 255.971
-  name: SNAKE2-🇯🇵 日本 | JPN 18
-  password: PQ05174892
-  port: 443
-  server: brief-flamingo.rooster465.autos
-  skip-cert-verify: true
-  subscription: SNAKE2
-  type: trojan
-  udp: true
-- _orig_name: 🇯🇵 日本 | JPN 4
-  latency: 269.387
-  name: SNAKE2-🇯🇵 日本 | JPN 4
-  password: PQ05174892
-  port: 443
-  server: smooth-cougar.rooster465.autos
-  skip-cert-verify: true
-  subscription: SNAKE2
+  success: 3/3
   type: trojan
   udp: true
 - _orig_name: 🇯🇵 日本 | JPN 8
-  latency: 269.539
+  jitter: 18.9
+  latency: 254.3
   name: SNAKE2-🇯🇵 日本 | JPN 8
   password: PQ05174892
   port: 443
   server: inspired-hound.rooster465.autos
   skip-cert-verify: true
   subscription: SNAKE2
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵 日本 | JPN 2
+  jitter: 28.7
+  latency: 259.1
+  name: SNAKE2-🇯🇵 日本 | JPN 2
+  password: PQ05174892
+  port: 443
+  server: champion-alien.rooster465.autos
+  skip-cert-verify: true
+  subscription: SNAKE2
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: 🇯🇵 日本 | JPN 4
+  jitter: 7.8
+  latency: 261.0
+  name: SNAKE2-🇯🇵 日本 | JPN 4
+  password: PQ05174892
+  port: 443
+  server: smooth-cougar.rooster465.autos
+  skip-cert-verify: true
+  subscription: SNAKE2
+  success: 2/3
   type: trojan
   udp: true
 - _orig_name: 🇯🇵 日本 | JPN 23
-  latency: 273.402
+  jitter: 8.0
+  latency: 265.4
   name: SNAKE2-🇯🇵 日本 | JPN 23
   password: PQ05174892
   port: 443
   server: aware-puma.rooster465.autos
   skip-cert-verify: true
   subscription: SNAKE2
+  success: 2/3
   type: trojan
   udp: true
 - _orig_name: 🇰🇷 韩国 | KOR 3
-  latency: 318.092
+  jitter: 21.9
+  latency: 311.6
   name: SNAKE2-🇰🇷 韩国 | KOR 3
   password: PQ05174892
   port: 443
   server: precious-stag.rooster465.autos
   skip-cert-verify: true
   subscription: SNAKE2
+  success: 3/3
   type: trojan
   udp: true
 - _orig_name: 🇰🇷 韩国 | KOR 6
@@ -1659,7 +2556,8 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  latency: 336.929
+  jitter: 14.6
+  latency: 315.0
   name: SNAKE2-🇰🇷 韩国 | KOR 6
   network: grpc
   port: 10049
@@ -1669,16 +2567,30 @@ proxies:
   server: kr4-r.link-t7.com
   servername: s0.awsstatic.com
   subscription: SNAKE2
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+- _orig_name: 🇸🇬 新加坡 | SGP 6
+  jitter: 18.2
+  latency: 366.8
+  name: SNAKE2-🇸🇬 新加坡 | SGP 6
+  password: PQ05174892
+  port: 443
+  server: apparent-wasp.rooster465.autos
+  skip-cert-verify: true
+  subscription: SNAKE2
+  success: 3/3
+  type: trojan
+  udp: true
 - _orig_name: 🇸🇬 新加坡 | SGP 8
   client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  latency: 382.317
+  jitter: 19.5
+  latency: 374.8
   name: SNAKE2-🇸🇬 新加坡 | SGP 8
   network: grpc
   port: 10039
@@ -1688,35 +2600,16 @@ proxies:
   server: sg4-r.link-t7.com
   servername: d1.awsstatic.com
   subscription: SNAKE2
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
-- _orig_name: 🇸🇬 新加坡 | SGP 6
-  latency: 385.588
-  name: SNAKE2-🇸🇬 新加坡 | SGP 6
-  password: PQ05174892
-  port: 443
-  server: apparent-wasp.rooster465.autos
-  skip-cert-verify: true
-  subscription: SNAKE2
-  type: trojan
-  udp: true
-- _orig_name: 🇺🇸 美国 | USA
-  latency: 425.022
-  name: SNAKE2-🇺🇸 美国 | USA
-  network: tcp
-  port: 52683
-  server: jp.sofast.live
-  subscription: SNAKE2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
 - _orig_name: 🇮🇳 印度 | IND
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-  latency: 431.376
+  jitter: 16.1
+  latency: 429.2
   name: SNAKE2-🇮🇳 印度 | IND
   network: tcp
   port: 40443
@@ -1726,31 +2619,48 @@ proxies:
   server: 5.253.42.163
   servername: deepl.com
   subscription: SNAKE2
+  success: 3/3
   tls: true
   type: vless
   udp: true
   uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-- _orig_name: 🇰🇷 韩国 | KOR
-  auth: dfb54e674104158210fdfcac45e5679d
-  latency: 472.009
-  name: SNAKE2-🇰🇷 韩国 | KOR
-  password: dfb54e674104158210fdfcac45e5679d
-  port: 50160
-  server: 193.122.104.200
-  skip-cert-verify: true
-  sni: 193-122-104-200.liao.kdns.fr
+- _orig_name: 🇺🇸 美国 | USA
+  jitter: 70.0
+  latency: 429.2
+  name: SNAKE2-🇺🇸 美国 | USA
+  network: tcp
+  port: 52683
+  server: jp.sofast.live
   subscription: SNAKE2
-  type: hysteria2
-- _orig_name: 🇫🇷FR-162.19.192.89-0495
+  success: 3/3
+  tls: false
+  type: vless
+  udp: true
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+- _orig_name: 🇨🇳 CN_71
+  latency: 473.7
+  name: SNAKE2-🇨🇳 CN_71
+  network: tcp
+  port: 58011
+  server: us22.sofast.live
+  subscription: SNAKE2
+  success: 1/3
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- _orig_name: 🇫🇷FR-162.19.192.89-0509
   alterId: 0
   cipher: auto
-  latency: 129.519
-  name: SSAGG-🇫🇷FR-162.19.192.89-0495
+  jitter: 39.7
+  latency: 149.5
+  name: SSAGG-🇫🇷FR-162.19.192.89-0509
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: false
   subscription: SSAGG
+  success: 3/3
   tls: false
   type: vmess
   uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
@@ -1758,49 +2668,58 @@ proxies:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
-- _orig_name: 🇫🇷FR-162.19.192.89-2230
-  alterId: 0
-  cipher: auto
-  latency: 134.825
-  name: SSAGG-🇫🇷FR-162.19.192.89-2230
-  network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
+- _orig_name: 🇯🇵JP-13.115.247.230-2273
+  jitter: 1.0
+  latency: 269.9
+  name: SSAGG-🇯🇵JP-13.115.247.230-2273
+  password: PQ05174892
+  port: 443
+  server: ethical-raccoon.rooster465.autos
   skip-cert-verify: false
   subscription: SSAGG
-  tls: false
-  type: vmess
-  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
-  ws-opts:
-    headers:
-      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
-    path: /
-- _orig_name: 未知 VMESS-1441 | free-nodes
+  success: 3/3
+  type: trojan
+- _orig_name: 未知 TROJAN-310 | free-nodes
+  latency: 308.9
+  name: V2RAYNN-未知 TROJAN-310 | free-nodes
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 2c.fast9988.com
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  subscription: V2RAYNN
+  success: 1/3
+  type: trojan
+- _orig_name: 未知 VMESS-1418 | free-nodes
   alterId: 0
   cipher: auto
-  latency: 137.442
-  name: V2RAYNN-未知 VMESS-1441 | free-nodes
+  jitter: 90.3
+  latency: 376.1
+  name: V2RAYNN-未知 VMESS-1418 | free-nodes
   network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
+  port: 80
+  server: www.true.th
   skip-cert-verify: false
   subscription: V2RAYNN
+  success: 2/3
   tls: false
   type: vmess
-  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
   ws-opts:
     headers:
-      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
-    path: /
-- _orig_name: 🇭🇰HK_1|2.8MB/s - undefinedms
+      Host: d7pu5mzr9c4b0.cloudfront.net
+    path: /htun
+- _orig_name: 🇭🇰HK_1|5.5MB/s - undefinedms
   alterId: 0
   cipher: auto
-  latency: 130.822
-  name: SPIDER-🇭🇰HK_1|2.8MB/s - undefinedms
+  jitter: 20.6
+  latency: 173.1
+  name: SPIDER-🇭🇰HK_1|5.5MB/s - undefinedms
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   subscription: SPIDER
+  success: 2/3
   tls: false
   type: vmess
   uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
@@ -1808,25 +2727,28 @@ proxies:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
-- _orig_name: 🇭🇰HK_3|4.2MB/s - undefinedms
+- _orig_name: 🇺🇸_美国_331 - undefinedms
   alterId: 0
   cipher: auto
-  latency: 138.889
-  name: SPIDER-🇭🇰HK_3|4.2MB/s - undefinedms
+  jitter: 70.3
+  latency: 396.1
+  name: SPIDER-🇺🇸_美国_331 - undefinedms
   network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
+  port: 80
+  server: www.true.th
   subscription: SPIDER
+  success: 2/3
   tls: false
   type: vmess
-  uuid: 6d27fe18-4e19-4b4e-8f47-e05a85414f0d
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
   ws-opts:
     headers:
-      Host: a7fbf12df555e5e8a99fc901525aaa76.mobgslb.tbcache.com
-    path: /
+      Host: d7pu5mzr9c4b0.cloudfront.net
+    path: /htun
 - _orig_name: 🇸🇬_新加坡_287
   client-fingerprint: random
-  latency: 353.275
+  jitter: 10.4
+  latency: 349.9
   name: FREE18-🇸🇬_新加坡_287
   network: ws
   port: 2083
@@ -1834,6 +2756,7 @@ proxies:
   servername: fm3.pages.dev
   skip-cert-verify: true
   subscription: FREE18
+  success: 3/3
   tls: true
   type: vless
   udp: true
@@ -1842,34 +2765,18 @@ proxies:
     headers:
       Host: fm3.pages.dev
     path: /
-- _orig_name: 🇺🇸_美国_331
-  alterId: 0
-  cipher: auto
-  latency: 482.019
-  name: FREE18-🇺🇸_美国_331
-  network: ws
-  port: 80
-  server: www.true.th
-  skip-cert-verify: true
-  subscription: FREE18
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
-  ws-opts:
-    headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
-    path: /htun
 - _orig_name: 🇹🇭 泰国(yudou789.top 玉豆免费节点)
   alterId: 0
   cipher: auto
-  latency: 420.092
+  jitter: 107.6
+  latency: 434.0
   name: LHF001-🇹🇭 泰国(yudou789.top 玉豆免费节点)
   network: ws
   port: 80
   server: www.true.th
   skip-cert-verify: true
   subscription: LHF001
+  success: 3/3
   tls: false
   type: vmess
   udp: true
@@ -1881,133 +2788,171 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - NMW-🇭🇰HK_1|1.3MB/s
-  - FREESUB-🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_e44b7cd3
+  - NMW-🇭🇰HK_1|5.5MB/s
+  - NMW-🇯🇵JP_2|4.3MB/s
+  - PUDDIN-xx|7c66|puddincat07@Telegram
+  - FREESUB-🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_aa7d4114
   - FREESUB-🟠🇲🇾[🎬🤖📺🎭]_github.com/Ruk1ng001_938f221d
   - ANAERSUB-美国 009
-  - Daily_Free-🇭🇰HK_134|172KB/s|A001-260618
-  - Daily_Free-🇭🇰HK_133|173KB/s|M003-260806
-  - Daily_Free-🇭🇰HK_116|214KB/s|A004-260618
-  - Daily_Free-🇰🇷KR_411|183KB/s|C002-260622
-  - Daily_Free-🇰🇷KR_402|221KB/s
-  - Daily_Free-🇰🇷KR_389|182KB/s
-  - Daily_Free-🇰🇷KR_429|396KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_768|220KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_798|326KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_766|207KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_732|180KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_684|254KB/s
-  - Daily_Free-🇯🇵JP_785|139KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_703|211KB/s
-  - Daily_Free-🇯🇵JP_772|338KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_806|87KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_748|114KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_729|94KB/s
-  - Daily_Free-🇯🇵JP_807|103KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_782|115KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_708|153KB/s
-  - Daily_Free-🇯🇵JP_713|162KB/s
-  - Daily_Free-🇯🇵JP_718|201KB/s
-  - Daily_Free-🇯🇵JP_731|131KB/s
-  - Daily_Free-🇯🇵JP_714|132KB/s
-  - Daily_Free-🇯🇵JP_705|363KB/s
-  - Daily_Free-🇯🇵JP_707|334KB/s
-  - Daily_Free-🇯🇵JP_796|339KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_760|321KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_783|124KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_668|223KB/s
-  - Daily_Free-🇲🇾MY_3|337KB/s|S001-260618
-  - Daily_Free-🇯🇵JP_725|279KB/s
-  - Daily_Free-🇸🇬SG_245|230KB/s|A004-260618
-  - Daily_Free-🇯🇵JP_674|147KB/s
-  - Daily_Free-🇯🇵JP_687|201KB/s
-  - Daily_Free-🇭🇰HK_100|151KB/s|A004-260618
-  - Daily_Free-🇰🇷KR_418|125KB/s|C002-260622
-  - Daily_Free-🇯🇵JP_791|329KB/s|R002-260618
-  - Daily_Free-🇰🇷KR_424|187KB/s
-  - Daily_Free-🇰🇷KR_414|364KB/s|C002-260622
-  - Daily_Free-🇰🇷KR_380|89KB/s
-  - Daily_Free-🇰🇷KR_375|317KB/s
-  - Daily_Free-🇸🇬SG_235|481KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_249|223KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_210|266KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_205|258KB/s
-  - Daily_Free-🇸🇬SG_207|297KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_234|240KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_213|128KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_231|148KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_165|194KB/s
-  - Daily_Free-🇸🇬SG_187|76KB/s
-  - Daily_Free-🇸🇬SG_229|180KB/s|C002-260622
-  - Daily_Free-🇸🇬SG_170|191KB/s
-  - Daily_Free-🇸🇬SG_197|183KB/s
-  - Daily_Free-🇸🇬SG_184|214KB/s
-  - Daily_Free-🇸🇬SG_201|215KB/s
-  - Daily_Free-🇸🇬SG_247|271KB/s
-  - Daily_Free-🇸🇬SG_171|165KB/s
-  - Daily_Free-🇸🇬SG_176|233KB/s
-  - Daily_Free-🇰🇷KR_336|280KB/s|A004-260618
+  - Daily_Free-🇫🇷FR_1046|400KB/s|B007-260618
+  - Daily_Free-🇭🇰HK_148|153KB/s|A001-260618
+  - Daily_Free-🇭🇰HK_149|82KB/s|A001-260618
+  - Daily_Free-🇭🇰HK_147|82KB/s|M003-260806
+  - Daily_Free-🇫🇷FR_182|425KB/s|C002-260622
+  - Daily_Free-🇫🇷FR_1044|274KB/s|B007-260618
+  - Daily_Free-🇫🇷FR_671|224KB/s|C002-260622
+  - Daily_Free-🇰🇷KR_412|357KB/s|C002-260622
+  - Daily_Free-🇫🇷FR_206|299KB/s|C002-260622
+  - Daily_Free-🇰🇷KR_371|108KB/s
+  - Daily_Free-🇰🇷KR_395|98KB/s|C002-260622
+  - Daily_Free-🇫🇷FR_67|212KB/s
+  - Daily_Free-🇫🇷FR_195|113KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_749|228KB/s|R002-260618
+  - Daily_Free-🇯🇵JP_754|214KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_752|204KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_223|175KB/s|A004-260618
+  - Daily_Free-🇯🇵JP_681|164KB/s
+  - Daily_Free-🇰🇷KR_384|308KB/s
+  - Daily_Free-🇯🇵JP_671|335KB/s
+  - Daily_Free-🇯🇵JP_728|125KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_726|282KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_742|205KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_654|99KB/s
+  - Daily_Free-🇯🇵JP_720|144KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_637|253KB/s
+  - Daily_Free-🇯🇵JP_718|309KB/s|C002-260622
+  - Daily_Free-🇯🇵JP_689|72KB/s
+  - Daily_Free-🇯🇵JP_669|212KB/s
+  - Daily_Free-🇯🇵JP_778|333KB/s
+  - Daily_Free-🇯🇵JP_694|84KB/s
+  - Daily_Free-🇯🇵JP_644|317KB/s
+  - Daily_Free-🇯🇵JP_762|130KB/s|C002-260622
+  - Daily_Free-🇭🇰HK_112|401KB/s|A004-260618
+  - Daily_Free-🇰🇷KR_419|159KB/s|C002-260622
+  - Daily_Free-🇫🇷FR_808|135KB/s|C002-260622
+  - Daily_Free-🇰🇷KR_358|151KB/s
+  - Daily_Free-🇭🇰HK_185|255KB/s|A004-260618
+  - Daily_Free-🇰🇷KR_362|127KB/s
+  - Daily_Free-🇲🇾MY_6|172KB/s|S001-260618
+  - Daily_Free-🇰🇷KR_408|176KB/s
+  - Daily_Free-🇭🇰HK_129|234KB/s|A004-260618
+  - Daily_Free-🇰🇷KR_399|209KB/s|C002-260622
+  - Daily_Free-🇫🇷FR_811|195KB/s|F003-260618
+  - Daily_Free-🇸🇬SG_230|87KB/s
+  - Daily_Free-🇸🇬SG_231|219KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_210|208KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_197|405KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_213|77KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_232|97KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_194|137KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_226|187KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_162|230KB/s
+  - Daily_Free-🇸🇬SG_169|118KB/s
+  - Daily_Free-🇫🇷FR_427|256KB/s|M002-260618
+  - Daily_Free-🇸🇬SG_157|109KB/s
+  - Daily_Free-🇸🇬SG_172|343KB/s
+  - Daily_Free-🇸🇬SG_233|233KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_189|272KB/s
+  - Daily_Free-🇸🇬SG_191|178KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_156|195KB/s
+  - Daily_Free-🇸🇬SG_224|181KB/s
+  - Daily_Free-🇸🇬SG_214|165KB/s|C002-260622
+  - Daily_Free-🇸🇬SG_185|92KB/s
+  - Daily_Free-🇸🇬SG_151|184KB/s
+  - Daily_Free-🇳🇱NL_362|256KB/s|A004-260618
+  - Daily_Free-🇫🇷FR_283|234KB/s|X001-260618
+  - Daily_Free-🇰🇷KR_415|108KB/s|R002-260618
+  - Daily_Free-🇹🇭TH_3|172KB/s|A004-260618
+  - Daily_Free-🇫🇷FR_177|239KB/s|C002-260622
   - KOOKER-🇰🇷KR_2|2.7MB/s
   - KOOKER-🇯🇵JP_2|3.8MB/s
   - KOOKER-🇯🇵JP_1|1.5MB/s
   - KOOKER-🇸🇬SG_1|1.6MB/s
-  - CLASHER-trojan 16 - 601
-  - AU1RXX-trojan-642134452
+  - CLASHER-trojan 203 - 780
+  - CLASHER-trojan 86 - 663
+  - AU1RXX-trojan-623134618
   - AU1RXX-trojan-642136461
   - AU1RXX-trojan-642136468
-  - AU1RXX-trojan-642136471
-  - AU1RXX-trojan-623134618
-  - AU1RXX-trojan-642136476
-  - AU1RXX-trojan-642136483
+  - AU1RXX-trojan-500957038
+  - AU1RXX-trojan-642136456
+  - AU1RXX-trojan-561637502
   - AU1RXX-trojan-642138460
-  - AU1RXX-trojan-642138449
   - AU1RXX-trojan-635869402
   - AU1RXX-trojan-642136481
-  - AU1RXX-trojan-642136456
+  - AU1RXX-trojan-642136483
+  - AU1RXX-hysteria2-553326953
   - AU1RXX-vless-629456321
-  - SHAOYOU-🇭🇰HK_1|5.5MB/s
-  - SHAOYOU-🇯🇵JP_2|4.3MB/s
-  - SHAOYOU-🇯🇵JP_1|4.9MB/s
-  - SHAOYOU-🇭🇰HK_2|4.0MB/s
-  - SHAOYOU-🇹🇭TH_1|1.5MB/s
-  - MAXHK-HK_1|4.3MB/s
+  - HAONL-🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_aa7d4114
+  - SHAOYOU-🇭🇰HK_1|5.7MB/s
+  - SHAOYOU-🇭🇰HK_2|4.9MB/s
+  - SHAOYOU-🇰🇷KR_4|5.8MB/s
+  - SHAOYOU-🇰🇷KR_3|5.5MB/s
+  - SHAOYOU-🇰🇷KR_5|1019KB/s
+  - SHAOYOU-🇯🇵JP_4|4.3MB/s
+  - SHAOYOU-🇯🇵JP_3|4.8MB/s
+  - SHAOYOU-🇯🇵JP_1|3.7MB/s
+  - SHAOYOU-🇰🇷KR_1|2.6MB/s
+  - SHAOYOU-🇭🇰HK_4|4.2MB/s
+  - SHAOYOU-🇸🇬SG_1|1.5MB/s
+  - SHAOYOU-🇸🇬SG_8|4.1MB/s
+  - SHAOYOU-🇸🇬SG_7|4.3MB/s
+  - SHAOYOU-🇸🇬SG_6|1.8MB/s
+  - SHAOYOU-🇸🇬SG_5|2.0MB/s
   - MAXHK-HK_5|4.7MB/s
   - MAXHK-HK_3|1.6MB/s
+  - MAXHK-HK_1|4.3MB/s
+  - MAXHK-香港3|@ripaojiedian
   - CHILD9527-🇩🇪 德国 893
-  - CHILD9527-🇺🇸 美国 111
-  - CHILD9527-🇭🇰 香港 04
+  - CHILD9527-🇹🇼 台湾 04
+  - CHILD9527-🇰🇷 韩国 07
+  - CHILD9527-🇰🇷 韩国 02
+  - CHILD9527-🇯🇵 日本 18
+  - CHILD9527-🇯🇵 日本 25
+  - CHILD9527-🇯🇵 日本 04
+  - CHILD9527-🇯🇵 日本 19
+  - CHILD9527-🇭🇰 香港 06
+  - CHILD9527-🇯🇵 日本 24
+  - CHILD9527-🇯🇵 日本 10
+  - CHILD9527-🇯🇵 日本 06
+  - CHILD9527-🇭🇰 香港 09
+  - CHILD9527-🇰🇷 韩国 03
+  - CHILD9527-🇰🇷 韩国 06
   - CHILD9527-🇩🇪 德国 884
+  - CHILD9527-🇸🇬 新加坡 07
+  - CHILD9527-🇸🇬 新加坡 09
+  - CHILD9527-🏳️ 其他 14
+  - CHILD9527-🇸🇬 新加坡 04
   - CHILD9527-🇺🇸 美国 31
+  - ZCB-自建-香港-v4
   - ZCB-自建-东京-v4
-  - ZCB-自建-东京-中转
   - ZCB-🇯🇵 [直连][旗舰]日本1
+  - ZCB-自建-香港-中转
   - ZCB-🇭🇰 [直连][旗舰]香港1
-  - SNAKE2-🇭🇰 香港 | HKG 8
   - SNAKE2-🇹🇼 🇨🇳 台湾 | TWN 2
-  - SNAKE2-🇰🇷 韩国 | KOR 7
+  - SNAKE2-🇭🇰 香港 | HKG 8
   - SNAKE2-🇰🇷 韩国 | KOR 2
-  - SNAKE2-🇯🇵 日本 | JPN 17
+  - SNAKE2-🇰🇷 韩国 | KOR 7
   - SNAKE2-🇯🇵 日本 | JPN 16
+  - SNAKE2-🇯🇵 日本 | JPN 17
   - SNAKE2-🇯🇵 日本 | JPN 22
-  - SNAKE2-🇯🇵 日本 | JPN 2
-  - SNAKE2-🇯🇵 日本 | JPN 18
-  - SNAKE2-🇯🇵 日本 | JPN 4
   - SNAKE2-🇯🇵 日本 | JPN 8
+  - SNAKE2-🇯🇵 日本 | JPN 2
+  - SNAKE2-🇯🇵 日本 | JPN 4
   - SNAKE2-🇯🇵 日本 | JPN 23
   - SNAKE2-🇰🇷 韩国 | KOR 3
   - SNAKE2-🇰🇷 韩国 | KOR 6
-  - SNAKE2-🇸🇬 新加坡 | SGP 8
   - SNAKE2-🇸🇬 新加坡 | SGP 6
-  - SNAKE2-🇺🇸 美国 | USA
+  - SNAKE2-🇸🇬 新加坡 | SGP 8
   - SNAKE2-🇮🇳 印度 | IND
-  - SNAKE2-🇰🇷 韩国 | KOR
-  - SSAGG-🇫🇷FR-162.19.192.89-0495
-  - SSAGG-🇫🇷FR-162.19.192.89-2230
-  - V2RAYNN-未知 VMESS-1441 | free-nodes
-  - SPIDER-🇭🇰HK_1|2.8MB/s - undefinedms
-  - SPIDER-🇭🇰HK_3|4.2MB/s - undefinedms
+  - SNAKE2-🇺🇸 美国 | USA
+  - SNAKE2-🇨🇳 CN_71
+  - SSAGG-🇫🇷FR-162.19.192.89-0509
+  - SSAGG-🇯🇵JP-13.115.247.230-2273
+  - V2RAYNN-未知 TROJAN-310 | free-nodes
+  - V2RAYNN-未知 VMESS-1418 | free-nodes
+  - SPIDER-🇭🇰HK_1|5.5MB/s - undefinedms
+  - SPIDER-🇺🇸_美国_331 - undefinedms
   - FREE18-🇸🇬_新加坡_287
-  - FREE18-🇺🇸_美国_331
   - LHF001-🇹🇭 泰国(yudou789.top 玉豆免费节点)
   type: select
 rule-providers:
