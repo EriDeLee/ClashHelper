@@ -1,87 +1,77 @@
 sources:
-  - name: NMW
-    url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.yml
-
-  - name: PUDDIN
-    url: https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml
-
-  - name: FREESUB
-    url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
-
-  - name: EMZCLASH
-    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
-
-  - name: ANAERSUB
-    url: https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml
-
-  - name: TESTEDNODE
-    url: https://raw.githubusercontent.com/dongchengjie/airport/main/subs/merged/tested_within.yaml
-
-  - name: Daily_Free
-    url: https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/ClashMeta.yml
-
-  - name: KOOKER
-    url: https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/mihomo.yaml
-
-  - name: FANCHANG
-    url: https://raw.githubusercontent.com/FanchangWang/clash_config/main/dist/config.yaml
-
-  - name: FLCLASHX
-    url: https://raw.githubusercontent.com/crolankawasaki/WhiteListClash-FLClashX/main/merged_flclash.yaml
-
-  - name: LOCKLOUD
-    url: https://raw.githubusercontent.com/khbmgh/Clash-LockandLoud/main/all.yaml
-
-  - name: CLASHER
-    url: https://raw.githubusercontent.com/khbmgh/clasher/refs/heads/main/all.yaml
-
-  - name: AU1RXX
-    url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml
-
-  - name: HAONL
-    url: https://raw.githubusercontent.com/haonL-7/clash-nodes/main/latest.yaml
-
-  - name: SHAOYOU
-    url: https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml
-
-  - name: MAXHK
-    url: https://raw.githubusercontent.com/MaxLansquenet/Clash/refs/heads/master/Clash-HK.yaml
-
-  - name: CHILD9527
-    url: https://raw.githubusercontent.com/child9527/clash-latest/refs/heads/main/MultiSource.yml
-
-  - name: VPNFA
-    url: https://raw.githubusercontent.com/10ium/VpnClashFaCollector/refs/heads/main/sub/final/all_mixed/clash.yaml
-
-  - name: WUBOZH
-    url: https://raw.githubusercontent.com/wubozh/clash-sub-pages/refs/heads/main/sub.yaml
-
-  - name: XYFQZY
-    url: https://raw.githubusercontent.com/xyfqzy/free-nodes/main/nodes/clash.yaml
-
-  - name: GSTAR
-    url: https://raw.githubusercontent.com/g-star1024/my-clash-subscribe/refs/heads/main/clash.yaml
-
-  - name: ZCB
-    url: https://raw.githubusercontent.com/zcb17704/clash-sub/refs/heads/main/clash-config.yaml
-
-  - name: SNAKE2
-    url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
-
-  - name: SSAGG
-    url: https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml
-
-  - name: V2RAYNN
-    url: https://raw.githubusercontent.com/v2raynnodes/clashfree/refs/heads/main/clash.yaml
-
-  - name: SPIDER
-    url: https://raw.githubusercontent.com/xituimao/spider-clash/refs/heads/main/output/clash_all.yaml
-
-  - name: OVMVO
-    url: https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml
-
-  - name: FREE18
-    url: https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml
-
-  - name: LHF001
-    url: https://raw.githubusercontent.com/LHF001/clash-sub/main/clash.yaml
+- name: FREESUB
+  url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
+- name: ANAERSUB
+  url: https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml
+- name: Daily_Free
+  url: https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/ClashMeta.yml
+- name: KOOKER
+  url: https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/mihomo.yaml
+- name: LOCKLOUD
+  url: https://raw.githubusercontent.com/khbmgh/Clash-LockandLoud/main/all.yaml
+- name: CLASHER
+  url: https://raw.githubusercontent.com/khbmgh/clasher/refs/heads/main/all.yaml
+- name: AU1RXX
+  url: https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml
+- name: SHAOYOU
+  url: https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml
+- name: MAXHK
+  url: https://raw.githubusercontent.com/MaxLansquenet/Clash/refs/heads/master/Clash-HK.yaml
+- name: CHILD9527
+  url: https://raw.githubusercontent.com/child9527/clash-latest/refs/heads/main/MultiSource.yml
+- name: VPNFA
+  url: https://raw.githubusercontent.com/10ium/VpnClashFaCollector/refs/heads/main/sub/final/all_mixed/clash.yaml
+- name: ZCB
+  url: https://raw.githubusercontent.com/zcb17704/clash-sub/refs/heads/main/clash-config.yaml
+- name: SNAKE2
+  url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
+- name: SPIDER
+  url: https://raw.githubusercontent.com/xituimao/spider-clash/refs/heads/main/output/clash_all.yaml
+- name: OVMVO
+  url: https://raw.githubusercontent.com/ovmvo/FreeSub/refs/heads/main/sub/permanent/mihomo.yaml
+- name: Free-v2ray-Configs
+  url: https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/clash.yaml
+- name: sub-mod
+  url: https://raw.githubusercontent.com/10Dream/sub-mod/refs/heads/main/sub/clash/mix.yaml
+- name: FreeNodes
+  url: https://raw.githubusercontent.com/Barabama/FreeNodes/feat/ai-crawler-v2/nodes/merged.yaml
+- name: V2ray-Config
+  url: https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/config/clash_advanced.yaml
+- name: AutoMergePublicNodes-Optimized
+  url: https://raw.githubusercontent.com/LeilaoMi/AutoMergePublicNodes-Optimized/main/output/all.yaml
+- name: vify
+  url: https://raw.githubusercontent.com/Mr-Meshky/vify/main/configs/clash.yaml
+- name: tg-v2ray-configs-every2h
+  url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/Config-jo.yaml
+- name: v2ray_to_Clash
+  url: https://raw.githubusercontent.com/WayhomeZ/v2ray_to_Clash/main/docs/config_monolithic.yaml
+- name: beimi
+  url: https://raw.githubusercontent.com/bily1258-design/beimi/main/output/clash.yaml
+- name: free-clash-sub
+  url: https://raw.githubusercontent.com/jostar1101/free-clash-sub/main/clash-merged-clean.yaml
+- name: MetaFetch
+  url: https://raw.githubusercontent.com/lanzm/MetaFetch/master/list.meta.yml
+- name: mihomo_ossp_proxies
+  url: https://raw.githubusercontent.com/omaler886/mihomo_ossp_proxies/main/published/pools/github-source-raw.yaml
+- name: v2ray_configs
+  url: https://raw.githubusercontent.com/oyunop/v2ray_configs/main/all.yaml
+- name: Free_VPN_Aggregator
+  url: https://raw.githubusercontent.com/qubertuwu/Free_VPN_Aggregator/blob/main/configs/clash/all_configs.yaml
+- name: OpenRay
+  url: https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/converted/all_valid_proxies_clash_config.yaml
+- name: Subscrip
+  url: https://raw.githubusercontent.com/shervinofpersia/Subscrip/main/SHΞN™.yaml
+- name: sub
+  url: https://raw.githubusercontent.com/shuoce/sub/main/share/clash.yaml
+- name: clashcode-nodes-meta
+  url: https://raw.githubusercontent.com/softttfc/clashcode/main/snippets/nodes.meta.yml
+- name: clashcode-crawclash
+  url: https://raw.githubusercontent.com/softttfc/clashcode/main/crawclash.yaml
+- name: clash-lite
+  url: https://raw.githubusercontent.com/spacex006/clash-lite/main/output/profile.yaml
+- name: free-nodes
+  url: https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml
+- name: Clash
+  url: https://raw.githubusercontent.com/zhulinghuanyu/Clash/main/clash/all-provider.yaml
+- name: Subscribe
+  url: https://raw.githubusercontent.com/zhulinghuanyu/Subscribe/main/clash.yaml
