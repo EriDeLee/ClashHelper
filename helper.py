@@ -39,6 +39,15 @@ for _stream in (sys.stdout, sys.stderr):
 LATENCY_THRESHOLD = 500
 TEST_TIMEOUT_MS = 1200
 TEST_CONCURRENCY = 128
+# 每个节点重复采样的轮数。抖动和成功率都需要多个样本才存在，等于 1 时两者都没有意义
+# （抖动字段不会出现，成功率恒为 1/1）。
+#
+# 必须是【多轮独立进程】而不是一轮里对同一节点并发发多次请求：同一瞬间发出的请求
+# 测的是同一个网络状态，测不出时间上的波动。每轮之间天然隔着一次完整的全池扫描
+# （约 146s），正好是抖动需要的时间跨度。
+#
+# 代价是线性的：全池 17527 个节点每轮约 146 秒，3 轮约 7.5 分钟。
+SAMPLE_PASSES = 3
 # 端点选择：google.com 本体比 gstatic.com（Google 的 CDN 边缘）严得多。
 # 2026-08-11 用同一批 22 个已知可用节点实测：gstatic 通过 16 个，google.com 只通过 9 个。
 # 保留 google.com 是有意的 —— 能连 CDN 却连不上本体的节点实际浏览也用不了。
@@ -75,11 +84,16 @@ FETCH_BACKOFF = 2     # 重试前等待的基数秒，第 n 次失败后等 n*BA
 # 构造 auth 时要从节点字典里剔掉的键。两类键的原因完全不同，别当成一类：
 #   name / type / server / port        —— 是真正的代理参数，但 payload 里已经
 #                                         单独给过了，留在 auth 里等于重复传
-#   _orig_name / subscription / latency —— 我们自己的记账字段，不是代理参数。
-#                                         这三个会一并写进 output.yaml，是历史
+#   _orig_name / subscription /        —— 我们自己的记账字段，不是代理参数。
+#   latency / success / jitter            这几个会一并写进 output.yaml，是历史
 #                                         输出一直带着的，Clash 能容忍，保持原样
+#
+# success / jitter 必须在这里列出来，否则一旦有人把 output.yaml 里的节点再喂回
+# 检测（或者将来 validate 被同一批节点调用两次），它们会作为未知代理参数传给
+# mihomo，让本来正常的节点报"代理初始化失败"。当前流程里 payload 在写入这些
+# 字段之前就构造好了，碰不到这个问题，但不能指望调用顺序永远不变。
 INTERNAL_KEYS = ('name', '_orig_name', 'type', 'server', 'port',
-                 'subscription', 'latency')
+                 'subscription', 'latency', 'success', 'jitter')
 
 
 # ─────────────────────────────
@@ -107,6 +121,24 @@ def _median(values):
     return ordered[mid] if len(ordered) % 2 else (ordered[mid - 1] + ordered[mid]) / 2
 
 
+def _jitter(values):
+    """抖动 = 相邻两次采样之差的绝对值的平均（RFC 3550 口径，mtr / iperf 用的就是它）。
+
+    为什么不是"最大减最小"：后者只反映一次最坏的尖刺，一个节点稳定在 300ms 但
+    有一次卡到 900ms，和一个节点在 300/600/900 之间来回跳，最大减最小都是 600，
+    但前者可用、后者不可用。相邻差能把这两种区分开。
+
+    values 是【成功样本】按采样轮次排好的延迟。中间失败的轮次不产生样本，也就是
+    跨过失败点直接比较前后两次 —— 失败本身已经由成功率记录，不必在抖动里重复计一遍。
+
+    只有一个成功样本时没有"相邻"可言，返回 None（调用方据此不写 jitter 字段）。
+    """
+    if len(values) < 2:
+        return None
+    return sum(abs(values[i] - values[i - 1])
+               for i in range(1, len(values))) / (len(values) - 1)
+
+
 def log_source_stats(sites, all_nodes, available):
     """按订阅源打一张 抓取 → 送检 → 合格 的漏斗表和命中率。
 
@@ -123,15 +155,20 @@ def log_source_stats(sites, all_nodes, available):
         key = node.get('subscription')
         submitted[key] = submitted.get(key, 0) + 1
     latencies = {}
+    jitters = {}
     for node in available:
         latencies.setdefault(node.get('subscription'), []).append(float(node.get('latency', 0)))
+        # 只成功一次的节点没有 jitter 字段，不能当 0 计入 —— 那会把最不稳的节点
+        # 算成最稳的。缺值就是缺值，直接不参与这一列的统计。
+        if 'jitter' in node:
+            jitters.setdefault(node.get('subscription'), []).append(float(node['jitter']))
 
     rows = []
     for site in sites:
         if site.data is None:
             # 拉取失败：分母是 0，命中率无从计算，不能和"全灭"并列
             rows.append({'name': site.name, 'fetched': None, 'sub': 0,
-                         'ok': 0, 'rate': None, 'med': None})
+                         'ok': 0, 'rate': None, 'med': None, 'jit': None})
             continue
         sub = submitted.get(site.name, 0)
         lats = latencies.get(site.name, [])
@@ -146,35 +183,41 @@ def log_source_stats(sites, all_nodes, available):
             'ok': len(lats),
             'rate': (len(lats) / sub) if sub else None,
             'med': _median(lats),
+            'jit': _median(jitters.get(site.name, [])),
         })
 
     # 命中率降序，其次合格数降序。没有分母的（拉取失败、送检 0）沉到表尾。
     rows.sort(key=lambda r: (r['rate'] is None, -(r['rate'] or 0), -r['ok'], r['name']))
 
-    widths = (14, 8, 8, 7, 10, 11)
+    widths = (14, 8, 8, 7, 10, 11, 11)
     log("")
     log("─" * sum(widths))
     log(_cell('订阅源', widths[0]) + _cell('抓取', widths[1], True)
         + _cell('送检', widths[2], True) + _cell('合格', widths[3], True)
-        + _cell('命中率', widths[4], True) + _cell('延迟中位', widths[5], True))
+        + _cell('命中率', widths[4], True) + _cell('延迟中位', widths[5], True)
+        + _cell('抖动中位', widths[6], True))
     log("─" * sum(widths))
     for r in rows:
         fetched = '拉取失败' if r['fetched'] is None else str(r['fetched'])
         rate = '—' if r['rate'] is None else f"{r['rate'] * 100:.2f}%"
         med = '—' if r['med'] is None else f"{r['med']:.0f}ms"
+        jit = '—' if r['jit'] is None else f"{r['jit']:.0f}ms"
         log(_cell(r['name'], widths[0]) + _cell(fetched, widths[1], True)
             + _cell(r['sub'], widths[2], True) + _cell(r['ok'], widths[3], True)
-            + _cell(rate, widths[4], True) + _cell(med, widths[5], True))
+            + _cell(rate, widths[4], True) + _cell(med, widths[5], True)
+            + _cell(jit, widths[6], True))
     log("─" * sum(widths))
 
     total_fetched = sum(r['fetched'] for r in rows if r['fetched'] is not None)
     total_sub = sum(r['sub'] for r in rows)
     total_ok = sum(r['ok'] for r in rows)
     all_lats = [lat for lats in latencies.values() for lat in lats]
+    all_jits = [j for js in jitters.values() for j in js]
     log(_cell('合计', widths[0]) + _cell(total_fetched, widths[1], True)
         + _cell(total_sub, widths[2], True) + _cell(total_ok, widths[3], True)
         + _cell(f"{(total_ok / total_sub * 100) if total_sub else 0:.2f}%", widths[4], True)
-        + _cell('—' if not all_lats else f"{_median(all_lats):.0f}ms", widths[5], True))
+        + _cell('—' if not all_lats else f"{_median(all_lats):.0f}ms", widths[5], True)
+        + _cell('—' if not all_jits else f"{_median(all_jits):.0f}ms", widths[6], True))
     dead = [r['name'] for r in rows if r['fetched'] is not None and r['ok'] == 0]
     lost = [r['name'] for r in rows if r['fetched'] is None]
     if dead:
@@ -211,17 +254,19 @@ class NodeFilter:
 
 
 # ─────────────────────────────
-# BatchValidator：一次子进程调用测完全部节点
+# BatchValidator：一次子进程调用测完全部节点，重复 SAMPLE_PASSES 轮取样
 #
 # 旧版对每个节点单独启动一次 latency.exe。实测该程序光启动就要 382ms
 # （32.8MB 二进制 + 整个 mihomo 引擎初始化），4790 个节点等于 30 分钟纯启动开销，
-# 而且外层线程池被限制在 cpu_count//2 = 8 个并发。现在只启动一次进程，
-# 并发交给 Go 侧的 goroutine。
+# 而且外层线程池被限制在 cpu_count//2 = 8 个并发。现在一轮只启动一次进程，
+# 并发交给 Go 侧的 goroutine；采样多少轮就启动多少次，那点启动开销可以忽略。
 class BatchValidator:
     def __init__(self, concurrency=TEST_CONCURRENCY, timeout_ms=TEST_TIMEOUT_MS,
-                 threshold_ms=LATENCY_THRESHOLD, test_url=TEST_URL):
+                 threshold_ms=LATENCY_THRESHOLD, test_url=TEST_URL,
+                 passes=SAMPLE_PASSES):
         self.concurrency = max(1, int(concurrency))
         self.timeout_ms = int(timeout_ms)
+        self.passes = max(1, int(passes))
         self.threshold_ms = threshold_ms
         self.test_url = test_url
         here = os.path.dirname(os.path.abspath(__file__))
@@ -265,6 +310,68 @@ class BatchValidator:
                 f"会漏掉本该合格的节点")
 
         total = len(nodes)
+        # payload 只构造一次、多轮共用，三个原因：
+        #   1. id 是 nodes 的下标，必须在各轮之间完全一致。否则聚合时会把 A 轮某个
+        #      节点的样本记到 B 节点头上，而这种错一声不响，结果全是假的。
+        #   2. 必须在起子进程【之前】构造。放在之后的话，一旦构造抛异常（节点里有
+        #      不可 JSON 序列化的值），子进程已经起来了、stdin 从没被写过也没 close，
+        #      它会永远卡在 io.ReadAll(os.Stdin) 上，而兜底强杀的 Timer 还没创建，
+        #      于是留下一个 33MB 的孤儿进程占着管道。
+        #   3. 顺带避免"跳过 port 非法的节点"那行告警每轮重复打一遍。
+        payload = json.dumps(self._payload(nodes)).encode('utf-8')
+
+        log(f"[检测] {total} 个节点 / {self.concurrency} 并发 / 单节点超时 "
+            f"{self.timeout_ms}ms / 重复采样 {self.passes} 轮")
+
+        # samples[id] 是长度恒为 passes 的列表，按轮次顺序存 (是否成功, 延迟)。
+        # 某轮没返回结果的按失败补位，长度才能恒定 —— 成功率的分母必须是采样轮数，
+        # 不能是"拿到结果的轮数"，否则子进程中途死掉会让活下来的节点成功率虚高。
+        samples = {i: [] for i in range(total)}
+        for pass_no in range(1, self.passes + 1):
+            results = self._run_pass(payload, nodes, pass_no)
+            for rid in range(total):
+                res = results.get(rid)
+                ok = bool(res and res.get('success'))
+                samples[rid].append((ok, float(res.get('latency') or 0) if ok else 0.0))
+
+        available = []
+        hist = {}
+        for idx, node in enumerate(nodes):
+            oks = [lat for ok, lat in samples[idx] if ok]
+            hist[len(oks)] = hist.get(len(oks), 0) + 1
+            if not oks:
+                continue
+            # latency 的口径从"单次采样"变成"成功样本的平均值"，门槛也按平均值判。
+            # 只成功一次的节点，平均值就是那一次 —— 它照旧能合格，只是 success 字段
+            # 会写成 1/3，你在 output.yaml 里一眼能看出它是靠运气过的。
+            mean = sum(oks) / len(oks)
+            if mean > self.threshold_ms:
+                continue
+            node['latency'] = round(mean, 1)
+            node['success'] = f"{len(oks)}/{self.passes}"
+            jitter = _jitter(oks)
+            if jitter is not None:
+                node['jitter'] = round(jitter, 1)
+            available.append(node)
+        available.sort(key=lambda n: n.get('latency', float('inf')))
+
+        spread = ', '.join(f"{k}/{self.passes} 次成功 {hist[k]} 个"
+                           for k in sorted(hist, reverse=True) if k)
+        log(f"[检测] 采样分布（至少成功一次的节点）：{spread or '无'}")
+        jits = [n['jitter'] for n in available if 'jitter' in n]
+        log(f"[检测] 合格节点抖动中位数 "
+            f"{'—' if not jits else format(_median(jits), '.1f') + 'ms'}"
+            f"，其中 {len(available) - len(jits)} 个只成功一次、没有抖动值")
+        log(f"[检测] 完成：{len(available)}/{total} 个节点合格")
+        return available
+
+    def _run_pass(self, payload, nodes, pass_no):
+        """跑一轮采样：起一次 latency.exe 把全部节点测一遍，返回 {id: 原始结果}。
+
+        这里刻意不做门槛判定、不排序、不写任何字段 —— 一轮的结果说明不了什么，
+        判定要等 validate 收齐所有轮次之后统一做。
+        """
+        total = len(nodes)
         waves = max(1, math.ceil(total / self.concurrency))
         budget = waves * (self.timeout_ms / 1000.0) * 3 + 120
 
@@ -273,14 +380,8 @@ class BatchValidator:
         env['LATENCY_TIMEOUT_MS'] = str(self.timeout_ms)
         env['LATENCY_URL'] = self.test_url
 
-        log(f"[检测] {total} 个节点 / {self.concurrency} 并发 / 单节点超时 "
-            f"{self.timeout_ms}ms / 约 {waves} 轮 / 兜底上限 {int(budget)}s")
-
-        # payload 必须在启动子进程【之前】构造好。放在之后的话，一旦构造抛异常
-        # （节点里有不可 JSON 序列化的值），子进程已经起来了、stdin 从没被写过也没
-        # close，它会永远卡在 io.ReadAll(os.Stdin) 上，而兜底强杀的 Timer 还没创建，
-        # 于是留下一个 33MB 的孤儿进程占着管道。
-        payload = json.dumps(self._payload(nodes)).encode('utf-8')
+        log(f"[检测] 第 {pass_no}/{self.passes} 轮采样开始"
+            f"（约 {waves} 波 / 兜底上限 {int(budget)}s）")
 
         proc = subprocess.Popen(
             [self.go_bin],
@@ -353,11 +454,12 @@ class BatchValidator:
                 node = nodes[rid]
                 name = node.get('_orig_name', node.get('name', 'Unknown'))
                 sub = node.get('subscription', 'Unknown')
-                progress = f"[{completed}/{total}]"
+                progress = f"[{pass_no}/{self.passes}][{completed}/{total}]"
                 if res.get('success'):
                     lat = float(res.get('latency', 0))
-                    verdict = "合格" if lat <= self.threshold_ms else f"超过 {self.threshold_ms}ms 门槛"
-                    log(f"[{sub}] {progress} {name} 延迟 {lat:.1f}ms {verdict}")
+                    # 这里不再写"合格"：单轮结果不是最终判定，门槛要等各轮平均出来才算
+                    over = "" if lat <= self.threshold_ms else f"（超过 {self.threshold_ms}ms 门槛）"
+                    log(f"[{sub}] {progress} {name} 延迟 {lat:.1f}ms{over}")
                 else:
                     log(f"[{sub}] {progress} {name} 不可用：{res.get('error', '')}")
             finished = True
@@ -380,24 +482,11 @@ class BatchValidator:
 
         missing = total - len(results)
         if missing:
-            # 整批共用一个进程，进程提前死掉不该让整轮结果全丢，
+            # 整批共用一个进程，进程提前死掉不该让这一轮结果全丢，
             # 没拿到结果的按不可用处理并明确报出来
-            log(f"[检测] 警告：{missing} 个节点没有返回结果"
+            log(f"[检测] 警告：第 {pass_no} 轮有 {missing} 个节点没有返回结果"
                 f"（子进程退出码 {proc.returncode}），按不可用处理")
-
-        available = []
-        for idx, node in enumerate(nodes):
-            res = results.get(idx)
-            if not res or not res.get('success'):
-                continue
-            lat = float(res.get('latency', 0))
-            if lat > self.threshold_ms:
-                continue
-            node['latency'] = lat
-            available.append(node)
-        available.sort(key=lambda n: n.get('latency', float('inf')))
-        log(f"[检测] 完成：{len(available)}/{total} 个节点合格")
-        return available
+        return results
 
     @staticmethod
     def _kill(proc, budget):
