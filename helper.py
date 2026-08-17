@@ -8,12 +8,14 @@ import math
 import subprocess
 import threading
 import time
+import unicodedata
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 import yaml
 from yaml.loader import SafeLoader
+from yaml.reader import Reader as YamlReader
 
 # 节点名里普遍带 emoji（🇭🇰 🟢 之类）。Windows 上 Python 的 stdout 一旦被重定向
 # （写日志、管道、CI），编码就退回系统 ANSI 代码页 GBK，遇到 emoji 直接
@@ -42,6 +44,16 @@ TEST_CONCURRENCY = 128
 # 保留 google.com 是有意的 —— 能连 CDN 却连不上本体的节点实际浏览也用不了。
 # 两者都正常返回 HTTP 204、不跳转，和"只认 2xx + 禁跟转发"的判定兼容。
 TEST_URL = "http://www.google.com/generate_204"
+
+# 协议白名单（初筛）。只有 type 落在这里的节点才会进入关键词过滤和测速，
+# 其余在拉取后立刻丢弃。动机是省测速时间：免费订阅里明文的 http / socks5 量很大，
+# 2026-08-12 那轮 output.yaml 的 69 个可用节点里就占了 19 个（27.5%）。
+# 匹配方式是 type 去空格转小写后精确比对 —— "VLESS" 能收，"hy2" 不能，
+# 后者 mihomo 本来也解析不了（adapter/parser.go 只认 ss / ssr / socks5 / http /
+# vmess / vless / snell / trojan / hysteria / hysteria2 / wireguard / tuic /
+# ssh / mieru，外加 direct / dns / reject 三个非订阅类型）。
+# 改成空集合即关闭初筛，全部协议照旧送去测。
+ALLOWED_TYPES = frozenset({'vless', 'trojan', 'vmess', 'hysteria2'})
 
 FETCH_WORKERS = 10    # 并发拉取订阅源的线程数
 FETCH_TIMEOUT = 10    # 单次请求超时（秒）
@@ -74,6 +86,101 @@ INTERNAL_KEYS = ('name', '_orig_name', 'type', 'server', 'port',
 def log(msg):
     # flush 是必要的：检测阶段的进度靠这些行体现，缓冲会让它们攒到最后一次性刷出来
     print(msg, flush=True)
+
+
+def _display_width(text):
+    """终端显示宽度。中文和 emoji 占两列，直接用 len() 对齐会歪。"""
+    return sum(2 if unicodedata.east_asian_width(ch) in ('W', 'F') else 1
+               for ch in str(text))
+
+
+def _cell(text, width, right=False):
+    pad = ' ' * max(0, width - _display_width(text))
+    return (pad + str(text)) if right else (str(text) + pad)
+
+
+def _median(values):
+    if not values:
+        return None
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    return ordered[mid] if len(ordered) % 2 else (ordered[mid - 1] + ordered[mid]) / 2
+
+
+def log_source_stats(sites, all_nodes, available):
+    """按订阅源打一张 抓取 → 送检 → 合格 的漏斗表和命中率。
+
+    只看合格数会把大源和好源搞混：一个源出 42 个可能是从 200 个里挑的（很强），
+    也可能是从 5000 个里挑的（很弱）。分母（送检数）原先只在 prepare() 阶段
+    各源自己那行日志里出现过一次，被后面几千行检测进度冲得根本翻不到，
+    所以在最后统一收口打一张表。
+
+    顺带把两种"0 产出"分开：拉取失败的源要去修订阅地址，测了全灭的源是节点
+    真的都死了。混在一列看会把"订阅挂了"误判成"节点质量差"，处置方向正好相反。
+    """
+    submitted = {}
+    for node in all_nodes:
+        key = node.get('subscription')
+        submitted[key] = submitted.get(key, 0) + 1
+    latencies = {}
+    for node in available:
+        latencies.setdefault(node.get('subscription'), []).append(float(node.get('latency', 0)))
+
+    rows = []
+    for site in sites:
+        if site.data is None:
+            # 拉取失败：分母是 0，命中率无从计算，不能和"全灭"并列
+            rows.append({'name': site.name, 'fetched': None, 'sub': 0,
+                         'ok': 0, 'rate': None, 'med': None})
+            continue
+        sub = submitted.get(site.name, 0)
+        lats = latencies.get(site.name, [])
+        # 必须查 isinstance：yaml.load 拿到的可能不是字典（订阅返回一段纯文本或
+        # 数组时就是），此处 .get 会抛 AttributeError。而这张表打在写文件【之前】，
+        # 一次崩溃会把整轮几分钟的检测结果连同 output.yaml 一起赔掉。
+        proxies = site.data.get('proxies') if isinstance(site.data, dict) else None
+        rows.append({
+            'name': site.name,
+            'fetched': len(proxies or []),
+            'sub': sub,
+            'ok': len(lats),
+            'rate': (len(lats) / sub) if sub else None,
+            'med': _median(lats),
+        })
+
+    # 命中率降序，其次合格数降序。没有分母的（拉取失败、送检 0）沉到表尾。
+    rows.sort(key=lambda r: (r['rate'] is None, -(r['rate'] or 0), -r['ok'], r['name']))
+
+    widths = (14, 8, 8, 7, 10, 11)
+    log("")
+    log("─" * sum(widths))
+    log(_cell('订阅源', widths[0]) + _cell('抓取', widths[1], True)
+        + _cell('送检', widths[2], True) + _cell('合格', widths[3], True)
+        + _cell('命中率', widths[4], True) + _cell('延迟中位', widths[5], True))
+    log("─" * sum(widths))
+    for r in rows:
+        fetched = '拉取失败' if r['fetched'] is None else str(r['fetched'])
+        rate = '—' if r['rate'] is None else f"{r['rate'] * 100:.2f}%"
+        med = '—' if r['med'] is None else f"{r['med']:.0f}ms"
+        log(_cell(r['name'], widths[0]) + _cell(fetched, widths[1], True)
+            + _cell(r['sub'], widths[2], True) + _cell(r['ok'], widths[3], True)
+            + _cell(rate, widths[4], True) + _cell(med, widths[5], True))
+    log("─" * sum(widths))
+
+    total_fetched = sum(r['fetched'] for r in rows if r['fetched'] is not None)
+    total_sub = sum(r['sub'] for r in rows)
+    total_ok = sum(r['ok'] for r in rows)
+    all_lats = [lat for lats in latencies.values() for lat in lats]
+    log(_cell('合计', widths[0]) + _cell(total_fetched, widths[1], True)
+        + _cell(total_sub, widths[2], True) + _cell(total_ok, widths[3], True)
+        + _cell(f"{(total_ok / total_sub * 100) if total_sub else 0:.2f}%", widths[4], True)
+        + _cell('—' if not all_lats else f"{_median(all_lats):.0f}ms", widths[5], True))
+    dead = [r['name'] for r in rows if r['fetched'] is not None and r['ok'] == 0]
+    lost = [r['name'] for r in rows if r['fetched'] is None]
+    if dead:
+        log(f"零产出（测了全灭）{len(dead)} 个：{', '.join(dead)}")
+    if lost:
+        log(f"零产出（订阅没拉到，节点未进检测）{len(lost)} 个：{', '.join(lost)}")
 
 
 # ─────────────────────────────
@@ -328,7 +435,23 @@ class Site:
             try:
                 resp = requests.get(self.url, headers=headers, timeout=FETCH_TIMEOUT)
                 resp.raise_for_status()
-                self.data = yaml.load(resp.text, Loader=SafeLoader)
+                # pyyaml 拒收 C1 控制字符等一批码位，引号内也不行，一个坏字符就让
+                # 整个文件解析失败。2026-08-17 实测：Daily_Free 第 2574 行有个节点把
+                # 🇨🇳 二次编码后塞进了 sni（一个广告链接），产生 4 个 U+009F/U+0087，
+                # pyyaml 抛 ReaderError，4185 个节点（其中 3357 个能过协议白名单）整块
+                # 丢失。而且这是必然失败：下面的重试白等 36 秒，第 100 次也是同一个错。
+                #
+                # 用 pyyaml 自己的 NON_PRINTABLE 清洗，范围和解析器拒收的范围严格一致，
+                # 不靠手写字符类。干净文件走这里是纯空转（实测 KOOKER 清洗前后文本
+                # 完全相同），所以不存在"本来能用、被清洗弄坏"的情况 —— 文件里只要有
+                # 这类字符，不清就是整个源全丢。
+                text, removed = YamlReader.NON_PRINTABLE.subn('', resp.text)
+                if removed:
+                    pos = YamlReader.NON_PRINTABLE.search(resp.text).start()
+                    log(f"[{self.name}] 清掉 {removed} 个 YAML 不接受的字符"
+                        f"（首个在第 {resp.text.count(chr(10), 0, pos) + 1} 行），"
+                        f"不清掉整个订阅会解析失败")
+                self.data = yaml.load(text, Loader=SafeLoader)
                 if self.data and 'proxies' in self.data:
                     for node in self.data.get('proxies') or []:
                         node['_orig_name'] = node.get('name', 'Unknown')
@@ -348,13 +471,42 @@ class Site:
                     time.sleep(wait)
         log(f"[{self.name}] 订阅获取失败（已尝试 {FETCH_ATTEMPTS} 次）: {last_err}")
 
+    def _apply_type_whitelist(self, nodes):
+        """协议初筛：丢掉 ALLOWED_TYPES 之外的节点。
+
+        放在关键词过滤之前只是为了少干活 —— 关键词过滤要对每个节点的名称和
+        地址各做 len(exclusion)+len(inclusion) 次子串查找，这里一次字典取值
+        就能决定去留。两者都是"与"条件，先后顺序不影响最终留下的节点集合，
+        只影响日志里那两个数字分别是谁筛完的。
+        """
+        if not ALLOWED_TYPES:
+            return nodes
+        kept = []
+        dropped = {}
+        for node in nodes:
+            # 走 or '' 而不是 .get('type', '')：订阅里写成 "type:"（键在、值为
+            # None）时默认值不生效，None.lower() 抛的 AttributeError 会一路冒到
+            # main，整个源被丢掉 —— 和 NodeFilter 里 server 字段踩过的是同一个坑。
+            kind = str(node.get('type') or '').strip().lower()
+            if kind in ALLOWED_TYPES:
+                kept.append(node)
+            else:
+                label = kind or '(无 type)'
+                dropped[label] = dropped.get(label, 0) + 1
+        if dropped:
+            detail = ', '.join(f"{k} {v}" for k, v in
+                               sorted(dropped.items(), key=lambda kv: (-kv[1], kv[0])))
+            log(f"[{self.name}] 协议初筛丢弃 {sum(dropped.values())} 个"
+                f"（{detail}），剩余 {len(kept)}")
+        return kept
+
     def prepare(self):
         """只做本地过滤，不做检测。返回待检测的候选节点。"""
         if not self.data or 'proxies' not in self.data:
             log(f"[{self.name}] No proxies found")
             return []
         raw = self.data.get('proxies') or []
-        filtered = self.filter.apply(raw)
+        filtered = self.filter.apply(self._apply_type_whitelist(raw))
         valid = [node for node in filtered
                  if all(field in node for field in Site.REQUIRED_FIELDS)]
         for node in valid:
@@ -460,6 +612,9 @@ def main():
         if site.data is None:
             continue
         site.accept(by_site.get(site.name, []))
+
+    # 判断哪个源值得留在 sources.yaml 里，靠这张表，不靠上面那一串"N 个节点可用"
+    log_source_stats(sites, all_nodes, available)
 
     proxy_count = 0
     for site in sites:
