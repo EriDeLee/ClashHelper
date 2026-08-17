@@ -1,5 +1,6 @@
 @echo off
 chcp 65001
+set "PYTHONIOENCODING=utf-8"
 setlocal
 REM Keep every temp write inside this folder (nothing lands on C:).
 if not exist "%~dp0.py-tmp" mkdir "%~dp0.py-tmp"
