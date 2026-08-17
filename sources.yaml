@@ -56,7 +56,7 @@ sources:
 - name: v2ray_configs
   url: https://raw.githubusercontent.com/oyunop/v2ray_configs/main/all.yaml
 - name: Free_VPN_Aggregator
-  url: https://raw.githubusercontent.com/qubertuwu/Free_VPN_Aggregator/blob/main/configs/clash/all_configs.yaml
+  url: https://raw.githubusercontent.com/qubertuwu/Free_VPN_Aggregator/refs/heads/main/configs/clash/all_configs.yaml
 - name: OpenRay
   url: https://raw.githubusercontent.com/sakha1370/OpenRay/main/output/converted/all_valid_proxies_clash_config.yaml
 - name: Subscrip
