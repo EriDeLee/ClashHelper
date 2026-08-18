@@ -38,7 +38,10 @@ for _stream in (sys.stdout, sys.stderr):
 # TEST_CONCURRENCY   同时测试的节点数。调得过高会让自家宽带成为瓶颈，
 #                    连好节点也会超时、被误判成不可用。
 LATENCY_THRESHOLD = 500
-TEST_TIMEOUT_MS = 1200
+# 600ms = 及格线 500ms + 100ms 灰区缓冲：贴线的好节点偶尔探到 500-600ms
+# 不至于被当死节点丢样本；600ms 以上反正淘汰，不值得等。
+# 97% 的节点是死节点、每个都吃满这个超时 —— 这是最大的单项省时。
+TEST_TIMEOUT_MS = 800
 TEST_CONCURRENCY = 128
 # 每个节点重复采样的轮数。抖动和成功率都需要多个样本才存在，等于 1 时两者都没有意义
 # （抖动字段不会出现，成功率恒为 1/1）。
@@ -58,7 +61,8 @@ TEST_URL = "http://www.google.com/generate_204"
 # 协议白名单（初筛）。只有 type 落在这里的节点才会进入关键词过滤和测速，
 # 其余在拉取后立刻丢弃。动机是省测速时间：免费订阅里明文的 http / socks5 量很大，
 # 2026-08-12 那轮 output.yaml 的 69 个可用节点里就占了 19 个（27.5%）。
-# 匹配方式是 type 去空格转小写后精确比对 —— "VLESS" 能收，"hy2" 不能，
+# 匹配方式是原样精确比对 —— "VLESS"、" vless" 都不能收（mihomo 对 type
+# 精确匹配小写，实测大写报 unsupport proxy type），"hy2" 也不能，
 # 后者 mihomo 本来也解析不了（adapter/parser.go 只认 ss / ssr / socks5 / http /
 # vmess / vless / snell / trojan / hysteria / hysteria2 / wireguard / tuic /
 # ssh / mieru，外加 direct / dns / reject 三个非订阅类型）。
@@ -73,38 +77,158 @@ ALLOWED_TYPES = frozenset({'vless', 'trojan', 'vmess', 'hysteria2'})
 #
 # short-id：必须是 hex 字符串，且 hex→int→hex 回写后长度为 2/4/8/16/32。
 #   回写检查能抓住 '09'（前导零）这类裸看合法、内核却拒绝的值。
-REALITY_SHORT_ID_LENS = (2, 4, 8, 16, 32)
-FLOW_ALLOWED = ('', 'xtls-rprx-vision', 'xtls-rprx-origin')
-VMESS_CIPHER_ALLOWED = ('', 'auto', 'none', 'aes-128-gcm',
-                        'chacha20-poly1305', 'zero')
+# vless flow 判定等价 mihomo vless.go：len < 16 完全不校验；len >= 16 时截断
+# 到 16 字符必须等于 xtls-rprx-vision（实测 'xtls-rprx-origin' 16 字符被拒、
+# 'xtls-rprx-vision-udp443-udp443' 截断后通过、'none' 等短值通过）。
+VLESS_FLOW_PREFIX = 'xtls-rprx-vision'
+# vmess cipher 完整支持列表（sing-vmess client.go switch + 实测 aes-128-cfb 通过）。
+# 注意缺失/空串也被拒（实测 key 'cipher' missing / unsupported security type）。
+VMESS_CIPHER_ALLOWED = ('auto', 'none', 'zero', 'aes-128-cfb',
+                        'aes-128-gcm', 'chacha20-poly1305')
 
-def _reality_public_key_ok(pk):
-    """public-key 必须能 base64 解码（标准或 url-safe）且正好 32 字节。"""
-    if pk is None:
-        return False
-    s = str(pk).strip()
-    if not s:
-        return False
-    for decode in (lambda x: base64.b64decode(x, altchars=b'-_'),
-                   base64.b64decode):
+def _vless_flow_ok(flow):
+    if not isinstance(flow, str):
+        return False  # mihomo mapstructure 严格模式：非字符串直接拒
+    return len(flow) < 16 or flow.startswith(VLESS_FLOW_PREFIX)
+
+def _mlkem_padding_ok(padding):
+    """等价 mihomo encryption/common.go 的 ParsePadding：每段 a-b-c 数字，
+    首段 a>=100 且 b,c>=35，偶数段 max(b,c) 总和 <=65553。"""
+    if padding == '':
+        return True
+    max_len = 0
+    for i, s in enumerate(padding.split('.')):
+        x = s.split('-')
+        if len(x) < 3 or not x[0] or not x[1] or not x[2]:
+            return False
         try:
-            return len(decode(s)) == 32
-        except Exception:
-            continue
-    return False
+            y0, y1, y2 = int(x[0]), int(x[1]), int(x[2])
+        except ValueError:
+            return False
+        if i == 0 and (y0 < 100 or y1 < 35 or y2 < 35):
+            return False
+        if i % 2 == 0:
+            max_len += max(y1, y2)
+    return max_len <= 65553
 
-def _reality_short_id_ok(sid):
-    # 必须是字符串：yaml 解析出的 int（如 85）clash-speedtest 直接报
-    # invalid REALITY short ID，int→str 会让它混进合法 hex（'85'）。
-    if not isinstance(sid, str):
+def _vless_encryption_ok(enc):
+    """等价 mihomo transport/vless/encryption/factory.go 的 NewClient。
+
+    ''/'none'/缺失 → 放行；否则必须是 mlkem768x25519plus.{native|xorpub|
+    random}.{1rtt|0rtt}.<段>，其中至少一段 >= 20 字符的 RawURL base64 且
+    解码为 32（X25519）或 1184（ML-KEM-768）字节 —— 全是短段会报
+    "empty nfsPKeysBytes"；短段拼接后还要过 ParsePadding（a-b-c 数字格式）。
+    实测 2026-08-18：真实订阅 26 个残缺值被 mihomo 拒。
+    """
+    if enc is None:
+        return True
+    s = str(enc)
+    if s in ('', 'none'):
+        return True
+    parts = s.split('.')
+    if len(parts) < 4 or parts[0] != 'mlkem768x25519plus':
         return False
-    if sid == '':
+    if parts[1] not in ('native', 'xorpub', 'random'):
+        return False
+    if parts[2] not in ('1rtt', '0rtt'):
+        return False
+    has_key = False
+    paddings = []
+    for r in parts[3:]:
+        if len(r) < 20:
+            paddings.append(r)
+            continue
+        if '=' in r:
+            return False  # RawURLEncoding 拒 padding
+        try:
+            raw = base64.b64decode(r + '=' * (-len(r) % 4), altchars=b'-_')
+        except Exception:
+            return False
+        if len(raw) not in (32, 1184):
+            return False
+        has_key = True
+    if not has_key:
+        return False
+    return _mlkem_padding_ok('.'.join(paddings))
+
+def _pyyaml_would_quote(s):
+    """pyyaml safe_dump 会对这个字符串加引号吗（safe_load 能解析成非字符串即加）。"""
+    if not s:
         return True
     try:
-        value = int(sid, 16)
+        return not isinstance(yaml.safe_load(s), str)
+    except Exception:
+        return True
+
+def _yamlv2_int(s):
+    """模拟 yaml.v2 对裸字符串的 int 判定（Go base-0 字面量 + 前导零十进制回退）。
+
+    行为学实测：'09' → 9（八进制失败回退十进制）、'00' → 0、'010' → 8。
+    """
+    t = s.replace('_', '')
+    neg = t[:1] == '-'
+    body = t[1:] if t[:1] in '+-' else t
+    if not body:
+        return None
+    try:
+        if body[:2].lower() == '0b':
+            v = int(body[2:], 2)
+        elif body[:2].lower() == '0o':
+            v = int(body[2:], 8)
+        elif body[:2].lower() == '0x':
+            v = int(body[2:], 16)
+        elif len(body) > 1 and body[0] == '0':
+            try:
+                v = int(body, 8)
+            except ValueError:
+                v = int(body, 10)
+        elif body[0] in '0123456789':
+            v = int(body, 10)
+        else:
+            return None
     except ValueError:
+        return None
+    return -v if neg else v
+
+def _reality_public_key_ok(pk):
+    """等价 mihomo v1.19.19 reality.go：public-key 缺失 → 不校验（按普通 TLS 走）。
+
+    非空时必须能 base64 无 padding（RawURLEncoding）解码且正好 32 字节。
+    带 '=' 的标准带 padding 写法 mihomo 会拒（Raw 解码报错），这里也拒。
+    """
+    if pk is None:
+        return True
+    s = str(pk).strip()
+    if not s:
+        return True
+    if '=' in s:
         return False
-    return len(format(value, 'x')) in REALITY_SHORT_ID_LENS
+    try:
+        raw = base64.b64decode(s + '=' * (-len(s) % 4), altchars=b'-_')
+    except Exception:
+        return False
+    return len(raw) == 32
+
+def _reality_short_id_ok(sid):
+    """等价 mihomo 对 short-id 的判定（经 pyyaml 写 + yaml.v2 读的双序列化拟合）。
+
+    行为学（27 个实测 case）：int 85 收 / int 9,0,255,65535,13871 拒；
+    str '09' 裸写被 yaml.v2 读成 int 9 → 拒；'00' 被 pyyaml 加引号原样 → 收。
+    终判：偶数位纯 hex 且解码字节数 ≤ 8（RealityMaxShortIDLen = 8）。
+    """
+    if sid is None:
+        return True  # mihomo 对缺失 short-id 不校验（空 hex 解码 0 字节）
+    if isinstance(sid, str):
+        if _pyyaml_would_quote(sid):
+            s_go = sid
+        else:
+            v = _yamlv2_int(sid)
+            s_go = str(v) if v is not None else sid
+    else:
+        s_go = str(sid)
+    if len(s_go) % 2 or not all(c in '0123456789abcdefABCDEF' for c in s_go):
+        return False
+    return len(s_go) // 2 <= 8
 
 FETCH_WORKERS = 10    # 并发拉取订阅源的线程数
 FETCH_TIMEOUT = 10    # 单次请求超时（秒）
@@ -117,11 +241,37 @@ FETCH_TIMEOUT = 10    # 单次请求超时（秒）
 FETCH_ATTEMPTS = 3    # 单个源的尝试次数
 FETCH_BACKOFF = 2     # 重试前等待的基数秒，第 n 次失败后等 n*BACKOFF
 
-# 刻意不做 (ip, port) 去重。2026-08-11 实测：六个源之间字面量重复只占 2.4%，
-# 加上 IP 级重复也只有 9%，去掉后耗时没有可测差别（不去重 39.5s / 去重 43.1s，
-# 差异在噪声内）。而同一台机器在不同源里往往是多份不同配置、好坏并存，
-# 去重反而要额外操心保留哪一份。收益接近零、维护成本不低，故不保留。
-# 历史上它被删过一次（01c881f，2025-02-18），这次是第二次删，原因相同。
+# 跨源去重（2026-08-18 第三次启用，规则来自聚合期决策）：
+#   key = type|凭证（uuid/password/auth 首个非空），不看 server:port ——
+#   免费池里同一组凭证被搬到无数 Cloudflare/中转 IP 上，测一个代表即可。
+#   凭证全空时兜底 type|server|port。
+# 前两次删除（01c881f 2025-02-18、后一次 2026-08-11）的共同前提是"重复只有
+# 2.4%~9%、省时在噪声内"——那是在 6 个源、4790 个节点时实测的。现在 29 个源
+# 66618 个送检节点里 type|凭证 重复占 84%（2026-08-18 实测，聚合源之间互相
+# 抄：V2ray-Config 端点 99% 与其他源重叠、clashcode-nodes-meta 94%），
+# 每轮约 5.5 万次重复测试纯浪费，前提已不成立。
+# "同凭证不同端点、好坏并存"的顾虑当时也权衡过：免费池凭证复用极普遍，
+# 全测一遍的边际收益远小于省下的时间，故按凭证合并、先到先得。
+def dedup_key(node):
+    cred = node.get('uuid') or node.get('password') or node.get('auth') or ''
+    if cred:
+        return (str(node.get('type') or ''), str(cred))
+    return (str(node.get('type') or ''), str(node.get('server') or ''),
+            node.get('port'))
+
+def dedup_nodes(nodes):
+    seen = set()
+    kept = []
+    for node in nodes:
+        k = dedup_key(node)
+        if k in seen:
+            continue
+        seen.add(k)
+        kept.append(node)
+    if len(kept) < len(nodes):
+        log(f"[去重] {len(nodes)} -> {len(kept)}（省 {len(nodes) - len(kept)}，"
+            f"同 type+凭证 只测首个代表，按 sources.yaml 先到先得）")
+    return kept
 
 # 构造 auth 时要从节点字典里剔掉的键。两类键的原因完全不同，别当成一类：
 #   name / type / server / port        —— 是真正的代理参数，但 payload 里已经
@@ -618,7 +768,9 @@ class Site:
             # 走 or '' 而不是 .get('type', '')：订阅里写成 "type:"（键在、值为
             # None）时默认值不生效，None.lower() 抛的 AttributeError 会一路冒到
             # main，整个源被丢掉 —— 和 NodeFilter 里 server 字段踩过的是同一个坑。
-            kind = str(node.get('type') or '').strip().lower()
+            # 不做 lower/strip：mihomo 对 type 精确匹配小写，实测 'VLESS' 直接报
+            # unsupport proxy type（2026-08-18），转小写放行会让 output.yaml 拒载。
+            kind = str(node.get('type') or '')
             if kind in ALLOWED_TYPES:
                 kept.append(node)
             else:
@@ -643,6 +795,19 @@ class Site:
         for node in nodes:
             reason = None
             kind = str(node.get('type') or '').lower()
+            # mihomo mapstructure 严格模式：port/server 值 None 等同字段缺失直接拒；
+            # port 是 bool、tls 是字符串同样拒（实测 2026-08-18）
+            if node.get('server') is None or node.get('port') is None:
+                reason = 'server/port 值为空'
+            elif isinstance(node.get('port'), bool):
+                reason = 'port 是 bool'
+            elif kind in ('vless', 'trojan', 'vmess') and node.get('tls') is not None \
+                    and not isinstance(node.get('tls'), bool):
+                reason = 'tls 非 bool'
+            elif kind == 'vless' and node.get('uuid') is None:
+                reason = 'vless 缺 uuid'
+            elif kind == 'trojan' and node.get('password') is None:
+                reason = 'trojan 缺 password'
             ro = node.get('reality-opts')
             if isinstance(ro, dict):
                 if not _reality_public_key_ok(ro.get('public-key')):
@@ -651,11 +816,13 @@ class Site:
                     reason = 'reality short-id 非法'
             if reason is None and kind == 'vless':
                 flow = node.get('flow')
-                if flow is not None and str(flow) not in FLOW_ALLOWED:
+                if flow is not None and not _vless_flow_ok(flow):
                     reason = f'flow {flow!r} 不受支持'
+                elif not _vless_encryption_ok(node.get('encryption')):
+                    reason = f'encryption {node.get("encryption")!r} 不受支持'
             if reason is None and kind == 'vmess':
                 cipher = node.get('cipher')
-                if cipher is not None and str(cipher).lower() not in VMESS_CIPHER_ALLOWED:
+                if not isinstance(cipher, str) or cipher.lower() not in VMESS_CIPHER_ALLOWED:
                     reason = f'vmess cipher {cipher!r} 不受支持'
             if reason is None and kind == 'hysteria2':
                 obfs = node.get('obfs')
@@ -789,6 +956,10 @@ def main():
                 all_nodes.extend(site.prepare())
             except Exception as e:
                 print(f"订阅源 {site.name} 过滤失败: {e}")
+
+    # ── 阶段一.5：跨源去重（在全部源 prepare 完之后、送检之前，
+    #    这样 all_nodes / log_source_stats 的分母自动就是去重后的送检集合）
+    all_nodes = dedup_nodes(all_nodes)
 
     # ── 阶段二：一次子进程，全部节点一起测
     available = BatchValidator().validate(all_nodes)
