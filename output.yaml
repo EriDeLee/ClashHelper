@@ -60,11 +60,2904 @@ external-controller-tls: false
 log-level: info
 mixed-port: 7890
 proxies:
+- _orig_name: 自建-香港-v4
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 108.6
+  latency: 239.9
+  name: ZCB-自建-香港-v4
+  port: 46028
+  reality-opts:
+    public-key: ZUpEUDxLNrNXWkiT20EFTz6cIc0RmjL-Olib-OennB0
+    short-id: 5eac8289
+  server: 151.242.125.100
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: ZCB
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34309e50-6697-4836-8d0e-c17ee2f979c4
+- _orig_name: 🇺🇸 神灯加速器-美国-06
+  jitter: 24.1
+  latency: 72.4
+  name: Clash-🇺🇸 神灯加速器-美国-06
+  password: b5a6ec01194bd3e2510f5468b0885be7
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-09
+  jitter: 36.1
+  latency: 74.7
+  name: Clash-🇺🇸 神灯加速器-美国-09
+  password: ac4d690c48661daaceb616b04007e2b5
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇭 神灯加速器-泰国-103
+  jitter: 26.5
+  latency: 75.2
+  name: Clash-🇹🇭 神灯加速器-泰国-103
+  password: b3dc9daaf39804635c99dc0a296926b4
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-09
+  jitter: 32.5
+  latency: 77.1
+  name: Clash-🇯🇵 神灯加速器-日本-09
+  password: 493b3d1b5d6a298a32eea1935463dc4d
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-04
+  jitter: 63.6
+  latency: 77.1
+  name: Clash-🇨🇦 神灯加速器-加拿大 JA-04
+  password: 690ffd98589eecac6ed2c40d56033d7c
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-38
+  jitter: 25.2
+  latency: 77.8
+  name: Clash-🇭🇰 神灯加速器-香港-38
+  password: a0d94e10446eef0e1eebb4f6c177512d
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-05
+  jitter: 46.6
+  latency: 78.3
+  name: Clash-🇺🇸 神灯加速器-美国-05
+  password: 7e62aec6f4a54b44cd439321c825d71b
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-17
+  jitter: 41.5
+  latency: 79.1
+  name: Clash-🇺🇸 神灯加速器-美国-17
+  password: 5cbfc58f2ca9478a08c96ad942513920
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-01
+  jitter: 15.4
+  latency: 79.4
+  name: Clash-🇹🇼 神灯加速器-台湾-01
+  password: aea165cb7f5890ff234bc2b8a7fb0de8
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-23
+  jitter: 56.1
+  latency: 79.6
+  name: Clash-🇭🇰 神灯加速器-香港-23
+  password: c30973184a30818b4a19c8b247cc3cd4
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-102
+  jitter: 8.5
+  latency: 79.7
+  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-102
+  password: aaa76da163060a6ec526445c2d7a2ac0
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇫🇷 神灯加速器-法国-05
+  jitter: 50.4
+  latency: 80.2
+  name: Clash-🇫🇷 神灯加速器-法国-05
+  password: 7547490bb96d371033b58baf91772254
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-01
+  jitter: 1.2
+  latency: 80.3
+  name: Clash-🇯🇵 神灯加速器-日本-01
+  password: 881340284b2ba5737f5f892a846c2940
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇳 神灯加速器-印度-03
+  jitter: 7.5
+  latency: 80.6
+  name: Clash-🇮🇳 神灯加速器-印度-03
+  password: 607b0b8b84b34c30d28be76fd6be439d
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-04
+  jitter: 59.8
+  latency: 81.2
+  name: Clash-🇹🇼 神灯加速器-台湾-04
+  password: bdbc9026183061770d64c6db2eab4ac7
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-02
+  jitter: 19.5
+  latency: 81.7
+  name: Clash-🇸🇬 神灯加速器-新加坡-02
+  password: 7834a6df93542db17c9a6be4e27d6059
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-02
+  jitter: 13.3
+  latency: 81.7
+  name: Clash-🇯🇵 神灯加速器-日本-02
+  password: bb611501dbb9aea577fd803fe11e945d
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇫🇷 神灯加速器-法国-02
+  jitter: 30.9
+  latency: 81.9
+  name: Clash-🇫🇷 神灯加速器-法国-02
+  password: a1cc1219f15873f5cf89c921e3f32347
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇷 神灯加速器-韩国-103
+  jitter: 74.5
+  latency: 82.1
+  name: Clash-🇰🇷 神灯加速器-韩国-103
+  password: 79489481b50562b988bf599736c8b0f9
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-12
+  jitter: 30.5
+  latency: 82.1
+  name: Clash-🇯🇵 神灯加速器-日本-12
+  password: b84de87320ca97b4ff862f916cc67eaa
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇹 神灯加速器-意大利-01
+  jitter: 15.9
+  latency: 82.3
+  name: Clash-🇮🇹 神灯加速器-意大利-01
+  password: 3a18d2d9d4caa3b86b241bbd37c90a40
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-101
+  jitter: 13.6
+  latency: 82.6
+  name: Clash-🇲🇾 神灯加速器-马来西亚-101
+  password: aa47bc798fe7d60f6e1e56fb32d2954a
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇦🇪 神灯加速器-阿联酋-03
+  jitter: 13.2
+  latency: 82.7
+  name: Clash-🇦🇪 神灯加速器-阿联酋-03
+  password: 3252f608e796316fbbac3359542f70d9
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇸 神灯加速器-冰岛 IS-02
+  jitter: 9.2
+  latency: 83.2
+  name: Clash-🇮🇸 神灯加速器-冰岛 IS-02
+  password: 6f4b67c2bcc27761d176e830f9a1e92b
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-35
+  jitter: 9.7
+  latency: 83.3
+  name: Clash-🇭🇰 神灯加速器-香港-35
+  password: b4d7471e8bf6508a55dae8b38ba1a625
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇭 神灯加速器-柬埔寨-01
+  jitter: 9.3
+  latency: 84.2
+  name: Clash-🇰🇭 神灯加速器-柬埔寨-01
+  password: b6d41b0db4bdd2a1d8d66b42dbdae4af
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇫🇷 神灯加速器-法国-04
+  jitter: 5.8
+  latency: 84.2
+  name: Clash-🇫🇷 神灯加速器-法国-04
+  password: beb0854f651380331623d79eb06d87be
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-104
+  jitter: 20.3
+  latency: 84.9
+  name: Clash-🇲🇾 神灯加速器-马来西亚-104
+  password: a6667237f0272b408e55cec8c3ebde8e
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-15
+  jitter: 28.5
+  latency: 85.3
+  name: Clash-🇺🇸 神灯加速器-美国-15
+  password: 3d2ecd5bd35aa636dc4c52bb07659400
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇭 神灯加速器-泰国-104
+  jitter: 4.6
+  latency: 85.5
+  name: Clash-🇹🇭 神灯加速器-泰国-104
+  password: 970cff306f67f10cb3aa6cad2f73c2e2
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-15
+  jitter: 13.7
+  latency: 85.5
+  name: Clash-🇯🇵 神灯加速器-日本-15
+  password: c680ca16e008a72ec88762dfcdfe5221
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-04
+  jitter: 17.6
+  latency: 85.6
+  name: Clash-🇯🇵 神灯加速器-日本-04
+  password: 35d0b407d742f02e3aceaa9c28f60e15
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇪 神灯加速器-爱尔兰-01
+  jitter: 5.9
+  latency: 85.7
+  name: Clash-🇮🇪 神灯加速器-爱尔兰-01
+  password: 948b69750854dbc28a9ec20d947e36c6
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-05
+  jitter: 11.8
+  latency: 86.8
+  name: Clash-🇯🇵 神灯加速器-日本-05
+  password: 6bd61140c3512e2b9c2be81ed012faff
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇹 神灯加速器-意大利-03
+  jitter: 38.3
+  latency: 86.9
+  name: Clash-🇮🇹 神灯加速器-意大利-03
+  password: 396b684da7e944a8f439669e24e8afed
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-05
+  jitter: 29.0
+  latency: 87.1
+  name: Clash-🇹🇼 神灯加速器-台湾-05
+  password: a157d762252558b15b32075645145251
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇷 神灯加速器-土耳其-03
+  jitter: 27.8
+  latency: 87.6
+  name: Clash-🇹🇷 神灯加速器-土耳其-03
+  password: 367473e73056a0192925e43298b88201
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-37
+  jitter: 15.3
+  latency: 87.6
+  name: Clash-🇭🇰 神灯加速器-香港-37
+  password: ce0c3a409dd52a7fcefeb25dc7e32d5f
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-104
+  jitter: 1.2
+  latency: 87.7
+  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-104
+  password: 8a6691810c87dd1c7ac2ac7103c334d9
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-12
+  jitter: 8.2
+  latency: 87.9
+  name: Clash-🇭🇰 神灯加速器-香港-12
+  password: 433eeaa26c6cfb611ac76aa154368ed1
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-02
+  jitter: 4.6
+  latency: 88.0
+  name: Clash-🇹🇼 神灯加速器-台湾-02
+  password: 8560843d8550aa368674c3bf0d4d3ad8
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-01
+  jitter: 72.7
+  latency: 88.1
+  name: Clash-🇲🇾 神灯加速器-马来西亚-01
+  password: e4d87574ab542fe6a834625782d4b89e
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-106
+  jitter: 13.5
+  latency: 89.1
+  name: Clash-🇲🇾 神灯加速器-马来西亚-106
+  password: 3e3a24469a836233ed552b320c50b4d7
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-31
+  jitter: 20.0
+  latency: 89.3
+  name: Clash-🇭🇰 神灯加速器-香港-31
+  password: c77998f773ec547f3ab3abfe59c7bc68
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-06
+  jitter: 62.1
+  latency: 89.5
+  name: Clash-🇯🇵 神灯加速器-日本-06
+  password: 4d8e20bdae228d69021cdac530a5ce6d
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇷 神灯加速器-韩国-102
+  jitter: 4.2
+  latency: 89.6
+  name: Clash-🇰🇷 神灯加速器-韩国-102
+  password: c89b4be208a7edb8edca2c3e847a5e3a
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-16
+  jitter: 5.7
+  latency: 89.8
+  name: Clash-🇺🇸 神灯加速器-美国-16
+  password: c72fb0394432d4ae5e5b2de915f646c8
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇪🇸 神灯加速器-西班牙-03
+  jitter: 6.8
+  latency: 89.8
+  name: Clash-🇪🇸 神灯加速器-西班牙-03
+  password: c9e7641fa78aebca32be5f8da87a79ec
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇩🇪 神灯加速器-德国-04
+  jitter: 7.6
+  latency: 89.9
+  name: Clash-🇩🇪 神灯加速器-德国-04
+  password: 881ff9e8588eaf4a7dd8352005921fa5
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇭 神灯加速器-泰国-101
+  jitter: 19.0
+  latency: 89.9
+  name: Clash-🇹🇭 神灯加速器-泰国-101
+  password: b6fde90b3a0080e7547099633e8d4a32
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-33
+  jitter: 43.8
+  latency: 90.0
+  name: Clash-🇭🇰 神灯加速器-香港-33
+  password: 6fac6920d85a061cc5bb88ea80e6a703
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-30
+  jitter: 22.3
+  latency: 90.1
+  name: Clash-🇭🇰 神灯加速器-香港-30
+  password: 4c1511d220e1437b234fa40571c43810
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇦🇪 神灯加速器-阿联酋-01
+  jitter: 23.4
+  latency: 90.5
+  name: Clash-🇦🇪 神灯加速器-阿联酋-01
+  password: da512fa7c70172080e013faff8ee9ac4
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-05
+  jitter: 17.2
+  latency: 90.6
+  name: Clash-🇻🇳 神灯加速器-越南-05
+  password: c300410095914c66daa846d8a5c92747
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-14
+  jitter: 59.1
+  latency: 90.6
+  name: Clash-🇺🇸 神灯加速器-美国-14
+  password: e9432eaf9d5269025086d1c0375855ea
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇸 神灯加速器-冰岛 IS-01
+  jitter: 60.5
+  latency: 90.6
+  name: Clash-🇮🇸 神灯加速器-冰岛 IS-01
+  password: f12507bcc9bbae297ed77b94d9232ae6
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-103
+  jitter: 17.9
+  latency: 90.7
+  name: Clash-🇲🇾 神灯加速器-马来西亚-103
+  password: 90d4384d3893a8f46c45746e8abf889a
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇬🇧 神灯加速器-英国-04
+  jitter: 7.8
+  latency: 91.1
+  name: Clash-🇬🇧 神灯加速器-英国-04
+  password: ac312a46f833789e1e5c87222ec9949f
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇩🇪 神灯加速器-德国-02
+  jitter: 16.4
+  latency: 91.7
+  name: Clash-🇩🇪 神灯加速器-德国-02
+  password: 6c79e6675554006e607c490a168617ce
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-13
+  jitter: 11.8
+  latency: 91.8
+  name: Clash-🇭🇰 神灯加速器-香港-13
+  password: c98ab2ef8640ec92870b4132c33cd371
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇦🇺 神灯加速器-澳大利亚-01
+  jitter: 5.3
+  latency: 91.9
+  name: Clash-🇦🇺 神灯加速器-澳大利亚-01
+  password: a74c18e385d4df373ae7871c331cc88b
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-07
+  jitter: 83.1
+  latency: 92.1
+  name: Clash-🇻🇳 神灯加速器-越南-07
+  password: e66417ea965ad6f00c09db996575bed2
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-03
+  jitter: 12.4
+  latency: 92.2
+  name: Clash-🇯🇵 神灯加速器-日本-03
+  password: 571eebbdb044bdd90d8773babf048844
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-04
+  jitter: 10.1
+  latency: 92.3
+  name: Clash-🇺🇸 神灯加速器-美国-04
+  password: 8e0cfdddbb7314e5c110576e7edec1f9
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-01
+  jitter: 30.8
+  latency: 92.4
+  name: Clash-🇺🇸 神灯加速器-美国-01
+  password: e53ec9194c1b433d78afe55ad01b3bb7
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇬🇷 神灯加速器-希腊-01
+  jitter: 2.5
+  latency: 92.5
+  name: Clash-🇬🇷 神灯加速器-希腊-01
+  password: 7f7c7a51bcfdbefacd90e0cb3e2c8638
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-06
+  jitter: 11.1
+  latency: 92.7
+  name: Clash-🇻🇳 神灯加速器-越南-06
+  password: cd15fc4b277f0a8a251e174c3e387dbc
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-08
+  jitter: 16.4
+  latency: 92.8
+  name: Clash-🇸🇬 神灯加速器-新加坡-08
+  password: da3c48a15e533f81d5286f6c58e51745
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-10
+  jitter: 12.2
+  latency: 92.9
+  name: Clash-🇯🇵 神灯加速器-日本-10
+  password: 483bb26f72bf7e77f40ab78e4b319e49
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇦🇪 神灯加速器-阿联酋-02
+  jitter: 9.3
+  latency: 92.9
+  name: Clash-🇦🇪 神灯加速器-阿联酋-02
+  password: 4fa64bc99914bc5e4339589945720e94
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇬🇧 神灯加速器-英国-02
+  jitter: 2.8
+  latency: 92.9
+  name: Clash-🇬🇧 神灯加速器-英国-02
+  password: c4bfc2e7209ffa8b5ee012a1b0a8116b
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-07
+  jitter: 15.7
+  latency: 93.2
+  name: Clash-🇹🇼 神灯加速器-台湾-07
+  password: 74577e02978f5758d19f276a502b24b5
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-20
+  jitter: 51.7
+  latency: 93.5
+  name: Clash-🇺🇸 神灯加速器-美国-20
+  password: 5649c062bf0b037bee58842aa4b2a568
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-08
+  jitter: 22.1
+  latency: 93.6
+  name: Clash-🇯🇵 神灯加速器-日本-08
+  password: a967a0bdb0a9aee1d9581130a2dcd19a
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇪 神灯加速器-爱尔兰-02
+  jitter: 10.7
+  latency: 94.4
+  name: Clash-🇮🇪 神灯加速器-爱尔兰-02
+  password: a82ce33cc050105e4908654c8878d45f
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-07
+  jitter: 58.5
+  latency: 94.6
+  name: Clash-🇺🇸 神灯加速器-美国-07
+  password: 7141b5f0592f2e7f459ea2e8cfcd8a84
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-03
+  jitter: 13.6
+  latency: 94.7
+  name: Clash-🇨🇦 神灯加速器-加拿大 JA-03
+  password: 64ec9c307e484b45867d8678d4be2180
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇹🇭 神灯加速器-泰国-106
+  jitter: 5.3
+  latency: 94.7
+  name: Clash-🇹🇭 神灯加速器-泰国-106
+  password: 77c2c63b9b3081a8deab212050ba5472
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-02
+  jitter: 7.1
+  latency: 95.2
+  name: Clash-🇲🇾 神灯加速器-马来西亚-02
+  password: 53d52598e15eda0daad99ec7d3461f06
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇦 神灯加速器-乌克兰-01
+  jitter: 11.6
+  latency: 95.3
+  name: Clash-🇺🇦 神灯加速器-乌克兰-01
+  password: 49aebff08369239f0adc7c8512c995ec
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇦 神灯加速器-乌克兰-02
+  jitter: 8.7
+  latency: 95.3
+  name: Clash-🇺🇦 神灯加速器-乌克兰-02
+  password: ba981c8decd95953dcdb219c324e4e1d
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-09
+  jitter: 29.5
+  latency: 95.6
+  name: Clash-🇸🇬 神灯加速器-新加坡-09
+  password: d41f645df853df801ce2b6edec20aa16
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇪🇸 神灯加速器-西班牙-01
+  jitter: 3.1
+  latency: 95.9
+  name: Clash-🇪🇸 神灯加速器-西班牙-01
+  password: 6edc9363c16bb2f7861bc1ab96edd69f
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇬🇧 神灯加速器-英国-01
+  jitter: 8.6
+  latency: 96.2
+  name: Clash-🇬🇧 神灯加速器-英国-01
+  password: 76c84031f490a7ecf94f66bee5fa2ad1
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-25
+  jitter: 28.6
+  latency: 96.2
+  name: Clash-🇭🇰 神灯加速器-香港-25
+  password: 93618d74a3bcf47c8cfbbe678bb29b08
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇳🇱 神灯加速器-荷兰-02
+  jitter: 11.1
+  latency: 96.5
+  name: Clash-🇳🇱 神灯加速器-荷兰-02
+  password: d86931c3cdedaae00c34a0ef62f744c6
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇬🇷 神灯加速器-希腊-02
+  jitter: 5.3
+  latency: 96.7
+  name: Clash-🇬🇷 神灯加速器-希腊-02
+  password: 73a21f82e484bc746b7b3e8b742622e1
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇸 神灯加速器-冰岛 IS-03
+  jitter: 12.9
+  latency: 96.7
+  name: Clash-🇮🇸 神灯加速器-冰岛 IS-03
+  password: ad2ac27a9fa52023755a961d77632f23
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-29
+  jitter: 15.3
+  latency: 97.8
+  name: Clash-🇭🇰 神灯加速器-香港-29
+  password: dc8487a54e41ae2a680b14ab235a30a2
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-22
+  jitter: 3.3
+  latency: 98.0
+  name: Clash-🇭🇰 神灯加速器-香港-22
+  password: 53141abd01b6a4bb4511bd81097c0b8f
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-11
+  jitter: 16.9
+  latency: 98.4
+  name: Clash-🇯🇵 神灯加速器-日本-11
+  password: ce9e02e876e32eca66d901eb4d07461c
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-18
+  jitter: 14.3
+  latency: 98.4
+  name: Clash-🇭🇰 神灯加速器-香港-18
+  password: e5a3fe75c38be1dc79af933221d2d86a
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇵🇭 神灯加速器-菲律宾-104
+  jitter: 3.2
+  latency: 98.7
+  name: Clash-🇵🇭 神灯加速器-菲律宾-104
+  password: cc41caea9689c07168b9e3cb8cc3d7c3
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇫🇷 神灯加速器-法国-01
+  jitter: 30.7
+  latency: 99.0
+  name: Clash-🇫🇷 神灯加速器-法国-01
+  password: dd135b010b5f8ec7ba4c4cc5a35f0efb
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇫🇷 神灯加速器-法国-03
+  jitter: 13.8
+  latency: 99.1
+  name: Clash-🇫🇷 神灯加速器-法国-03
+  password: 74bd27bf0a1968d15e8a020666472b47
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-07
+  jitter: 49.9
+  latency: 100.0
+  name: Clash-🇯🇵 神灯加速器-日本-07
+  password: 2bfc5fda7fbccde82d6fada1465d131c
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-06
+  jitter: 27.0
+  latency: 100.5
+  name: Clash-🇹🇼 神灯加速器-台湾-06
+  password: da5051376e910e2b7c371ef039ab6a28
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇷 神灯加速器-韩国-01
+  jitter: 21.8
+  latency: 100.6
+  name: Clash-🇰🇷 神灯加速器-韩国-01
+  password: fcee28341b091d3045cca8e1e280316a
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇭 神灯加速器-瑞士-01
+  jitter: 85.1
+  latency: 100.7
+  name: Clash-🇨🇭 神灯加速器-瑞士-01
+  password: fa33e21c919eae07cb838f3fa28c8608
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-16
+  jitter: 7.5
+  latency: 101.0
+  name: Clash-🇭🇰 神灯加速器-香港-16
+  password: 5f9b5bfbf52c85aeddefdca3abc694b1
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇦🇺 神灯加速器-澳大利亚-02
+  jitter: 6.7
+  latency: 101.2
+  name: Clash-🇦🇺 神灯加速器-澳大利亚-02
+  password: 7a5054478a34abfa1ca881874d3c5f62
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-04
+  jitter: 15.2
+  latency: 101.2
+  name: Clash-🇸🇬 神灯加速器-新加坡-04
+  password: 81352974801287f06ab58f555f45ef0b
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-06
+  jitter: 32.1
+  latency: 101.8
+  name: Clash-🇸🇬 神灯加速器-新加坡-06
+  password: d9c8aa383174c25132e0df201ffab4e3
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-04
+  jitter: 23.0
+  latency: 101.8
+  name: Clash-🇻🇳 神灯加速器-越南-04
+  password: ec9eae88bafe1b2e84f2fcd0d646c976
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-17
+  jitter: 6.6
+  latency: 101.9
+  name: Clash-🇭🇰 神灯加速器-香港-17
+  password: d518716100e9e02b425f760d9219844e
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇭 神灯加速器-柬埔寨-02
+  jitter: 10.6
+  latency: 102.0
+  name: Clash-🇰🇭 神灯加速器-柬埔寨-02
+  password: 2fa9fbc5087f5905380fcac2479e2156
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-05
+  jitter: 95.0
+  latency: 102.4
+  name: Clash-🇨🇦 神灯加速器-加拿大 JA-05
+  password: d453daeb7e9b5fb9cad882763bd71d85
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-01
+  jitter: 13.1
+  latency: 102.5
+  name: Clash-🇻🇳 神灯加速器-越南-01
+  password: 6aa25635a999d62f49eba40879fbc915
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-40
+  jitter: 16.0
+  latency: 103.2
+  name: Clash-🇭🇰 神灯加速器-香港-40
+  password: 8551a9d47b390b78d3be443ad1d0019d
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-39
+  jitter: 23.5
+  latency: 103.7
+  name: Clash-🇭🇰 神灯加速器-香港-39
+  password: 43deb843e3f5da502d0b394995fc42d2
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇳 神灯加速器-印度-02
+  jitter: 14.1
+  latency: 104.0
+  name: Clash-🇮🇳 神灯加速器-印度-02
+  password: d306137cdbd55eac0d79ca7d1e3904a4
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-27
+  jitter: 15.2
+  latency: 104.1
+  name: Clash-🇭🇰 神灯加速器-香港-27
+  password: e05cbe848f32b3b9d1224ddacaa3c51d
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇵🇭 神灯加速器-菲律宾-103
+  jitter: 7.2
+  latency: 104.3
+  name: Clash-🇵🇭 神灯加速器-菲律宾-103
+  password: c9d003ce58bcafecd687cd88256ce2ff
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-05
+  jitter: 73.8
+  latency: 104.8
+  name: Clash-🇸🇬 神灯加速器-新加坡-05
+  password: 2a9457028b242be77f485aec3693cd8f
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇪 神灯加速器-爱尔兰-03
+  jitter: 22.0
+  latency: 106.4
+  name: Clash-🇮🇪 神灯加速器-爱尔兰-03
+  password: ee633fac24a4a265077aa7290e3d29d0
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇭 神灯加速器-泰国-105
+  jitter: 8.2
+  latency: 106.7
+  name: Clash-🇹🇭 神灯加速器-泰国-105
+  password: 81f683c3f594588c69c9494526a57f3d
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-28
+  jitter: 22.1
+  latency: 107.0
+  name: Clash-🇭🇰 神灯加速器-香港-28
+  password: f53d2b849a03b2e06fd1c1a04968aff6
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-21
+  jitter: 89.6
+  latency: 107.1
+  name: Clash-🇭🇰 神灯加速器-香港-21
+  password: e8aaaf6f97db95a2faa5af0c1566385b
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇩🇪 神灯加速器-德国-01
+  jitter: 28.0
+  latency: 107.1
+  name: Clash-🇩🇪 神灯加速器-德国-01
+  password: ffaac02033b3fd3458f2aec9386da59b
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-36
+  jitter: 18.3
+  latency: 107.2
+  name: Clash-🇭🇰 神灯加速器-香港-36
+  password: 8ea984e1be9ce8206722eb08924039a2
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇷 神灯加速器-韩国-02
+  jitter: 20.6
+  latency: 107.2
+  name: Clash-🇰🇷 神灯加速器-韩国-02
+  password: ed0ac307c27a5b8cd06c9712949a3b0e
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇩🇪 神灯加速器-德国-05
+  jitter: 38.0
+  latency: 107.4
+  name: Clash-🇩🇪 神灯加速器-德国-05
+  password: 299954a05eabaed82063bdff0ff4cae2
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-24
+  jitter: 56.9
+  latency: 107.7
+  name: Clash-🇭🇰 神灯加速器-香港-24
+  password: 41aabe3621c1a46115260b480fa08c47
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇹 神灯加速器-意大利-02
+  jitter: 79.1
+  latency: 107.8
+  name: Clash-🇮🇹 神灯加速器-意大利-02
+  password: ecb1c69fa0997abfe3965a2f343d4d52
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇬🇷 神灯加速器-希腊-03
+  jitter: 2.4
+  latency: 108.3
+  name: Clash-🇬🇷 神灯加速器-希腊-03
+  password: 6eef2727659a8135ac79419c64aa2f87
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-10
+  jitter: 7.0
+  latency: 108.5
+  name: Clash-🇻🇳 神灯加速器-越南-10
+  password: 53b0c468a3ef95de5ec22f517072bdcd
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇵🇭 神灯加速器-菲律宾-106
+  jitter: 48.3
+  latency: 109.0
+  name: Clash-🇵🇭 神灯加速器-菲律宾-106
+  password: dd83faad1f67dfdf80c6703efc2d1ebc
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇪🇸 神灯加速器-西班牙-02
+  jitter: 38.8
+  latency: 109.0
+  name: Clash-🇪🇸 神灯加速器-西班牙-02
+  password: e1cb7ebf88a4b935a9ccc5378660ecc2
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-13
+  jitter: 31.9
+  latency: 109.6
+  name: Clash-🇯🇵 神灯加速器-日本-13
+  password: 95f5d289f92dd5f510ded14378a0675c
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇳🇱 神灯加速器-荷兰-01
+  jitter: 6.5
+  latency: 109.9
+  name: Clash-🇳🇱 神灯加速器-荷兰-01
+  password: 53e00b660ad5da37f677dafeee646c9b
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-15
+  jitter: 12.4
+  latency: 109.9
+  name: Clash-🇭🇰 神灯加速器-香港-15
+  password: cdc83e78afe4ef70ac895d88bcbc6bb5
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-08
+  jitter: 24.5
+  latency: 109.9
+  name: Clash-🇹🇼 神灯加速器-台湾-08
+  password: d66e65fd90c2be0f94fa27adc0e5e088
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇷 神灯加速器-土耳其-01
+  jitter: 11.4
+  latency: 111.0
+  name: Clash-🇹🇷 神灯加速器-土耳其-01
+  password: 5abea49277813a05e58f337a5afa1f31
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-105
+  jitter: 15.8
+  latency: 111.2
+  name: Clash-🇲🇾 神灯加速器-马来西亚-105
+  password: 48d435ae12ff0704baa7de0780d5dab5
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-103
+  jitter: 6.3
+  latency: 111.3
+  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-103
+  password: 9f08b5c59e0e0f5235d111cab8a3fe1b
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-106
+  jitter: 53.6
+  latency: 111.5
+  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-106
+  password: 3493ff930d879b214732f71d449538d6
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-10
+  jitter: 36.6
+  latency: 111.5
+  name: Clash-🇸🇬 神灯加速器-新加坡-10
+  password: d7f4b46d9e42ad4a6519bde2ff7ce43c
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-13
+  jitter: 47.8
+  latency: 111.9
+  name: Clash-🇺🇸 神灯加速器-美国-13
+  password: 3520ebcc604f430b1abb25129b92ad03
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇭 神灯加速器-泰国-102
+  jitter: 24.6
+  latency: 113.6
+  name: Clash-🇹🇭 神灯加速器-泰国-102
+  password: e6afedbba859fd975268a93ef46359ae
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-11
+  jitter: 18.9
+  latency: 116.2
+  name: Clash-🇺🇸 神灯加速器-美国-11
+  password: 2ce88088024f525d77c2bda96e81d737
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-01
+  jitter: 14.5
+  latency: 116.5
+  name: Clash-🇸🇬 神灯加速器-新加坡-01
+  password: fb334d27c52a3bed052f7c14bdc18963
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-26
+  jitter: 6.2
+  latency: 118.0
+  name: Clash-🇭🇰 神灯加速器-香港-26
+  password: e6a5cbbde3aae828e180b1fb4026841a
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-32
+  jitter: 35.2
+  latency: 118.4
+  name: Clash-🇭🇰 神灯加速器-香港-32
+  password: fa74fc619c26978ad3585426d06fbde6
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-03
+  jitter: 31.6
+  latency: 118.9
+  name: Clash-🇺🇸 神灯加速器-美国-03
+  password: f04de0d9d524231179110ce2f2556fae
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-02
+  jitter: 43.9
+  latency: 119.5
+  name: Clash-🇻🇳 神灯加速器-越南-02
+  password: 3cd6031c7173d0584ebbaae1a17d4b60
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇵🇭 神灯加速器-菲律宾-102
+  jitter: 38.6
+  latency: 122.0
+  name: Clash-🇵🇭 神灯加速器-菲律宾-102
+  password: 75549bb4b4a8b7b9d940608808880852
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇲🇾 神灯加速器-马来西亚-102
+  jitter: 29.5
+  latency: 125.5
+  name: Clash-🇲🇾 神灯加速器-马来西亚-102
+  password: 23516889fd0914ecce15d80d60365c09
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-12
+  jitter: 29.4
+  latency: 125.7
+  name: Clash-🇺🇸 神灯加速器-美国-12
+  password: 254a0b7402009010a3740e084dff6b56
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇯🇵 神灯加速器-日本-14
+  jitter: 8.6
+  latency: 126.1
+  name: Clash-🇯🇵 神灯加速器-日本-14
+  password: ab2327f92ff95dd8f8ec190cb0528ee6
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-105
+  jitter: 37.7
+  latency: 126.7
+  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-105
+  password: 2bec9594deabbce4b0030700e6e916f0
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-101
+  jitter: 9.5
+  latency: 129.6
+  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-101
+  password: 828b96278358962c945c18913e3ce5b7
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-18
+  jitter: 97.4
+  latency: 132.3
+  name: Clash-🇺🇸 神灯加速器-美国-18
+  password: 2ddeb5f43bbb897b13db728b2dfbef92
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-08
+  jitter: 41.9
+  latency: 135.2
+  name: Clash-🇺🇸 神灯加速器-美国-08
+  password: 21fe8584f34486531ca5c3583775f80f
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇵🇭 神灯加速器-菲律宾-105
+  jitter: 70.7
+  latency: 137.9
+  name: Clash-🇵🇭 神灯加速器-菲律宾-105
+  password: cb4f1e6cdad854b8a1e434c596fd40e8
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-02
+  jitter: 89.8
+  latency: 143.1
+  name: Clash-🇺🇸 神灯加速器-美国-02
+  password: 3083d270c621275837d5f509c0337c22
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-34
+  jitter: 27.5
+  latency: 149.4
+  name: Clash-🇭🇰 神灯加速器-香港-34
+  password: 22905eeb40abd86cf8314faceeefb35d
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-09
+  jitter: 43.9
+  latency: 154.9
+  name: Clash-🇻🇳 神灯加速器-越南-09
+  password: 21f23a6ab64758d06316c8184eb6344d
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇵🇭 神灯加速器-菲律宾-101
+  jitter: 53.9
+  latency: 159.2
+  name: Clash-🇵🇭 神灯加速器-菲律宾-101
+  password: 1e42a6ea0530691ddac99b9255ca6368
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-03
+  jitter: 54.1
+  latency: 159.7
+  name: Clash-🇸🇬 神灯加速器-新加坡-03
+  password: 1ad0aff9c95a0ee59d12b0e2bc905ff4
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-01
+  jitter: 92.2
+  latency: 160.0
+  name: Clash-🇨🇦 神灯加速器-加拿大 JA-01
+  password: 1c8c770339adb746416981873a96c423
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 2/3
+  type: trojan
+- _orig_name: 🇬🇧 神灯加速器-英国-03
+  jitter: 91.2
+  latency: 160.5
+  name: Clash-🇬🇧 神灯加速器-英国-03
+  password: 275edc5ad2872c5f40a15de8a9e95416
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-19
+  jitter: 70.8
+  latency: 173.4
+  name: Clash-🇺🇸 神灯加速器-美国-19
+  password: 149e8b06cedeaca58f830b51ec374540
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-14
+  jitter: 31.9
+  latency: 173.7
+  name: Clash-🇭🇰 神灯加速器-香港-14
+  password: 13e6b9f9497485cdedfdc59328e6a8ad
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇺🇸 神灯加速器-美国-10
+  jitter: 66.5
+  latency: 174.1
+  name: Clash-🇺🇸 神灯加速器-美国-10
+  password: 14bac0e43c849123ccb0fd0690f24316
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇼 神灯加速器-台湾-03
+  jitter: 50.4
+  latency: 183.1
+  name: Clash-🇹🇼 神灯加速器-台湾-03
+  password: 139ba1c7177aff4dac1d13767230a1a2
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-19
+  jitter: 107.8
+  latency: 187.6
+  name: Clash-🇭🇰 神灯加速器-香港-19
+  password: 01f65778463ad8f0eff9dbe3e1a75a35
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-02
+  jitter: 111.9
+  latency: 190.6
+  name: Clash-🇨🇦 神灯加速器-加拿大 JA-02
+  password: 08340a533092e321470fbe21b3407694
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇰🇷 神灯加速器-韩国-101
+  jitter: 56.9
+  latency: 201.4
+  name: Clash-🇰🇷 神灯加速器-韩国-101
+  password: 0892f6ae870db484a45a82524b45903d
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇮🇳 神灯加速器-印度-01
+  jitter: 165.0
+  latency: 201.5
+  name: Clash-🇮🇳 神灯加速器-印度-01
+  password: 1a4dbf8b75346468b85c8d7f70c0cc75
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-08
+  jitter: 68.6
+  latency: 202.6
+  name: Clash-🇻🇳 神灯加速器-越南-08
+  password: 002023c45d18bca3eba2757bb683309a
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 Huaxia-HuaXiaLink-香港3（高速）
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 38.9
+  latency: 205.6
+  name: Clash-🇭🇰 Huaxia-HuaXiaLink-香港3（高速）
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Y-csa54knKKd97yx50oLRBXCs0At7Ch699jUo2D7BAo
+    short-id: 44209ff2b9206201
+  server: 38.175.193.73
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: faa360ca-6ec4-457a-8881-0f92989512d4
+- _orig_name: 🇩🇪 神灯加速器-德国-03
+  jitter: 56.7
+  latency: 205.7
+  name: Clash-🇩🇪 神灯加速器-德国-03
+  password: 057c3dd2a74c74d1c71d63c098924d3d
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇻🇳 神灯加速器-越南-03
+  jitter: 59.3
+  latency: 209.8
+  name: Clash-🇻🇳 神灯加速器-越南-03
+  password: 094a90dd5480ed7702597be34aeaacf7
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇹🇷 神灯加速器-土耳其-02
+  jitter: 60.4
+  latency: 209.8
+  name: Clash-🇹🇷 神灯加速器-土耳其-02
+  password: 0f3a49a77c569bc5cb7e272777ff4b4d
+  port: 59443
+  server: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja262.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇨🇭 神灯加速器-瑞士-02
+  jitter: 49.1
+  latency: 213.1
+  name: Clash-🇨🇭 神灯加速器-瑞士-02
+  password: 0255972f1b5cc33c6f87fbc561085684
+  port: 59443
+  server: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+  sni: tyy129.magiclampcloud.com
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇸🇬 神灯加速器-新加坡-07
+  jitter: 164.5
+  latency: 223.8
+  name: Clash-🇸🇬 神灯加速器-新加坡-07
+  password: 1268e67e8d569099e8abb463d08fe0e4
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 神灯加速器-香港-20
+  jitter: 133.4
+  latency: 230.1
+  name: Clash-🇭🇰 神灯加速器-香港-20
+  password: 06cf12a7fab279375e55e2f0cfdef381
+  port: 59443
+  server: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+  sni: ja304.magiclampcloud.cn
+  subscription: Clash
+  success: 3/3
+  type: trojan
+- _orig_name: 🇭🇰 FyFlash-VIP 香港-01
+  alterId: 0
+  cipher: auto
+  jitter: 55.6
+  latency: 270.8
+  name: Clash-🇭🇰 FyFlash-VIP 香港-01
+  network: ws
+  port: 443
+  server: hk01.wy888.us
+  servername: hk01.wy888.us
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vmess
+  uuid: 14bc5b2c-15d4-409e-abe1-97120acbce2b
+  ws-opts:
+    headers:
+      Host: hk01.wy888.us
+    path: /65ma72vy
+- _orig_name: 🇭🇰 快橙-香港06快橙
+  jitter: 42.6
+  latency: 275.4
+  name: Clash-🇭🇰 快橙-香港06快橙
+  network: ws
+  port: 443
+  server: n1732526138.lie5d.cyou
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 00ea4c5c-104e-434f-a126-29d34fa7bb0f
+  ws-opts:
+    headers:
+      Host: n1732526138.lie5d.cyou
+    path: /00ea4c5c-104e-434f-a126-29d34fa7bb0f
+- _orig_name: 🇰🇷 xingyun-韩国 通用 自动 4
+  auth: qHm7OcegGZxHjKdK
+  jitter: 23.7
+  latency: 279.7
+  name: Clash-🇰🇷 xingyun-韩国 通用 自动 4
+  password: qHm7OcegGZxHjKdK
+  port: 16001
+  server: 3.38.109.234
+  skip-cert-verify: true
+  sni: kor-ls-d-2.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-Reality
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 46.2
+  latency: 282.3
+  name: Clash-🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-Reality
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zVJVCkcnyPjMZvx-GMQnnbkEgNiws80sppKB6A0uqBY
+    short-id: 83dee8596e65d99e
+  server: sk1i-il4mxi.sparkra.top
+  servername: www.bing.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 907a940c-bad0-4356-a280-7dec12f1479e
+- _orig_name: 🇸🇬 GeLink-新加坡-vip-1772
+  auth: 0ee718a6-4e01-41d5-824a-fd38bf477cc3
+  jitter: 47.5
+  latency: 309.5
+  name: Clash-🇸🇬 GeLink-新加坡-vip-1772
+  password: 0ee718a6-4e01-41d5-824a-fd38bf477cc3
+  port: 35000
+  server: 152.69.220.212
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇰🇷 xingyun-韩国 通用 自动 2
+  auth: hw1vMdGtLBhHwmob
+  jitter: 112.4
+  latency: 310.8
+  name: Clash-🇰🇷 xingyun-韩国 通用 自动 2
+  password: hw1vMdGtLBhHwmob
+  port: 36001
+  server: 3.39.243.85
+  skip-cert-verify: true
+  sni: kor-ls-c-5.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇯🇵 日本东京(YouTube,ChatGPT等)
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 148.6
+  latency: 320.9
+  name: Clash-🇯🇵 日本东京(YouTube,ChatGPT等)
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ogltVauN6d4e3Y16mWpt0GmkzoSTnVEPB43Lc--mCW8
+    short-id: 2fe1cd05eb389fce
+  server: 116.206.93.231
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 2/3
+  tls: true
+  type: vless
+  uuid: 1be3c1d2-c997-40c2-b0d4-08b680ef4ee0
+- _orig_name: 🇰🇷 快橙-韩国
+  jitter: 104.6
+  latency: 328.8
+  name: Clash-🇰🇷 快橙-韩国
+  network: ws
+  port: 443
+  server: n1732526139.4u9ma.icu
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 10bdecf8-483e-476d-9a40-8ad7be09b552
+  ws-opts:
+    headers:
+      Host: n1732526139.4u9ma.icu
+    path: /10bdecf8-483e-476d-9a40-8ad7be09b552
+- _orig_name: 🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-VLESS-WS
+  jitter: 99.8
+  latency: 348.1
+  name: Clash-🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-VLESS-WS
+  network: ws
+  port: 443
+  server: sk1i-il4mxi.sparkra.top
+  servername: sk1i-il4mxi.sparkra.top
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: d556edbe-75b5-46fa-b7d4-7946db7a460a
+  ws-opts:
+    headers:
+      Host: sk1i-il4mxi.sparkra.top
+    path: /d556edbe-75b5-46fa-b7d4-7946db7a460a
+- _orig_name: 🇸🇬 新加坡优质(移动,电信优选)
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 137.8
+  latency: 354.8
+  name: Clash-🇸🇬 新加坡优质(移动,电信优选)
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: eXWCRw_UjfzOb2vr1I-VQO3GZQCf3lwlE8Ldzn8EO2A
+    short-id: 2f8feff3c9e71b4c
+  server: 163.128.99.208
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 2/3
+  tls: true
+  type: vless
+  uuid: 980502a9-c8b4-48bb-b294-bbd846434712
+- _orig_name: 🇭🇰 BigBear-🇭🇰 香港精品2-扣量×1.7
+  alterId: 0
+  cipher: auto
+  latency: 367.2
+  name: Clash-🇭🇰 BigBear-🇭🇰 香港精品2-扣量×1.7
+  network: ws
+  port: 443
+  server: 47.244.67.73
+  servername: api-data.fcapp.run
+  skip-cert-verify: true
+  subscription: Clash
+  success: 1/3
+  tls: true
+  type: vmess
+  uuid: aad29678-939b-4fae-9fec-709219762510
+  ws-opts:
+    headers:
+      Host: api-39208e19-7c0e-48b1-94e4-a632871b4a00.aitrack.io
+    path: /f-hk1/v2
+- _orig_name: 🇭🇰 xingyun-香港 解锁 自动 3
+  alterId: 0
+  cipher: auto
+  latency: 370.4
+  name: Clash-🇭🇰 xingyun-香港 解锁 自动 3
+  network: ws
+  port: 21134
+  server: 103.255.209.100
+  servername: hk-akile-b-1.orwnaubrzcrbhrdgpdtu.org
+  skip-cert-verify: true
+  subscription: Clash
+  success: 1/3
+  tls: true
+  type: vmess
+  uuid: 3551ba91-10f6-41c0-aedf-c2c72e5e3880
+  ws-opts:
+    headers:
+      Host: hk-akile-b-1.orwnaubrzcrbhrdgpdtu.org
+    path: /hk-akile-b-1/getData
+- _orig_name: 🇯🇵 xingyun-日本 通用 自动 4
+  auth: iXGXtXagCRspsj6f
+  jitter: 98.9
+  latency: 384.2
+  name: Clash-🇯🇵 xingyun-日本 通用 自动 4
+  password: iXGXtXagCRspsj6f
+  port: 46001
+  server: 54.248.166.77
+  skip-cert-verify: true
+  sni: jp-ls-j-1.hogbvdxheortndkhdgws.uk
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇮🇹 快橙-意大利
+  jitter: 200.8
+  latency: 384.3
+  name: Clash-🇮🇹 快橙-意大利
+  network: ws
+  port: 443
+  server: n1732526147.4u9ma.icu
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: beb49099-9f3d-4b4d-ab5d-9eab35a4cafa
+  ws-opts:
+    headers:
+      Host: n1732526147.4u9ma.icu
+    path: /beb49099-9f3d-4b4d-ab5d-9eab35a4cafa
+- _orig_name: 🇦🇺 快橙-澳大利亚
+  jitter: 143.5
+  latency: 390.5
+  name: Clash-🇦🇺 快橙-澳大利亚
+  network: ws
+  port: 443
+  server: n1761184281.74qxv.top
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: b2bed3c3-ca3b-4fe2-8131-a7def4d13d98
+  ws-opts:
+    headers:
+      Host: n1761184281.74qxv.top
+    path: /b2bed3c3-ca3b-4fe2-8131-a7def4d13d98
+- _orig_name: 🇭🇰 xingyun-香港 通用 自动 4
+  auth: lXEJFtAR8nmFNHqI
+  jitter: 77.0
+  latency: 392.5
+  name: Clash-🇭🇰 xingyun-香港 通用 自动 4
+  password: lXEJFtAR8nmFNHqI
+  port: 46001
+  server: 16.162.89.66
+  skip-cert-verify: true
+  sni: hk-ls-n-10.khljbzxpeytzgsqgtfki.cc
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇭🇰 RedMouse-香港-A1
+  client-fingerprint: qq
+  flow: xtls-rprx-vision
+  jitter: 223.2
+  latency: 399.4
+  name: Clash-🇭🇰 RedMouse-香港-A1
+  network: tcp
+  port: 30011
+  reality-opts:
+    public-key: SSFIkykW4mCy8Kn4ni7kX7QA9_DX1TX8YWM1ufLplkU
+  server: 47.83.179.144
+  servername: www.figma.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 454eed72-9a63-4af6-b1e1-1d5b65638f7e
+- _orig_name: 🇯🇵 xingyun-日本 解锁 自动 2
+  auth: BwAmBUHr2Sk9ZpR8
+  jitter: 22.4
+  latency: 400.7
+  name: Clash-🇯🇵 xingyun-日本 解锁 自动 2
+  password: BwAmBUHr2Sk9ZpR8
+  port: 16001
+  server: 151.242.164.80
+  skip-cert-verify: true
+  sni: jp-akile-1.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇲🇾 快橙-马来西亚
+  jitter: 21.9
+  latency: 406.6
+  name: Clash-🇲🇾 快橙-马来西亚
+  network: ws
+  port: 443
+  server: n1743918712.lie5d.cyou
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: cda1e092-1c87-4ada-bd88-ee192ad6dc6e
+  ws-opts:
+    headers:
+      Host: n1743918712.lie5d.cyou
+    path: /cda1e092-1c87-4ada-bd88-ee192ad6dc6e
+- _orig_name: 🇭🇰 Huaxia-HuaXiaLink-香港1（高速）
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 639.9
+  latency: 407.2
+  name: Clash-🇭🇰 Huaxia-HuaXiaLink-香港1（高速）
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 97My_FMaU1UUY4BDmFwBZw80ISXlTHqY6_8zZuzn4zc
+    short-id: 97768a3d8641c0d0
+  server: 154.64.246.9
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: a9ff2941-a0ba-459b-8b40-05b64e78986e
+- _orig_name: 🇯🇵 xingyun-日本 通用 自动 3
+  auth: Xhi1sPz9kkFir34L
+  jitter: 124.9
+  latency: 407.4
+  name: Clash-🇯🇵 xingyun-日本 通用 自动 3
+  password: Xhi1sPz9kkFir34L
+  port: 16001
+  server: 43.206.139.97
+  skip-cert-verify: true
+  sni: jp-ls-f-4.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇭🇰 xingyun-香港 通用 自动 5
+  auth: ndIJBX0c2CixLMiN
+  jitter: 31.3
+  latency: 415.3
+  name: Clash-🇭🇰 xingyun-香港 通用 自动 5
+  password: ndIJBX0c2CixLMiN
+  port: 46001
+  server: 43.198.243.142
+  skip-cert-verify: true
+  sni: hk-ls-p-3.czzhkractqqakfzdmrgd.cc
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇯🇵 xingyun-日本 解锁 自动
+  auth: AMnTye4y6Jjxc0J0
+  jitter: 11.6
+  latency: 416.3
+  name: Clash-🇯🇵 xingyun-日本 解锁 自动
+  password: AMnTye4y6Jjxc0J0
+  port: 26001
+  server: 151.242.164.204
+  skip-cert-verify: true
+  sni: jp-akile-6.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇸🇬 快橙-新加坡 2
+  jitter: 111.3
+  latency: 418.0
+  name: Clash-🇸🇬 快橙-新加坡 2
+  network: ws
+  port: 443
+  server: n1733198989.4u9ma.icu
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 91eec07a-45db-4791-bf0c-8e46ff49cf6d
+  ws-opts:
+    headers:
+      Host: n1733198989.4u9ma.icu
+    path: /91eec07a-45db-4791-bf0c-8e46ff49cf6d
+- _orig_name: 🇯🇵 xingyun-日本 通用 自动 2
+  auth: WRfgxYe412HnIeGn
+  jitter: 197.4
+  latency: 420.1
+  name: Clash-🇯🇵 xingyun-日本 通用 自动 2
+  password: WRfgxYe412HnIeGn
+  port: 36001
+  server: 52.195.16.54
+  skip-cert-verify: true
+  sni: jp-ls-g-1.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇭🇰 xingyun-香港 通用 自动
+  auth: Bz3sMcXskeFY1DlE
+  jitter: 203.6
+  latency: 421.6
+  name: Clash-🇭🇰 xingyun-香港 通用 自动
+  password: Bz3sMcXskeFY1DlE
+  port: 46001
+  server: 18.166.215.97
+  skip-cert-verify: true
+  sni: hk-ls-h-1.apcwjtnmuwembbfzmxqx.cc
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇰🇷 xingyun-韩国 通用 自动
+  auth: d05iHacuHHer4ED8
+  jitter: 60.1
+  latency: 424.1
+  name: Clash-🇰🇷 xingyun-韩国 通用 自动
+  password: d05iHacuHHer4ED8
+  port: 36001
+  server: 3.35.236.166
+  skip-cert-verify: true
+  sni: kor-ls-a3.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇰🇷 xingyun-韩国 通用 自动 3
+  auth: i3kHmZNLGuEsWVMC
+  jitter: 52.2
+  latency: 425.0
+  name: Clash-🇰🇷 xingyun-韩国 通用 自动 3
+  password: i3kHmZNLGuEsWVMC
+  port: 36001
+  server: 3.35.199.135
+  skip-cert-verify: true
+  sni: kor-ls-b-4.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇸🇬 快橙-新加坡
+  jitter: 110.3
+  latency: 435.6
+  name: Clash-🇸🇬 快橙-新加坡
+  network: ws
+  port: 443
+  server: n1733198990.lie5d.cyou
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 32a01a75-8bc3-4095-a2b4-55cb705a95fe
+  ws-opts:
+    headers:
+      Host: n1733198990.lie5d.cyou
+    path: /32a01a75-8bc3-4095-a2b4-55cb705a95fe
+- _orig_name: 🇹🇭 快橙-泰国
+  jitter: 70.6
+  latency: 445.0
+  name: Clash-🇹🇭 快橙-泰国
+  network: ws
+  port: 443
+  server: n1743918711.4u9ma.icu
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 80e1e4d6-2a39-4e3a-9660-79fa2b77043c
+  ws-opts:
+    headers:
+      Host: n1743918711.4u9ma.icu
+    path: /80e1e4d6-2a39-4e3a-9660-79fa2b77043c
+- _orig_name: 🇭🇰 Huaxia-HuaXiaLink-香港2（高速）
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 323.4
+  latency: 448.7
+  name: Clash-🇭🇰 Huaxia-HuaXiaLink-香港2（高速）
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UnAmt5Tobp-N4zsFApOuYpbhOZaHJADJpb55-qEHsTw
+    short-id: c8d0811f1d2e09b2
+  server: 154.64.246.5
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 92867026-12e2-4dae-a8f3-13234f2a1a75
+- _orig_name: 🇵🇭 FastStunnel-菲律宾-马尼拉-cgul-il4n8q-298ms-vless-ws
+  jitter: 32.9
+  latency: 458.8
+  name: Clash-🇵🇭 FastStunnel-菲律宾-马尼拉-cgul-il4n8q-298ms-vless-ws
+  network: ws
+  port: 443
+  server: cgul-il4n8q.quantira.top
+  servername: cgul-il4n8q.quantira.top
+  skip-cert-verify: true
+  subscription: Clash
+  success: 2/3
+  tls: true
+  type: vless
+  uuid: 77cf8ed0-c26f-4d64-9527-71705f9f7adf
+  ws-opts:
+    headers:
+      Host: cgul-il4n8q.quantira.top
+    path: /77cf8ed0-c26f-4d64-9527-71705f9f7adf
+- _orig_name: 自动选择（Ins,YouTube,ChatGPT等）
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 228.8
+  latency: 462.8
+  name: Clash-自动选择（Ins,YouTube,ChatGPT等）
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: l_AILVmgCSrYUlKhoiFc6NYY-zjXE6FTGEDaG1MECQY
+    short-id: 635295c55ea6eda1
+  server: 163.128.99.165
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: 66d0024b-307a-4714-86f7-07d141a244bf
+- _orig_name: 🇯🇵 xingyun-日本 通用 自动
+  auth: 7VTHxC6ne0sjEAMU
+  jitter: 110.5
+  latency: 465.8
+  name: Clash-🇯🇵 xingyun-日本 通用 自动
+  password: 7VTHxC6ne0sjEAMU
+  port: 56001
+  server: 3.113.182.149
+  skip-cert-verify: true
+  sni: jp-ls-e-6.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇭🇰 xingyun-香港 通用 自动 3
+  auth: IqNyxpC83KSjFCaC
+  jitter: 141.3
+  latency: 474.2
+  name: Clash-🇭🇰 xingyun-香港 通用 自动 3
+  password: IqNyxpC83KSjFCaC
+  port: 26001
+  server: 43.198.101.212
+  skip-cert-verify: true
+  sni: hk-ls-d-6.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇰🇷 xingyun-韩国 解锁 自动
+  auth: 3JdcAYVWhBbZrVNi
+  jitter: 193.8
+  latency: 475.8
+  name: Clash-🇰🇷 xingyun-韩国 解锁 自动
+  password: 3JdcAYVWhBbZrVNi
+  port: 56001
+  server: 210.216.173.110
+  skip-cert-verify: true
+  sni: kor-akile-a3.nebulacloud.win
+  subscription: Clash
+  success: 3/3
+  type: hysteria2
+- _orig_name: 🇨🇦 快橙-加拿大
+  jitter: 68.5
+  latency: 493.7
+  name: Clash-🇨🇦 快橙-加拿大
+  network: ws
+  port: 443
+  server: n1733198987.4u9ma.icu
+  skip-cert-verify: true
+  subscription: Clash
+  success: 2/3
+  tls: true
+  type: vless
+  uuid: e293e09e-b2d6-413d-9aa5-8c74f4ad64f5
+  ws-opts:
+    headers:
+      Host: n1733198987.4u9ma.icu
+    path: /e293e09e-b2d6-413d-9aa5-8c74f4ad64f5
+- _orig_name: 🇸🇬 Huaxia-HuaXiaLink-新加坡1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 229.0
+  latency: 494.4
+  name: Clash-🇸🇬 Huaxia-HuaXiaLink-新加坡1
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: f7ysLjHXSTFqwfeUvS26zrbLmjwpvsa0xtfMYz46OjQ
+    short-id: 0123456789abcdef
+  server: 163.128.98.110
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: Clash
+  success: 3/3
+  tls: true
+  type: vless
+  uuid: f67e149c-e1f4-4162-876b-a34591b8349f
+- _orig_name: vless-716487934
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 22.5
+  latency: 325.3
+  name: AU1RXX-vless-716487934
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g
+    short-id: e6d59aff03e5b0
+  server: tw4.miyazono-kaori.com
+  servername: dlcdnets.asus.com
+  subscription: AU1RXX
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 757ea408-8207-4850-b23f-f2082243288d
+- _orig_name: trojan-710506292
+  jitter: 150.1
+  latency: 336.2
+  name: AU1RXX-trojan-710506292
+  password: EQ30679154
+  port: 443
+  server: giving-perch.rooster465.autos
+  skip-cert-verify: false
+  sni: giving-perch.rooster465.autos
+  subscription: AU1RXX
+  success: 3/3
+  type: trojan
+  udp: true
+- _orig_name: vless-705792844
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  latency: 450.1
+  name: AU1RXX-vless-705792844
+  network: tcp
+  port: 38551
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  server: 188.253.123.164
+  servername: cdnjs.cloudflare.com
+  subscription: AU1RXX
+  success: 1/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- _orig_name: vless-716054695
+  jitter: 78.6
+  latency: 462.1
+  name: AU1RXX-vless-716054695
+  network: tcp
+  port: 62145
+  server: 158.178.144.96
+  subscription: AU1RXX
+  success: 3/3
+  type: vless
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- _orig_name: vless-696792794
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 165.7
+  latency: 476.8
+  name: AU1RXX-vless-696792794
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: oCsEp9srC8WQ7ZAsGSqD0QZ9MrNtIrUyllSZcgTfd28
+    short-id: b81f60db2e3d6346
+  server: 103.76.85.228
+  servername: www.apple.com
+  subscription: AU1RXX
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 696338ec-091d-4b41-b855-8f88d5b5d873
+- _orig_name: 🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_926a837f
+  encryption: none
+  flow: none
+  jitter: 259.2
+  latency: 349.5
+  name: FREESUB-🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_926a837f
+  network: ws
+  port: 48140
+  server: 188.166.244.136
+  subscription: FREESUB
+  success: 3/3
+  type: vless
+  udp: true
+  uuid: efbaec86-ee09-4150-9024-fa5f5d0429e4
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.143 Safari/537.36
+    path: /Free By Tharuwa (0767597317)
+  xudp: true
+- _orig_name: 🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_dfe85c30
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  latency: 417.1
+  name: FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_dfe85c30
+  network: http
+  port: 52080
+  server: 38.246.226.240
+  subscription: FREESUB
+  success: 1/3
+  tls: false
+  type: vmess
+  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+- _orig_name: 🔴🇰🇷[🎬📺🎭🎪]_github.com/Ruk1ng001_e6c290c1
+  latency: 433.6
+  name: FREESUB-🔴🇰🇷[🎬📺🎭🎪]_github.com/Ruk1ng001_e6c290c1
+  network: ws
+  packet-encoding: xudp
+  port: 80
+  server: mci.v2plus.ovh
+  servername: worker3.bobiv63003.workers.dev
+  subscription: FREESUB
+  success: 1/3
+  type: vless
+  uuid: 0c6c9627-95fe-418a-bd4c-50df888c44bd
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: worker3.bobiv63003.workers.dev
+    max-early-data: 2560
+    path: /ffEt2nn4iTWiXfi8
 - _orig_name: 🟠🇭🇰[📺]_github.com/Ruk1ng001_9e629f96
   alterId: 0
   cipher: auto
-  jitter: 141.8
-  latency: 309.3
+  jitter: 335.2
+  latency: 450.0
   name: FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_9e629f96
   network: ws
   packet-encoding: xudp
@@ -82,560 +2975,33 @@ proxies:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
   xudp: true
-- _orig_name: 🟠🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001_002e9496
-  jitter: 63.1
-  latency: 338.4
-  name: FREESUB-🟠🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001_002e9496
-  network: tcp
-  password: HC04361579
-  port: 443
-  server: pet-albacore.rooster465.autos
-  sni: pet-albacore.rooster465.autos
-  subscription: FREESUB
-  success: 3/3
-  type: trojan
-- _orig_name: 🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_8da01bef
-  alterId: '0'
-  cipher: auto
-  jitter: 12.0
-  latency: 344.9
-  name: FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_8da01bef
-  network: tcp
-  port: 443
-  server: 64.83.12.153
-  subscription: FREESUB
-  success: 2/3
-  type: vmess
-  uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
-- _orig_name: 🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_7ffb22f6
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 41.1
-  latency: 382.5
-  name: FREESUB-🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_7ffb22f6
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 1xIu8ESLs4JviWXp8XaOceWAEVHqWLzNIiojA_uf8Ug
-    short-id: 83feb7aa267e9ddf
-  server: 103.100.158.10
-  servername: www.apple.com
-  subscription: FREESUB
-  success: 3/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6a1f6c94-7785-42e2-9203-381d1f4db37e
-  xudp: true
-- _orig_name: 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_399481ac
-  auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  jitter: 19.8
-  latency: 404.4
-  name: FREESUB-🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_399481ac
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 13.212.32.171
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  subscription: FREESUB
-  success: 3/3
-  type: hysteria2
-  udp: true
-- _orig_name: 🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_51fe6fcf
-  cipher: auto
-  jitter: 29.6
-  latency: 406.8
-  name: FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_51fe6fcf
-  network: none
-  port: 51693
-  server: 216.167.49.171
-  subscription: FREESUB
-  success: 3/3
-  tls: false
-  type: vless
-  uuid: 0121a5ff-89da-4f0f-93e5-400370f91a96
-- _orig_name: 🔴🇯🇵[📺🎭🎪✨]_github.com/Ruk1ng001_ec5e3037
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  latency: 419.2
-  name: FREESUB-🔴🇯🇵[📺🎭🎪✨]_github.com/Ruk1ng001_ec5e3037
-  network: tcp
-  port: 39411
-  reality-opts:
-    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
-    short-id: bc8e3658db7d1323
-  server: 188.253.123.164
-  servername: cdnjs.cloudflare.com
-  subscription: FREESUB
-  success: 1/3
-  tls: true
-  type: vless
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-- _orig_name: 🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_dfe85c30
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  latency: 462.0
-  name: FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_dfe85c30
-  network: http
-  port: 52080
-  server: 38.246.226.240
-  subscription: FREESUB
-  success: 1/3
-  tls: false
-  type: vmess
-  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
-- _orig_name: trojan-710506292
-  jitter: 21.9
-  latency: 212.3
-  name: AU1RXX-trojan-710506292
-  password: EQ30679154
-  port: 443
-  server: giving-perch.rooster465.autos
-  skip-cert-verify: false
-  sni: giving-perch.rooster465.autos
-  subscription: AU1RXX
-  success: 3/3
-  type: trojan
-  udp: true
-- _orig_name: hysteria2-696780796
-  jitter: 26.5
-  latency: 268.9
-  name: AU1RXX-hysteria2-696780796
-  password: 0ee718a6-4e01-41d5-824a-fd38bf477cc3
-  port: 35000
-  server: 152.69.220.212
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  subscription: AU1RXX
-  success: 3/3
-  type: hysteria2
-- _orig_name: vless-696792797
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  latency: 289.3
-  name: AU1RXX-vless-696792797
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: -LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0
-    short-id: e3a4bdfe3d6fd8ec
-  server: 163.128.98.231
-  servername: www.apple.com
-  subscription: AU1RXX
-  success: 1/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: bda35755-c838-49c3-a19e-3712f2d54275
-- _orig_name: vless-701345477
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 50.4
-  latency: 319.7
-  name: AU1RXX-vless-701345477
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zVJVCkcnyPjMZvx-GMQnnbkEgNiws80sppKB6A0uqBY
-    short-id: 83dee8596e65d99e
-  server: sk1i-il4mxi.sparkra.top
-  servername: www.bing.com
-  subscription: AU1RXX
-  success: 3/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 907a940c-bad0-4356-a280-7dec12f1479e
-- _orig_name: vless-700894615
-  jitter: 5.5
-  latency: 329.4
-  name: AU1RXX-vless-700894615
-  network: ws
-  port: 443
-  server: paid.sshehi.ggff.net
-  servername: aka.ms
-  skip-cert-verify: true
-  subscription: AU1RXX
-  success: 2/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c86212-ae0b-430e-9abb-244e715b533f
-- _orig_name: vless-705141076
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 223.5
-  latency: 335.6
-  name: AU1RXX-vless-705141076
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: ZuN9nc78h4Ccb19eb9NpTCs0jZkhJB8L0i1ZoAhu0XU
-    short-id: b2f4518cf979889d
-  server: 43.165.177.82
-  servername: www.cloudflare.com
-  subscription: AU1RXX
-  success: 3/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b772594-d6b9-4f4f-849b-8a6f92f594fe
-- _orig_name: vmess-713739028
-  alterId: 0
-  cipher: auto
-  latency: 415.1
-  name: AU1RXX-vmess-713739028
-  network: ws
-  port: 443
-  server: tokyo02.zgjok.com
-  servername: tokyo02.zgjok.com
-  skip-cert-verify: true
-  subscription: AU1RXX
-  success: 1/3
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3fe113f9-e564-4111-b8c7-11f597687689
-- _orig_name: vless-696780852
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 387.0
-  latency: 441.9
-  name: AU1RXX-vless-696780852
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Y-csa54knKKd97yx50oLRBXCs0At7Ch699jUo2D7BAo
-    short-id: 44209ff2b9206201
-  server: 38.175.193.73
-  servername: www.apple.com
-  subscription: AU1RXX
-  success: 2/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: faa360ca-6ec4-457a-8881-0f92989512d4
-- _orig_name: vless-696780850
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 10.2
-  latency: 446.8
-  name: AU1RXX-vless-696780850
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 97My_FMaU1UUY4BDmFwBZw80ISXlTHqY6_8zZuzn4zc
-    short-id: 97768a3d8641c0d0
-  server: 154.64.246.9
-  servername: www.apple.com
-  subscription: AU1RXX
-  success: 2/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: a9ff2941-a0ba-459b-8b40-05b64e78986e
-- _orig_name: 自建-香港-v4
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 48.4
-  latency: 228.5
-  name: ZCB-自建-香港-v4
-  port: 46028
-  reality-opts:
-    public-key: ZUpEUDxLNrNXWkiT20EFTz6cIc0RmjL-Olib-OennB0
-    short-id: 5eac8289
-  server: 151.242.125.100
-  servername: www.apple.com
-  skip-cert-verify: true
-  subscription: ZCB
-  success: 3/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 34309e50-6697-4836-8d0e-c17ee2f979c4
-- _orig_name: 🇯🇵 [直连][旗舰]日本1
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 103.6
-  latency: 329.7
-  name: ZCB-🇯🇵 [直连][旗舰]日本1
-  port: 443
-  reality-opts:
-    public-key: BA8mvRN9GwK0UyNqEbpmhpslATWzSn9N0Ady9rHXuGQ
-    short-id: 34d571c93fb25e4b
-  server: jp1-vip2.suntree.club
-  servername: www.microsoft.com
-  skip-cert-verify: true
-  subscription: ZCB
-  success: 3/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63a92837-1ca6-465a-83b5-6bde2faff0b0
-- _orig_name: 自建-东京-v4
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 204.4
-  latency: 391.6
-  name: ZCB-自建-东京-v4
-  port: 46028
-  reality-opts:
-    public-key: PZbWzaFDKzEudGuUHNQskYsni1stsBOWMB1wQouJSVg
-    short-id: 47a06576
-  server: 45.192.249.244
-  servername: www.apple.com
-  skip-cert-verify: true
-  subscription: ZCB
-  success: 2/3
-  tls: true
-  type: vless
-  udp: true
-  uuid: 130aa8e0-d9ee-4c1a-b590-1d538a9c29bf
-- _orig_name: 🇺🇸_美国_74 - undefinedms
-  alterId: 0
-  cipher: auto
-  jitter: 91.0
-  latency: 438.1
-  name: SPIDER-🇺🇸_美国_74 - undefinedms
-  network: ws
-  port: 80
-  server: www.true.th
-  subscription: SPIDER
-  success: 3/3
-  tls: false
-  type: vmess
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
-  ws-opts:
-    headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
-    path: /htun
-- _orig_name: 🇭🇰 香港 90
-  alterId: 0
-  cipher: auto
-  jitter: 232.1
-  latency: 234.2
-  name: FreeNodes-🇭🇰 香港 90
-  network: ws
-  packet-encoding: xudp
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  skip-cert-verify: false
-  sub_tag: A001-260618
-  subscription: FreeNodes
-  success: 2/3
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0c657913-e593-4893-9555-f88478c33a4b
-  ws-opts:
-    headers:
-      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
-    path: /
-  xudp: true
-- _orig_name: hysteria2-696793168
-  jitter: 8.0
-  latency: 247.0
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793168
-  password: NjpqMyHOlMjWTcjE
-  port: 56001
-  server: 3.39.237.40
-  skip-cert-verify: true
-  sni: kor-ls-6.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793195
-  jitter: 20.5
-  latency: 266.5
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793195
-  password: utT5adO6LDyTmWDw
-  port: 46001
-  server: 15.165.46.219
-  skip-cert-verify: true
-  sni: kor-ls-c-3.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793159
-  jitter: 142.2
-  latency: 347.5
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793159
-  password: DWUWPXNSLv23EqVH
-  port: 46001
-  server: 15.165.42.204
-  skip-cert-verify: true
-  sni: kor-ls-c-4.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793152
-  jitter: 3.6
-  latency: 356.5
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793152
-  password: 6Ug9HIr4G5blTQOs
-  port: 16001
-  server: 54.95.162.204
-  skip-cert-verify: true
-  sni: jp-ls-i-9.czzhkractqqakfzdmrgd.cc
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793150
-  jitter: 24.0
-  latency: 386.0
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793150
-  password: 3JdcAYVWhBbZrVNi
-  port: 56001
-  server: 210.216.173.110
-  skip-cert-verify: true
-  sni: kor-akile-a3.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793158
-  jitter: 95.5
-  latency: 416.8
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793158
-  password: CWsE4u1kSIC5Oyji
-  port: 36001
-  server: 18.177.155.57
-  skip-cert-verify: true
-  sni: jp-ls-g-2.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793162
-  jitter: 103.7
-  latency: 423.2
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793162
-  password: IjBnCAk6Dqxpmn9g
-  port: 26001
-  server: 35.74.27.195
-  skip-cert-verify: true
-  sni: jp-ls-d-5.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793165
-  jitter: 171.7
-  latency: 433.7
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793165
-  password: KCDEranjrFV6ToJA
-  port: 26001
-  server: 16.163.129.29
-  skip-cert-verify: true
-  sni: hk-ls-b-4.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793188
-  jitter: 82.6
-  latency: 445.4
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793188
-  password: lIwUCowWjcP6MUEL
-  port: 46001
-  server: 95.40.88.54
-  skip-cert-verify: true
-  sni: hk-ls-n-1.khljbzxpeytzgsqgtfki.cc
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793155
-  jitter: 97.5
-  latency: 472.5
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793155
-  password: AMnTye4y6Jjxc0J0
-  port: 26001
-  server: 151.242.164.204
-  skip-cert-verify: true
-  sni: jp-akile-6.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793194
-  jitter: 232.5
-  latency: 473.1
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793194
-  password: qi4fG5dMTMHNhy9s
-  port: 26001
-  server: 18.162.109.191
-  skip-cert-verify: true
-  sni: hk-ls-r-7.czzhkractqqakfzdmrgd.cc
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-656041579
-  jitter: 567.0
-  latency: 475.1
-  name: AutoMergePublicNodes-Optimized-hysteria2-656041579
-  password: fJT5wNXNkYDvYKKGWUc9f2vd0LvHKSwc
-  port: 443
-  server: 43.167.198.167
-  skip-cert-verify: true
-  sni: 43.167.198.167
-  subscription: AutoMergePublicNodes-Optimized
-  success: 2/3
-  type: hysteria2
-- _orig_name: hysteria2-696793177
-  jitter: 69.0
-  latency: 496.0
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793177
-  password: WDA6rCTOxN3onfzP
-  port: 46001
-  server: 54.251.0.160
-  skip-cert-verify: true
-  sni: sg-ls-v-8.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: hysteria2-696793186
-  jitter: 69.7
-  latency: 499.7
-  name: AutoMergePublicNodes-Optimized-hysteria2-696793186
-  password: izPqJeiR9JOtMLAl
-  port: 46001
-  server: 18.142.106.224
-  skip-cert-verify: true
-  sni: sg-ls-r-4.nebulacloud.win
-  subscription: AutoMergePublicNodes-Optimized
-  success: 3/3
-  type: hysteria2
-- _orig_name: OpenRay  KR-2717
-  client-fingerprint: chrome
-  jitter: 68.1
-  latency: 286.9
-  name: OpenRay-OpenRay  KR-2717
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs
-    short-id: 0a427bc3
-  server: 119.28.161.143
-  servername: apple.com
-  subscription: OpenRay
-  success: 3/3
-  tls: true
-  type: vless
-  uuid: 1ebb0858-218a-4dee-8746-36a67bc64462
 - _orig_name: 香港03-trojan丨峰
-  jitter: 87.8
-  latency: 312.1
+  jitter: 5.6
+  latency: 261.1
   name: sub-香港03-trojan丨峰
   password: 9r8mCADcmmw20itjcJ3xdGAlDoxNYpR6
   port: 58635
   server: vip-hk-3.hkd4fwmg.vip
   sni: vip-hk-3.hkd4fwmg.vip
   subscription: sub
-  success: 3/3
+  success: 2/3
+  tls: true
+  type: trojan
+- _orig_name: 香港02-trojan丨峰
+  jitter: 17.4
+  latency: 262.4
+  name: sub-香港02-trojan丨峰
+  password: xo31m0WOUzLO5jDwoFwMuj7537iMb4iX
+  port: 35808
+  server: vip-hk-2.hkd4fwmg.vip
+  sni: vip-hk-2.hkd4fwmg.vip
+  subscription: sub
+  success: 2/3
   tls: true
   type: trojan
 - _orig_name: 香港01-trojan丨峰
-  jitter: 87.9
-  latency: 315.4
+  jitter: 130.5
+  latency: 485.4
   name: sub-香港01-trojan丨峰
   password: HgfSPsZipminWXtj2m0k6o+Sl1xyOp9o
   port: 43803
@@ -645,2718 +3011,28 @@ proxies:
   success: 3/3
   tls: true
   type: trojan
-- _orig_name: 香港02-trojan丨峰
-  jitter: 87.2
-  latency: 325.6
-  name: sub-香港02-trojan丨峰
-  password: xo31m0WOUzLO5jDwoFwMuj7537iMb4iX
-  port: 35808
-  server: vip-hk-2.hkd4fwmg.vip
-  sni: vip-hk-2.hkd4fwmg.vip
-  subscription: sub
-  success: 3/3
-  tls: true
-  type: trojan
-- _orig_name: 🇰🇷 神灯加速器-韩国-101
-  jitter: 25.3
-  latency: 67.7
-  name: Clash-🇰🇷 神灯加速器-韩国-101
-  password: 0892f6ae870db484a45a82524b45903d
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-19
-  jitter: 27.0
-  latency: 72.2
-  name: Clash-🇺🇸 神灯加速器-美国-19
-  password: 149e8b06cedeaca58f830b51ec374540
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-10
-  jitter: 37.4
-  latency: 72.9
-  name: Clash-🇺🇸 神灯加速器-美国-10
-  password: 14bac0e43c849123ccb0fd0690f24316
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-19
-  jitter: 23.2
-  latency: 74.1
-  name: Clash-🇭🇰 神灯加速器-香港-19
-  password: 01f65778463ad8f0eff9dbe3e1a75a35
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇩🇪 神灯加速器-德国-03
-  jitter: 16.0
-  latency: 75.0
-  name: Clash-🇩🇪 神灯加速器-德国-03
-  password: 057c3dd2a74c74d1c71d63c098924d3d
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-14
-  jitter: 29.9
-  latency: 75.9
-  name: Clash-🇭🇰 神灯加速器-香港-14
-  password: 13e6b9f9497485cdedfdc59328e6a8ad
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-07
-  jitter: 7.9
-  latency: 76.5
-  name: Clash-🇯🇵 神灯加速器-日本-07
-  password: 2bfc5fda7fbccde82d6fada1465d131c
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-02
-  jitter: 30.3
-  latency: 77.4
-  name: Clash-🇨🇦 神灯加速器-加拿大 JA-02
-  password: 08340a533092e321470fbe21b3407694
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-03
-  jitter: 4.1
-  latency: 77.9
-  name: Clash-🇸🇬 神灯加速器-新加坡-03
-  password: 1ad0aff9c95a0ee59d12b0e2bc905ff4
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇷 神灯加速器-土耳其-02
-  jitter: 45.8
-  latency: 78.1
-  name: Clash-🇹🇷 神灯加速器-土耳其-02
-  password: 0f3a49a77c569bc5cb7e272777ff4b4d
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-07
-  jitter: 32.4
-  latency: 81.0
-  name: Clash-🇸🇬 神灯加速器-新加坡-07
-  password: 1268e67e8d569099e8abb463d08fe0e4
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-03
-  jitter: 50.7
-  latency: 84.8
-  name: Clash-🇻🇳 神灯加速器-越南-03
-  password: 094a90dd5480ed7702597be34aeaacf7
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-34
-  jitter: 15.6
-  latency: 84.9
-  name: Clash-🇭🇰 神灯加速器-香港-34
-  password: 22905eeb40abd86cf8314faceeefb35d
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇵🇭 神灯加速器-菲律宾-101
-  jitter: 6.9
-  latency: 86.6
-  name: Clash-🇵🇭 神灯加速器-菲律宾-101
-  password: 1e42a6ea0530691ddac99b9255ca6368
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-102
-  jitter: 18.5
-  latency: 88.0
-  name: Clash-🇲🇾 神灯加速器-马来西亚-102
-  password: 23516889fd0914ecce15d80d60365c09
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇨🇭 神灯加速器-瑞士-02
-  jitter: 30.8
-  latency: 88.6
-  name: Clash-🇨🇭 神灯加速器-瑞士-02
-  password: 0255972f1b5cc33c6f87fbc561085684
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-12
-  jitter: 9.3
-  latency: 88.9
-  name: Clash-🇺🇸 神灯加速器-美国-12
-  password: 254a0b7402009010a3740e084dff6b56
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-08
-  jitter: 26.6
-  latency: 89.2
-  name: Clash-🇻🇳 神灯加速器-越南-08
-  password: 002023c45d18bca3eba2757bb683309a
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-08
-  jitter: 12.2
-  latency: 92.1
-  name: Clash-🇺🇸 神灯加速器-美国-08
-  password: 21fe8584f34486531ca5c3583775f80f
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇩🇪 神灯加速器-德国-05
-  jitter: 10.5
-  latency: 92.6
-  name: Clash-🇩🇪 神灯加速器-德国-05
-  password: 299954a05eabaed82063bdff0ff4cae2
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-09
-  jitter: 15.0
-  latency: 93.2
-  name: Clash-🇻🇳 神灯加速器-越南-09
-  password: 21f23a6ab64758d06316c8184eb6344d
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-105
-  jitter: 13.6
-  latency: 94.2
-  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-105
-  password: 2bec9594deabbce4b0030700e6e916f0
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-18
-  jitter: 54.7
-  latency: 96.2
-  name: Clash-🇺🇸 神灯加速器-美国-18
-  password: 2ddeb5f43bbb897b13db728b2dfbef92
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-05
-  jitter: 8.1
-  latency: 97.0
-  name: Clash-🇸🇬 神灯加速器-新加坡-05
-  password: 2a9457028b242be77f485aec3693cd8f
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-01
-  jitter: 35.1
-  latency: 97.4
-  name: Clash-🇨🇦 神灯加速器-加拿大 JA-01
-  password: 1c8c770339adb746416981873a96c423
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇮🇳 神灯加速器-印度-01
-  jitter: 29.2
-  latency: 98.1
-  name: Clash-🇮🇳 神灯加速器-印度-01
-  password: 1a4dbf8b75346468b85c8d7f70c0cc75
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-11
-  jitter: 12.7
-  latency: 98.8
-  name: Clash-🇺🇸 神灯加速器-美国-11
-  password: 2ce88088024f525d77c2bda96e81d737
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇬🇧 神灯加速器-英国-03
-  jitter: 55.9
-  latency: 99.9
-  name: Clash-🇬🇧 神灯加速器-英国-03
-  password: 275edc5ad2872c5f40a15de8a9e95416
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇦🇪 神灯加速器-阿联酋-03
-  jitter: 21.3
-  latency: 100.5
-  name: Clash-🇦🇪 神灯加速器-阿联酋-03
-  password: 3252f608e796316fbbac3359542f70d9
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇰🇭 神灯加速器-柬埔寨-02
-  jitter: 13.6
-  latency: 102.6
-  name: Clash-🇰🇭 神灯加速器-柬埔寨-02
-  password: 2fa9fbc5087f5905380fcac2479e2156
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-20
-  jitter: 49.5
-  latency: 104.8
-  name: Clash-🇭🇰 神灯加速器-香港-20
-  password: 06cf12a7fab279375e55e2f0cfdef381
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-15
-  jitter: 22.7
-  latency: 105.5
-  name: Clash-🇺🇸 神灯加速器-美国-15
-  password: 3d2ecd5bd35aa636dc4c52bb07659400
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-03
-  jitter: 75.1
-  latency: 105.8
-  name: Clash-🇹🇼 神灯加速器-台湾-03
-  password: 139ba1c7177aff4dac1d13767230a1a2
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-04
-  jitter: 11.0
-  latency: 106.4
-  name: Clash-🇯🇵 神灯加速器-日本-04
-  password: 35d0b407d742f02e3aceaa9c28f60e15
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇹 神灯加速器-意大利-01
-  jitter: 22.2
-  latency: 110.7
-  name: Clash-🇮🇹 神灯加速器-意大利-01
-  password: 3a18d2d9d4caa3b86b241bbd37c90a40
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇹 神灯加速器-意大利-03
-  jitter: 32.5
-  latency: 114.1
-  name: Clash-🇮🇹 神灯加速器-意大利-03
-  password: 396b684da7e944a8f439669e24e8afed
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-106
-  jitter: 14.7
-  latency: 116.4
-  name: Clash-🇲🇾 神灯加速器-马来西亚-106
-  password: 3e3a24469a836233ed552b320c50b4d7
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇷 神灯加速器-土耳其-03
-  jitter: 5.8
-  latency: 116.8
-  name: Clash-🇹🇷 神灯加速器-土耳其-03
-  password: 367473e73056a0192925e43298b88201
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-12
-  jitter: 13.7
-  latency: 117.8
-  name: Clash-🇭🇰 神灯加速器-香港-12
-  password: 433eeaa26c6cfb611ac76aa154368ed1
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-02
-  jitter: 87.6
-  latency: 120.6
-  name: Clash-🇺🇸 神灯加速器-美国-02
-  password: 3083d270c621275837d5f509c0337c22
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-10
-  jitter: 22.6
-  latency: 123.1
-  name: Clash-🇯🇵 神灯加速器-日本-10
-  password: 483bb26f72bf7e77f40ab78e4b319e49
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇬🇷 神灯加速器-希腊-03
-  jitter: 95.2
-  latency: 123.9
-  name: Clash-🇬🇷 神灯加速器-希腊-03
-  password: 6eef2727659a8135ac79419c64aa2f87
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-09
-  jitter: 9.9
-  latency: 125.8
-  name: Clash-🇯🇵 神灯加速器-日本-09
-  password: 493b3d1b5d6a298a32eea1935463dc4d
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-02
-  jitter: 15.7
-  latency: 126.2
-  name: Clash-🇲🇾 神灯加速器-马来西亚-02
-  password: 53d52598e15eda0daad99ec7d3461f06
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇦 神灯加速器-乌克兰-01
-  jitter: 19.7
-  latency: 127.6
-  name: Clash-🇺🇦 神灯加速器-乌克兰-01
-  password: 49aebff08369239f0adc7c8512c995ec
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-08
-  jitter: 65.9
-  latency: 128.4
-  name: Clash-🇯🇵 神灯加速器-日本-08
-  password: a967a0bdb0a9aee1d9581130a2dcd19a
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-105
-  jitter: 75.0
-  latency: 129.8
-  name: Clash-🇲🇾 神灯加速器-马来西亚-105
-  password: 48d435ae12ff0704baa7de0780d5dab5
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-39
-  jitter: 16.3
-  latency: 132.1
-  name: Clash-🇭🇰 神灯加速器-香港-39
-  password: 43deb843e3f5da502d0b394995fc42d2
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-22
-  jitter: 2.2
-  latency: 133.8
-  name: Clash-🇭🇰 神灯加速器-香港-22
-  password: 53141abd01b6a4bb4511bd81097c0b8f
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇦🇪 神灯加速器-阿联酋-02
-  jitter: 20.8
-  latency: 134.0
-  name: Clash-🇦🇪 神灯加速器-阿联酋-02
-  password: 4fa64bc99914bc5e4339589945720e94
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-06
-  jitter: 8.7
-  latency: 134.6
-  name: Clash-🇯🇵 神灯加速器-日本-06
-  password: 4d8e20bdae228d69021cdac530a5ce6d
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-106
-  jitter: 109.3
-  latency: 135.0
-  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-106
-  password: 3493ff930d879b214732f71d449538d6
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-24
-  jitter: 94.5
-  latency: 135.6
-  name: Clash-🇭🇰 神灯加速器-香港-24
-  password: 41aabe3621c1a46115260b480fa08c47
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-02
-  jitter: 91.2
-  latency: 136.5
-  name: Clash-🇻🇳 神灯加速器-越南-02
-  password: 3cd6031c7173d0584ebbaae1a17d4b60
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-03
-  jitter: 18.0
-  latency: 136.6
-  name: Clash-🇯🇵 神灯加速器-日本-03
-  password: 571eebbdb044bdd90d8773babf048844
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇳 神灯加速器-印度-03
-  jitter: 21.1
-  latency: 138.9
-  name: Clash-🇮🇳 神灯加速器-印度-03
-  password: 607b0b8b84b34c30d28be76fd6be439d
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-10
-  jitter: 99.7
-  latency: 139.0
-  name: Clash-🇻🇳 神灯加速器-越南-10
-  password: 53b0c468a3ef95de5ec22f517072bdcd
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇵🇭 神灯加速器-菲律宾-102
-  jitter: 103.6
-  latency: 141.1
-  name: Clash-🇵🇭 神灯加速器-菲律宾-102
-  password: 75549bb4b4a8b7b9d940608808880852
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-17
-  jitter: 15.0
-  latency: 142.1
-  name: Clash-🇺🇸 神灯加速器-美国-17
-  password: 5cbfc58f2ca9478a08c96ad942513920
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-04
-  jitter: 7.5
-  latency: 142.3
-  name: Clash-🇨🇦 神灯加速器-加拿大 JA-04
-  password: 690ffd98589eecac6ed2c40d56033d7c
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇷 神灯加速器-土耳其-01
-  jitter: 86.3
-  latency: 142.7
-  name: Clash-🇹🇷 神灯加速器-土耳其-01
-  password: 5abea49277813a05e58f337a5afa1f31
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇮🇹 神灯加速器-意大利-02
-  jitter: 94.8
-  latency: 144.5
-  name: Clash-🇮🇹 神灯加速器-意大利-02
-  password: ecb1c69fa0997abfe3965a2f343d4d52
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-20
-  jitter: 91.7
-  latency: 146.2
-  name: Clash-🇺🇸 神灯加速器-美国-20
-  password: 5649c062bf0b037bee58842aa4b2a568
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-103
-  jitter: 130.2
-  latency: 146.6
-  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-103
-  password: 9f08b5c59e0e0f5235d111cab8a3fe1b
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇩🇪 神灯加速器-德国-01
-  jitter: 51.4
-  latency: 148.8
-  name: Clash-🇩🇪 神灯加速器-德国-01
-  password: ffaac02033b3fd3458f2aec9386da59b
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-07
-  jitter: 90.9
-  latency: 149.7
-  name: Clash-🇺🇸 神灯加速器-美国-07
-  password: 7141b5f0592f2e7f459ea2e8cfcd8a84
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-07
-  jitter: 7.2
-  latency: 149.9
-  name: Clash-🇹🇼 神灯加速器-台湾-07
-  password: 74577e02978f5758d19f276a502b24b5
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-01
-  jitter: 93.6
-  latency: 150.1
-  name: Clash-🇸🇬 神灯加速器-新加坡-01
-  password: fb334d27c52a3bed052f7c14bdc18963
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-25
-  jitter: 125.4
-  latency: 150.3
-  name: Clash-🇭🇰 神灯加速器-香港-25
-  password: 93618d74a3bcf47c8cfbbe678bb29b08
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇬🇧 神灯加速器-英国-01
-  latency: 151.1
-  name: Clash-🇬🇧 神灯加速器-英国-01
-  password: 76c84031f490a7ecf94f66bee5fa2ad1
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-03
-  jitter: 0.0
-  latency: 153.0
-  name: Clash-🇨🇦 神灯加速器-加拿大 JA-03
-  password: 64ec9c307e484b45867d8678d4be2180
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-26
-  jitter: 86.6
-  latency: 153.2
-  name: Clash-🇭🇰 神灯加速器-香港-26
-  password: e6a5cbbde3aae828e180b1fb4026841a
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-32
-  jitter: 106.5
-  latency: 153.7
-  name: Clash-🇭🇰 神灯加速器-香港-32
-  password: fa74fc619c26978ad3585426d06fbde6
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-16
-  jitter: 9.8
-  latency: 156.4
-  name: Clash-🇭🇰 神灯加速器-香港-16
-  password: 5f9b5bfbf52c85aeddefdca3abc694b1
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇰🇷 神灯加速器-韩国-103
-  jitter: 22.7
-  latency: 156.9
-  name: Clash-🇰🇷 神灯加速器-韩国-103
-  password: 79489481b50562b988bf599736c8b0f9
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-05
-  jitter: 20.0
-  latency: 157.2
-  name: Clash-🇯🇵 神灯加速器-日本-05
-  password: 6bd61140c3512e2b9c2be81ed012faff
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇦🇺 神灯加速器-澳大利亚-02
-  jitter: 86.7
-  latency: 157.6
-  name: Clash-🇦🇺 神灯加速器-澳大利亚-02
-  password: 7a5054478a34abfa1ca881874d3c5f62
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇬🇷 神灯加速器-希腊-02
-  jitter: 13.8
-  latency: 158.4
-  name: Clash-🇬🇷 神灯加速器-希腊-02
-  password: 73a21f82e484bc746b7b3e8b742622e1
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇫🇷 神灯加速器-法国-05
-  jitter: 16.6
-  latency: 158.6
-  name: Clash-🇫🇷 神灯加速器-法国-05
-  password: 7547490bb96d371033b58baf91772254
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-01
-  jitter: 13.8
-  latency: 159.6
-  name: Clash-🇻🇳 神灯加速器-越南-01
-  password: 6aa25635a999d62f49eba40879fbc915
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-103
-  jitter: 110.2
-  latency: 159.7
-  name: Clash-🇲🇾 神灯加速器-马来西亚-103
-  password: 90d4384d3893a8f46c45746e8abf889a
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇬🇷 神灯加速器-希腊-01
-  jitter: 21.2
-  latency: 159.9
-  name: Clash-🇬🇷 神灯加速器-希腊-01
-  password: 7f7c7a51bcfdbefacd90e0cb3e2c8638
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇨🇦 神灯加速器-加拿大 JA-05
-  jitter: 82.3
-  latency: 160.0
-  name: Clash-🇨🇦 神灯加速器-加拿大 JA-05
-  password: d453daeb7e9b5fb9cad882763bd71d85
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇫🇷 神灯加速器-法国-03
-  jitter: 16.0
-  latency: 160.4
-  name: Clash-🇫🇷 神灯加速器-法国-03
-  password: 74bd27bf0a1968d15e8a020666472b47
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-14
-  jitter: 128.3
-  latency: 160.7
-  name: Clash-🇯🇵 神灯加速器-日本-14
-  password: ab2327f92ff95dd8f8ec190cb0528ee6
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇩🇪 神灯加速器-德国-02
-  jitter: 28.7
-  latency: 161.5
-  name: Clash-🇩🇪 神灯加速器-德国-02
-  password: 6c79e6675554006e607c490a168617ce
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-33
-  jitter: 16.3
-  latency: 161.7
-  name: Clash-🇭🇰 神灯加速器-香港-33
-  password: 6fac6920d85a061cc5bb88ea80e6a703
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-101
-  jitter: 113.9
-  latency: 162.5
-  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-101
-  password: 828b96278358962c945c18913e3ce5b7
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-05
-  jitter: 18.6
-  latency: 164.5
-  name: Clash-🇺🇸 神灯加速器-美国-05
-  password: 7e62aec6f4a54b44cd439321c825d71b
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-36
-  jitter: 120.6
-  latency: 165.0
-  name: Clash-🇭🇰 神灯加速器-香港-36
-  password: 8ea984e1be9ce8206722eb08924039a2
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇹🇭 神灯加速器-泰国-105
-  jitter: 115.2
-  latency: 166.1
-  name: Clash-🇹🇭 神灯加速器-泰国-105
-  password: 81f683c3f594588c69c9494526a57f3d
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-08
-  jitter: 121.9
-  latency: 166.9
-  name: Clash-🇹🇼 神灯加速器-台湾-08
-  password: d66e65fd90c2be0f94fa27adc0e5e088
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-04
-  jitter: 17.8
-  latency: 167.1
-  name: Clash-🇺🇸 神灯加速器-美国-04
-  password: 8e0cfdddbb7314e5c110576e7edec1f9
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-13
-  jitter: 137.4
-  latency: 168.7
-  name: Clash-🇺🇸 神灯加速器-美国-13
-  password: 3520ebcc604f430b1abb25129b92ad03
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇪🇸 神灯加速器-西班牙-01
-  jitter: 12.1
-  latency: 168.8
-  name: Clash-🇪🇸 神灯加速器-西班牙-01
-  password: 6edc9363c16bb2f7861bc1ab96edd69f
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-06
-  jitter: 50.0
-  latency: 169.3
-  name: Clash-🇹🇼 神灯加速器-台湾-06
-  password: da5051376e910e2b7c371ef039ab6a28
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-02
-  jitter: 17.8
-  latency: 169.4
-  name: Clash-🇸🇬 神灯加速器-新加坡-02
-  password: 7834a6df93542db17c9a6be4e27d6059
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-01
-  jitter: 0.3
-  latency: 169.5
-  name: Clash-🇯🇵 神灯加速器-日本-01
-  password: 881340284b2ba5737f5f892a846c2940
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-05
-  latency: 170.2
-  name: Clash-🇹🇼 神灯加速器-台湾-05
-  password: a157d762252558b15b32075645145251
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-40
-  jitter: 102.3
-  latency: 170.6
-  name: Clash-🇭🇰 神灯加速器-香港-40
-  password: 8551a9d47b390b78d3be443ad1d0019d
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇹🇭 神灯加速器-泰国-106
-  jitter: 11.6
-  latency: 171.3
-  name: Clash-🇹🇭 神灯加速器-泰国-106
-  password: 77c2c63b9b3081a8deab212050ba5472
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-02
-  jitter: 13.2
-  latency: 171.3
-  name: Clash-🇹🇼 神灯加速器-台湾-02
-  password: 8560843d8550aa368674c3bf0d4d3ad8
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-08
-  jitter: 37.4
-  latency: 172.2
-  name: Clash-🇸🇬 神灯加速器-新加坡-08
-  password: da3c48a15e533f81d5286f6c58e51745
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇦🇪 神灯加速器-阿联酋-01
-  jitter: 74.8
-  latency: 173.6
-  name: Clash-🇦🇪 神灯加速器-阿联酋-01
-  password: da512fa7c70172080e013faff8ee9ac4
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-17
-  jitter: 56.2
-  latency: 174.5
-  name: Clash-🇭🇰 神灯加速器-香港-17
-  password: d518716100e9e02b425f760d9219844e
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇪 神灯加速器-爱尔兰-01
-  jitter: 12.5
-  latency: 174.6
-  name: Clash-🇮🇪 神灯加速器-爱尔兰-01
-  password: 948b69750854dbc28a9ec20d947e36c6
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇪🇸 神灯加速器-西班牙-03
-  jitter: 31.4
-  latency: 174.6
-  name: Clash-🇪🇸 神灯加速器-西班牙-03
-  password: c9e7641fa78aebca32be5f8da87a79ec
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇸 神灯加速器-冰岛 IS-01
-  latency: 176.7
-  name: Clash-🇮🇸 神灯加速器-冰岛 IS-01
-  password: f12507bcc9bbae297ed77b94d9232ae6
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-104
-  jitter: 0.1
-  latency: 178.4
-  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-104
-  password: 8a6691810c87dd1c7ac2ac7103c334d9
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-13
-  jitter: 43.5
-  latency: 178.4
-  name: Clash-🇭🇰 神灯加速器-香港-13
-  password: c98ab2ef8640ec92870b4132c33cd371
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-38
-  jitter: 6.4
-  latency: 179.1
-  name: Clash-🇭🇰 神灯加速器-香港-38
-  password: a0d94e10446eef0e1eebb4f6c177512d
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-06
-  jitter: 41.7
-  latency: 179.1
-  name: Clash-🇻🇳 神灯加速器-越南-06
-  password: cd15fc4b277f0a8a251e174c3e387dbc
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-13
-  jitter: 155.8
-  latency: 179.8
-  name: Clash-🇯🇵 神灯加速器-日本-13
-  password: 95f5d289f92dd5f510ded14378a0675c
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇫🇷 神灯加速器-法国-02
-  latency: 180.3
-  name: Clash-🇫🇷 神灯加速器-法国-02
-  password: a1cc1219f15873f5cf89c921e3f32347
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-31
-  jitter: 22.3
-  latency: 180.8
-  name: Clash-🇭🇰 神灯加速器-香港-31
-  password: c77998f773ec547f3ab3abfe59c7bc68
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇰🇷 神灯加速器-韩国-01
-  latency: 181.0
-  name: Clash-🇰🇷 神灯加速器-韩国-01
-  password: fcee28341b091d3045cca8e1e280316a
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-30
-  jitter: 60.3
-  latency: 181.3
-  name: Clash-🇭🇰 神灯加速器-香港-30
-  password: 4c1511d220e1437b234fa40571c43810
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇭 神灯加速器-泰国-101
-  latency: 181.5
-  name: Clash-🇹🇭 神灯加速器-泰国-101
-  password: b6fde90b3a0080e7547099633e8d4a32
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-35
-  latency: 181.6
-  name: Clash-🇭🇰 神灯加速器-香港-35
-  password: b4d7471e8bf6508a55dae8b38ba1a625
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇹🇭 神灯加速器-泰国-104
-  jitter: 5.2
-  latency: 181.8
-  name: Clash-🇹🇭 神灯加速器-泰国-104
-  password: 970cff306f67f10cb3aa6cad2f73c2e2
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇵🇭 神灯加速器-菲律宾-104
-  jitter: 38.7
-  latency: 182.5
-  name: Clash-🇵🇭 神灯加速器-菲律宾-104
-  password: cc41caea9689c07168b9e3cb8cc3d7c3
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇰🇷 神灯加速器-韩国-02
-  latency: 182.6
-  name: Clash-🇰🇷 神灯加速器-韩国-02
-  password: ed0ac307c27a5b8cd06c9712949a3b0e
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇮🇸 神灯加速器-冰岛 IS-02
-  jitter: 13.9
-  latency: 183.0
-  name: Clash-🇮🇸 神灯加速器-冰岛 IS-02
-  password: 6f4b67c2bcc27761d176e830f9a1e92b
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇩🇪 神灯加速器-德国-04
-  jitter: 0.6
-  latency: 183.0
-  name: Clash-🇩🇪 神灯加速器-德国-04
-  password: 881ff9e8588eaf4a7dd8352005921fa5
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇪 神灯加速器-爱尔兰-02
-  latency: 183.6
-  name: Clash-🇮🇪 神灯加速器-爱尔兰-02
-  password: a82ce33cc050105e4908654c8878d45f
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-16
-  jitter: 35.9
-  latency: 183.6
-  name: Clash-🇺🇸 神灯加速器-美国-16
-  password: c72fb0394432d4ae5e5b2de915f646c8
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇹🇭 神灯加速器-泰国-103
-  jitter: 31.7
-  latency: 184.0
-  name: Clash-🇹🇭 神灯加速器-泰国-103
-  password: b3dc9daaf39804635c99dc0a296926b4
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-04
-  jitter: 14.0
-  latency: 184.3
-  name: Clash-🇸🇬 神灯加速器-新加坡-04
-  password: 81352974801287f06ab58f555f45ef0b
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇨🇭 神灯加速器-瑞士-01
-  latency: 185.4
-  name: Clash-🇨🇭 神灯加速器-瑞士-01
-  password: fa33e21c919eae07cb838f3fa28c8608
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-14
-  latency: 186.8
-  name: Clash-🇺🇸 神灯加速器-美国-14
-  password: e9432eaf9d5269025086d1c0375855ea
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 FyFlash-VIP 香港-01
-  alterId: 0
-  cipher: auto
-  jitter: 19.9
-  latency: 186.9
-  name: Clash-🇭🇰 FyFlash-VIP 香港-01
-  network: ws
-  port: 443
-  server: hk01.wy888.us
-  servername: hk01.wy888.us
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  tls: true
-  type: vmess
-  uuid: 14bc5b2c-15d4-409e-abe1-97120acbce2b
-  ws-opts:
-    headers:
-      Host: hk01.wy888.us
-    path: /65ma72vy
-- _orig_name: 🇮🇪 神灯加速器-爱尔兰-03
-  latency: 186.9
-  name: Clash-🇮🇪 神灯加速器-爱尔兰-03
-  password: ee633fac24a4a265077aa7290e3d29d0
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-04
-  latency: 187.6
-  name: Clash-🇻🇳 神灯加速器-越南-04
-  password: ec9eae88bafe1b2e84f2fcd0d646c976
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇬🇧 神灯加速器-英国-02
-  jitter: 39.0
-  latency: 188.2
-  name: Clash-🇬🇧 神灯加速器-英国-02
-  password: c4bfc2e7209ffa8b5ee012a1b0a8116b
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-15
-  jitter: 32.6
-  latency: 188.3
-  name: Clash-🇯🇵 神灯加速器-日本-15
-  password: c680ca16e008a72ec88762dfcdfe5221
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇰🇷 神灯加速器-韩国-102
-  jitter: 34.3
-  latency: 188.5
-  name: Clash-🇰🇷 神灯加速器-韩国-102
-  password: c89b4be208a7edb8edca2c3e847a5e3a
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-01
-  latency: 189.1
-  name: Clash-🇺🇸 神灯加速器-美国-01
-  password: e53ec9194c1b433d78afe55ad01b3bb7
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇬🇧 神灯加速器-英国-04
-  jitter: 46.3
-  latency: 190.6
-  name: Clash-🇬🇧 神灯加速器-英国-04
-  password: ac312a46f833789e1e5c87222ec9949f
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-28
-  latency: 191.7
-  name: Clash-🇭🇰 神灯加速器-香港-28
-  password: f53d2b849a03b2e06fd1c1a04968aff6
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-02
-  jitter: 10.9
-  latency: 192.1
-  name: Clash-🇯🇵 神灯加速器-日本-02
-  password: bb611501dbb9aea577fd803fe11e945d
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-18
-  latency: 193.0
-  name: Clash-🇭🇰 神灯加速器-香港-18
-  password: e5a3fe75c38be1dc79af933221d2d86a
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-05
-  jitter: 37.6
-  latency: 194.2
-  name: Clash-🇻🇳 神灯加速器-越南-05
-  password: c300410095914c66daa846d8a5c92747
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇻🇳 神灯加速器-越南-07
-  latency: 194.9
-  name: Clash-🇻🇳 神灯加速器-越南-07
-  password: e66417ea965ad6f00c09db996575bed2
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇦🇺 神灯加速器-澳大利亚-01
-  latency: 195.3
-  name: Clash-🇦🇺 神灯加速器-澳大利亚-01
-  password: a74c18e385d4df373ae7871c331cc88b
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-04
-  latency: 196.0
-  name: Clash-🇹🇼 神灯加速器-台湾-04
-  password: bdbc9026183061770d64c6db2eab4ac7
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-01
-  latency: 197.0
-  name: Clash-🇲🇾 神灯加速器-马来西亚-01
-  password: e4d87574ab542fe6a834625782d4b89e
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-101
-  latency: 197.7
-  name: Clash-🇲🇾 神灯加速器-马来西亚-101
-  password: aa47bc798fe7d60f6e1e56fb32d2954a
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-21
-  latency: 197.7
-  name: Clash-🇭🇰 神灯加速器-香港-21
-  password: e8aaaf6f97db95a2faa5af0c1566385b
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇲🇾 神灯加速器-马来西亚-104
-  latency: 198.0
-  name: Clash-🇲🇾 神灯加速器-马来西亚-104
-  password: a6667237f0272b408e55cec8c3ebde8e
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇹🇭 神灯加速器-泰国-102
-  latency: 198.0
-  name: Clash-🇹🇭 神灯加速器-泰国-102
-  password: e6afedbba859fd975268a93ef46359ae
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-11
-  latency: 198.7
-  name: Clash-🇯🇵 神灯加速器-日本-11
-  password: ce9e02e876e32eca66d901eb4d07461c
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇹🇼 神灯加速器-台湾-01
-  jitter: 66.6
-  latency: 198.8
-  name: Clash-🇹🇼 神灯加速器-台湾-01
-  password: aea165cb7f5890ff234bc2b8a7fb0de8
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-27
-  latency: 200.0
-  name: Clash-🇭🇰 神灯加速器-香港-27
-  password: e05cbe848f32b3b9d1224ddacaa3c51d
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇮🇸 神灯加速器-冰岛 IS-03
-  jitter: 19.3
-  latency: 200.2
-  name: Clash-🇮🇸 神灯加速器-冰岛 IS-03
-  password: ad2ac27a9fa52023755a961d77632f23
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇮🇩 神灯加速器-印尼 印度尼西亚-102
-  latency: 201.7
-  name: Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-102
-  password: aaa76da163060a6ec526445c2d7a2ac0
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇵🇭 神灯加速器-菲律宾-105
-  latency: 201.7
-  name: Clash-🇵🇭 神灯加速器-菲律宾-105
-  password: cb4f1e6cdad854b8a1e434c596fd40e8
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-09
-  latency: 201.8
-  name: Clash-🇸🇬 神灯加速器-新加坡-09
-  password: d41f645df853df801ce2b6edec20aa16
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇯🇵 神灯加速器-日本-12
-  latency: 204.1
-  name: Clash-🇯🇵 神灯加速器-日本-12
-  password: b84de87320ca97b4ff862f916cc67eaa
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇺🇦 神灯加速器-乌克兰-02
-  latency: 204.1
-  name: Clash-🇺🇦 神灯加速器-乌克兰-02
-  password: ba981c8decd95953dcdb219c324e4e1d
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-37
-  latency: 204.5
-  name: Clash-🇭🇰 神灯加速器-香港-37
-  password: ce0c3a409dd52a7fcefeb25dc7e32d5f
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇰🇭 神灯加速器-柬埔寨-01
+- _orig_name: 🇯🇵 日本 01
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 12.0
   latency: 205.4
-  name: Clash-🇰🇭 神灯加速器-柬埔寨-01
-  password: b6d41b0db4bdd2a1d8d66b42dbdae4af
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-10
-  latency: 205.5
-  name: Clash-🇸🇬 神灯加速器-新加坡-10
-  password: d7f4b46d9e42ad4a6519bde2ff7ce43c
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇮🇳 神灯加速器-印度-02
-  latency: 206.0
-  name: Clash-🇮🇳 神灯加速器-印度-02
-  password: d306137cdbd55eac0d79ca7d1e3904a4
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇺🇸 神灯加速器-美国-06
-  latency: 206.2
-  name: Clash-🇺🇸 神灯加速器-美国-06
-  password: b5a6ec01194bd3e2510f5468b0885be7
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-15
-  latency: 206.7
-  name: Clash-🇭🇰 神灯加速器-香港-15
-  password: cdc83e78afe4ef70ac895d88bcbc6bb5
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-29
-  latency: 208.8
-  name: Clash-🇭🇰 神灯加速器-香港-29
-  password: dc8487a54e41ae2a680b14ab235a30a2
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇭🇰 神灯加速器-香港-23
-  latency: 210.7
-  name: Clash-🇭🇰 神灯加速器-香港-23
-  password: c30973184a30818b4a19c8b247cc3cd4
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇫🇷 神灯加速器-法国-01
-  latency: 213.7
-  name: Clash-🇫🇷 神灯加速器-法国-01
-  password: dd135b010b5f8ec7ba4c4cc5a35f0efb
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇳🇱 神灯加速器-荷兰-02
-  latency: 214.1
-  name: Clash-🇳🇱 神灯加速器-荷兰-02
-  password: d86931c3cdedaae00c34a0ef62f744c6
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇵🇭 神灯加速器-菲律宾-106
-  latency: 214.2
-  name: Clash-🇵🇭 神灯加速器-菲律宾-106
-  password: dd83faad1f67dfdf80c6703efc2d1ebc
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇪🇸 神灯加速器-西班牙-02
-  latency: 215.9
-  name: Clash-🇪🇸 神灯加速器-西班牙-02
-  password: e1cb7ebf88a4b935a9ccc5378660ecc2
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇫🇷 神灯加速器-法国-04
-  latency: 218.7
-  name: Clash-🇫🇷 神灯加速器-法国-04
-  password: beb0854f651380331623d79eb06d87be
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇸🇬 神灯加速器-新加坡-06
-  latency: 219.0
-  name: Clash-🇸🇬 神灯加速器-新加坡-06
-  password: d9c8aa383174c25132e0df201ffab4e3
-  port: 59443
-  server: tyy129.magiclampcloud.com
-  skip-cert-verify: true
-  sni: tyy129.magiclampcloud.com
-  subscription: Clash
-  success: 1/3
-  type: trojan
-- _orig_name: 🇳🇱 神灯加速器-荷兰-01
-  jitter: 228.0
-  latency: 227.9
-  name: Clash-🇳🇱 神灯加速器-荷兰-01
-  password: 53e00b660ad5da37f677dafeee646c9b
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇭🇰 FyFlash-VIP 香港-1
-  alterId: 0
-  cipher: auto
-  jitter: 25.4
-  latency: 245.5
-  name: Clash-🇭🇰 FyFlash-VIP 香港-1
-  network: ws
-  port: 443
-  server: sv1.wy888.us
-  servername: sv1.wy888.us
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  tls: true
-  type: vmess
-  uuid: a7522798-e461-4006-9540-4627ef35ba57
-  ws-opts:
-    headers:
-      Host: sv1.wy888.us
-    path: /vd1e636
-- _orig_name: 🇵🇭 神灯加速器-菲律宾-103
-  jitter: 99.5
-  latency: 246.7
-  name: Clash-🇵🇭 神灯加速器-菲律宾-103
-  password: c9d003ce58bcafecd687cd88256ce2ff
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 3/3
-  type: trojan
-- _orig_name: 🇰🇷 xingyun-韩国 通用 自动 2
-  auth: WeGFdjUmZHhKriCK
-  jitter: 7.4
-  latency: 264.4
-  name: Clash-🇰🇷 xingyun-韩国 通用 自动 2
-  password: WeGFdjUmZHhKriCK
-  port: 56001
-  server: 13.124.252.207
-  skip-cert-verify: true
-  sni: kor-ls-5.nebulacloud.win
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇭🇰 xingyun-香港 解锁 自动 4
-  alterId: 0
-  cipher: auto
-  latency: 270.1
-  name: Clash-🇭🇰 xingyun-香港 解锁 自动 4
-  network: ws
-  port: 22449
-  server: 103.255.209.76
-  servername: hk-akile-b-2.orwnaubrzcrbhrdgpdtu.org
-  skip-cert-verify: true
-  subscription: Clash
-  success: 1/3
-  tls: true
-  type: vmess
-  uuid: 1d7c8e88-9fba-4725-bd36-3673a3363e62
-  ws-opts:
-    headers:
-      Host: hk-akile-b-2.orwnaubrzcrbhrdgpdtu.org
-    path: /hk-akile-b-2/getData
-- _orig_name: 🇭🇰 BigBear-🇭🇰 香港1-移动优化
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 52.3
-  latency: 279.7
-  name: Clash-🇭🇰 BigBear-🇭🇰 香港1-移动优化
+  name: Subscribe-🇯🇵 日本 01
   network: tcp
   port: 443
   reality-opts:
-    public-key: 4comh-7Jm_wZXJQ5QiLSCbVGQIbMUzHUIBdb0aFtLzM
-  server: 202.155.155.245
-  servername: cdnjs.cloudflare.com
-  skip-cert-verify: true
-  subscription: Clash
+    public-key: ZuN9nc78h4Ccb19eb9NpTCs0jZkhJB8L0i1ZoAhu0XU
+    short-id: b2f4518cf979889d
+  server: 43.165.177.82
+  servername: www.cloudflare.com
+  subscription: Subscribe
   success: 2/3
   tls: true
   type: vless
-  uuid: 16d46fee-f57c-4ac3-95e5-7a1e720c5cb1
-- _orig_name: 🇭🇰 BigBear-🇭🇰 香港精品2-扣量×1.7
-  alterId: 0
-  cipher: auto
-  jitter: 58.1
-  latency: 282.2
-  name: Clash-🇭🇰 BigBear-🇭🇰 香港精品2-扣量×1.7
-  network: ws
-  port: 443
-  server: 47.244.67.73
-  servername: api-data.fcapp.run
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vmess
-  uuid: e3deec3a-91b1-4f63-aba0-23a6892e7453
-  ws-opts:
-    headers:
-      Host: api-39208e19-7c0e-48b1-94e4-a632871b4a00.aitrack.io
-    path: /f-hk1/v2
-- _orig_name: 🇰🇷 xingyun-韩国 通用 自动 3
-  auth: dghL4PJ1sSjXQsOq
-  jitter: 38.3
-  latency: 284.4
-  name: Clash-🇰🇷 xingyun-韩国 通用 自动 3
-  password: dghL4PJ1sSjXQsOq
-  port: 26001
-  server: 3.39.246.101
-  skip-cert-verify: true
-  sni: kor-ls-d-3.nebulacloud.win
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇭🇰 RedMouse-香港-A1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  latency: 290.7
-  name: Clash-🇭🇰 RedMouse-香港-A1
-  network: tcp
-  port: 30011
-  reality-opts:
-    public-key: SSFIkykW4mCy8Kn4ni7kX7QA9_DX1TX8YWM1ufLplkU
-  server: 47.83.179.144
-  servername: www.figma.com
-  skip-cert-verify: true
-  subscription: Clash
-  success: 1/3
-  tls: true
-  type: vless
-  uuid: 0082637b-d357-45b1-8ec1-403543f66165
-- _orig_name: 🇨🇭 快橙-瑞士
-  jitter: 4.3
-  latency: 295.1
-  name: Clash-🇨🇭 快橙-瑞士
-  network: ws
-  port: 443
-  server: n1732526816.4u9ma.icu
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: e6748606-d853-41f6-9358-555b453aa4a5
-  ws-opts:
-    headers:
-      Host: n1732526816.4u9ma.icu
-    path: /e6748606-d853-41f6-9358-555b453aa4a5
-- _orig_name: 🇵🇭 Viva-菲律宾-马尼拉-Mg7G
-  alpn:
-  - h3
-  auth: 01c1ec61-711d-443d-8ac9-441294fccd05
-  jitter: 103.9
-  latency: 299.6
-  name: Clash-🇵🇭 Viva-菲律宾-马尼拉-Mg7G
-  obfs: salamander
-  obfs-password: a01c8362-f79e-42ac-8c34-22cc02ad4c92
-  password: 01c1ec61-711d-443d-8ac9-441294fccd05
-  port: 41975
-  server: 66.253.11.170
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇸🇪 快橙-瑞典
-  jitter: 65.0
-  latency: 303.0
-  name: Clash-🇸🇪 快橙-瑞典
-  network: ws
-  port: 443
-  server: n1732526140.lie5d.cyou
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  tls: true
-  type: vless
-  uuid: 156ded81-7bc9-46ff-a70c-24201aa49e49
-  ws-opts:
-    headers:
-      Host: n1732526140.lie5d.cyou
-    path: /156ded81-7bc9-46ff-a70c-24201aa49e49
-- _orig_name: 🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-VLESS-WS
-  jitter: 30.9
-  latency: 303.8
-  name: Clash-🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-VLESS-WS
-  network: ws
-  port: 443
-  server: sk1i-il4mxi.sparkra.top
-  servername: sk1i-il4mxi.sparkra.top
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  tls: true
-  type: vless
-  uuid: d556edbe-75b5-46fa-b7d4-7946db7a460a
-  ws-opts:
-    headers:
-      Host: sk1i-il4mxi.sparkra.top
-    path: /d556edbe-75b5-46fa-b7d4-7946db7a460a
-- _orig_name: 🇺🇸 神灯加速器-美国-03
-  jitter: 459.9
-  latency: 325.5
-  name: Clash-🇺🇸 神灯加速器-美国-03
-  password: f04de0d9d524231179110ce2f2556fae
-  port: 59443
-  server: ja304.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja304.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇰🇷 快橙-韩国
-  jitter: 150.7
-  latency: 332.2
-  name: Clash-🇰🇷 快橙-韩国
-  network: ws
-  port: 443
-  server: n1732526139.4u9ma.icu
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: 10bdecf8-483e-476d-9a40-8ad7be09b552
-  ws-opts:
-    headers:
-      Host: n1732526139.4u9ma.icu
-    path: /10bdecf8-483e-476d-9a40-8ad7be09b552
-- _orig_name: 🇭🇰 xingyun-香港 通用 自动 5
-  auth: y41zANWuH1JjtXG7
-  jitter: 17.2
-  latency: 339.7
-  name: Clash-🇭🇰 xingyun-香港 通用 自动 5
-  password: y41zANWuH1JjtXG7
-  port: 56001
-  server: 18.163.214.246
-  skip-cert-verify: true
-  sni: hk-ls-i-19.apcwjtnmuwembbfzmxqx.cc
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇺🇸 神灯加速器-美国-09
-  jitter: 310.3
-  latency: 353.2
-  name: Clash-🇺🇸 神灯加速器-美国-09
-  password: ac4d690c48661daaceb616b04007e2b5
-  port: 59443
-  server: ja262.magiclampcloud.cn
-  skip-cert-verify: true
-  sni: ja262.magiclampcloud.cn
-  subscription: Clash
-  success: 2/3
-  type: trojan
-- _orig_name: 🇯🇵 xingyun-日本 通用 自动 4
-  auth: mwO2xVAlnRYI4fVi
-  jitter: 22.3
-  latency: 357.1
-  name: Clash-🇯🇵 xingyun-日本 通用 自动 4
-  password: mwO2xVAlnRYI4fVi
-  port: 26001
-  server: 52.195.194.48
-  skip-cert-verify: true
-  sni: jp-ls-i-1.czzhkractqqakfzdmrgd.cc
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇭🇰 xingyun-香港 解锁 自动 2
-  alterId: 0
-  cipher: auto
-  jitter: 138.9
-  latency: 359.5
-  name: Clash-🇭🇰 xingyun-香港 解锁 自动 2
-  network: ws
-  port: 41734
-  server: 103.255.208.18
-  servername: hk-akile-a4.nebulacloud.win
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vmess
-  uuid: a866cbde-e0f7-43c1-86cb-02c8bc8a69fa
-  ws-opts:
-    headers:
-      Host: hk-akile-a4.nebulacloud.win
-    path: /hk-akile-a4/getData
-- _orig_name: 🇯🇵 日本东京(YouTube,ChatGPT等)
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 7.9
-  latency: 364.6
-  name: Clash-🇯🇵 日本东京(YouTube,ChatGPT等)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UELkOW_O1VTrA_RtDuSVpL-G_nm4MO5bFe04Pqd-8xA
-    short-id: ccfcdb3c0f33baba
-  server: 116.206.92.148
-  servername: www.apple.com
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: e6237e8e-ad90-4952-8089-c7960b17e6dc
-- _orig_name: 🇬🇧 快橙-英国
-  jitter: 11.3
-  latency: 365.6
-  name: Clash-🇬🇧 快橙-英国
-  network: ws
-  port: 443
-  server: n1743918700.lie5d.cyou
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: ab3a639a-2bec-4122-b891-38d9084fc067
-  ws-opts:
-    headers:
-      Host: n1743918700.lie5d.cyou
-    path: /ab3a639a-2bec-4122-b891-38d9084fc067
-- _orig_name: 🇭🇰 xingyun-香港 通用 自动 2
-  auth: DYWLhYTLaNDtXDOB
-  jitter: 66.3
-  latency: 377.0
-  name: Clash-🇭🇰 xingyun-香港 通用 自动 2
-  password: DYWLhYTLaNDtXDOB
-  port: 36001
-  server: 18.163.190.23
-  skip-cert-verify: true
-  sni: hk-ls-k-5.apcwjtnmuwembbfzmxqx.cc
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇯🇵 快橙-日本03快橙
-  jitter: 25.6
-  latency: 380.4
-  name: Clash-🇯🇵 快橙-日本03快橙
-  network: ws
-  port: 443
-  server: n1733198994.lie5d.cyou
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: 0e13496c-30ad-4369-ac82-13b6f954da95
-  ws-opts:
-    headers:
-      Host: n1733198994.lie5d.cyou
-    path: /0e13496c-30ad-4369-ac82-13b6f954da95
-- _orig_name: 🇰🇷 xingyun-韩国 通用 自动 4
-  auth: smQhDd3kvByxk4vz
-  jitter: 23.8
-  latency: 389.7
-  name: Clash-🇰🇷 xingyun-韩国 通用 自动 4
-  password: smQhDd3kvByxk4vz
-  port: 46001
-  server: 43.203.156.207
-  skip-cert-verify: true
-  sni: kor-ls-c-2.nebulacloud.win
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇸🇬 快橙-新加坡 2
-  jitter: 11.6
-  latency: 392.6
-  name: Clash-🇸🇬 快橙-新加坡 2
-  network: ws
-  port: 443
-  server: n1733198989.4u9ma.icu
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: 91eec07a-45db-4791-bf0c-8e46ff49cf6d
-  ws-opts:
-    headers:
-      Host: n1733198989.4u9ma.icu
-    path: /91eec07a-45db-4791-bf0c-8e46ff49cf6d
-- _orig_name: 🇭🇰 xingyun-香港 通用 自动
-  auth: CfemkfmQsi7Wd43M
-  jitter: 109.6
-  latency: 396.9
-  name: Clash-🇭🇰 xingyun-香港 通用 自动
-  password: CfemkfmQsi7Wd43M
-  port: 56001
-  server: 16.162.190.212
-  skip-cert-verify: true
-  sni: hk-ls-m-9.khljbzxpeytzgsqgtfki.cc
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇯🇵 xingyun-日本 通用 自动
-  auth: RT05nIbbfp7p9mQt
-  jitter: 147.2
-  latency: 397.6
-  name: Clash-🇯🇵 xingyun-日本 通用 自动
-  password: RT05nIbbfp7p9mQt
-  port: 56001
-  server: 54.168.69.224
-  skip-cert-verify: true
-  sni: jp-ls-c-2.nebulacloud.win
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇭🇰 快橙-香港06快橙
-  jitter: 224.6
-  latency: 399.3
-  name: Clash-🇭🇰 快橙-香港06快橙
-  network: ws
-  port: 443
-  server: n1732526138.lie5d.cyou
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: 00ea4c5c-104e-434f-a126-29d34fa7bb0f
-  ws-opts:
-    headers:
-      Host: n1732526138.lie5d.cyou
-    path: /00ea4c5c-104e-434f-a126-29d34fa7bb0f
-- _orig_name: 🇯🇵 xingyun-日本 通用 自动 3
-  auth: mLpypri20HWGlJOj
-  jitter: 28.1
-  latency: 401.5
-  name: Clash-🇯🇵 xingyun-日本 通用 自动 3
-  password: mLpypri20HWGlJOj
-  port: 56001
-  server: 43.207.127.90
-  skip-cert-verify: true
-  sni: jp-ls-7.nebulacloud.win
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇸🇬 新加坡优质(移动,电信优选)
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  latency: 408.3
-  name: Clash-🇸🇬 新加坡优质(移动,电信优选)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ejr6ZVvv6XL1U9tFm2ev72egsXzqMFNPlgbDU4uPH1Q
-    short-id: 3b32806e4a620eac
-  server: 163.128.99.5
-  servername: www.apple.com
-  skip-cert-verify: true
-  subscription: Clash
-  success: 1/3
-  tls: true
-  type: vless
-  uuid: 1210355c-323f-4098-b782-96627ca8b495
-- _orig_name: 🇭🇰 BigBear-🇭🇰 香港精品3-扣量×1.8
-  alterId: 0
-  cipher: auto
-  jitter: 188.6
-  latency: 414.1
-  name: Clash-🇭🇰 BigBear-🇭🇰 香港精品3-扣量×1.8
-  network: ws
-  port: 443
-  server: 47.244.67.76
-  servername: api-data.fcapp.run
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vmess
-  uuid: 909a8edb-a43f-4d11-9709-f952c1b1a11c
-  ws-opts:
-    headers:
-      Host: api-39208e19-7c0e-48b1-94e4-a632871b4a00.aitrack.io
-    path: /jp_hk1cft
-- _orig_name: 🇰🇷 xingyun-韩国 通用 自动
-  auth: QW8UOraywggxrjuK
-  jitter: 37.1
-  latency: 416.8
-  name: Clash-🇰🇷 xingyun-韩国 通用 自动
-  password: QW8UOraywggxrjuK
-  port: 36001
-  server: 43.200.129.1
-  skip-cert-verify: true
-  sni: kor-ls-a4.nebulacloud.win
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇵🇭 FastStunnel-菲律宾-马尼拉-cgul-il4n8q-298ms-vless-ws
-  jitter: 288.0
-  latency: 425.2
-  name: Clash-🇵🇭 FastStunnel-菲律宾-马尼拉-cgul-il4n8q-298ms-vless-ws
-  network: ws
-  port: 443
-  server: cgul-il4n8q.quantira.top
-  servername: cgul-il4n8q.quantira.top
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  tls: true
-  type: vless
-  uuid: 77cf8ed0-c26f-4d64-9527-71705f9f7adf
-  ws-opts:
-    headers:
-      Host: cgul-il4n8q.quantira.top
-    path: /77cf8ed0-c26f-4d64-9527-71705f9f7adf
-- _orig_name: 🇯🇵 xingyun-日本 通用 自动 2
-  auth: gt00INFmbm2fKQ0k
-  jitter: 160.9
-  latency: 436.2
-  name: Clash-🇯🇵 xingyun-日本 通用 自动 2
-  password: gt00INFmbm2fKQ0k
-  port: 56001
-  server: 52.195.147.1
-  skip-cert-verify: true
-  sni: jp-ls-j-9.hogbvdxheortndkhdgws.uk
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇮🇳 快橙-印度
-  jitter: 54.0
-  latency: 440.1
-  name: Clash-🇮🇳 快橙-印度
-  network: ws
-  port: 443
-  server: n1732526132.4u9ma.icu
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: a0c1bc3f-f4b9-48ae-bb0c-56408d12c76d
-  ws-opts:
-    headers:
-      Host: n1732526132.4u9ma.icu
-    path: /a0c1bc3f-f4b9-48ae-bb0c-56408d12c76d
-- _orig_name: 🇲🇾 快橙-马来西亚
-  jitter: 156.0
-  latency: 440.6
-  name: Clash-🇲🇾 快橙-马来西亚
-  network: ws
-  port: 443
-  server: n1743918712.lie5d.cyou
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: cda1e092-1c87-4ada-bd88-ee192ad6dc6e
-  ws-opts:
-    headers:
-      Host: n1743918712.lie5d.cyou
-    path: /cda1e092-1c87-4ada-bd88-ee192ad6dc6e
-- _orig_name: 🇸🇬 新加坡高速(YouTube,ChatGPT等)
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  jitter: 244.6
-  latency: 453.9
-  name: Clash-🇸🇬 新加坡高速(YouTube,ChatGPT等)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JdElVMz3G6PwHg9ve2KhRJrxxlxKqJCE5rRBCovIUzU
-    short-id: 7b94b8365e124d83
-  server: 163.128.99.45
-  servername: www.apple.com
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  tls: true
-  type: vless
-  uuid: c478762b-ed3c-4d56-8280-840dad0d0fde
-- _orig_name: 🇭🇰 xingyun-香港 通用 自动 3
-  auth: Q46doUMOSBc2r3q9
-  jitter: 149.6
-  latency: 454.5
-  name: Clash-🇭🇰 xingyun-香港 通用 自动 3
-  password: Q46doUMOSBc2r3q9
-  port: 36001
-  server: 18.162.200.166
-  skip-cert-verify: true
-  sni: hk-ls-r-8.czzhkractqqakfzdmrgd.cc
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇹🇭 Viva-泰国-Bangkok-dZCE
-  alpn:
-  - h3
-  auth: 68f43d84-390e-46d1-aedf-bbde1bd6c66a
-  jitter: 136.1
-  latency: 471.0
-  name: Clash-🇹🇭 Viva-泰国-Bangkok-dZCE
-  obfs: salamander
-  obfs-password: 47361108-5722-4504-91c7-e33bfea0e9fe
-  password: 68f43d84-390e-46d1-aedf-bbde1bd6c66a
-  port: 42746
-  server: 107.155.39.118
-  skip-cert-verify: true
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
-- _orig_name: 🇸🇬 xingyun-新加坡 通用 自动 4
-  auth: igcFHpmLAOLfbMMh
-  jitter: 28.2
-  latency: 481.7
-  name: Clash-🇸🇬 xingyun-新加坡 通用 自动 4
-  password: igcFHpmLAOLfbMMh
-  port: 26001
-  server: 47.129.118.242
-  skip-cert-verify: true
-  sni: sg-ls-q-1.nebulacloud.win
-  subscription: Clash
-  success: 2/3
-  type: hysteria2
-- _orig_name: 🇨🇦 快橙-加拿大
-  jitter: 197.1
-  latency: 489.8
-  name: Clash-🇨🇦 快橙-加拿大
-  network: ws
-  port: 443
-  server: n1733198987.4u9ma.icu
-  skip-cert-verify: true
-  subscription: Clash
-  success: 2/3
-  tls: true
-  type: vless
-  uuid: e293e09e-b2d6-413d-9aa5-8c74f4ad64f5
-  ws-opts:
-    headers:
-      Host: n1733198987.4u9ma.icu
-    path: /e293e09e-b2d6-413d-9aa5-8c74f4ad64f5
-- _orig_name: 🇭🇰 xingyun-香港 通用 自动 4
-  auth: oL5aOWMxyse3KCb6
-  jitter: 161.3
-  latency: 490.2
-  name: Clash-🇭🇰 xingyun-香港 通用 自动 4
-  password: oL5aOWMxyse3KCb6
-  port: 26001
-  server: 95.40.17.254
-  skip-cert-verify: true
-  sni: hk-ls-e-9.apcwjtnmuwembbfzmxqx.cc
-  subscription: Clash
-  success: 3/3
-  type: hysteria2
+  udp: true
+  uuid: 0b772594-d6b9-4f4f-849b-8a6f92f594fe
 - _orig_name: 🇰🇷 韩国 02
-  jitter: 6.5
-  latency: 226.8
+  jitter: 8.8
+  latency: 217.1
   name: Subscribe-🇰🇷 韩国 02
   password: StO6w4Osht9ZcK2mIv3U14
   port: 8444
@@ -3367,265 +3043,489 @@ proxies:
   success: 3/3
   type: trojan
   udp: true
+- _orig_name: 🇯🇵 日本 12
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 13.1
+  latency: 309.6
+  name: Subscribe-🇯🇵 日本 12
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: h2GGazCHLBtmIUxiCxGUvsaEF8mGi8xFeCcI14sAJTI
+    short-id: 4bbe62498d4cc3c9
+  server: 156.231.113.153
+  servername: www.cloudflare.com
+  subscription: Subscribe
+  success: 2/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3340c44a-042e-4dfd-b82c-33192d56ba98
+- _orig_name: 🇯🇵 日本 13
+  auth: fJT5wNXNkYDvYKKGWUc9f2vd0LvHKSwc
+  jitter: 263.0
+  latency: 430.0
+  name: Subscribe-🇯🇵 日本 13
+  password: fJT5wNXNkYDvYKKGWUc9f2vd0LvHKSwc
+  port: 443
+  server: 43.167.198.167
+  skip-cert-verify: true
+  sni: 43.167.198.167
+  subscription: Subscribe
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793195
+  jitter: 31.0
+  latency: 260.1
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793195
+  password: utT5adO6LDyTmWDw
+  port: 46001
+  server: 15.165.46.219
+  skip-cert-verify: true
+  sni: kor-ls-c-3.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793159
+  jitter: 43.0
+  latency: 278.0
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793159
+  password: DWUWPXNSLv23EqVH
+  port: 46001
+  server: 15.165.42.204
+  skip-cert-verify: true
+  sni: kor-ls-c-4.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793168
+  jitter: 31.7
+  latency: 292.2
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793168
+  password: NjpqMyHOlMjWTcjE
+  port: 56001
+  server: 3.39.237.40
+  skip-cert-verify: true
+  sni: kor-ls-6.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: vless-696792799
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  jitter: 76.6
+  latency: 332.9
+  name: AutoMergePublicNodes-Optimized-vless-696792799
+  port: 443
+  reality-opts:
+    public-key: EAxetkUM_1nerrjiX8yM7ceiOZccVFbYRiRt9ALDWzw
+    short-id: 12ec278197ed73d9
+  server: 163.128.99.85
+  servername: www.apple.com
+  skip-cert-verify: true
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: f68eda7b-a93a-437e-8b35-3bb6c675b025
+- _orig_name: vless-700894615
+  latency: 335.0
+  name: AutoMergePublicNodes-Optimized-vless-700894615
+  network: ws
+  port: 443
+  server: paid.sshehi.ggff.net
+  servername: aka.ms
+  skip-cert-verify: true
+  subscription: AutoMergePublicNodes-Optimized
+  success: 1/3
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49c86212-ae0b-430e-9abb-244e715b533f
+  ws-opts:
+    headers: {}
+    path: /
+- _orig_name: hysteria2-696793165
+  jitter: 50.0
+  latency: 352.8
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793165
+  password: KCDEranjrFV6ToJA
+  port: 26001
+  server: 16.163.129.29
+  skip-cert-verify: true
+  sni: hk-ls-b-4.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793152
+  jitter: 46.5
+  latency: 373.5
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793152
+  password: 6Ug9HIr4G5blTQOs
+  port: 16001
+  server: 54.95.162.204
+  skip-cert-verify: true
+  sni: jp-ls-i-9.czzhkractqqakfzdmrgd.cc
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793162
+  jitter: 123.5
+  latency: 423.6
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793162
+  password: IjBnCAk6Dqxpmn9g
+  port: 26001
+  server: 35.74.27.195
+  skip-cert-verify: true
+  sni: jp-ls-d-5.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793185
+  jitter: 56.6
+  latency: 426.1
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793185
+  password: g7obAzkn87Eqsuhe
+  port: 16001
+  server: 95.40.86.214
+  skip-cert-verify: true
+  sni: hk-ls-f-7.apcwjtnmuwembbfzmxqx.cc
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793158
+  jitter: 100.4
+  latency: 430.4
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793158
+  password: CWsE4u1kSIC5Oyji
+  port: 36001
+  server: 18.177.155.57
+  skip-cert-verify: true
+  sni: jp-ls-g-2.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793194
+  jitter: 11.4
+  latency: 445.8
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793194
+  password: qi4fG5dMTMHNhy9s
+  port: 26001
+  server: 18.162.109.191
+  skip-cert-verify: true
+  sni: hk-ls-r-7.czzhkractqqakfzdmrgd.cc
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: hysteria2-696793193
+  jitter: 141.2
+  latency: 451.8
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793193
+  password: qIsFFQ4lwYOR40I8
+  port: 56001
+  server: 3.34.30.40
+  skip-cert-verify: true
+  sni: kor-ls-4.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 3/3
+  type: hysteria2
+- _orig_name: '@DeltaKroneckerGithub#101'
+  latency: 466.1
+  name: AutoMergePublicNodes-Optimized-@DeltaKroneckerGithub#101
+  network: ws
+  port: 2095
+  server: 104.16.164.102
+  subscription: AutoMergePublicNodes-Optimized
+  success: 1/3
+  type: vless
+  udp: true
+  uuid: 74cc6c90-3c28-4a14-9f60-c0e8201ff5b0
+  ws-opts:
+    headers:
+      Host: polished-heart-cb1b.evil-entrap-corner.workers.dev
+    path: /E2ffFPPbBV4n?ed=2560
+- _orig_name: 🇭🇰HK#8
+  alterId: 0
+  cipher: auto
+  jitter: 679.8
+  latency: 470.5
+  name: AutoMergePublicNodes-Optimized-🇭🇰HK#8
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  subscription: AutoMergePublicNodes-Optimized
+  success: 2/3
+  type: vmess
+  udp: true
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
+  ws-opts:
+    headers:
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
+    path: /
+- _orig_name: hysteria2-696793177
+  jitter: 21.4
+  latency: 485.0
+  name: AutoMergePublicNodes-Optimized-hysteria2-696793177
+  password: WDA6rCTOxN3onfzP
+  port: 46001
+  server: 54.251.0.160
+  skip-cert-verify: true
+  sni: sg-ls-v-8.nebulacloud.win
+  subscription: AutoMergePublicNodes-Optimized
+  success: 2/3
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_9e629f96
-  - FREESUB-🟠🇯🇵[🤖📺🎭🎪]_github.com/Ruk1ng001_002e9496
-  - FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_8da01bef
-  - FREESUB-🟠🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_7ffb22f6
-  - FREESUB-🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_399481ac
-  - FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_51fe6fcf
-  - FREESUB-🔴🇯🇵[📺🎭🎪✨]_github.com/Ruk1ng001_ec5e3037
-  - FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_dfe85c30
-  - AU1RXX-trojan-710506292
-  - AU1RXX-hysteria2-696780796
-  - AU1RXX-vless-696792797
-  - AU1RXX-vless-701345477
-  - AU1RXX-vless-700894615
-  - AU1RXX-vless-705141076
-  - AU1RXX-vmess-713739028
-  - AU1RXX-vless-696780852
-  - AU1RXX-vless-696780850
   - ZCB-自建-香港-v4
-  - ZCB-🇯🇵 [直连][旗舰]日本1
-  - ZCB-自建-东京-v4
-  - SPIDER-🇺🇸_美国_74 - undefinedms
-  - FreeNodes-🇭🇰 香港 90
-  - AutoMergePublicNodes-Optimized-hysteria2-696793168
-  - AutoMergePublicNodes-Optimized-hysteria2-696793195
-  - AutoMergePublicNodes-Optimized-hysteria2-696793159
-  - AutoMergePublicNodes-Optimized-hysteria2-696793152
-  - AutoMergePublicNodes-Optimized-hysteria2-696793150
-  - AutoMergePublicNodes-Optimized-hysteria2-696793158
-  - AutoMergePublicNodes-Optimized-hysteria2-696793162
-  - AutoMergePublicNodes-Optimized-hysteria2-696793165
-  - AutoMergePublicNodes-Optimized-hysteria2-696793188
-  - AutoMergePublicNodes-Optimized-hysteria2-696793155
-  - AutoMergePublicNodes-Optimized-hysteria2-696793194
-  - AutoMergePublicNodes-Optimized-hysteria2-656041579
-  - AutoMergePublicNodes-Optimized-hysteria2-696793177
-  - AutoMergePublicNodes-Optimized-hysteria2-696793186
-  - OpenRay-OpenRay  KR-2717
-  - sub-香港03-trojan丨峰
-  - sub-香港01-trojan丨峰
-  - sub-香港02-trojan丨峰
-  - Clash-🇰🇷 神灯加速器-韩国-101
-  - Clash-🇺🇸 神灯加速器-美国-19
-  - Clash-🇺🇸 神灯加速器-美国-10
-  - Clash-🇭🇰 神灯加速器-香港-19
-  - Clash-🇩🇪 神灯加速器-德国-03
-  - Clash-🇭🇰 神灯加速器-香港-14
-  - Clash-🇯🇵 神灯加速器-日本-07
-  - Clash-🇨🇦 神灯加速器-加拿大 JA-02
-  - Clash-🇸🇬 神灯加速器-新加坡-03
-  - Clash-🇹🇷 神灯加速器-土耳其-02
-  - Clash-🇸🇬 神灯加速器-新加坡-07
-  - Clash-🇻🇳 神灯加速器-越南-03
-  - Clash-🇭🇰 神灯加速器-香港-34
-  - Clash-🇵🇭 神灯加速器-菲律宾-101
-  - Clash-🇲🇾 神灯加速器-马来西亚-102
-  - Clash-🇨🇭 神灯加速器-瑞士-02
-  - Clash-🇺🇸 神灯加速器-美国-12
-  - Clash-🇻🇳 神灯加速器-越南-08
-  - Clash-🇺🇸 神灯加速器-美国-08
-  - Clash-🇩🇪 神灯加速器-德国-05
-  - Clash-🇻🇳 神灯加速器-越南-09
-  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-105
-  - Clash-🇺🇸 神灯加速器-美国-18
-  - Clash-🇸🇬 神灯加速器-新加坡-05
-  - Clash-🇨🇦 神灯加速器-加拿大 JA-01
-  - Clash-🇮🇳 神灯加速器-印度-01
-  - Clash-🇺🇸 神灯加速器-美国-11
-  - Clash-🇬🇧 神灯加速器-英国-03
-  - Clash-🇦🇪 神灯加速器-阿联酋-03
-  - Clash-🇰🇭 神灯加速器-柬埔寨-02
-  - Clash-🇭🇰 神灯加速器-香港-20
-  - Clash-🇺🇸 神灯加速器-美国-15
-  - Clash-🇹🇼 神灯加速器-台湾-03
-  - Clash-🇯🇵 神灯加速器-日本-04
-  - Clash-🇮🇹 神灯加速器-意大利-01
-  - Clash-🇮🇹 神灯加速器-意大利-03
-  - Clash-🇲🇾 神灯加速器-马来西亚-106
-  - Clash-🇹🇷 神灯加速器-土耳其-03
-  - Clash-🇭🇰 神灯加速器-香港-12
-  - Clash-🇺🇸 神灯加速器-美国-02
-  - Clash-🇯🇵 神灯加速器-日本-10
-  - Clash-🇬🇷 神灯加速器-希腊-03
+  - Clash-🇺🇸 神灯加速器-美国-06
+  - Clash-🇺🇸 神灯加速器-美国-09
+  - Clash-🇹🇭 神灯加速器-泰国-103
   - Clash-🇯🇵 神灯加速器-日本-09
+  - Clash-🇨🇦 神灯加速器-加拿大 JA-04
+  - Clash-🇭🇰 神灯加速器-香港-38
+  - Clash-🇺🇸 神灯加速器-美国-05
+  - Clash-🇺🇸 神灯加速器-美国-17
+  - Clash-🇹🇼 神灯加速器-台湾-01
+  - Clash-🇭🇰 神灯加速器-香港-23
+  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-102
+  - Clash-🇫🇷 神灯加速器-法国-05
+  - Clash-🇯🇵 神灯加速器-日本-01
+  - Clash-🇮🇳 神灯加速器-印度-03
+  - Clash-🇹🇼 神灯加速器-台湾-04
+  - Clash-🇸🇬 神灯加速器-新加坡-02
+  - Clash-🇯🇵 神灯加速器-日本-02
+  - Clash-🇫🇷 神灯加速器-法国-02
+  - Clash-🇰🇷 神灯加速器-韩国-103
+  - Clash-🇯🇵 神灯加速器-日本-12
+  - Clash-🇮🇹 神灯加速器-意大利-01
+  - Clash-🇲🇾 神灯加速器-马来西亚-101
+  - Clash-🇦🇪 神灯加速器-阿联酋-03
+  - Clash-🇮🇸 神灯加速器-冰岛 IS-02
+  - Clash-🇭🇰 神灯加速器-香港-35
+  - Clash-🇰🇭 神灯加速器-柬埔寨-01
+  - Clash-🇫🇷 神灯加速器-法国-04
+  - Clash-🇲🇾 神灯加速器-马来西亚-104
+  - Clash-🇺🇸 神灯加速器-美国-15
+  - Clash-🇹🇭 神灯加速器-泰国-104
+  - Clash-🇯🇵 神灯加速器-日本-15
+  - Clash-🇯🇵 神灯加速器-日本-04
+  - Clash-🇮🇪 神灯加速器-爱尔兰-01
+  - Clash-🇯🇵 神灯加速器-日本-05
+  - Clash-🇮🇹 神灯加速器-意大利-03
+  - Clash-🇹🇼 神灯加速器-台湾-05
+  - Clash-🇹🇷 神灯加速器-土耳其-03
+  - Clash-🇭🇰 神灯加速器-香港-37
+  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-104
+  - Clash-🇭🇰 神灯加速器-香港-12
+  - Clash-🇹🇼 神灯加速器-台湾-02
+  - Clash-🇲🇾 神灯加速器-马来西亚-01
+  - Clash-🇲🇾 神灯加速器-马来西亚-106
+  - Clash-🇭🇰 神灯加速器-香港-31
+  - Clash-🇯🇵 神灯加速器-日本-06
+  - Clash-🇰🇷 神灯加速器-韩国-102
+  - Clash-🇺🇸 神灯加速器-美国-16
+  - Clash-🇪🇸 神灯加速器-西班牙-03
+  - Clash-🇩🇪 神灯加速器-德国-04
+  - Clash-🇹🇭 神灯加速器-泰国-101
+  - Clash-🇭🇰 神灯加速器-香港-33
+  - Clash-🇭🇰 神灯加速器-香港-30
+  - Clash-🇦🇪 神灯加速器-阿联酋-01
+  - Clash-🇻🇳 神灯加速器-越南-05
+  - Clash-🇺🇸 神灯加速器-美国-14
+  - Clash-🇮🇸 神灯加速器-冰岛 IS-01
+  - Clash-🇲🇾 神灯加速器-马来西亚-103
+  - Clash-🇬🇧 神灯加速器-英国-04
+  - Clash-🇩🇪 神灯加速器-德国-02
+  - Clash-🇭🇰 神灯加速器-香港-13
+  - Clash-🇦🇺 神灯加速器-澳大利亚-01
+  - Clash-🇻🇳 神灯加速器-越南-07
+  - Clash-🇯🇵 神灯加速器-日本-03
+  - Clash-🇺🇸 神灯加速器-美国-04
+  - Clash-🇺🇸 神灯加速器-美国-01
+  - Clash-🇬🇷 神灯加速器-希腊-01
+  - Clash-🇻🇳 神灯加速器-越南-06
+  - Clash-🇸🇬 神灯加速器-新加坡-08
+  - Clash-🇯🇵 神灯加速器-日本-10
+  - Clash-🇦🇪 神灯加速器-阿联酋-02
+  - Clash-🇬🇧 神灯加速器-英国-02
+  - Clash-🇹🇼 神灯加速器-台湾-07
+  - Clash-🇺🇸 神灯加速器-美国-20
+  - Clash-🇯🇵 神灯加速器-日本-08
+  - Clash-🇮🇪 神灯加速器-爱尔兰-02
+  - Clash-🇺🇸 神灯加速器-美国-07
+  - Clash-🇨🇦 神灯加速器-加拿大 JA-03
+  - Clash-🇹🇭 神灯加速器-泰国-106
   - Clash-🇲🇾 神灯加速器-马来西亚-02
   - Clash-🇺🇦 神灯加速器-乌克兰-01
-  - Clash-🇯🇵 神灯加速器-日本-08
-  - Clash-🇲🇾 神灯加速器-马来西亚-105
-  - Clash-🇭🇰 神灯加速器-香港-39
-  - Clash-🇭🇰 神灯加速器-香港-22
-  - Clash-🇦🇪 神灯加速器-阿联酋-02
-  - Clash-🇯🇵 神灯加速器-日本-06
-  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-106
-  - Clash-🇭🇰 神灯加速器-香港-24
-  - Clash-🇻🇳 神灯加速器-越南-02
-  - Clash-🇯🇵 神灯加速器-日本-03
-  - Clash-🇮🇳 神灯加速器-印度-03
-  - Clash-🇻🇳 神灯加速器-越南-10
-  - Clash-🇵🇭 神灯加速器-菲律宾-102
-  - Clash-🇺🇸 神灯加速器-美国-17
-  - Clash-🇨🇦 神灯加速器-加拿大 JA-04
-  - Clash-🇹🇷 神灯加速器-土耳其-01
-  - Clash-🇮🇹 神灯加速器-意大利-02
-  - Clash-🇺🇸 神灯加速器-美国-20
-  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-103
-  - Clash-🇩🇪 神灯加速器-德国-01
-  - Clash-🇺🇸 神灯加速器-美国-07
-  - Clash-🇹🇼 神灯加速器-台湾-07
-  - Clash-🇸🇬 神灯加速器-新加坡-01
-  - Clash-🇭🇰 神灯加速器-香港-25
-  - Clash-🇬🇧 神灯加速器-英国-01
-  - Clash-🇨🇦 神灯加速器-加拿大 JA-03
-  - Clash-🇭🇰 神灯加速器-香港-26
-  - Clash-🇭🇰 神灯加速器-香港-32
-  - Clash-🇭🇰 神灯加速器-香港-16
-  - Clash-🇰🇷 神灯加速器-韩国-103
-  - Clash-🇯🇵 神灯加速器-日本-05
-  - Clash-🇦🇺 神灯加速器-澳大利亚-02
-  - Clash-🇬🇷 神灯加速器-希腊-02
-  - Clash-🇫🇷 神灯加速器-法国-05
-  - Clash-🇻🇳 神灯加速器-越南-01
-  - Clash-🇲🇾 神灯加速器-马来西亚-103
-  - Clash-🇬🇷 神灯加速器-希腊-01
-  - Clash-🇨🇦 神灯加速器-加拿大 JA-05
-  - Clash-🇫🇷 神灯加速器-法国-03
-  - Clash-🇯🇵 神灯加速器-日本-14
-  - Clash-🇩🇪 神灯加速器-德国-02
-  - Clash-🇭🇰 神灯加速器-香港-33
-  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-101
-  - Clash-🇺🇸 神灯加速器-美国-05
-  - Clash-🇭🇰 神灯加速器-香港-36
-  - Clash-🇹🇭 神灯加速器-泰国-105
-  - Clash-🇹🇼 神灯加速器-台湾-08
-  - Clash-🇺🇸 神灯加速器-美国-04
-  - Clash-🇺🇸 神灯加速器-美国-13
-  - Clash-🇪🇸 神灯加速器-西班牙-01
-  - Clash-🇹🇼 神灯加速器-台湾-06
-  - Clash-🇸🇬 神灯加速器-新加坡-02
-  - Clash-🇯🇵 神灯加速器-日本-01
-  - Clash-🇹🇼 神灯加速器-台湾-05
-  - Clash-🇭🇰 神灯加速器-香港-40
-  - Clash-🇹🇭 神灯加速器-泰国-106
-  - Clash-🇹🇼 神灯加速器-台湾-02
-  - Clash-🇸🇬 神灯加速器-新加坡-08
-  - Clash-🇦🇪 神灯加速器-阿联酋-01
-  - Clash-🇭🇰 神灯加速器-香港-17
-  - Clash-🇮🇪 神灯加速器-爱尔兰-01
-  - Clash-🇪🇸 神灯加速器-西班牙-03
-  - Clash-🇮🇸 神灯加速器-冰岛 IS-01
-  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-104
-  - Clash-🇭🇰 神灯加速器-香港-13
-  - Clash-🇭🇰 神灯加速器-香港-38
-  - Clash-🇻🇳 神灯加速器-越南-06
-  - Clash-🇯🇵 神灯加速器-日本-13
-  - Clash-🇫🇷 神灯加速器-法国-02
-  - Clash-🇭🇰 神灯加速器-香港-31
-  - Clash-🇰🇷 神灯加速器-韩国-01
-  - Clash-🇭🇰 神灯加速器-香港-30
-  - Clash-🇹🇭 神灯加速器-泰国-101
-  - Clash-🇭🇰 神灯加速器-香港-35
-  - Clash-🇹🇭 神灯加速器-泰国-104
-  - Clash-🇵🇭 神灯加速器-菲律宾-104
-  - Clash-🇰🇷 神灯加速器-韩国-02
-  - Clash-🇮🇸 神灯加速器-冰岛 IS-02
-  - Clash-🇩🇪 神灯加速器-德国-04
-  - Clash-🇮🇪 神灯加速器-爱尔兰-02
-  - Clash-🇺🇸 神灯加速器-美国-16
-  - Clash-🇹🇭 神灯加速器-泰国-103
-  - Clash-🇸🇬 神灯加速器-新加坡-04
-  - Clash-🇨🇭 神灯加速器-瑞士-01
-  - Clash-🇺🇸 神灯加速器-美国-14
-  - Clash-🇭🇰 FyFlash-VIP 香港-01
-  - Clash-🇮🇪 神灯加速器-爱尔兰-03
-  - Clash-🇻🇳 神灯加速器-越南-04
-  - Clash-🇬🇧 神灯加速器-英国-02
-  - Clash-🇯🇵 神灯加速器-日本-15
-  - Clash-🇰🇷 神灯加速器-韩国-102
-  - Clash-🇺🇸 神灯加速器-美国-01
-  - Clash-🇬🇧 神灯加速器-英国-04
-  - Clash-🇭🇰 神灯加速器-香港-28
-  - Clash-🇯🇵 神灯加速器-日本-02
-  - Clash-🇭🇰 神灯加速器-香港-18
-  - Clash-🇻🇳 神灯加速器-越南-05
-  - Clash-🇻🇳 神灯加速器-越南-07
-  - Clash-🇦🇺 神灯加速器-澳大利亚-01
-  - Clash-🇹🇼 神灯加速器-台湾-04
-  - Clash-🇲🇾 神灯加速器-马来西亚-01
-  - Clash-🇲🇾 神灯加速器-马来西亚-101
-  - Clash-🇭🇰 神灯加速器-香港-21
-  - Clash-🇲🇾 神灯加速器-马来西亚-104
-  - Clash-🇹🇭 神灯加速器-泰国-102
-  - Clash-🇯🇵 神灯加速器-日本-11
-  - Clash-🇹🇼 神灯加速器-台湾-01
-  - Clash-🇭🇰 神灯加速器-香港-27
-  - Clash-🇮🇸 神灯加速器-冰岛 IS-03
-  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-102
-  - Clash-🇵🇭 神灯加速器-菲律宾-105
-  - Clash-🇸🇬 神灯加速器-新加坡-09
-  - Clash-🇯🇵 神灯加速器-日本-12
   - Clash-🇺🇦 神灯加速器-乌克兰-02
-  - Clash-🇭🇰 神灯加速器-香港-37
-  - Clash-🇰🇭 神灯加速器-柬埔寨-01
-  - Clash-🇸🇬 神灯加速器-新加坡-10
-  - Clash-🇮🇳 神灯加速器-印度-02
-  - Clash-🇺🇸 神灯加速器-美国-06
-  - Clash-🇭🇰 神灯加速器-香港-15
-  - Clash-🇭🇰 神灯加速器-香港-29
-  - Clash-🇭🇰 神灯加速器-香港-23
-  - Clash-🇫🇷 神灯加速器-法国-01
+  - Clash-🇸🇬 神灯加速器-新加坡-09
+  - Clash-🇪🇸 神灯加速器-西班牙-01
+  - Clash-🇬🇧 神灯加速器-英国-01
+  - Clash-🇭🇰 神灯加速器-香港-25
   - Clash-🇳🇱 神灯加速器-荷兰-02
+  - Clash-🇬🇷 神灯加速器-希腊-02
+  - Clash-🇮🇸 神灯加速器-冰岛 IS-03
+  - Clash-🇭🇰 神灯加速器-香港-29
+  - Clash-🇭🇰 神灯加速器-香港-22
+  - Clash-🇯🇵 神灯加速器-日本-11
+  - Clash-🇭🇰 神灯加速器-香港-18
+  - Clash-🇵🇭 神灯加速器-菲律宾-104
+  - Clash-🇫🇷 神灯加速器-法国-01
+  - Clash-🇫🇷 神灯加速器-法国-03
+  - Clash-🇯🇵 神灯加速器-日本-07
+  - Clash-🇹🇼 神灯加速器-台湾-06
+  - Clash-🇰🇷 神灯加速器-韩国-01
+  - Clash-🇨🇭 神灯加速器-瑞士-01
+  - Clash-🇭🇰 神灯加速器-香港-16
+  - Clash-🇦🇺 神灯加速器-澳大利亚-02
+  - Clash-🇸🇬 神灯加速器-新加坡-04
+  - Clash-🇸🇬 神灯加速器-新加坡-06
+  - Clash-🇻🇳 神灯加速器-越南-04
+  - Clash-🇭🇰 神灯加速器-香港-17
+  - Clash-🇰🇭 神灯加速器-柬埔寨-02
+  - Clash-🇨🇦 神灯加速器-加拿大 JA-05
+  - Clash-🇻🇳 神灯加速器-越南-01
+  - Clash-🇭🇰 神灯加速器-香港-40
+  - Clash-🇭🇰 神灯加速器-香港-39
+  - Clash-🇮🇳 神灯加速器-印度-02
+  - Clash-🇭🇰 神灯加速器-香港-27
+  - Clash-🇵🇭 神灯加速器-菲律宾-103
+  - Clash-🇸🇬 神灯加速器-新加坡-05
+  - Clash-🇮🇪 神灯加速器-爱尔兰-03
+  - Clash-🇹🇭 神灯加速器-泰国-105
+  - Clash-🇭🇰 神灯加速器-香港-28
+  - Clash-🇭🇰 神灯加速器-香港-21
+  - Clash-🇩🇪 神灯加速器-德国-01
+  - Clash-🇭🇰 神灯加速器-香港-36
+  - Clash-🇰🇷 神灯加速器-韩国-02
+  - Clash-🇩🇪 神灯加速器-德国-05
+  - Clash-🇭🇰 神灯加速器-香港-24
+  - Clash-🇮🇹 神灯加速器-意大利-02
+  - Clash-🇬🇷 神灯加速器-希腊-03
+  - Clash-🇻🇳 神灯加速器-越南-10
   - Clash-🇵🇭 神灯加速器-菲律宾-106
   - Clash-🇪🇸 神灯加速器-西班牙-02
-  - Clash-🇫🇷 神灯加速器-法国-04
-  - Clash-🇸🇬 神灯加速器-新加坡-06
+  - Clash-🇯🇵 神灯加速器-日本-13
   - Clash-🇳🇱 神灯加速器-荷兰-01
-  - Clash-🇭🇰 FyFlash-VIP 香港-1
-  - Clash-🇵🇭 神灯加速器-菲律宾-103
-  - Clash-🇰🇷 xingyun-韩国 通用 自动 2
-  - Clash-🇭🇰 xingyun-香港 解锁 自动 4
-  - Clash-🇭🇰 BigBear-🇭🇰 香港1-移动优化
-  - Clash-🇭🇰 BigBear-🇭🇰 香港精品2-扣量×1.7
-  - Clash-🇰🇷 xingyun-韩国 通用 自动 3
-  - Clash-🇭🇰 RedMouse-香港-A1
-  - Clash-🇨🇭 快橙-瑞士
-  - Clash-🇵🇭 Viva-菲律宾-马尼拉-Mg7G
-  - Clash-🇸🇪 快橙-瑞典
-  - Clash-🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-VLESS-WS
+  - Clash-🇭🇰 神灯加速器-香港-15
+  - Clash-🇹🇼 神灯加速器-台湾-08
+  - Clash-🇹🇷 神灯加速器-土耳其-01
+  - Clash-🇲🇾 神灯加速器-马来西亚-105
+  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-103
+  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-106
+  - Clash-🇸🇬 神灯加速器-新加坡-10
+  - Clash-🇺🇸 神灯加速器-美国-13
+  - Clash-🇹🇭 神灯加速器-泰国-102
+  - Clash-🇺🇸 神灯加速器-美国-11
+  - Clash-🇸🇬 神灯加速器-新加坡-01
+  - Clash-🇭🇰 神灯加速器-香港-26
+  - Clash-🇭🇰 神灯加速器-香港-32
   - Clash-🇺🇸 神灯加速器-美国-03
-  - Clash-🇰🇷 快橙-韩国
-  - Clash-🇭🇰 xingyun-香港 通用 自动 5
-  - Clash-🇺🇸 神灯加速器-美国-09
-  - Clash-🇯🇵 xingyun-日本 通用 自动 4
-  - Clash-🇭🇰 xingyun-香港 解锁 自动 2
-  - Clash-🇯🇵 日本东京(YouTube,ChatGPT等)
-  - Clash-🇬🇧 快橙-英国
-  - Clash-🇭🇰 xingyun-香港 通用 自动 2
-  - Clash-🇯🇵 快橙-日本03快橙
-  - Clash-🇰🇷 xingyun-韩国 通用 自动 4
-  - Clash-🇸🇬 快橙-新加坡 2
-  - Clash-🇭🇰 xingyun-香港 通用 自动
-  - Clash-🇯🇵 xingyun-日本 通用 自动
+  - Clash-🇻🇳 神灯加速器-越南-02
+  - Clash-🇵🇭 神灯加速器-菲律宾-102
+  - Clash-🇲🇾 神灯加速器-马来西亚-102
+  - Clash-🇺🇸 神灯加速器-美国-12
+  - Clash-🇯🇵 神灯加速器-日本-14
+  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-105
+  - Clash-🇮🇩 神灯加速器-印尼 印度尼西亚-101
+  - Clash-🇺🇸 神灯加速器-美国-18
+  - Clash-🇺🇸 神灯加速器-美国-08
+  - Clash-🇵🇭 神灯加速器-菲律宾-105
+  - Clash-🇺🇸 神灯加速器-美国-02
+  - Clash-🇭🇰 神灯加速器-香港-34
+  - Clash-🇻🇳 神灯加速器-越南-09
+  - Clash-🇵🇭 神灯加速器-菲律宾-101
+  - Clash-🇸🇬 神灯加速器-新加坡-03
+  - Clash-🇨🇦 神灯加速器-加拿大 JA-01
+  - Clash-🇬🇧 神灯加速器-英国-03
+  - Clash-🇺🇸 神灯加速器-美国-19
+  - Clash-🇭🇰 神灯加速器-香港-14
+  - Clash-🇺🇸 神灯加速器-美国-10
+  - Clash-🇹🇼 神灯加速器-台湾-03
+  - Clash-🇭🇰 神灯加速器-香港-19
+  - Clash-🇨🇦 神灯加速器-加拿大 JA-02
+  - Clash-🇰🇷 神灯加速器-韩国-101
+  - Clash-🇮🇳 神灯加速器-印度-01
+  - Clash-🇻🇳 神灯加速器-越南-08
+  - Clash-🇭🇰 Huaxia-HuaXiaLink-香港3（高速）
+  - Clash-🇩🇪 神灯加速器-德国-03
+  - Clash-🇻🇳 神灯加速器-越南-03
+  - Clash-🇹🇷 神灯加速器-土耳其-02
+  - Clash-🇨🇭 神灯加速器-瑞士-02
+  - Clash-🇸🇬 神灯加速器-新加坡-07
+  - Clash-🇭🇰 神灯加速器-香港-20
+  - Clash-🇭🇰 FyFlash-VIP 香港-01
   - Clash-🇭🇰 快橙-香港06快橙
-  - Clash-🇯🇵 xingyun-日本 通用 自动 3
+  - Clash-🇰🇷 xingyun-韩国 通用 自动 4
+  - Clash-🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-Reality
+  - Clash-🇸🇬 GeLink-新加坡-vip-1772
+  - Clash-🇰🇷 xingyun-韩国 通用 自动 2
+  - Clash-🇯🇵 日本东京(YouTube,ChatGPT等)
+  - Clash-🇰🇷 快橙-韩国
+  - Clash-🇵🇭 TomVPN-菲律宾-马尼拉-0mLj-VLESS-WS
   - Clash-🇸🇬 新加坡优质(移动,电信优选)
-  - Clash-🇭🇰 BigBear-🇭🇰 香港精品3-扣量×1.8
-  - Clash-🇰🇷 xingyun-韩国 通用 自动
-  - Clash-🇵🇭 FastStunnel-菲律宾-马尼拉-cgul-il4n8q-298ms-vless-ws
-  - Clash-🇯🇵 xingyun-日本 通用 自动 2
-  - Clash-🇮🇳 快橙-印度
-  - Clash-🇲🇾 快橙-马来西亚
-  - Clash-🇸🇬 新加坡高速(YouTube,ChatGPT等)
-  - Clash-🇭🇰 xingyun-香港 通用 自动 3
-  - Clash-🇹🇭 Viva-泰国-Bangkok-dZCE
-  - Clash-🇸🇬 xingyun-新加坡 通用 自动 4
-  - Clash-🇨🇦 快橙-加拿大
+  - Clash-🇭🇰 BigBear-🇭🇰 香港精品2-扣量×1.7
+  - Clash-🇭🇰 xingyun-香港 解锁 自动 3
+  - Clash-🇯🇵 xingyun-日本 通用 自动 4
+  - Clash-🇮🇹 快橙-意大利
+  - Clash-🇦🇺 快橙-澳大利亚
   - Clash-🇭🇰 xingyun-香港 通用 自动 4
+  - Clash-🇭🇰 RedMouse-香港-A1
+  - Clash-🇯🇵 xingyun-日本 解锁 自动 2
+  - Clash-🇲🇾 快橙-马来西亚
+  - Clash-🇭🇰 Huaxia-HuaXiaLink-香港1（高速）
+  - Clash-🇯🇵 xingyun-日本 通用 自动 3
+  - Clash-🇭🇰 xingyun-香港 通用 自动 5
+  - Clash-🇯🇵 xingyun-日本 解锁 自动
+  - Clash-🇸🇬 快橙-新加坡 2
+  - Clash-🇯🇵 xingyun-日本 通用 自动 2
+  - Clash-🇭🇰 xingyun-香港 通用 自动
+  - Clash-🇰🇷 xingyun-韩国 通用 自动
+  - Clash-🇰🇷 xingyun-韩国 通用 自动 3
+  - Clash-🇸🇬 快橙-新加坡
+  - Clash-🇹🇭 快橙-泰国
+  - Clash-🇭🇰 Huaxia-HuaXiaLink-香港2（高速）
+  - Clash-🇵🇭 FastStunnel-菲律宾-马尼拉-cgul-il4n8q-298ms-vless-ws
+  - Clash-自动选择（Ins,YouTube,ChatGPT等）
+  - Clash-🇯🇵 xingyun-日本 通用 自动
+  - Clash-🇭🇰 xingyun-香港 通用 自动 3
+  - Clash-🇰🇷 xingyun-韩国 解锁 自动
+  - Clash-🇨🇦 快橙-加拿大
+  - Clash-🇸🇬 Huaxia-HuaXiaLink-新加坡1
+  - AU1RXX-vless-716487934
+  - AU1RXX-trojan-710506292
+  - AU1RXX-vless-705792844
+  - AU1RXX-vless-716054695
+  - AU1RXX-vless-696792794
+  - FREESUB-🟠🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_926a837f
+  - FREESUB-🟢🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_dfe85c30
+  - FREESUB-🔴🇰🇷[🎬📺🎭🎪]_github.com/Ruk1ng001_e6c290c1
+  - FREESUB-🟠🇭🇰[📺]_github.com/Ruk1ng001_9e629f96
+  - sub-香港03-trojan丨峰
+  - sub-香港02-trojan丨峰
+  - sub-香港01-trojan丨峰
+  - Subscribe-🇯🇵 日本 01
   - Subscribe-🇰🇷 韩国 02
+  - Subscribe-🇯🇵 日本 12
+  - Subscribe-🇯🇵 日本 13
+  - AutoMergePublicNodes-Optimized-hysteria2-696793195
+  - AutoMergePublicNodes-Optimized-hysteria2-696793159
+  - AutoMergePublicNodes-Optimized-hysteria2-696793168
+  - AutoMergePublicNodes-Optimized-vless-696792799
+  - AutoMergePublicNodes-Optimized-vless-700894615
+  - AutoMergePublicNodes-Optimized-hysteria2-696793165
+  - AutoMergePublicNodes-Optimized-hysteria2-696793152
+  - AutoMergePublicNodes-Optimized-hysteria2-696793162
+  - AutoMergePublicNodes-Optimized-hysteria2-696793185
+  - AutoMergePublicNodes-Optimized-hysteria2-696793158
+  - AutoMergePublicNodes-Optimized-hysteria2-696793194
+  - AutoMergePublicNodes-Optimized-hysteria2-696793193
+  - AutoMergePublicNodes-Optimized-@DeltaKroneckerGithub#101
+  - AutoMergePublicNodes-Optimized-🇭🇰HK#8
+  - AutoMergePublicNodes-Optimized-hysteria2-696793177
   type: select
 rule-providers:
   apple:
