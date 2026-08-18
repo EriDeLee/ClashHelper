@@ -5,6 +5,7 @@ import sys
 import os
 import json
 import math
+import base64
 import subprocess
 import threading
 import time
@@ -63,6 +64,47 @@ TEST_URL = "http://www.google.com/generate_204"
 # ssh / mieru，外加 direct / dns / reject 三个非订阅类型）。
 # 改成空集合即关闭初筛，全部协议照旧送去测。
 ALLOWED_TYPES = frozenset({'vless', 'trojan', 'vmess', 'hysteria2'})
+
+# ── 协议配置校验（2026-08-18 从 clash-speedtest 实测搬来）──
+# clash-speedtest 加载聚合配置时逐条报错：invalid REALITY short ID / invalid
+# REALITY public key / unsupported xtls flow type / missing obfs password /
+# unsupported security type。这些节点即使测速通过也进不了 mihomo 内核，
+# 在测速前就筛掉，省测速时间。
+#
+# short-id：必须是 hex 字符串，且 hex→int→hex 回写后长度为 2/4/8/16/32。
+#   回写检查能抓住 '09'（前导零）这类裸看合法、内核却拒绝的值。
+REALITY_SHORT_ID_LENS = (2, 4, 8, 16, 32)
+FLOW_ALLOWED = ('', 'xtls-rprx-vision', 'xtls-rprx-origin')
+VMESS_CIPHER_ALLOWED = ('', 'auto', 'none', 'aes-128-gcm',
+                        'chacha20-poly1305', 'zero')
+
+def _reality_public_key_ok(pk):
+    """public-key 必须能 base64 解码（标准或 url-safe）且正好 32 字节。"""
+    if pk is None:
+        return False
+    s = str(pk).strip()
+    if not s:
+        return False
+    for decode in (lambda x: base64.b64decode(x, altchars=b'-_'),
+                   base64.b64decode):
+        try:
+            return len(decode(s)) == 32
+        except Exception:
+            continue
+    return False
+
+def _reality_short_id_ok(sid):
+    # 必须是字符串：yaml 解析出的 int（如 85）clash-speedtest 直接报
+    # invalid REALITY short ID，int→str 会让它混进合法 hex（'85'）。
+    if not isinstance(sid, str):
+        return False
+    if sid == '':
+        return True
+    try:
+        value = int(sid, 16)
+    except ValueError:
+        return False
+    return len(format(value, 'x')) in REALITY_SHORT_ID_LENS
 
 FETCH_WORKERS = 10    # 并发拉取订阅源的线程数
 FETCH_TIMEOUT = 10    # 单次请求超时（秒）
@@ -589,13 +631,64 @@ class Site:
                 f"（{detail}），剩余 {len(kept)}")
         return kept
 
+    def _apply_protocol_validation(self, nodes):
+        """协议配置校验：筛掉 mihomo 内核会拒绝加载的节点。
+
+        与 _apply_type_whitelist 一样放在关键词过滤之前 —— 规则只查字段
+        值，一次能定去留；且校验对个别字段做无害化（hysteria2 的 obfs
+        残留空密码直接摘掉），做在关键词过滤前不会影响后面的逻辑。
+        """
+        kept = []
+        dropped = {}
+        for node in nodes:
+            reason = None
+            kind = str(node.get('type') or '').lower()
+            ro = node.get('reality-opts')
+            if isinstance(ro, dict):
+                if not _reality_public_key_ok(ro.get('public-key')):
+                    reason = 'reality public-key 非法'
+                elif not _reality_short_id_ok(ro.get('short-id')):
+                    reason = 'reality short-id 非法'
+            if reason is None and kind == 'vless':
+                flow = node.get('flow')
+                if flow is not None and str(flow) not in FLOW_ALLOWED:
+                    reason = f'flow {flow!r} 不受支持'
+            if reason is None and kind == 'vmess':
+                cipher = node.get('cipher')
+                if cipher is not None and str(cipher).lower() not in VMESS_CIPHER_ALLOWED:
+                    reason = f'vmess cipher {cipher!r} 不受支持'
+            if reason is None and kind == 'hysteria2':
+                obfs = node.get('obfs')
+                obfs_pw = node.get('obfs-password')
+                if obfs is None or str(obfs) in ('', 'none'):
+                    # 无混淆：清掉空残留，避免 obfs-password 空字符串触发内核报错
+                    node.pop('obfs', None)
+                    if obfs_pw in (None, ''):
+                        node.pop('obfs-password', None)
+                elif str(obfs) == 'salamander':
+                    if not obfs_pw:
+                        reason = 'hysteria2 salamander 缺 obfs-password'
+                else:
+                    reason = f'hysteria2 obfs {obfs!r} 不受支持'
+            if reason:
+                dropped[reason] = dropped.get(reason, 0) + 1
+            else:
+                kept.append(node)
+        if dropped:
+            detail = ', '.join(f"{k} {v}" for k, v in
+                               sorted(dropped.items(), key=lambda kv: (-kv[1], kv[0])))
+            log(f"[{self.name}] 协议校验丢弃 {sum(dropped.values())} 个"
+                f"（{detail}），剩余 {len(kept)}")
+        return kept
+
     def prepare(self):
         """只做本地过滤，不做检测。返回待检测的候选节点。"""
         if not self.data or 'proxies' not in self.data:
             log(f"[{self.name}] No proxies found")
             return []
         raw = self.data.get('proxies') or []
-        filtered = self.filter.apply(self._apply_type_whitelist(raw))
+        filtered = self.filter.apply(
+            self._apply_protocol_validation(self._apply_type_whitelist(raw)))
         valid = [node for node in filtered
                  if all(field in node for field in Site.REQUIRED_FIELDS)]
         for node in valid:
@@ -610,9 +703,18 @@ class Site:
         保持了原顺序，所以这里不必再排一次。
         """
         self.nodes = list(tested)
+        seen = {}
         for node in self.nodes:
             orig = node.get('_orig_name', node.get('name', 'Unknown'))
-            node['name'] = f"{self.name}-{orig}"
+            name = f"{self.name}-{orig}"
+            # 同源内不同节点可能共享原始名（内容不同所以没被去重），
+            # mihomo 对重名直接拒绝加载，加序号后缀保命。
+            if name in seen:
+                seen[name] += 1
+                name = f"{name}-{seen[name]}"
+            else:
+                seen[name] = 1
+            node['name'] = name
         log(f"[{self.name}] 节点检测完成，{len(self.nodes)} 个节点可用")
 
     def get_titles(self):
